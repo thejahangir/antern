@@ -88,8 +88,8 @@ const uxStudioTeam: Leader[] = [
     name: "Jahangir Alam",
     role: "Principal UX Architect",
     image: jahangir,
-    bio: "Principal UX Architect driving enterprise-scale experience architecture.",
-    fullBio: "Jahangir is a Principal UX Architect with 15+ years of experience spanning UX, UI, and Front-End engineering. He operates at the intersection of experience architecture, operating models, and digital platforms—helping organizations institutionalize user-centricity at scale. He has partnered with global enterprises including Prometric, Hyundai, NCR, HPE, Sabre, Costco, and NetApp to modernize experience systems, improve adoption, and enable execution across complex environments.",
+    bio: "Passionate about UX loves driving enterprise-scale experience architecture.",
+    fullBio: "UX Architect & Experience Strategist with 15+ years of experience spanning UX, UI, and Front-End engineering. He operates at the intersection of experience architecture, operating models, and digital platforms—helping organizations institutionalize user-centricity at scale. He has partnered with global enterprises including Prometric, Hyundai, NCR, HPE, Sabre, Costco, and NetApp to modernize experience systems, improve adoption, and enable execution across complex environments.",
     expertise: ["Cognitive Experience Design", "AI-Driven UX", "Intelligent Design Systems", "Interaction Architecture", "Cross-Platform UX", "Enterprise UX Strategy"],
     strategicHighlight: "Institutionalizing human-centered experience systems within enterprise operating models.",
     socials: { linkedin: "#", twitter: "#" , email: "jahangir@antern.tech"}
