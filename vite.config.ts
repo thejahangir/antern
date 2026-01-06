@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/Antern-Final-Codebase/', 
+    base: '/antern/', 
 
     plugins: [react()],
 
