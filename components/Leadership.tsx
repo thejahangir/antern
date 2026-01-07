@@ -123,6 +123,15 @@ interface LeadershipProps {
 export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
   const [selectedLeader, setSelectedLeader] = useState<Leader | null>(null);
   const [isDossierActive, setIsDossierActive] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.pageYOffset);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (selectedLeader) {
@@ -177,12 +186,15 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative h-[65vh] min-h-[500px] flex items-center bg-[#0A0A0A] overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
+        <div 
+          className="absolute -inset-y-24 inset-x-0 z-0 will-change-transform opacity-40"
+          style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
+        >
           <img 
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2400&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" 
             alt="Antern Leadership Collaboration" 
-            className="w-full h-full object-cover opacity-40 grayscale"
+            className="w-full h-full object-cover grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent"></div>
           <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 

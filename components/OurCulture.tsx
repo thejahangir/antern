@@ -18,7 +18,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
   return (
     <div className="bg-white min-h-screen selection:bg-[#4918A9] selection:text-white overflow-hidden">
       {/* 1. KINETIC HERO */}
-      <section className="relative h-screen min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
           className="absolute -inset-y-24 inset-x-0 z-0 opacity-40 grayscale"
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}

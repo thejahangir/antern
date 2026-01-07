@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 interface Job {
   id: string;
@@ -147,6 +147,13 @@ export const Careers: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [alertSuccess, setAlertSuccess] = useState(false);
   const detailScrollRef = useRef<HTMLDivElement>(null);
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const filteredJobs = filter === 'All' ? jobs : jobs.filter(j => j.department === filter);
   const departments = ['All', ...Array.from(new Set(jobs.map(j => j.department)))];
@@ -223,8 +230,25 @@ export const Careers: React.FC = () => {
     <div className="bg-white min-h-screen font-sans selection:bg-[#4918A9] selection:text-white">
       
       {/* 1. KINETIC HERO */}
-      <section className="relative h-[40vh] md:h-[50vh] flex items-center overflow-hidden bg-[#0A0A0A]">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#0A0A0A]">
+        {/* Background Image Layer */}
+        <div 
+          className="absolute -inset-y-24 inset-x-0 z-0 will-change-transform opacity-30"
+          style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
+        >
+          <img 
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2500&auto=format&fit=crop" 
+            alt="Career Opportunities" 
+            className="w-full h-full object-cover grayscale"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
+        </div>
+
+        {/* Grid Overlay */}
+        <div 
+          className="absolute inset-0 opacity-10 z-0 pointer-events-none"
+          style={{ transform: `translate3d(0, ${offsetY * 0.05}px, 0)` }}
+        >
           <div className="absolute inset-0 grid-lines"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] radial-glow"></div>
         </div>
