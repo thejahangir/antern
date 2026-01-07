@@ -26,37 +26,43 @@ export const Events: React.FC = () => {
       dateObj: getRelativeDate(-3),
       location: 'Virtual Lab',
       title: 'Microservices & Chaos Engineering',
-      type: 'Technical Workshop'
+      type: 'Technical Workshop',
+      inviteOnly: false
     },
     {
       dateObj: getRelativeDate(-2),
       location: 'Bangalore Hub',
       title: 'Accessible UX: Beyond Compliance',
-      type: 'Design Sprint'
+      type: 'Design Sprint',
+      inviteOnly: false
     },
     {
       dateObj: getRelativeDate(12),
       location: 'San Francisco',
-      title: 'Cognitive Summit 2025',
-      type: 'Flagship Conference'
+      title: 'Cognitive Summit 2024',
+      type: 'Flagship Conference',
+      inviteOnly: false
     },
     {
       dateObj: getRelativeDate(25),
       location: 'Virtual',
       title: 'UX ROI Masterclass',
-      type: 'Webinar'
+      type: 'Webinar',
+      inviteOnly: false
     },
     {
       dateObj: getRelativeDate(40),
       location: 'London',
       title: 'Enterprise Modernization Forum',
-      type: 'Roundtable'
+      type: 'Roundtable',
+      inviteOnly: true
     },
     {
       dateObj: getRelativeDate(60),
       location: 'New York',
       title: 'Generative AI in FinTech',
-      type: 'Industry Panel'
+      type: 'Industry Panel',
+      inviteOnly: true
     }
   ];
 
@@ -114,20 +120,40 @@ export const Events: React.FC = () => {
               return (
                 <div 
                   key={i} 
-                  className={`flex flex-col md:flex-row items-center gap-12 p-12 border transition-all relative overflow-hidden ${
+                  className={`group flex flex-col md:flex-row items-center gap-12 p-12 border transition-all duration-500 relative overflow-hidden ${
                     eventIsPast 
                       ? 'border-gray-100 bg-gray-50/50 opacity-75 grayscale-[0.8]' 
-                      : 'border-gray-100 hover:border-[#4918A9]/50 bg-white hover:shadow-lg'
+                      : event.inviteOnly
+                        ? 'border-gray-200 bg-white hover:border-[#ea4a54] hover:shadow-[0_20px_40px_-15px_rgba(234,74,84,0.15)]' // Red/Pink accent for invite only
+                        : 'border-gray-100 hover:border-[#4918A9]/50 bg-white hover:shadow-lg'
                   }`}
                 >
-                  {eventIsPast && (
-                    <div className="absolute top-4 right-4 px-3 py-1 bg-gray-200 text-gray-500 text-[9px] font-black uppercase tracking-widest rounded-sm">
-                      Concluded
-                    </div>
-                  )}
+                  {/* Status Badges */}
+                  <div className="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                    {eventIsPast && (
+                      <div className="px-3 py-1 bg-gray-200 text-gray-500 text-[9px] font-black uppercase tracking-widest rounded-sm">
+                        Concluded
+                      </div>
+                    )}
+                    {event.inviteOnly && !eventIsPast && (
+                      <div className="flex items-center gap-2 px-3 py-1.5 bg-[#ea4a54]/5 border border-[#ea4a54]/20 text-[#ea4a54] rounded-sm shadow-sm animate-in fade-in slide-in-from-top-2 duration-700">
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        <span className="text-[9px] font-black uppercase tracking-widest">By Invitation Only</span>
+                      </div>
+                    )}
+                  </div>
                   
+                  {/* Date Column */}
                   <div className="text-center md:text-left shrink-0 min-w-[140px]">
-                    <div className={`text-3xl font-black ${eventIsPast ? 'text-gray-400' : 'text-[#4918A9]'}`}>
+                    <div className={`text-3xl font-black ${
+                      eventIsPast 
+                        ? 'text-gray-400' 
+                        : event.inviteOnly 
+                          ? 'text-[#ea4a54]' 
+                          : 'text-[#4918A9]'
+                    }`}>
                       {dateParts[0]}
                     </div>
                     <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">
@@ -135,24 +161,47 @@ export const Events: React.FC = () => {
                     </div>
                   </div>
                   
+                  {/* Content Column */}
                   <div className="flex-1">
                     <span className="text-[9px] font-black uppercase tracking-widest text-gray-400 mb-2 block">
                       {event.type} &bull; {event.location}
                     </span>
-                    <h3 className={`text-2xl font-black uppercase tracking-tight ${eventIsPast ? 'text-gray-500 line-through decoration-2 decoration-gray-300' : 'text-[#1A1A1A]'}`}>
+                    <h3 className={`text-2xl font-black uppercase tracking-tight ${
+                      eventIsPast ? 'text-gray-500 line-through decoration-2 decoration-gray-300' : 'text-[#1A1A1A]'
+                    }`}>
                       {event.title}
                     </h3>
+                    {event.inviteOnly && !eventIsPast && (
+                      <p className="mt-4 text-xs font-medium text-gray-400 italic flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-[#ea4a54] rounded-full"></span>
+                        Exclusive access for strategic partners and executive leadership.
+                      </p>
+                    )}
                   </div>
                   
+                  {/* Action Column */}
                   <button 
-                    disabled={eventIsPast}
-                    className={`px-10 py-4 text-[10px] font-black uppercase tracking-[0.3em] transition-all whitespace-nowrap ${
+                    disabled={eventIsPast || event.inviteOnly}
+                    className={`px-10 py-4 text-[10px] font-black uppercase tracking-[0.3em] transition-all whitespace-nowrap flex items-center gap-3 ${
                       eventIsPast 
-                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                        : 'bg-[#1A1A1A] text-white hover:bg-[#4918A9]'
+                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed border border-transparent' 
+                        : event.inviteOnly
+                          ? 'bg-transparent border border-gray-200 text-gray-400 cursor-not-allowed hover:bg-gray-50'
+                          : 'bg-[#1A1A1A] text-white hover:bg-[#4918A9] border border-transparent'
                     }`}
                   >
-                    {eventIsPast ? 'Registration Closed' : 'Register'}
+                    {eventIsPast ? (
+                      'Registration Closed'
+                    ) : event.inviteOnly ? (
+                      <>
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        Private Event
+                      </>
+                    ) : (
+                      'Register'
+                    )}
                   </button>
                 </div>
               );
