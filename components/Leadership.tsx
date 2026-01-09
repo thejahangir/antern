@@ -146,7 +146,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
   const TeamSection = ({ title, subtitle, members, columns = 3 }: { title: string; subtitle: string; members: Leader[]; columns?: number }) => (
     <div className="mb-32">
       <div className="flex flex-col mb-16">
-        <div className="accent-bar bg-[#4918A9] w-12 mb-6"></div>
+        <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
         <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-4">{title}</h2>
         <p className="text-gray-400 text-lg font-light uppercase tracking-widest text-[10px]">{subtitle}</p>
       </div>
@@ -165,7 +165,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
                 <p className="text-white text-sm font-light leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
                 <button 
-                  className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#4918A9] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
+                  className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
                   onClick={() => setSelectedLeader(member)}
                 >
                   View Profile Dossier
@@ -173,9 +173,9 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
               </div>
             </div>
             <div className="relative">
-              <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#4918A9] transition-colors">{member.name}</h3>
+              <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#004b23] transition-colors">{member.name}</h3>
               <p className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mt-2">{member.role}</p>
-              <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#4918A9] group-hover:w-12 transition-all duration-500"></div>
+              <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#004b23] group-hover:w-12 transition-all duration-500"></div>
             </div>
           </div>
         ))}
@@ -204,17 +204,17 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#D9D1DB] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-6 block">
+            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Global Governance
             </span>
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
               Leadership<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Team
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#4918A9] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#70e000] pl-10">
               The architects of Antern's global mission, committed to delivering intelligent solutions with enterprise-grade integrity and strategic foresight.
             </p>
           </div>
@@ -250,14 +250,14 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
         </div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight text-[#1A1A1A] mb-12">
-            Build with the <span className="text-[#4918A9]">Best.</span>
+            Build with the <span className="text-[#004b23]">Best.</span>
           </h2>
           <p className="text-xl text-gray-500 font-light mb-16 leading-relaxed max-w-2xl mx-auto">
             Our multi-disciplinary teams are ready to transform your most complex challenges into intuitive, scalable digital assets.
           </p>
           <button 
             onClick={onContact}
-            className="px-16 py-6 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#4918A9] transition-all shadow-[0_30px_60px_rgba(73,24,169,0.15)] group"
+            className="px-16 py-6 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-[0_30px_60px_rgba(0,75,35,0.15)] group"
           >
             Initiate Consultation
             <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
@@ -293,8 +293,8 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
                 <h3 className="text-5xl lg:text-7xl font-black uppercase tracking-tighter text-white relative z-10">
                   {selectedLeader.name}
                 </h3>
-                <p className="text-[12px] font-black uppercase tracking-[0.6em] text-[#4918A9] mt-6 relative z-10 flex items-center gap-4">
-                  <span className="w-8 h-px bg-[#4918A9]"></span>
+                <p className="text-[12px] font-black uppercase tracking-[0.6em] text-[#70e000] mt-6 relative z-10 flex items-center gap-4">
+                  <span className="w-8 h-px bg-[#70e000]"></span>
                   {selectedLeader.role}
                 </p>
               </div>
@@ -312,27 +312,27 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
               </button>
 
               <div className="max-w-xl">
-                <div className="accent-bar bg-[#4918A9] w-12 mb-12"></div>
+                <div className="accent-bar bg-[#70e000] w-12 mb-12"></div>
                 
                 <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-6">Strategic Vision</h4>
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Strategic Vision</h4>
                   <p className="text-3xl lg:text-4xl font-light italic leading-tight text-white/90">
                     "{selectedLeader.strategicHighlight}"
                   </p>
                 </section>
 
                 <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-6">Executive Context</h4>
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Executive Context</h4>
                   <p className="text-lg text-gray-400 font-light leading-relaxed">
                     {selectedLeader.fullBio || selectedLeader.bio}
                   </p>
                 </section>
 
                 <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-8">Core Expertise</h4>
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-8">Core Expertise</h4>
                   <div className="flex flex-wrap gap-3">
                     {selectedLeader.expertise.map(exp => (
-                      <span key={exp} className="px-5 py-3 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-gray-300 bg-white/5 hover:border-[#4918A9] transition-colors">
+                      <span key={exp} className="px-5 py-3 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-gray-300 bg-white/5 hover:border-[#70e000] transition-colors">
                         {exp}
                       </span>
                     ))}
@@ -348,12 +348,12 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
                         href={key === 'email' ? `mailto:${val}` : val} 
                         className="group flex flex-col gap-2"
                       >
-                        <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 group-hover:text-[#4918A9] transition-colors">
+                        <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 group-hover:text-[#70e000] transition-colors">
                           {key}
                         </span>
                         <div className="flex items-center gap-3">
                           <span className="text-xs font-black uppercase tracking-widest">Connect</span>
-                          <div className="w-0 h-px bg-[#4918A9] group-hover:w-8 transition-all duration-500"></div>
+                          <div className="w-0 h-px bg-[#70e000] group-hover:w-8 transition-all duration-500"></div>
                         </div>
                       </a>
                     ))}

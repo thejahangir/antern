@@ -85,7 +85,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
   ];
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#4918A9] selection:text-white">
+    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
       {/* 1. HERO SECTION */}
       <section className="relative h-[85vh] min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
@@ -93,7 +93,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2400&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000" 
             className="w-full h-full object-cover" 
             alt="Antern Solutions Ecosystem"
           />
@@ -106,17 +106,17 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#4918A9] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#D9D1DB] mb-6 block">
+            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Integrated Ecosystem
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Total<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Solutions.
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#4918A9] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               A unified architecture of cognitive products and strategic services designed to modernize the enterprise stack from the inside out.
             </p>
           </div>
@@ -128,7 +128,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5">
              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-8">
-               The Power of <br /><span className="text-[#4918A9]">Convergence.</span>
+               The Power of <br /><span className="text-[#004b23]">Convergence.</span>
              </h2>
              <div className="w-16 h-2 bg-[#1A1A1A]"></div>
           </div>
@@ -145,7 +145,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-24">
             <div>
-              <div className="accent-bar bg-[#4918A9] w-12 mb-6"></div>
+              <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A]">Cognitive Products</h2>
             </div>
             <p className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Deployed in 200+ Enterprises</p>
@@ -165,7 +165,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                 </div>
                 
                 <div className="w-full lg:w-1/2">
-                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#4918A9] mb-4 block">{product.tagline}</span>
+                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#004b23] mb-4 block">{product.tagline}</span>
                   <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#1A1A1A] mb-6">{product.name}</h3>
                   <p className="text-lg text-gray-500 font-light leading-relaxed mb-10 border-l-2 border-gray-200 pl-6">
                     {product.description}
@@ -174,13 +174,13 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                     {product.features.map(feat => (
                       <div key={feat} className="flex items-center gap-3">
-                        <div className="w-1.5 h-1.5 bg-[#4918A9]"></div>
+                        <div className="w-1.5 h-1.5 bg-[#004b23]"></div>
                         <span className="text-xs font-bold uppercase tracking-widest text-[#1A1A1A]">{feat}</span>
                       </div>
                     ))}
                   </div>
 
-                  <button className="px-8 py-4 bg-[#1A1A1A] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#4918A9] transition-all">
+                  <button className="px-8 py-4 bg-[#1A1A1A] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] transition-all">
                     View Specs
                   </button>
                 </div>
@@ -193,12 +193,12 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
       {/* 4. SERVICES MATRIX */}
       <section className="py-32 bg-[#1A1A1A] text-white overflow-hidden relative">
         {/* Background Accents */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#4918A9]/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#004b23]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="mb-24 text-center">
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
-              Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] to-[#4918A9]">Services</span>
+              Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Services</span>
             </h2>
             <p className="text-gray-400 font-light max-w-2xl mx-auto">
               Beyond software. We provide the operational infrastructure and design expertise to ensure your digital transformation is sustainable.
@@ -213,10 +213,10 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
               >
                 <div>
                    <div className="flex justify-between items-start mb-8">
-                      <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#D9D1DB] transition-colors">
+                      <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#ccff33] transition-colors">
                         {service.name}
                       </h3>
-                      <span className="text-[10px] font-black border border-white/20 px-2 py-1 text-gray-400 group-hover:border-[#4918A9] group-hover:text-[#4918A9] transition-all">
+                      <span className="text-[10px] font-black border border-white/20 px-2 py-1 text-gray-400 group-hover:border-[#70e000] group-hover:text-[#70e000] transition-all">
                         {service.icon}
                       </span>
                    </div>
@@ -230,7 +230,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                   onClick={() => onNavigateTo(service.targetPage)}
                 >
                   <span>Explore Capability</span>
-                  <div className="w-8 h-px bg-[#4918A9] opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-8 h-px bg-[#004b23] opacity-60 group-hover:opacity-100 transition-opacity"></div>
                 </div>
               </div>
             ))}
@@ -245,11 +245,11 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
              {[
                { val: "2M+", label: "Assessments Conducted" },
                { val: "40%", label: "Avg. Efficiency Gain" },
-               { val: "98%", label: "Uptime SLA" },
+               { val: "99.9%", label: "Uptime SLA" },
                { val: "Global", label: "Delivery Network" }
              ].map((stat, i) => (
                <div key={i} className="group">
-                 <div className="text-4xl md:text-6xl font-black text-[#1A1A1A] mb-4 group-hover:text-[#4918A9] transition-colors">{stat.val}</div>
+                 <div className="text-4xl md:text-6xl font-black text-[#1A1A1A] mb-4 group-hover:text-[#004b23] transition-colors">{stat.val}</div>
                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">{stat.label}</div>
                </div>
              ))}
@@ -261,14 +261,14 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
       <section className="py-48 bg-[#F8F7F9] relative overflow-hidden text-center border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
-            Architect Your <br /><span className="text-[#4918A9]">Future.</span>
+            Architect Your <br /><span className="text-[#004b23]">Future.</span>
           </h2>
           <p className="text-xl text-gray-500 font-light mb-16 max-w-2xl mx-auto">
             Deploy the full Antern ecosystem to secure your competitive advantage in the cognitive era.
           </p>
           <button 
             onClick={() => setIsConsultationOpen(true)}
-            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#4918A9] transition-all shadow-2xl"
+            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#004b23] transition-all shadow-2xl"
           >
             Request a consultation
           </button>
@@ -310,7 +310,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                         required 
                         type="text" 
                         placeholder="Your full name" 
-                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#4918A9] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
+                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
                     </div>
                     <div className="group">
@@ -319,7 +319,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                         required 
                         type="email" 
                         placeholder="corporate@email.com" 
-                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#4918A9] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
+                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
                     </div>
                     <div className="group">
@@ -328,7 +328,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                         required 
                         type="tel" 
                         placeholder="+1 (555) 000-0000" 
-                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#4918A9] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
+                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
                     </div>
                     <div className="group">
@@ -337,7 +337,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                         required 
                         rows={3} 
                         placeholder="Briefly describe your strategic needs..." 
-                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#4918A9] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A] resize-none" 
+                        className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A] resize-none" 
                       />
                     </div>
                   </div>
@@ -345,7 +345,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                   <button 
                     type="submit" 
                     disabled={formStatus === 'submitting'}
-                    className="w-full py-5 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#4918A9] transition-all flex items-center justify-center gap-4 group"
+                    className="w-full py-5 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] transition-all flex items-center justify-center gap-4 group"
                   >
                     {formStatus === 'submitting' ? 'Processing...' : 'Submit Request'}
                     {formStatus !== 'submitting' && (
@@ -356,7 +356,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
               )}
             </div>
             {/* Modal Decorative Accent */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1A1A1A] via-[#4918A9] to-[#1A1A1A]"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1A1A1A] via-[#70e000] to-[#1A1A1A]"></div>
           </div>
         </div>
       )}

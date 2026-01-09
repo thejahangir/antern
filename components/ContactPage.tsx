@@ -1,7 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import bangalore from '../src/assets/img/bangalore.jpg';
-import hyderabad from '../src/assets/img/hyderbad.jpg';
 
 interface Props { 
   onInitiateStrategy: () => void; 
@@ -37,7 +35,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       region: 'India Headquarters',
       address: '#226, 10 M, 100 Ft Road, HRBR Layout, Block 1, Kalyan Nagar, Bangalore - 560 043. India.',
       timezone: 'IST',
-      image: bangalore, // Vidhana Soudha
+      image: 'https://images.unsplash.com/photo-1610433572201-110753c6cff9?q=80&w=800&auto=format&fit=crop', // Vidhana Soudha
     },
     {
       city: 'United States',
@@ -51,12 +49,12 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       region: 'Technology Center',
       address: 'Inorganic Growth & Digital Innovation Hub. HITECH City, Hyderabad.',
       timezone: 'IST',
-      image: hyderabad, // Charminar
+      image: 'https://images.unsplash.com/photo-1605142859862-978be7eba909?q=80&w=800&auto=format&fit=crop', // Charminar
     }
   ];
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#4918A9] selection:text-white">
+    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
       {/* 1. KINETIC HERO */}
       <section className="relative h-[80vh] min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
@@ -64,7 +62,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           style={{ transform: `translate3d(0, ${offsetY * 0.2}px, 0)` }}
         >
           <img 
-            src="https://plus.unsplash.com/premium_photo-1661484700417-84df9a52c9e7?q=80&w=2400&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2500" 
             className="w-full h-full object-cover" 
             alt="Antern Global Office"
           />
@@ -73,26 +71,26 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#4918A9] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#D9D1DB] mb-8 block">
+            <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
               Direct Portal
             </span>
             <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
               Initiate<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Sync.
               </span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#4918A9] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
             </p>
             
             <div className="flex flex-col md:flex-row gap-8">
                <div className="group">
                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-2 block">General Inquiries</span>
-                  <a href="mailto:contact@antern.com" className="text-2xl font-black text-white hover:text-[#4918A9] transition-colors flex items-center gap-4">
+                  <a href="mailto:contact@antern.com" className="text-2xl font-black text-white hover:text-[#70e000] transition-colors flex items-center gap-4">
                     contact@antern.com
-                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#4918A9] transition-all"></div>
+                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
                   </a>
                </div>
             </div>
@@ -102,7 +100,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
         {/* Floating Accent */}
         <div className="absolute bottom-20 right-10 hidden lg:block">
            <div className="flex flex-col items-center gap-6">
-              <div className="w-px h-32 bg-gradient-to-b from-white/20 to-[#4918A9]"></div>
+              <div className="w-px h-32 bg-gradient-to-b from-white/20 to-[#70e000]"></div>
               <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40 rotate-90 origin-left mt-24 whitespace-nowrap">Global Operations</span>
            </div>
         </div>
@@ -116,7 +114,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                 <div className="accent-bar bg-[#1A1A1A] w-16 mb-8"></div>
                 <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                   Operational <br />
-                  <span className="text-[#4918A9]">Hubs.</span>
+                  <span className="text-[#004b23]">Hubs.</span>
                 </h2>
              </div>
              <p className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-400 max-w-[250px] border-l border-gray-100 pl-8">
@@ -131,10 +129,10 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                   <div className="flex items-center justify-between mb-8 pb-6 border-b border-gray-100 group-hover:border-white/10 transition-colors">
                     <div className="flex flex-col">
                         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-white/50 transition-colors mb-1">Timezone</span>
-                        <span className="text-xl font-black text-[#4918A9] group-hover:text-[#D9D1DB] transition-colors">{office.timezone}</span>
+                        <span className="text-xl font-black text-[#004b23] group-hover:text-[#ccff33] transition-colors">{office.timezone}</span>
                     </div>
                     <div className="flex items-center gap-3 bg-gray-50 group-hover:bg-white/10 px-4 py-2 rounded-full transition-colors">
-                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#70e000] animate-pulse"></div>
                         <span className="text-lg font-mono font-bold text-[#1A1A1A] group-hover:text-white transition-colors">
                             {times[office.city] || '--:--'}
                         </span>
@@ -144,7 +142,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                   <h3 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white transition-colors mb-6">
                     {office.city}
                   </h3>
-                  <div className="w-8 h-1 bg-[#4918A9] mb-8 group-hover:w-full group-hover:bg-[#4918A9] transition-all duration-700"></div>
+                  <div className="w-8 h-1 bg-[#004b23] mb-8 group-hover:w-full group-hover:bg-[#70e000] transition-all duration-700"></div>
                   
                   {/* Particular Place Thumbnail */}
                   <div className="my-8 aspect-[16/10] w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000 border border-gray-100 group-hover:border-white/10 bg-gray-50 relative">
@@ -155,7 +153,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                     />
                     {/* Tech Overlay */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
-                       <div className="absolute inset-0 bg-gradient-to-t from-[#4918A9]/40 to-transparent"></div>
+                       <div className="absolute inset-0 bg-gradient-to-t from-[#004b23]/40 to-transparent"></div>
                        <div className="absolute top-4 left-4 flex gap-1">
                           <div className="w-1 h-1 bg-white rounded-full animate-pulse"></div>
                           <div className="w-1 h-px bg-white/50 w-8 mt-0.5"></div>
@@ -169,12 +167,12 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                 </div>
 
                 <div className="relative z-20 pt-12 border-t border-gray-50 group-hover:border-white/10 transition-colors">
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 group-hover:text-[#D9D1DB] block mb-4 transition-colors">
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 group-hover:text-[#ccff33] block mb-4 transition-colors">
                     {office.region}
                   </span>
                   <button className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors group/btn">
                     View on Map 
-                    <div className="w-10 h-px bg-current group-hover:w-20 transition-all duration-500 bg-[#4918A9]"></div>
+                    <div className="w-10 h-px bg-current group-hover:w-20 transition-all duration-500 bg-[#70e000]"></div>
                   </button>
                 </div>
 
@@ -197,10 +195,10 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
             
             <div className="lg:col-span-5">
-              <div className="accent-bar bg-[#4918A9] w-24 mb-10"></div>
+              <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none text-[#1A1A1A] mb-10">
                 Strategic <br />
-                <span className="text-[#4918A9]">Engagement.</span>
+                <span className="text-[#004b23]">Engagement.</span>
               </h2>
               <p className="text-xl text-gray-500 font-light leading-relaxed mb-12">
                 Engage our executive council for an immediate deep-dive into your strategic needs, or utilize our cognitive engine to define your project requirements.
@@ -213,7 +211,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                    { label: 'Press', detail: 'media@antern.tech' }
                  ].map(item => (
                    <div key={item.label} className="group cursor-pointer">
-                      <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-300 group-hover:text-[#4918A9] transition-colors">{item.label}</span>
+                      <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-300 group-hover:text-[#70e000] transition-colors">{item.label}</span>
                       <p className="text-xl font-bold text-[#1A1A1A] mt-1">{item.detail}</p>
                    </div>
                  ))}
@@ -221,13 +219,13 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             </div>
 
             <div className="lg:col-span-7">
-               <div className="p-12 md:p-20 bg-white shadow-[0_64px_128px_-32px_rgba(73,24,169,0.1)] relative group rounded-sm">
+               <div className="p-12 md:p-20 bg-white shadow-[0_64px_128px_-32px_rgba(0,75,35,0.1)] relative group rounded-sm">
                   <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.03] pointer-events-none">
                      <span className="text-[150px] font-black leading-none">+</span>
                   </div>
                   
                   <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-12">
-                    Request a <span className="text-[#4918A9]">Session.</span>
+                    Request a <span className="text-[#004b23]">Session.</span>
                   </h3>
                   
                   <form className="space-y-12" onSubmit={(e) => e.preventDefault()}>
@@ -235,27 +233,27 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                       <input 
                         type="text" 
                         placeholder="Full Name / Operational Handle" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#4918A9] transition-all placeholder:text-gray-400"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
                       />
                     </div>
                     <div className="relative">
                       <input 
                         type="email" 
                         placeholder="Professional Email Node" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#4918A9] transition-all placeholder:text-gray-400"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
                       />
                     </div>
                     <div className="relative">
                       <textarea 
                         rows={1}
                         placeholder="Initial Directive / Inquiry Details" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#4918A9] transition-all placeholder:text-gray-400 resize-none"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400 resize-none"
                       />
                     </div>
                     
                     <button 
                       onClick={onInitiateStrategy}
-                      className="w-full py-8 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.6em] hover:bg-[#4918A9] transition-all shadow-2xl flex items-center justify-center gap-6 group"
+                      className="w-full py-8 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.6em] hover:bg-[#004b23] transition-all shadow-2xl flex items-center justify-center gap-6 group"
                     >
                       Initiate a Discussion
                       <div className="w-12 h-px bg-white group-hover:w-20 transition-all"></div>

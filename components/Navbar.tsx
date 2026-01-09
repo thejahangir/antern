@@ -41,11 +41,11 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
 
   const textColor = isScrolled ? 'text-gray-900' : 'text-white';
-  const hoverColor = isScrolled ? 'hover:text-[#4918A9]' : 'hover:text-[#D9D1DB]';
+  const hoverColor = isScrolled ? 'hover:text-[#004b23]' : 'hover:text-[#ccff33]';
   const dropdownBg = isScrolled ? 'bg-white' : 'bg-[#1A1A1A]';
   const dropdownBorder = isScrolled ? 'border-gray-200' : 'border-white/10';
   const subTextColor = isScrolled ? 'text-gray-900' : 'text-white/80';
-  const subHoverTextColor = isScrolled ? 'text-[#4918A9]' : 'text-white';
+  const subHoverTextColor = isScrolled ? 'text-[#004b23]' : 'text-[#70e000]';
   const subHoverBg = isScrolled ? 'hover:bg-gray-50' : 'hover:bg-white/5';
 
   const navItems: NavItem[] = [
@@ -174,8 +174,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <button className={`px-4 py-2 border border-current opacity-30 group hover:opacity-100 transition-all flex items-center gap-3 font-bold cursor-pointer ${textColor}`}>
                     Discover
                     <div className="flex gap-0.5">
-                       <div className={`w-1 h-1 bg-current transition-all duration-300 ${isDiscoverOpen ? 'scale-150 bg-[#4918A9]' : 'scale-100'}`}></div>
-                       <div className={`w-1 h-1 bg-current transition-all duration-300 delay-75 ${isDiscoverOpen ? 'scale-150 bg-[#4918A9]' : 'scale-100'}`}></div>
+                       <div className={`w-1 h-1 bg-current transition-all duration-300 ${isDiscoverOpen ? 'scale-150 bg-[#70e000]' : 'scale-100'}`}></div>
+                       <div className={`w-1 h-1 bg-current transition-all duration-300 delay-75 ${isDiscoverOpen ? 'scale-150 bg-[#70e000]' : 'scale-100'}`}></div>
                     </div>
                   </button>
 
@@ -234,8 +234,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                           relative px-5 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
                           ${hoverColor} 
                           ${isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'}
-                          ${isActive 
-                            ? `text-[#4918A9] font-black ${isScrolled ? 'bg-[#4918A9]/5' : 'bg-white/5'}` 
+                           ${isActive 
+                            ? `text-[#004b23] font-black ${isScrolled ? 'bg-[#70e000]/10' : 'bg-white/5 text-[#70e000]'}` 
                             : 'font-bold'
                           }
                         `}
@@ -246,8 +246,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                           </svg>
                         )}
-                        {isActive && (
-                          <span className="absolute bottom-1.5 left-5 right-5 h-0.5 bg-[#4918A9] rounded-full"></span>
+                       {isActive && (
+                          <span className="absolute bottom-1.5 left-5 right-5 h-0.5 bg-[#70e000] rounded-full"></span>
                         )}
                       </a>
 
@@ -287,16 +287,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             className={`
               text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-500 relative group px-6 py-2.5 rounded-full border flex items-center gap-2.5 cursor-pointer
               ${currentPage === 'ux-studio' 
-                ? 'bg-[#4918A9] text-white border-[#4918A9] shadow-[0_10px_20px_rgba(73,24,169,0.3)]' 
+                ? 'bg-[#004b23] text-white border-[#004b23] shadow-[0_10px_20px_rgba(0,75,35,0.3)]' 
                 : isScrolled
-                  ? 'text-[#4918A9] border-[#4918A9]/20 hover:bg-[#4918A9] hover:text-white hover:border-[#4918A9]'
+                  ? 'text-[#004b23] border-[#004b23]/20 hover:bg-[#004b23] hover:text-white hover:border-[#004b23]'
                   : 'text-white border-white/20 hover:bg-white hover:text-[#1A1A1A] hover:border-white'
               }
             `}
           >
             UX Studio
             <span className={`w-1.5 h-1.5 rounded-full animate-pulse transition-colors duration-500 ${
-              currentPage === 'ux-studio' ? 'bg-white' : 'bg-[#4918A9]'
+              currentPage === 'ux-studio' ? 'bg-[#70e000]' : 'bg-[#70e000]'
             }`}></span>
           </button>
 
@@ -305,8 +305,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onContact}
             className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer ${
               isScrolled 
-                ? 'bg-[#1A1A1A] text-white hover:bg-[#4918A9]' 
-                : 'bg-white text-[#1A1A1A] hover:bg-[#D9D1DB]'
+                ? 'bg-[#1A1A1A] text-white hover:bg-[#70e000] hover:text-[#004b23]' 
+                : 'bg-white text-[#1A1A1A] hover:bg-[#ccff33]'
             }`}
           >
             Contact
@@ -338,7 +338,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <div key={item.label}>
                    <button 
                     onClick={(e) => handleNavClick(e as any, item.id, item.targetPage)}
-                    className="text-4xl font-black uppercase tracking-tighter hover:text-[#D9D1DB] cursor-pointer"
+                    className="text-4xl font-black uppercase tracking-tighter hover:text-[#ccff33] cursor-pointer"
                    >
                      {item.label}
                    </button>
@@ -357,11 +357,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                    )}
                 </div>
              ))}
-             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#4918A9] text-left flex items-center gap-4 cursor-pointer">
+              <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
                 UX Studio
-                <span className="w-2 h-2 bg-[#4918A9] rounded-full animate-pulse"></span>
+                <span className="w-2 h-2 bg-[#70e000] rounded-full animate-pulse"></span>
              </button>
-             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('contact'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#D9D1DB] text-left text-white/50 cursor-pointer">
+             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('contact'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#ccff33] text-left text-white/50 cursor-pointer">
                 Contact
              </button>
           </div>

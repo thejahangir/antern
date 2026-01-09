@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
           <div className="accent-bar"></div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[1.1] tracking-tight">
             Bright Thinking.<br />
-            <span className="bg-gradient-to-r from-[#D9D1DB] to-[#4918A9] bg-clip-text text-transparent">Intelligent</span> Solutions.
+            <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Intelligent</span> Solutions.
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-xl leading-relaxed">
@@ -47,9 +47,9 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <button 
+          <button 
               onClick={onInitiateStrategy}
-              className="px-10 py-5 bg-[#4918A9] text-white font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-[#1A1A1A] transition-all"
+              className="px-10 py-5 bg-[#004b23] text-white font-bold uppercase tracking-widest text-sm hover:bg-[#70e000] hover:text-[#004b23] transition-all"
             >
               Initiate Strategy Session
             </button>

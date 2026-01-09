@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { WhatsNew } from './components/WhatsNew';
-import { Products } from './components/Products';
 import { Services } from './components/Services';
 import { TransitionBanner } from './components/TransitionBanner';
 import { UXStudioBanner } from './components/UXStudioBanner';
@@ -51,12 +49,43 @@ export type PageType =
   | 'whitepapers' | 'events' | 'sustainability' | 'privacy' | 'terms' | 'cookies' | 'contact'
   | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions';
 
+  const VALID_PAGES: PageType[] = [
+    'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
+    'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
+    'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
+    'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions'
+  ];
+  
+  const getPageFromHash = (): PageType => {
+    const hash = window.location.hash.replace('#', '');
+    if (VALID_PAGES.includes(hash as PageType)) {
+      return hash as PageType;
+    }
+    return 'home';
+  };
+
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentPage, setCurrentPage] = useState<PageType>('home');
   const [navSource, setNavSource] = useState<PageType | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContext, setModalContext] = useState<'strategy' | 'audit'>('strategy');
+
+    // Handle Browser Back/Forward Navigation
+    useEffect(() => {
+      const handlePopState = (event: PopStateEvent) => {
+        const page = getPageFromHash();
+        setCurrentPage(page);
+        if (event.state && event.state.source) {
+          setNavSource(event.state.source);
+        } else {
+          setNavSource(null);
+        }
+      };
+  
+      window.addEventListener('popstate', handlePopState);
+      return () => window.removeEventListener('popstate', handlePopState);
+    }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,6 +102,15 @@ const App: React.FC = () => {
   const navigateTo = (page: PageType, source?: PageType) => {
     setNavSource(source || null);
     setCurrentPage(page);
+
+    
+    // Update URL Hash to support browser back button
+    const url = page === 'home' ? window.location.pathname : `#${page}`;
+    const hashCheck = page === 'home' ? '' : `#${page}`;
+    
+    if (window.location.hash !== hashCheck) {
+      window.history.pushState({ source: source || null }, '', url);
+    }
   };
 
   const openStrategySession = () => {
@@ -86,7 +124,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div id="top" className="min-h-screen selection:bg-[#D9D1DB] selection:text-[#4918A9] bg-white">
+    <div id="top" className="min-h-screen selection:bg-[#70e000] selection:text-[#004b23] bg-white">
       <ProgressBar />
       <Navbar 
         isScrolled={isScrolled} 
@@ -106,19 +144,16 @@ const App: React.FC = () => {
         <main>
           <Hero onInitiateStrategy={openStrategySession} onViewSolutions={() => navigateTo('solutions')} />
           <About />
-          <WhatsNew />
-          <Products onViewSolutions={() => navigateTo('solutions')} />
+       
           <Services />
-          <TransitionBanner />
-          <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} />
-          <IdeasTransformation />
+          
+          
           <InnovationExcellence />
-          <CultureCareers 
-            onExploreCareers={() => navigateTo('careers')} 
-            onExploreCulture={() => navigateTo('culture')}
-          />
-          <Testimonials />
+
+          
           <LatestNews />
+          <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} />
+          <Testimonials />
           <GetThereTogether onPartner={openStrategySession} />
         </main>
       )}

@@ -39,9 +39,10 @@ export const Testimonials: React.FC = () => {
           
           {/* Section Info */}
           <div className="lg:col-span-4">
-            <div className="accent-bar"></div>
+            <div className="accent-bar bg-[#004b23]"></div>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-8">
-              Strategic<br />Impact
+              Strategic<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Impact</span>
             </h2>
             <p className="text-gray-500 text-lg mb-12">
               Our clients are leaders in their respective industries, driving transformation through our intelligent digital solutions.
@@ -51,7 +52,7 @@ export const Testimonials: React.FC = () => {
             <div className="flex items-center gap-4">
               <button 
                 onClick={() => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all"
+                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -59,7 +60,7 @@ export const Testimonials: React.FC = () => {
               </button>
               <button 
                 onClick={() => setActiveIndex((prev) => (prev + 1) % testimonials.length)}
-                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all"
+                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -69,7 +70,7 @@ export const Testimonials: React.FC = () => {
                 {testimonials.map((_, idx) => (
                   <div 
                     key={idx}
-                    className={`h-1 transition-all duration-500 ${idx === activeIndex ? 'w-8 bg-[#4918A9]' : 'w-2 bg-gray-200'}`}
+                    className={`h-1 transition-all duration-500 ${idx === activeIndex ? 'w-8 bg-[#004b23]' : 'w-2 bg-gray-200'}`}
                   />
                 ))}
               </div>
@@ -89,7 +90,7 @@ export const Testimonials: React.FC = () => {
               >
                 <div className="h-full flex flex-col justify-between">
                   <div className="mb-12">
-                    <span className="text-[11px] font-black uppercase tracking-[0.3em] text-[#4918A9] mb-8 block">Client Perspective</span>
+                    <span className="text-[11px] font-black uppercase tracking-[0.3em] text-[#004b23] mb-8 block">Client Perspective</span>
                     <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1A1A1A] leading-[1.3] tracking-tight">
                       "{t.quote}"
                     </blockquote>
@@ -103,7 +104,7 @@ export const Testimonials: React.FC = () => {
                     />
                     <div>
                       <h4 className="text-xl font-bold text-[#1A1A1A] tracking-tight uppercase">{t.author}</h4>
-                      <p className="text-[#4918A9] text-xs font-black uppercase tracking-widest">{t.role}</p>
+                      <p className="text-[#004b23] text-xs font-black uppercase tracking-widest">{t.role}</p>
                     </div>
                   </div>
                 </div>

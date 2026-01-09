@@ -27,14 +27,14 @@ export const BackToTop: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 z-50 w-14 h-14 bg-[#4918A9] text-white flex items-center justify-center transition-all duration-500 shadow-2xl hover:bg-[#1A1A1A] group ${
+      className={`fixed bottom-8 right-8 z-50 w-14 h-14 bg-[#004b23] text-white flex items-center justify-center transition-all duration-500 shadow-2xl hover:bg-[#70e000] hover:text-[#004b23] group ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
       }`}
       aria-label="Back to top"
     >
       {/* Dynamic line effect */}
       <div className="absolute top-0 left-0 w-full h-0.5 bg-white/20">
-        <div className="h-full bg-white w-0 group-hover:w-full transition-all duration-500"></div>
+        <div className="h-full bg-[#ccff33] w-0 group-hover:w-full transition-all duration-500"></div>
       </div>
       
       <svg 
@@ -47,7 +47,7 @@ export const BackToTop: React.FC = () => {
       </svg>
       
       {/* Side Label (revealed on hover) */}
-      <span className="absolute right-full mr-4 px-3 py-1 bg-[#1A1A1A] text-[10px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+      <span className="absolute right-full mr-4 px-3 py-1 bg-[#1A1A1A] text-[#70e000] text-[10px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
         Top
       </span>
     </button>

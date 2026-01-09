@@ -92,17 +92,17 @@ export const Events: React.FC = () => {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#4918A9] w-24 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#D9D1DB] mb-6 block">
+            <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Global Assemblies
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Strategic<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Events
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#4918A9] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               Connecting global thinkers and industrial leaders to define the next horizon of digital excellence.
             </p>
           </div>
@@ -125,7 +125,7 @@ export const Events: React.FC = () => {
                       ? 'border-gray-100 bg-gray-50/50 opacity-75 grayscale-[0.8]' 
                       : event.inviteOnly
                         ? 'border-gray-200 bg-white hover:border-[#ea4a54] hover:shadow-[0_20px_40px_-15px_rgba(234,74,84,0.15)]' // Red/Pink accent for invite only
-                        : 'border-gray-100 hover:border-[#4918A9]/50 bg-white hover:shadow-lg'
+                        : 'border-gray-100 hover:border-[#004b23]/50 bg-white hover:shadow-lg'
                   }`}
                 >
                   {/* Status Badges */}
@@ -152,7 +152,7 @@ export const Events: React.FC = () => {
                         ? 'text-gray-400' 
                         : event.inviteOnly 
                           ? 'text-[#ea4a54]' 
-                          : 'text-[#4918A9]'
+                          : 'text-[#004b23]'
                     }`}>
                       {dateParts[0]}
                     </div>
@@ -187,7 +187,7 @@ export const Events: React.FC = () => {
                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed border border-transparent' 
                         : event.inviteOnly
                           ? 'bg-transparent border border-gray-200 text-gray-400 cursor-not-allowed hover:bg-gray-50'
-                          : 'bg-[#1A1A1A] text-white hover:bg-[#4918A9] border border-transparent'
+                          : 'bg-[#1A1A1A] text-white hover:bg-[#004b23] border border-transparent'
                     }`}
                   >
                     {eventIsPast ? (

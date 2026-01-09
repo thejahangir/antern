@@ -46,7 +46,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
               Architecting<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Tomorrow.
               </span>
             </h1>
