@@ -33,78 +33,78 @@ export const Testimonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-32 bg-white overflow-hidden border-t border-gray-100">
+    <section className="py-20 bg-white overflow-hidden border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          {/* Section Info */}
+          {/* Section Info - Compact */}
           <div className="lg:col-span-4">
-            <div className="accent-bar bg-[#004b23]"></div>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-8">
+            <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
+            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
               Strategic<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Impact</span>
+              Impact
             </h2>
-            <p className="text-gray-500 text-lg mb-12">
+            <p className="text-gray-500 text-sm leading-relaxed mb-8">
               Our clients are leaders in their respective industries, driving transformation through our intelligent digital solutions.
             </p>
             
-            {/* Custom Navigation Controls */}
-            <div className="flex items-center gap-4">
+            {/* Custom Navigation Controls - Compact */}
+            <div className="flex items-center gap-3">
               <button 
                 onClick={() => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
+                className="w-10 h-10 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
               >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button 
                 onClick={() => setActiveIndex((prev) => (prev + 1) % testimonials.length)}
-                className="w-12 h-12 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
+                className="w-10 h-10 flex items-center justify-center border border-gray-200 text-[#1A1A1A] hover:bg-[#004b23] hover:text-white hover:border-[#004b23] transition-all"
               >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
-              <div className="ml-4 flex gap-2">
+              <div className="ml-4 flex gap-1.5">
                 {testimonials.map((_, idx) => (
                   <div 
                     key={idx}
-                    className={`h-1 transition-all duration-500 ${idx === activeIndex ? 'w-8 bg-[#004b23]' : 'w-2 bg-gray-200'}`}
+                    className={`h-0.5 transition-all duration-500 ${idx === activeIndex ? 'w-6 bg-[#004b23]' : 'w-2 bg-gray-200'}`}
                   />
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Testimonial Content */}
-          <div className="lg:col-span-8 relative min-h-[400px]">
+          {/* Testimonial Content - Compact */}
+          <div className="lg:col-span-8 relative min-h-[280px] lg:min-h-[240px]">
             {testimonials.map((t, idx) => (
               <div 
                 key={idx}
-                className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+                className={`absolute inset-0 transition-all duration-700 ease-out ${
                   idx === activeIndex 
                     ? 'opacity-100 translate-x-0' 
-                    : 'opacity-0 translate-x-12 pointer-events-none'
+                    : 'opacity-0 translate-x-8 pointer-events-none'
                 }`}
               >
                 <div className="h-full flex flex-col justify-between">
-                  <div className="mb-12">
-                    <span className="text-[11px] font-black uppercase tracking-[0.3em] text-[#004b23] mb-8 block">Client Perspective</span>
-                    <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1A1A1A] leading-[1.3] tracking-tight">
+                  <div className="mb-6">
+                    <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#004b23] mb-4 block">Client Perspective</span>
+                    <blockquote className="text-xl md:text-2xl font-normal italic text-[#1A1A1A] leading-snug tracking-tight">
                       "{t.quote}"
                     </blockquote>
                   </div>
                   
-                  <div className="flex items-center gap-6 pt-12 border-t border-gray-100">
+                  <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
                     <img 
                       src={t.avatar} 
                       alt={t.author} 
-                      className="w-16 h-16 grayscale group-hover:grayscale-0 transition-all duration-500 object-cover"
+                      className="w-10 h-10 grayscale object-cover rounded-sm"
                     />
                     <div>
-                      <h4 className="text-xl font-bold text-[#1A1A1A] tracking-tight uppercase">{t.author}</h4>
-                      <p className="text-[#004b23] text-xs font-black uppercase tracking-widest">{t.role}</p>
+                      <h4 className="text-sm font-black text-[#1A1A1A] tracking-wide uppercase">{t.author}</h4>
+                      <p className="text-[#004b23] text-[10px] font-bold uppercase tracking-widest">{t.role}</p>
                     </div>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export const Testimonials: React.FC = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
   );
 };

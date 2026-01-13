@@ -1,48 +1,52 @@
 
 import React from 'react';
 
-export const GetThereTogether: React.FC = () => {
-  return (
-    <section className="relative bg-white py-32 md:py-48 overflow-hidden">
-      {/* Background Image Layer - Adjusted opacity for greater prominence */}
-      <div className="absolute inset-0 z-0 opacity-[0.3] pointer-events-none">
-        <img 
-          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000" 
-          alt="Modern Collaborative Space" 
-          className="w-full h-full object-cover grayscale"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/40 to-white"></div>
-      </div>
+interface GetThereTogetherProps {
+  onPartner?: () => void;
+}
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="accent-bar bg-[#004b23] w-16 mb-12 mx-auto"></div>
-          
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A] mb-16">
-            Let's get there <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Together.</span>
-          </h2>
-          
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <a 
-              href="#contact" 
-              className="group flex items-center gap-6 text-[14px] font-black uppercase tracking-[0.4em] text-[#1A1A1A]"
-            >
-              Partner with antern
-              <div className="w-12 h-px bg-[#1A1A1A] group-hover:w-24 group-hover:bg-[#004b23] transition-all duration-700"></div>
-              <svg className="w-6 h-6 text-[#004b23]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
+export const GetThereTogether: React.FC<GetThereTogetherProps> = ({ onPartner }) => {
+  return (
+    <section className="relative w-full py-20 overflow-hidden border-t border-gray-200">
+      {/* Background Image Layer - Increased visibility */}
+      <div className="absolute inset-0 z-0">
+         <img 
+           src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000" 
+           alt="Strategic Partnership Team" 
+           className="w-full h-full object-cover opacity-25"
+         />
+         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/50"></div>
       </div>
       
-      {/* Background decoration: Subtle repeating text */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden opacity-[0.02] pointer-events-none whitespace-nowrap select-none z-0">
-        <span className="text-[150px] font-black uppercase tracking-tighter text-[#1A1A1A]">
-          TRANSFORMATION INNOVATION MODERNIZATION SCALE AGILITY TRANSFORMATION INNOVATION MODERNIZATION SCALE AGILITY
-        </span>
+      {/* Content Container - Fixed layout centered */}
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          
+          {/* Heading - Adjusted for compact layout */}
+          <div className="text-center md:text-left flex-1">
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
+              Let's get there <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Together.</span>
+            </h2>
+          </div>
+          
+          {/* Action - Enhanced Button */}
+          <div className="shrink-0">
+            <button 
+              onClick={onPartner}
+              className="group flex items-center gap-6 text-[13px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] hover:text-[#004b23] transition-colors whitespace-nowrap"
+            >
+              Start Partnership
+              <div className="w-16 h-px bg-[#1A1A1A] group-hover:w-24 group-hover:bg-[#004b23] transition-all duration-500"></div>
+              <div className="w-12 h-12 rounded-full border border-gray-300 bg-white/80 backdrop-blur-sm flex items-center justify-center group-hover:bg-[#004b23] group-hover:border-[#004b23] transition-all shadow-lg hover:shadow-xl">
+                 <svg className="w-4 h-4 text-[#1A1A1A] group-hover:text-white transform group-hover:-rotate-45 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                 </svg>
+              </div>
+            </button>
+          </div>
+
+        </div>
       </div>
     </section>
   );

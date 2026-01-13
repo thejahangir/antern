@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Services } from './components/Services';
 import { TransitionBanner } from './components/TransitionBanner';
+import { FluidBanner } from './components/FluidBanner';
 import { UXStudioBanner } from './components/UXStudioBanner';
 import { UXStudioDetail } from './components/UXStudioDetail';
 import { UXProcessDetail } from './components/UXProcessDetail';
@@ -148,11 +149,12 @@ const App: React.FC = () => {
           <Services />
           
           
-          <InnovationExcellence />
+          {/* <InnovationExcellence /> */}
 
-          
+         
           <LatestNews />
-          <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} />
+          <FluidBanner />
+          {/* <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} /> */}
           <Testimonials />
           <GetThereTogether onPartner={openStrategySession} />
         </main>

@@ -11,31 +11,29 @@ export const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="relative py-48 bg-white overflow-hidden selection:bg-[#70e000] selection:text-[#004b23]">
-      {/* Background Watermark Layer */}
+    <section id="about" className="relative py-24 bg-white overflow-hidden selection:bg-[#70e000] selection:text-[#004b23]">
+      {/* Background Watermark Layer - Positioned tighter */}
       <div 
-        className="absolute top-20 right-[-15%] text-[500px] font-black text-[#1A1A1A]/[0.02] select-none pointer-events-none leading-none tracking-tighter"
+        className="absolute top-10 right-[-10%] text-[350px] font-black text-[#1A1A1A]/[0.02] select-none pointer-events-none leading-none tracking-tighter"
         style={{ transform: `translate3d(${-offsetY * 0.15}px, 0, 0)` }}
       >
         ANTERN
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* 1. NARRATIVE HEADER */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-32 items-end">
-          <div className="lg:col-span-8">
-            <div className="accent-bar bg-[#004b23] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#004b23] mb-8 block">The Antern Narrative</span>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.8] text-[#1A1A1A]">
+        {/* 1. NARRATIVE HEADER - Compact Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-20 items-center">
+          <div className="lg:col-span-7">
+            <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
+            <span className="text-[11px] font-black uppercase tracking-[0.6em] text-[#1A1A1A] mb-3 block">The Antern Narrative</span>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
               Decades of <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
-                Excellence.
-              </span>
+              Excellence.
             </h2>
           </div>
-          <div className="lg:col-span-4 pb-4">
-            <div className="relative p-10 border-l border-gray-100 bg-gray-50/30">
-              <p className="text-xl text-gray-500 font-light leading-relaxed italic">
+          <div className="lg:col-span-5">
+            <div className="relative p-8 border-l-2 border-[#004b23]/10 bg-gray-50/50 rounded-r-sm">
+              <p className="text-lg text-gray-600 font-medium leading-relaxed italic">
                 "We bridge the gap between engineering logic and human instinct, scaling mission-critical systems with surgical precision."
               </p>
               <div className="absolute top-0 left-0 w-2 h-2 bg-[#004b23]"></div>
@@ -44,7 +42,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* 2. STRATEGIC PILLARS GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-gray-100 border border-gray-100 mb-32">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-gray-100 border border-gray-100 mb-32">
           <div className="bg-white p-12 md:p-24 group hover:bg-[#1A1A1A] transition-all duration-700">
             <div className="flex items-center gap-6 mb-16">
               <div className="w-20 h-px bg-[#004b23] group-hover:bg-white/30 transition-all group-hover:w-32"></div>
@@ -76,12 +74,12 @@ export const About: React.FC = () => {
               Our Methodology <div className="w-8 h-px bg-current"></div>
             </button>
           </div>
-        </div>
+        </div> */}
 
-        {/* 3. IMPACT SYNC SECTION */}
-        <div className="relative group overflow-hidden bg-[#1A1A1A] min-h-[600px] flex flex-col lg:flex-row items-stretch">
+        {/* 3. IMPACT SYNC SECTION (Compact Version) */}
+        <div className="relative group overflow-hidden bg-[#1A1A1A] flex flex-col lg:flex-row items-stretch border border-white/5">
           {/* Visual Layer */}
-          <div className="lg:w-1/2 relative overflow-hidden h-[500px] lg:h-auto border-r border-white/5">
+          <div className="lg:w-1/2 relative overflow-hidden h-[350px] lg:h-auto border-r border-white/5">
             <img 
               src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000" 
               className="w-full h-full object-cover grayscale opacity-30 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105"
@@ -96,39 +94,33 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Metrics Layer */}
-          <div className="lg:w-1/2 p-12 md:p-24 flex flex-col justify-center relative">
-            <div className="absolute top-0 right-0 p-12 opacity-[0.03] text-[200px] font-black leading-none pointer-events-none text-white">
+          {/* Metrics Layer - Tighter Layout */}
+          <div className="lg:w-1/2 p-10 md:p-14 flex flex-col justify-center relative">
+            <div className="absolute top-0 right-0 p-8 opacity-[0.03] text-[150px] font-black leading-none pointer-events-none text-white">
               +
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 relative z-10">
+            <div className="grid grid-cols-2 gap-10 md:gap-16 relative z-10">
               <div className="relative group/metric">
-                <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-4 block transition-colors">Longevity</span>
-                <div className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">10+</div>
-                <p className="text-gray-500 text-sm font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Years of strategic presence</p>
+                <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Longevity</span>
+                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">10+</div>
+                <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Years active</p>
               </div>
               <div className="relative group/metric">
-                <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-4 block transition-colors">Velocity</span>
-                <div className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">500+</div>
-                <p className="text-gray-500 text-sm font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Digital systems delivered</p>
+                <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Velocity</span>
+                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">500+</div>
+                <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Systems shipped</p>
               </div>
               <div className="relative group/metric">
-                <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-4 block transition-colors">Scale</span>
-                <div className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">24/7</div>
-                <p className="text-gray-500 text-sm font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Operational Intelligence sync</p>
+                <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Scale</span>
+                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">24/7</div>
+                <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Global sync</p>
               </div>
               <div className="relative group/metric">
-                <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-4 block transition-colors">Quality</span>
-                <div className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">01</div>
-                <p className="text-gray-500 text-sm font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Unified Excellence standard</p>
+                <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Quality</span>
+                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">01</div>
+                <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Unified Standard</p>
               </div>
-            </div>
-
-            <div className="mt-24 pt-16 border-t border-white/5">
-              <p className="text-gray-400 text-sm font-light leading-relaxed max-w-sm">
-                Our multi-disciplinary teams operate across three global tech corridors, ensuring seamless delivery and mission-critical support for our Global 500 partners.
-              </p>
             </div>
           </div>
         </div>
