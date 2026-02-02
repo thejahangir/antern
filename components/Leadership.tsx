@@ -116,6 +116,59 @@ const uxStudioTeam: Leader[] = [
   }
 ];
 
+interface TeamSectionProps {
+  title: string;
+  subtitle: string;
+  members: Leader[];
+  columns?: number;
+  onSelect: (member: Leader) => void;
+}
+
+const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, columns = 3, onSelect }) => (
+  <div className="mb-32">
+    <div className="flex flex-col mb-16">
+      <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
+      <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-4">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
+          {title}
+        </span>
+        <span className="text-[#004b23]">.</span>
+      </h2>
+      <p className="text-gray-500 text-sm font-bold uppercase tracking-[0.2em]">{subtitle}</p>
+    </div>
+    <div className={`grid grid-cols-1 gap-10 ${columns > 2 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+      {members.map((member) => (
+        <div key={member.name} className="group relative">
+          <div 
+            className="aspect-[4/5] overflow-hidden bg-gray-100 mb-8 border border-gray-100 transition-all duration-700 hover:shadow-2xl grayscale group-hover:grayscale-0 relative cursor-pointer"
+            onClick={() => onSelect(member)}
+          >
+            <img 
+              src={member.image} 
+              alt={member.name} 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
+              <p className="text-white text-sm font-light leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
+              <button 
+                className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
+                onClick={(e) => { e.stopPropagation(); onSelect(member); }}
+              >
+                View Profile Dossier
+              </button>
+            </div>
+          </div>
+          <div className="relative">
+            <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#004b23] transition-colors">{member.name}</h3>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mt-2">{member.role}</p>
+            <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#004b23] group-hover:w-12 transition-all duration-500"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 interface LeadershipProps {
   onContact?: () => void;
 }
@@ -142,46 +195,6 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
       document.body.style.overflow = 'unset';
     }
   }, [selectedLeader]);
-
-  const TeamSection = ({ title, subtitle, members, columns = 3 }: { title: string; subtitle: string; members: Leader[]; columns?: number }) => (
-    <div className="mb-32">
-      <div className="flex flex-col mb-16">
-        <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
-        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-4">{title}</h2>
-        <p className="text-gray-400 text-lg font-light uppercase tracking-widest text-[10px]">{subtitle}</p>
-      </div>
-      <div className={`grid grid-cols-1 md:grid-cols-${columns > 2 ? '3' : '2'} gap-10`}>
-        {members.map((member) => (
-          <div key={member.name} className="group relative">
-            <div 
-              className="aspect-[4/5] overflow-hidden bg-gray-100 mb-8 border border-gray-100 transition-all duration-700 hover:shadow-2xl grayscale group-hover:grayscale-0 relative cursor-pointer"
-              onClick={() => setSelectedLeader(member)}
-            >
-              <img 
-                src={member.image} 
-                alt={member.name} 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
-                <p className="text-white text-sm font-light leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
-                <button 
-                  className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
-                  onClick={() => setSelectedLeader(member)}
-                >
-                  View Profile Dossier
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#004b23] transition-colors">{member.name}</h3>
-              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mt-2">{member.role}</p>
-              <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#004b23] group-hover:w-12 transition-all duration-500"></div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="bg-white">
@@ -229,35 +242,47 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             subtitle="Strategic Executive Council" 
             members={leadershipTeam} 
             columns={2}
+            onSelect={setSelectedLeader}
           />
           <TeamSection 
             title="Advisors" 
             subtitle="Global Strategy & Innovation Board" 
             members={advisors} 
+            onSelect={setSelectedLeader}
           />
           <TeamSection 
             title="UX Studio" 
             subtitle="Experience Architecture & Behavioral Design Leads" 
             members={uxStudioTeam} 
+            onSelect={setSelectedLeader}
           />
         </div>
       </section>
 
-      {/* Closing CTA */}
-      <section className="py-48 bg-gray-50 text-center relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] text-[400px] font-black select-none pointer-events-none">
-          +
+      {/* Closing CTA - Tightened & Parallax */}
+      <section className="relative py-24 bg-[#0A0A0A] overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0">
+           <div 
+             className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
+             style={{ 
+               backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop')",
+               backgroundAttachment: 'fixed'
+             }}
+           ></div>
+           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-transparent to-[#0A0A0A]"></div>
         </div>
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight text-[#1A1A1A] mb-12">
-            Build with the <span className="text-[#004b23]">Best.</span>
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
+            Build with the <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Best.</span>
           </h2>
-          <p className="text-xl text-gray-500 font-light mb-16 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 font-light mb-10 leading-relaxed max-w-xl mx-auto">
             Our multi-disciplinary teams are ready to transform your most complex challenges into intuitive, scalable digital assets.
           </p>
           <button 
             onClick={onContact}
-            className="px-16 py-6 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-[0_30px_60px_rgba(0,75,35,0.15)] group"
+            className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-2xl group"
           >
             Initiate Consultation
             <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>

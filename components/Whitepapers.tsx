@@ -11,7 +11,7 @@ export const Whitepapers: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
       {/* 1. KINETIC HERO */}
       <section className="relative h-[70vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
@@ -28,37 +28,47 @@ export const Whitepapers: React.FC = () => {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#4918A9] w-24 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#D9D1DB] mb-6 block">
+            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Deep Architecture
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Technical<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Whitepapers
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#4918A9] pl-8">
-              Deep technical deep-dives and strategic frameworks for the next generation of enterprise architecture.
+            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
+              Rigorous deep-dives and strategic frameworks for the next generation of enterprise architecture. Validated research for the CTO office.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-32">
+      {/* 2. PAPERS GRID */}
+      <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-100 border border-gray-100">
             {[
-              { title: 'The Ethics of Autonomous UX', desc: 'A framework for human-in-the-loop AI orchestration.' },
-              { title: 'Post-Quantum Resilience', desc: 'Preparing infrastructure for next-gen cryptographic challenges.' },
-              { title: 'Semantic Matching Engines', desc: 'The math behind ScanJD and the future of talent sourcing.' },
-              { title: 'Cloud Mesh Optimization', desc: 'Reducing latency in high-density multi-cloud environments.' }
+              { title: 'The Ethics of Autonomous UX', desc: 'A framework for human-in-the-loop AI orchestration, ensuring agency is preserved in automated systems.' },
+              { title: 'Post-Quantum Resilience', desc: 'Preparing legacy infrastructure for next-gen cryptographic challenges and Q-Day readiness.' },
+              { title: 'Semantic Matching Engines', desc: 'The mathematical architecture behind ScanJD and the future of ontology-based talent sourcing.' },
+              { title: 'Cloud Mesh Optimization', desc: 'Reducing latency in high-density multi-cloud environments through edge-compute strategies.' }
             ].map((paper, i) => (
-              <div key={i} className="bg-white p-16 hover:bg-gray-50 transition-all">
-                <h3 className="text-2xl font-black uppercase tracking-tight mb-4 leading-tight">{paper.title}</h3>
-                <p className="text-gray-500 font-light mb-12">{paper.desc}</p>
-                <button className="px-8 py-4 border border-gray-200 text-[10px] font-black uppercase tracking-widest hover:bg-[#4918A9] hover:text-white transition-all">
-                  Access Paper
+              <div key={i} className="bg-white p-16 hover:bg-[#1A1A1A] group transition-all duration-500">
+                <div className="mb-10">
+                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">
+                     WP-0{i+1}
+                   </span>
+                </div>
+                <h3 className="text-3xl font-black uppercase tracking-tight mb-6 leading-[0.95] text-[#1A1A1A] group-hover:text-white transition-colors">
+                  {paper.title}
+                </h3>
+                <p className="text-gray-500 group-hover:text-gray-400 font-light mb-12 text-lg leading-relaxed transition-colors">
+                  {paper.desc}
+                </p>
+                <button className="px-10 py-5 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-[#1A1A1A] group-hover:bg-[#004b23] group-hover:text-white group-hover:border-[#004b23] transition-all">
+                  Access Document
                 </button>
               </div>
             ))}

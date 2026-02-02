@@ -50,43 +50,47 @@ export type PageType =
   | 'whitepapers' | 'events' | 'sustainability' | 'privacy' | 'terms' | 'cookies' | 'contact'
   | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions';
 
-  const VALID_PAGES: PageType[] = [
-    'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
-    'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
-    'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
-    'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions'
-  ];
-  
-  const getPageFromHash = (): PageType => {
+const VALID_PAGES: PageType[] = [
+  'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
+  'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
+  'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
+  'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions'
+];
+
+const getPageFromHash = (): PageType => {
+  try {
     const hash = window.location.hash.replace('#', '');
     if (VALID_PAGES.includes(hash as PageType)) {
       return hash as PageType;
     }
-    return 'home';
-  };
+  } catch (e) {
+    console.warn("Could not access location hash:", e);
+  }
+  return 'home';
+};
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentPage, setCurrentPage] = useState<PageType>('home');
+  const [currentPage, setCurrentPage] = useState<PageType>(getPageFromHash());
   const [navSource, setNavSource] = useState<PageType | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContext, setModalContext] = useState<'strategy' | 'audit'>('strategy');
 
-    // Handle Browser Back/Forward Navigation
-    useEffect(() => {
-      const handlePopState = (event: PopStateEvent) => {
-        const page = getPageFromHash();
-        setCurrentPage(page);
-        if (event.state && event.state.source) {
-          setNavSource(event.state.source);
-        } else {
-          setNavSource(null);
-        }
-      };
-  
-      window.addEventListener('popstate', handlePopState);
-      return () => window.removeEventListener('popstate', handlePopState);
-    }, []);
+  // Handle Browser Back/Forward Navigation
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const page = getPageFromHash();
+      setCurrentPage(page);
+      if (event.state && event.state.source) {
+        setNavSource(event.state.source);
+      } else {
+        setNavSource(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,13 +108,17 @@ const App: React.FC = () => {
     setNavSource(source || null);
     setCurrentPage(page);
 
-    
     // Update URL Hash to support browser back button
-    const url = page === 'home' ? window.location.pathname : `#${page}`;
-    const hashCheck = page === 'home' ? '' : `#${page}`;
-    
-    if (window.location.hash !== hashCheck) {
-      window.history.pushState({ source: source || null }, '', url);
+    // Wrapped in try/catch to handle environments where pushState is restricted (e.g., sandboxed iframes/blobs)
+    try {
+      const url = page === 'home' ? window.location.pathname : `#${page}`;
+      const hashCheck = page === 'home' ? '' : `#${page}`;
+      
+      if (window.location.hash !== hashCheck) {
+        window.history.pushState({ source: source || null }, '', url);
+      }
+    } catch (e) {
+      console.warn("Navigation state update failed (likely restricted environment):", e);
     }
   };
 

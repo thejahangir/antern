@@ -16,7 +16,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
   }, []);
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#4918A9] selection:text-white overflow-hidden">
+    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23] overflow-hidden">
       {/* 1. KINETIC HERO */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
@@ -33,17 +33,17 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#4918A9] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#D9D1DB] mb-8 block">
+            <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#ccff33] mb-8 block">
               The Human Operating System
             </span>
             <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
               Our<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Culture.
               </span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#4918A9] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Technology is engineered by the mind, but sustained by the heart. At Antern, we build ecosystems where both thrive."
             </p>
           </div>
@@ -52,7 +52,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         {/* Floating Detail */}
         <div className="absolute bottom-20 right-10 hidden lg:block">
            <div className="flex flex-col items-center gap-6">
-              <div className="w-px h-32 bg-gradient-to-b from-white/20 to-[#4918A9]"></div>
+              <div className="w-px h-32 bg-gradient-to-b from-white/20 to-[#004b23]"></div>
               <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40 rotate-90 origin-left mt-24 whitespace-nowrap">Unified Purpose</span>
            </div>
         </div>
@@ -66,7 +66,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-10"></div>
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-12">
                 The Antern<br />
-                <span className="text-[#4918A9]">Manifesto.</span>
+                <span className="text-[#004b23]">Manifesto.</span>
               </h2>
               <div className="aspect-[4/5] bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
                 <img 
@@ -79,7 +79,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             
             <div className="lg:col-span-7 flex flex-col justify-center space-y-12">
               <p className="text-2xl md:text-4xl text-[#1A1A1A] font-light leading-tight">
-                We believe that <span className="font-black text-[#4918A9]">Brilliance</span> is a shared state. 
+                We believe that <span className="font-black text-[#004b23]">Brilliance</span> is a shared state. 
               </p>
               <p className="text-xl text-gray-500 font-light leading-relaxed">
                 Antern isn't just a place to work; it's a sanctuary for high-fidelity thinkers. We've stripped away the hierarchy of traditional enterprise to focus on the hierarchy of ideas. Our culture is built on the radical notion that autonomy, combined with extreme ownership, produces world-class digital systems.
@@ -109,9 +109,9 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-32">
-             <div className="accent-bar bg-[#4918A9] mx-auto w-16 mb-10"></div>
+             <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-10"></div>
              <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
-               The Pillars of <br /><span className="text-[#4918A9]">Our Identity.</span>
+               The Pillars of <br /><span className="text-[#004b23]">Our Identity.</span>
              </h2>
           </div>
 
@@ -134,7 +134,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                     {pillar.desc}
                   </p>
                 </div>
-                <div className="w-12 h-1 bg-[#4918A9] group-hover:w-full transition-all duration-1000 mt-12"></div>
+                <div className="w-12 h-1 bg-[#004b23] group-hover:w-full transition-all duration-1000 mt-12"></div>
               </div>
             ))}
           </div>
@@ -150,15 +150,15 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                <div className="relative z-10 aspect-square overflow-hidden grayscale group hover:grayscale-0 transition-all duration-1000 shadow-3xl">
                   <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Workspace" />
                </div>
-               <div className="absolute -top-10 -right-10 w-40 h-40 border-t border-r border-[#4918A9] opacity-20 pointer-events-none"></div>
-               <div className="absolute -bottom-10 -left-10 w-40 h-40 border-b border-l border-[#4918A9] opacity-20 pointer-events-none"></div>
+               <div className="absolute -top-10 -right-10 w-40 h-40 border-t border-r border-[#004b23] opacity-20 pointer-events-none"></div>
+               <div className="absolute -bottom-10 -left-10 w-40 h-40 border-b border-l border-[#004b23] opacity-20 pointer-events-none"></div>
             </div>
 
             <div className="lg:col-span-6">
-              <div className="accent-bar bg-[#4918A9] w-24 mb-10"></div>
+              <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-10">
                 The Global <br />
-                <span className="text-[#4918A9]">Studio Experience.</span>
+                <span className="text-[#004b23]">Studio Experience.</span>
               </h2>
               <div className="space-y-10 text-xl text-gray-500 font-light leading-relaxed">
                 <p>
@@ -175,7 +175,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                     "Global Sync Rooms"
                   ].map(label => (
                     <div key={label} className="flex items-center gap-3">
-                       <div className="w-2 h-2 bg-[#4918A9]"></div>
+                       <div className="w-2 h-2 bg-[#004b23]"></div>
                        <span className="text-[11px] font-black uppercase tracking-widest text-[#1A1A1A]">{label}</span>
                     </div>
                   ))}
@@ -187,30 +187,38 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         </div>
       </section>
 
-      {/* 5. FINAL CTA */}
-      <section className="py-48 bg-[#1A1A1A] text-center relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#4918A9]/10 rounded-full blur-[150px] pointer-events-none"></div>
-        
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <div className="accent-bar bg-[#D9D1DB] mx-auto w-24 mb-12"></div>
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-12">
+      {/* 5. FINAL CTA - Tightened & Parallax */}
+      <section className="relative py-24 bg-[#0A0A0A] overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0">
+           <div 
+             className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
+             style={{ 
+               backgroundImage: "url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop')",
+               backgroundAttachment: 'fixed'
+             }}
+           ></div>
+           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-transparent to-[#0A0A0A]"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
             Are you <br />
-            <span className="text-[#D9D1DB]">Sync Material?</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Sync Material?</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 font-light mb-20 leading-relaxed">
+          <p className="text-lg text-gray-400 font-light mb-10 leading-relaxed max-w-xl mx-auto">
             We are always looking for high-fidelity talent to join our global network of thinkers and doers.
           </p>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
               onClick={onExploreCareers}
-              className="px-16 py-7 bg-white text-[#1A1A1A] text-[12px] font-black uppercase tracking-[0.6em] hover:bg-[#4918A9] hover:text-white transition-all shadow-3xl group"
+              className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-2xl group"
             >
               View Open Roles
               <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
             </button>
             <button 
               onClick={onInitiateStrategy}
-              className="px-16 py-7 border border-white/20 text-white text-[12px] font-black uppercase tracking-[0.6em] hover:bg-white hover:text-[#1A1A1A] transition-all"
+              className="px-12 py-5 border border-white/20 text-white text-[11px] font-black uppercase tracking-[0.5em] hover:bg-white hover:text-[#1A1A1A] transition-all"
             >
               Partner with Us
             </button>

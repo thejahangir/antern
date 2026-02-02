@@ -42,7 +42,14 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
     setIsLoading(true);
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      // Defensive check for process environment to avoid runtime crashes in browser
+      const apiKey = typeof process !== 'undefined' && process.env ? process.env.API_KEY : undefined;
+      
+      if (!apiKey) {
+        throw new Error("API Key configuration missing or inaccessible");
+      }
+
+      const ai = new GoogleGenAI({ apiKey });
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
         contents: userMessage,
@@ -58,7 +65,8 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
       const botText = response.text || "I'm sorry, I couldn't process that. Please contact our human specialists at contact@antern.com.";
       setMessages(prev => [...prev, { role: 'bot', text: botText }]);
     } catch (error) {
-      setMessages(prev => [...prev, { role: 'bot', text: "Connection interrupted. Please try re-engaging or reach out directly to our team." }]);
+      console.error("AI Error:", error);
+      setMessages(prev => [...prev, { role: 'bot', text: "Secure connection interrupted. Please try re-engaging or reach out directly to our team." }]);
     } finally {
       setIsLoading(false);
     }

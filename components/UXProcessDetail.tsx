@@ -119,52 +119,47 @@ const processSteps = [
 
 export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscovery }) => {
   return (
-    <div className="bg-[#FFFFFF] selection:bg-[#4918A9] selection:text-white">
-      {/* Hero Section */}
+    <div className="bg-[#FFFFFF] selection:bg-[#70e000] selection:text-[#004b23]">
+      {/* 1. KINETIC HERO */}
       <section className="relative h-[85vh] min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2400&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2500&auto=format&fit=crop" 
             alt="UX Research and Analysis" 
-            className="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-[3000ms] ease-out"
+            className="w-full h-full object-cover opacity-30 grayscale hover:grayscale-0 transition-all duration-[3000ms] ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent"></div>
           {/* Decorative Pattern */}
-          <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
-               style={{ backgroundImage: 'radial-gradient(#fff 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }}>
-          </div>
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#D9D1DB] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-6 block">
+            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Strategic Lifecycle
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-4 text-white">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
               The Design<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9D1DB] via-[#7C4DFF] to-[#4918A9]">
-                Lifecycle
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
+                Lifecycle.
               </span>
             </h1>
-            <h2 className="text-xl md:text-3xl font-light text-[#D9D1DB]/90 mb-10 tracking-tight italic leading-tight">
-              Research-led thinking that shapes purposeful experiences.
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#4918A9] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
               A rigorous, data-driven framework spanning seven critical phases of digital evolution. We transform enterprise complexity into human-centric frictionlessness.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Intro section */}
+      {/* 2. INTRO PHILOSOPHY */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8">
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
-                Evidence-based <span className="text-[#4918A9]">Discovery</span>. <br />
-                Iterative <span className="text-[#4918A9]">Execution</span>.
+                Evidence-based <span className="text-[#004b23]">Discovery</span>. <br />
+                Iterative <span className="text-[#004b23]">Execution</span>.
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
@@ -176,35 +171,35 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
         </div>
       </section>
 
-      {/* The Lifecycle Grid */}
+      {/* 3. THE LIFECYCLE GRID */}
       <section className="relative bg-[#F8F7F9] py-32 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-px border border-gray-200 bg-gray-200">
             {processSteps.map((step, index) => (
               <div 
                 key={step.id} 
-                className="group bg-white border border-gray-200 hover:border-[#4918A9] transition-all duration-500 shadow-sm hover:shadow-xl overflow-hidden"
+                className="group bg-white hover:bg-[#1A1A1A] transition-all duration-500 overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[300px]">
                   
                   {/* Phase ID & Indicator */}
-                  <div className="lg:col-span-1 bg-gray-50 group-hover:bg-[#4918A9] flex items-center justify-center p-8 transition-colors duration-500">
-                    <span className="text-4xl lg:text-5xl font-black text-gray-300 group-hover:text-white transition-colors">
+                  <div className="lg:col-span-1 bg-gray-50 group-hover:bg-[#004b23] flex items-center justify-center p-8 transition-colors duration-500">
+                    <span className="text-4xl lg:text-5xl font-black text-gray-200 group-hover:text-white transition-colors">
                       {step.id}
                     </span>
                   </div>
 
                   {/* Core Strategic Tasks */}
-                  <div className="lg:col-span-6 p-10 lg:p-14 border-r border-gray-100">
-                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#4918A9] mb-4">Core Objectives</div>
-                    <h3 className="text-3xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8 leading-none">
+                  <div className="lg:col-span-6 p-10 lg:p-14 border-r border-gray-100 group-hover:border-white/10 transition-colors">
+                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] mb-6 transition-colors">Core Objectives</div>
+                    <h3 className="text-3xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white mb-8 leading-none transition-colors">
                       {step.title}
                     </h3>
                     <div className="space-y-5">
                       {step.tasks.map((task, i) => (
                         <div key={i} className="flex gap-4 items-start">
-                          <div className="w-1.5 h-1.5 bg-[#4918A9] mt-2 rounded-full shrink-0"></div>
-                          <p className="text-lg text-gray-700 font-medium leading-snug">
+                          <div className="w-1.5 h-1.5 bg-[#004b23] group-hover:bg-[#70e000] mt-2 rounded-full shrink-0 transition-colors"></div>
+                          <p className="text-lg text-gray-700 group-hover:text-gray-400 font-medium leading-snug transition-colors">
                             {task}
                           </p>
                         </div>
@@ -213,13 +208,13 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
                   </div>
 
                   {/* Discovery Deliverables */}
-                  <div className="lg:col-span-5 p-10 lg:p-14 bg-gray-50/30">
-                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-6">Key Deliverables</div>
+                  <div className="lg:col-span-5 p-10 lg:p-14 bg-gray-50/30 group-hover:bg-transparent transition-colors">
+                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-white/50 mb-6 transition-colors">Key Deliverables</div>
                     <div className="flex flex-wrap gap-2">
                       {step.discovery.map((item, i) => (
                         <div 
                           key={i} 
-                          className="px-4 py-3 bg-white border border-gray-200 text-[12px] font-bold uppercase tracking-widest text-gray-600 group-hover:border-[#4918A9]/20 transition-all"
+                          className="px-4 py-3 bg-white border border-gray-200 text-[12px] font-bold uppercase tracking-widest text-gray-600 group-hover:bg-white/5 group-hover:text-[#ccff33] group-hover:border-[#70e000] transition-all"
                         >
                           {item}
                         </div>
@@ -234,25 +229,25 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
         </div>
       </section>
 
-      {/* Footer CTA */}
+      {/* 4. FOOTER CTA */}
       <section className="py-48 bg-white text-center relative overflow-hidden">
         {/* Background Accents */}
-        <div className="absolute top-0 right-0 opacity-10 pointer-events-none -translate-y-1/2">
-           <span className="text-[300px] font-black text-[#4918A9]">+</span>
+        <div className="absolute top-0 right-0 opacity-[0.03] pointer-events-none -translate-y-1/2 select-none">
+           <span className="text-[400px] font-black text-[#1A1A1A]">+</span>
         </div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <div className="accent-bar bg-[#4918A9] mx-auto w-16 mb-12"></div>
+          <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
           <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A] mb-12">
             Ready to <br />
-            <span className="text-[#4918A9]">Initiate?</span>
+            <span className="text-[#004b23]">Initiate?</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-500 font-light mb-16 leading-relaxed">
             Successful digital transformation is the result of a disciplined lifecycle. Let's deploy our strategic framework for your next mission-critical project.
           </p>
           <button 
             onClick={onStartDiscovery}
-            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#4918A9] transition-all shadow-[0_30px_60px_rgba(73,24,169,0.2)] group"
+            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#004b23] transition-all shadow-2xl group"
           >
             Start Project Discovery
             <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
