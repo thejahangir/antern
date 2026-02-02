@@ -6,7 +6,8 @@ interface NavItem {
   label: string;
   id: string;
   targetPage?: string;
-  subItems?: { label: string; id: string; targetPage?: string }[];
+  externalLink?: string;
+  subItems?: { label: string; id: string; targetPage?: string; externalLink?: string }[];
 }
 
 interface NavbarProps {
@@ -64,8 +65,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       id: 'products',
       subItems: [
         { label: 'Product Roadmap', id: 'roadmap', targetPage: 'roadmap' },
-        { label: 'IAmInterviewed', id: 'products' },
-        { label: 'MySkillTest', id: 'products' },
+        { label: 'IAmInterviewed', id: 'iaminterviewed', externalLink: 'https://iaminterviewed.com/' },
+        { label: 'MySkillTest', id: 'myskilltest', externalLink: 'https://myskilltest.com/' },
         { label: 'ScanJD', id: 'products' }
       ]
     },
@@ -85,11 +86,16 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: 'Careers', id: 'careers', targetPage: 'careers' }
   ];
 
-  const handleNavClick = (e: React.MouseEvent, id: string, targetPage?: string) => {
+  const handleNavClick = (e: React.MouseEvent, id: string, targetPage?: string, externalLink?: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
     setIsDiscoverOpen(false);
     
+    if (externalLink) {
+      window.open(externalLink, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
     if (targetPage) {
       onNavigateTo(targetPage);
       return;
@@ -136,7 +142,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'py-4 bg-white border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)] scrolled' 
+          ? 'py-4 bg-white border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)]' 
           : isDetailPage
             ? 'py-6 bg-black/40 backdrop-blur-md'
             : 'py-6 bg-transparent'
@@ -189,7 +195,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           onMouseLeave={() => setActiveDropdown(null)}
                         >
                           <button 
-                            onClick={(e) => handleNavClick(e, item.id, item.targetPage)}
+                            onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)}
                             className={`px-4 py-2 whitespace-nowrap text-[11px] font-black tracking-widest cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all`}
                           >
                             {item.label}
@@ -201,7 +207,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                                 {item.subItems.map((sub) => (
                                   <button
                                     key={sub.label}
-                                    onClick={(e) => handleNavClick(e as any, sub.id, sub.targetPage)}
+                                    onClick={(e) => handleNavClick(e as any, sub.id, sub.targetPage, sub.externalLink)}
                                     className={`px-4 py-3 text-[11px] font-bold text-left cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all border-b border-white/5 last:border-0`}
                                   >
                                     {sub.label}
@@ -228,8 +234,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
                       <a 
-                        href={item.targetPage ? undefined : `#${item.id}`} 
-                        onClick={(e) => handleNavClick(e, item.id, item.targetPage)} 
+                        href={item.externalLink || (item.targetPage ? undefined : `#${item.id}`)}
+                        onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)} 
                         className={`
                           relative px-5 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
                           ${hoverColor} 
@@ -259,8 +265,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                             {item.subItems.map((sub) => (
                               <a
                                 key={sub.label}
-                                href={sub.targetPage ? undefined : `#${sub.id}`}
-                                onClick={(e) => handleNavClick(e, sub.id, sub.targetPage)}
+                                href={sub.externalLink || (sub.targetPage ? undefined : `#${sub.id}`)}
+                                onClick={(e) => handleNavClick(e, sub.id, sub.targetPage, sub.externalLink)}
                                 className={`group/sub px-5 py-4 text-[12px] font-bold tracking-[0.12em] cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all duration-300 flex items-center justify-between border-b border-gray-100/5 last:border-0`}
                               >
                                 <span className="transform transition-transform duration-300 group-hover/sub:translate-x-1">
@@ -337,7 +343,7 @@ export const Navbar: React.FC<NavbarProps> = ({
              {navItems.map((item) => (
                 <div key={item.label}>
                    <button 
-                    onClick={(e) => handleNavClick(e as any, item.id, item.targetPage)}
+                    onClick={(e) => handleNavClick(e as any, item.id, item.targetPage, item.externalLink)}
                     className="text-4xl font-black uppercase tracking-tighter hover:text-[#ccff33] cursor-pointer"
                    >
                      {item.label}
@@ -347,7 +353,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                        {item.subItems.map(sub => (
                          <button 
                           key={sub.label} 
-                          onClick={(e) => handleNavClick(e as any, sub.id, sub.targetPage)}
+                          onClick={(e) => handleNavClick(e as any, sub.id, sub.targetPage, sub.externalLink)}
                           className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white text-left cursor-pointer"
                          >
                            {sub.label}
@@ -357,7 +363,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                    )}
                 </div>
              ))}
-              <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
+             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
                 UX Studio
                 <span className="w-2 h-2 bg-[#70e000] rounded-full animate-pulse"></span>
              </button>

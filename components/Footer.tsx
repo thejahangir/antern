@@ -21,8 +21,8 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
              <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Digital Products</h4>
              <ul className="space-y-4">
                <li><button onClick={() => onNavigateTo('roadmap')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Product Roadmap</button></li>
-               <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">IAmInterviewed</button></li>
-               <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">MySkillTest</button></li>
+               <li><a href="https://iaminterviewed.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">IAmInterviewed</a></li>
+               <li><a href="https://myskilltest.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">MySkillTest</a></li>
                <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">ScanJD</button></li>
              </ul>
           </div>
