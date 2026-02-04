@@ -50,11 +50,8 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Infrastructure Sovereignty
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
-              On-Premise<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Delivery
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
+              On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Ultimate security and performance. We deploy Antern's full intelligence stack within your own secure infrastructure, ensuring complete data isolation.
@@ -68,7 +65,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">
                 Air-Gapped <br />
                 <span className="text-[#004b23]">Excellence.</span>
               </h2>

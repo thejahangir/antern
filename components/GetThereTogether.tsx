@@ -24,7 +24,7 @@ export const GetThereTogether: React.FC<GetThereTogetherProps> = ({ onPartner })
           
           {/* Heading - Adjusted for compact layout */}
           <div className="text-center md:text-left flex-1">
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
               Let's get there <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Together.</span>
             </h2>

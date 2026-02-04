@@ -50,10 +50,8 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#004b23] mb-6 block bg-[#ccff33] px-2 py-1 w-fit">
               Global Scale
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white  tracking-tighter leading-[0.85] mb-8">
-              Offshore Dev<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Centers (ODC)
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white  tracking-tighter leading-[0.85] mb-8">
+              Offshore Dev <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Centers.
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#70e000] pl-10">

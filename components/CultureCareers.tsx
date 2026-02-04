@@ -28,7 +28,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
             
             <div className="absolute inset-0 p-12 md:p-20 flex flex-col justify-end pointer-events-none">
               <div className="accent-bar bg-white w-12 mb-6"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white leading-[0.9] mb-6">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white leading-[0.9] mb-6">
                 Our<br />Culture
               </h2>
               <p className="text-white/80 text-lg md:text-xl max-w-sm mb-10 font-light leading-relaxed">
@@ -50,7 +50,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
           <div className="relative group cursor-pointer overflow-hidden bg-[#F8F7F9]">
             <div className="p-12 md:p-20 lg:p-32 flex flex-col h-full justify-center">
               <div className="accent-bar bg-[#4918A9] w-12 mb-8"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.9] mb-8">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.9] mb-8">
                 Advance<br />
                 <span className="text-[#4918A9]">Your Career</span>
               </h2>

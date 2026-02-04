@@ -146,7 +146,7 @@ export const IdeasTransformation: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
             <div className="accent-bar bg-[#4918A9] w-16 mb-6"></div>
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
+            <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
               Ideas that drive<br />
               <span className="text-[#4918A9]">Transformation</span>
             </h2>
@@ -232,7 +232,7 @@ export const IdeasTransformation: React.FC = () => {
                 <span className={`text-[11px] font-black uppercase tracking-[0.4em] text-[#4918A9] mb-3 transition-all duration-1000`}>
                   {idea.category}
                 </span>
-                <h3 className={`font-black  tracking-tight text-[#1A1A1A] leading-[0.9] mb-6 transition-all duration-1000 text-3xl md:text-5xl lg:text-6xl`}>
+                <h3 className={`font-black  tracking-tight text-[#1A1A1A] leading-[0.9] mb-6 transition-all duration-1000 text-3xl md:text-5xl lg:text-5xl`}>
                   {idea.title}
                 </h3>
                 <p className={`mb-8 font-light leading-relaxed transition-all duration-1000 max-w-3xl text-lg text-[#1A1A1A]`}>

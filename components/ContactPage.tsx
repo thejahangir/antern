@@ -75,11 +75,8 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
               Direct Portal
             </span>
-            <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
-              Initiate<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Sync.
-              </span>
+            <h1 className="ext-5xl md:text-5xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
+              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> Us.</span>
             </h1>
             <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
@@ -112,7 +109,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-12">
              <div className="max-w-2xl">
                 <div className="accent-bar bg-[#1A1A1A] w-16 mb-8"></div>
-                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
+                <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                   Operational <br />
                   <span className="text-[#004b23]">Hubs.</span>
                 </h2>
@@ -196,7 +193,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none text-[#1A1A1A] mb-10">
+              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-none text-[#1A1A1A] mb-10">
                 Strategic <br />
                 <span className="text-[#004b23]">Engagement.</span>
               </h2>

@@ -64,11 +64,8 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
                 Official Correspondence
               </span>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white mb-8">
-                The<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                  Directive.
-                </span>
+              <h1 className="text-5xl md:ext-5xl lg:ext-5xl font-black tracking-tighter leading-[0.9] text-white mb-8">
+                Message from <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> CEO.</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#70e000] pl-10 italic">
                 "We are not here to predict the future, but to engineer the infrastructure that makes it inevitable."
@@ -100,7 +97,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             </div>
 
             <div className="lg:col-span-8">
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
                 Architectural Integrity <br />
                 <span className="text-[#004b23]">is our true north.</span>
               </h2>
@@ -131,7 +128,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-12">
             <div className="max-w-2xl">
               <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
+              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                 Vision <br />
                 <span className="text-[#004b23]">2025 - 2030.</span>
               </h2>
@@ -183,7 +180,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <div className="accent-bar bg-[#70e000] mx-auto w-16 mb-12"></div>
-          <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-12">
+          <h2 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-12">
             A Note of <br />
             <span className="text-[#ccff33]">Deep Gratitude.</span>
           </h2>
@@ -201,7 +198,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
 
           <div className="flex flex-col items-center">
             <div className="relative mb-8 group">
-              <span className="text-5xl md:text-7xl font-light text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
+              <span className="text-5xl md:ext-5xl font-light text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
                 Ramakrishna RL
               </span>
               <div className="absolute -bottom-4 left-0 w-full h-px bg-[#70e000] scale-x-0 animate-expand-line"></div>

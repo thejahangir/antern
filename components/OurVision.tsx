@@ -44,7 +44,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black tracking-[0.5em] text-[#ccff33] mb-6 block">
               The Strategic Manifesto
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.85] text-white mb-8">
+            <h1 className="text-5xl md:text-5xl lg:text-5xl font-black leading-[0.85] text-white mb-8">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Vision.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
@@ -59,7 +59,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
                 Digital <span className="text-[#004b23]">Sovereignty</span> <br /> 
                 over Digital Noise.
               </h2>
@@ -143,7 +143,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4">
               <div className="accent-bar bg-[#004b23] w-12 mb-10"></div>
-              <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-8">
+              <h2 className="text-5xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-8">
                 The<br />
                 <span className="text-[#004b23]">Roadmap</span><br />
                 to 2030

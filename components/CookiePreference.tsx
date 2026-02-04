@@ -7,7 +7,7 @@ export const CookiePreference: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="accent-bar bg-[#004b23] w-12 h-1.5 mb-10"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Data Control</span>
-        <h1 className="text-6xl font-black uppercase tracking-tighter mb-8 text-[#1A1A1A]">
+        <h1 className="text-5xl font-black uppercase tracking-tighter mb-8 text-[#1A1A1A]">
           Cookie Preference
         </h1>
         <p className="text-xl text-gray-500 font-light mb-16 max-w-2xl leading-relaxed">

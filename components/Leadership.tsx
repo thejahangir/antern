@@ -128,7 +128,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
   <div className="mb-32">
     <div className="flex flex-col mb-16">
       <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
-      <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-4">
+      <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9] mb-4">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
           {title}
         </span>
@@ -221,11 +221,8 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Global Governance
             </span>
-            <h1 className="text-6xl md:text-8xl font-black  tracking-tighter leading-[0.85] text-white mb-8">
-              Leadership<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Team
-              </span>
+            <h1 className="text-5xl md:ext-5xl font-black  tracking-tighter leading-[0.85] text-white mb-8">
+              Leadership <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Team. </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#70e000] pl-10">
               The architects of Antern's global mission, committed to delivering intelligent solutions with enterprise-grade integrity and strategic foresight.
@@ -273,7 +270,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
         </div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
             Build with the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Best.</span>
           </h2>
@@ -315,7 +312,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
                 <div className="text-[10vw] font-black leading-none text-transparent border-text select-none opacity-10 absolute -bottom-8 left-0 whitespace-nowrap">
                    {selectedLeader.name.split(' ')[0]}
                 </div>
-                <h3 className="text-5xl lg:text-7xl font-black uppercase tracking-tighter text-white relative z-10">
+                <h3 className="text-5xl lg:text-5xl font-black uppercase tracking-tighter text-white relative z-10">
                   {selectedLeader.name}
                 </h3>
                 <p className="text-[12px] font-black uppercase tracking-[0.6em] text-[#70e000] mt-6 relative z-10 flex items-center gap-4">

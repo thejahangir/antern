@@ -38,11 +38,8 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Validation Protocol
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
-              Online<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Assessments
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
+              Online <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Assessments</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Data-driven competency validation. Our adaptive testing engine dynamically adjusts complexity to pinpoint candidate expertise with surgical accuracy.

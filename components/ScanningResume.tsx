@@ -38,11 +38,8 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Intelligent Parser
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
-              Scanning<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Resume
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
+              Scanning <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Resume.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Beyond keywords. Our semantic engine understands context, career velocity, and implied skills to match talent with opportunity instantly.
@@ -106,7 +103,7 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="accent-bar bg-[#004b23] mx-auto w-12 mb-8"></div>
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-20">The Matching Core</h2>
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-20">The Matching Core</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="p-8 group">
@@ -130,7 +127,7 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
 
       <section className="py-48 bg-[#1A1A1A] relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white mb-12">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-white mb-12">
             Process <span className="text-[#ccff33]">Faster.</span>
           </h2>
           <button 

@@ -26,7 +26,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
             <span className="text-[11px] font-black uppercase tracking-[0.6em] text-[#1A1A1A] mb-3 block">The Antern Narrative</span>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
+            <h2 className="text-5xl md:text-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
               Decades of <br />
               Excellence.
             </h2>
@@ -103,22 +103,22 @@ export const About: React.FC = () => {
             <div className="grid grid-cols-2 gap-10 md:gap-16 relative z-10">
               <div className="relative group/metric">
                 <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Longevity</span>
-                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">10+</div>
+                <div className="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">10+</div>
                 <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Years active</p>
               </div>
               <div className="relative group/metric">
                 <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Velocity</span>
-                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">500+</div>
+                <div className="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">500+</div>
                 <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Systems shipped</p>
               </div>
               <div className="relative group/metric">
                 <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Scale</span>
-                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">24/7</div>
+                <div className="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">24/7</div>
                 <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Global sync</p>
               </div>
               <div className="relative group/metric">
                 <span className="text-[9px] font-black uppercase tracking-[0.6em] text-[#70e000] group-hover/metric:text-[#ccff33] mb-3 block transition-colors">Quality</span>
-                <div className="text-4xl md:text-6xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">01</div>
+                <div className="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#70e000] group-hover/metric:to-[#ccff33] transition-all">01</div>
                 <p className="text-gray-500 text-[10px] font-medium uppercase tracking-widest group-hover/metric:text-gray-400 transition-colors">Unified Standard</p>
               </div>
             </div>

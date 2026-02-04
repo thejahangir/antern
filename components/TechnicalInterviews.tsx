@@ -42,11 +42,8 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Evaluation Engine
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
-              Technical<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Interviews
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
+              Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Interviews.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Precision evaluation at scale. We combine human expertise with algorithmic insights to validate engineering talent with zero bias.
@@ -61,7 +58,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-8"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
                 The Interview <br />
                 <span className="text-[#004b23]">OS.</span>
               </h2>
@@ -148,7 +145,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
            </svg>
         </div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white mb-10 leading-none">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-white mb-10 leading-none">
             Hire with <br /><span className="text-[#ccff33]">Certainty.</span>
           </h2>
           <button 

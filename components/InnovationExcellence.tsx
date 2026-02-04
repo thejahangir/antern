@@ -18,7 +18,7 @@ export const InnovationExcellence: React.FC = () => {
           <div className="relative group overflow-hidden border-r border-gray-100">
             <div className="p-12 md:p-24 lg:p-32 flex flex-col h-full min-h-[600px] justify-center relative z-10 bg-white group-hover:bg-gray-50 transition-colors duration-700">
               <div className="accent-bar bg-[#004b23] w-12 mb-10"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
                 Continuous<br />
                 <span className="text-[#004b23]">Innovation</span>
               </h2>
@@ -56,7 +56,7 @@ export const InnovationExcellence: React.FC = () => {
           <div className="relative group overflow-hidden">
             <div className="p-12 md:p-24 lg:p-32 flex flex-col h-full min-h-[600px] justify-center relative z-10 bg-white group-hover:bg-[#1A1A1A] group-hover:text-white transition-all duration-700">
               <div className="accent-bar bg-[#70e000] w-12 mb-10"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A] group-hover:text-white transition-colors">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A] group-hover:text-white transition-colors">
                 Operational<br />
                 <span className="group-hover:text-[#ccff33] transition-colors">Excellence</span>
               </h2>

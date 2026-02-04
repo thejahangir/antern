@@ -49,11 +49,8 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Experience Systems & Design
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-6">
-              Architecting<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Intuition
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-6">
+              UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Studio.</span>
             </h1>
             <h2 className="text-2xl md:text-4xl font-light text-[#ccff33]/90 mb-12 tracking-tight italic leading-tight">
               Designing systems that think before users do.
@@ -78,7 +75,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-8">
               <div className="accent-bar bg-[#004b23] w-12 mb-8"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
                 Architecture for <br />
                 <span className="text-[#004b23]">Human Potential.</span>
               </h2>
@@ -115,7 +112,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="max-w-2xl">
               <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-4 block">Strategic Capability</span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-5xl font-black uppercase tracking-tighter mb-6 leading-tight">
                 Deep User Research & <br />Design Methodology
               </h2>
               <p className="text-xl text-white/80 font-light leading-relaxed mb-8">
@@ -142,7 +139,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-24">
             <div className="accent-bar bg-[#004b23] w-24"></div>
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
+            <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
               The UX<br />
               <span className="text-[#004b23]">Business Engine</span>
             </h2>
@@ -233,7 +230,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
                 Enterprise Value Realization
               </span>
-              <div className="text-8xl md:text-[140px] font-black tracking-tighter leading-none mb-4 group-hover:text-[#ccff33] transition-colors duration-700">
+              <div className="ext-5xl md:text-[140px] font-black tracking-tighter leading-none mb-4 group-hover:text-[#ccff33] transition-colors duration-700">
                 100:1
               </div>
               <h3 className="text-xl md:text-2xl font-black uppercase tracking-widest text-[#ccff33] opacity-80">
@@ -243,7 +240,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             
             <div className="lg:col-span-7">
               <div className="accent-bar bg-white w-20 mb-10"></div>
-              <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-10 leading-[0.9] text-white">
+              <h2 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.9] text-white">
                 Proven <span className="text-[#ccff33]">Impact</span>, <br />
                 Quantifiable <span className="text-[#ccff33]">ROI</span>.
               </h2>
@@ -285,7 +282,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <div className="lg:col-span-5">
                 <div className="accent-bar bg-[#ccff33] w-20 mb-8"></div>
                 <div className="text-[10px] font-black text-[#ccff33] uppercase tracking-[0.5em] mb-4">Strategic Value Proposition</div>
-                <h3 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
+                <h3 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
                   Acquisition <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Architecture</span>
                 </h3>
@@ -349,7 +346,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <div className="accent-bar bg-[#004b23] w-24"></div>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
+              <h2 className="text-5xl md:ext-5xl lg:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
                 AI Experience<br />
                 <span className="text-[#004b23]">Design (AIXD)</span>
               </h2>
@@ -450,7 +447,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#ccff33] w-20 mb-10"></div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
+              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
                 Ethical UX <br />
                 <span className="text-[#ccff33]">Architecture</span>
               </h2>
@@ -517,7 +514,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
       <section className="py-32 bg-white relative overflow-hidden border-y border-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-center">
             <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-10 leading-[1] text-[#1A1A1A]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-10 leading-[1] text-[#1A1A1A]">
                 The Cognitive <span className="text-[#004b23]">Bridge</span>
             </h2>
             <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto leading-relaxed mb-20">
@@ -560,7 +557,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             
             <div className="lg:col-span-5">
               <div className="accent-bar bg-gradient-to-r from-[#004b23] to-[#ccff33] w-32 mb-12"></div>
-              <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
+              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
                 The Growth <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Engine</span>
               </h2>
@@ -569,7 +566,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               </p>
               
               <div className="relative p-12 bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-2xl">
-                <div className="text-8xl md:text-[120px] font-black tracking-tighter leading-none mb-4 text-[#ccff33]">
+                <div className="ext-5xl md:text-[120px] font-black tracking-tighter leading-none mb-4 text-[#ccff33]">
                   32%
                 </div>
                 <h4 className="text-xs font-black uppercase tracking-[0.5em] text-[#004b23] mb-4">Baseline Efficiency Gain</h4>
@@ -648,7 +645,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
       <section className="py-32 bg-white border-t border-gray-100 overflow-hidden relative text-center">
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-10 leading-tight text-[#1A1A1A]">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-10 leading-tight text-[#1A1A1A]">
             Design the <span className="text-[#004b23]">Untold</span> Story<br /> of your Enterprise.
           </h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

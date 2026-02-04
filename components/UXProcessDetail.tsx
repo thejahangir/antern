@@ -139,7 +139,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Strategic Lifecycle
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
               The Design<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Lifecycle.
@@ -157,7 +157,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8">
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
                 Evidence-based <span className="text-[#004b23]">Discovery</span>. <br />
                 Iterative <span className="text-[#004b23]">Execution</span>.
               </h2>
@@ -238,7 +238,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A] mb-12">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A] mb-12">
             Ready to <br />
             <span className="text-[#004b23]">Initiate?</span>
           </h2>

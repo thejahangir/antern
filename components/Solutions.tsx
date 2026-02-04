@@ -110,11 +110,8 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
               Integrated Ecosystem
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
-              Total<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Solutions.
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
+              Total <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Solutions. </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               A unified architecture of cognitive products and strategic services designed to modernize the enterprise stack from the inside out.
@@ -127,7 +124,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
       <section className="py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5">
-             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-8">
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-8">
                The Power of <br /><span className="text-[#004b23]">Convergence.</span>
              </h2>
              <div className="w-16 h-2 bg-[#1A1A1A]"></div>
@@ -197,7 +194,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="mb-24 text-center">
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">
               Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Services</span>
             </h2>
             <p className="text-gray-400 font-light max-w-2xl mx-auto">
@@ -249,7 +246,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                { val: "Global", label: "Delivery Network" }
              ].map((stat, i) => (
                <div key={i} className="group">
-                 <div className="text-4xl md:text-6xl font-black text-[#1A1A1A] mb-4 group-hover:text-[#004b23] transition-colors">{stat.val}</div>
+                 <div className="text-4xl md:text-5xl font-black text-[#1A1A1A] mb-4 group-hover:text-[#004b23] transition-colors">{stat.val}</div>
                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">{stat.label}</div>
                </div>
              ))}
@@ -260,7 +257,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
       {/* 6. CTA */}
       <section className="py-48 bg-[#F8F7F9] relative overflow-hidden text-center border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
             Architect Your <br /><span className="text-[#004b23]">Future.</span>
           </h2>
           <p className="text-xl text-gray-500 font-light mb-16 max-w-2xl mx-auto">

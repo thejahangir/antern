@@ -255,11 +255,8 @@ export const Careers: React.FC = () => {
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Join the Vanguard
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
-              The Talent<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Matrix.
-              </span>
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
+              The Talent <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Matrix.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Recruiting elite architects for the global intelligence transition. We are building the team that builds the future.
@@ -355,7 +352,7 @@ export const Careers: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#ccff33] w-12 mb-8"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white leading-none mb-8">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white leading-none mb-8">
                 Stay<br />
                 <span className="text-[#ccff33]">Synchronized.</span>
               </h2>

@@ -37,10 +37,8 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#ccff33] mb-8 block">
               The Human Operating System
             </span>
-            <h1 className="text-7xl md:text-9xl font-black text-white tracking-tighter leading-[0.8] mb-12">
-              Our<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Culture.
+            <h1 className="ext-5xl md:text-5xl font-black text-white tracking-tighter leading-[0.8] mb-12">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Culture.
               </span>
             </h1>
             <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
@@ -64,7 +62,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24">
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-10"></div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-12">
+              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-12">
                 The Antern<br />
                 <span className="text-[#004b23]">Manifesto.</span>
               </h2>
@@ -110,7 +108,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-32">
              <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-10"></div>
-             <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
+             <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                The Pillars of <br /><span className="text-[#004b23]">Our Identity.</span>
              </h2>
           </div>
@@ -156,7 +154,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
 
             <div className="lg:col-span-6">
               <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-10">
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-10">
                 The Global <br />
                 <span className="text-[#004b23]">Studio Experience.</span>
               </h2>
@@ -201,7 +199,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         </div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
+          <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
             Are you <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Sync Material?</span>
           </h2>

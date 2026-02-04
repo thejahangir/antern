@@ -56,7 +56,7 @@ export const AIConsultant: React.FC = () => {
           {/* Left Column: Context & Branding */}
           <div className="lg:col-span-5">
             <div className="accent-bar bg-[#4918A9]"></div>
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
               Strategic AI<br />
               <span className="text-[#4918A9]">Advisory</span>
             </h2>
