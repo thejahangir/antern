@@ -161,7 +161,7 @@ const App: React.FC = () => {
 
          
           <LatestNews />
-          <FluidBanner />
+          <FluidBanner onExplore={() => navigateTo('managed-services')} />
           {/* <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} /> */}
           <Testimonials />
           <GetThereTogether onPartner={openStrategySession} />

@@ -1,7 +1,10 @@
 
 import React from 'react';
+interface FluidBannerProps {
+  onExplore?: () => void;
+}
 
-export const FluidBanner: React.FC = () => {
+export const FluidBanner: React.FC<FluidBannerProps> = ({ onExplore }) => {
   return (
     <section className="relative py-16 bg-[#1A1A1A] overflow-hidden group border-y border-white/5">
       {/* Background Graphic Element - Subtle Texture */}
@@ -37,10 +40,13 @@ export const FluidBanner: React.FC = () => {
                 ))}
              </div>
              
-             <button className="group/btn flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.3em] text-white cursor-pointer hover:text-[#70e000] transition-colors shrink-0">
+             <button 
+                onClick={onExplore}
+                className="group/btn flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-white cursor-pointer hover:text-[#70e000] transition-colors shrink-0"
+             >
                 Explore
-                <div className="w-8 h-px bg-white group-hover/btn:w-16 group-hover/btn:bg-[#70e000] transition-all duration-500"></div>
-                <svg className="w-4 h-4 text-[#70e000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-6 h-px bg-white group-hover/btn:w-12 group-hover/btn:bg-[#70e000] transition-all duration-500"></div>
+                <svg className="w-3.5 h-3.5 text-[#70e000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
              </button>
