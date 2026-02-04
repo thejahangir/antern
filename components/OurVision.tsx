@@ -44,11 +44,8 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black tracking-[0.5em] text-[#ccff33] mb-6 block">
               The Strategic Manifesto
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
-              Architecting<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Tomorrow.
-              </span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.85] text-white mb-8">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Vision.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
               Antern's vision transcends technology. We are building the cognitive infrastructure for a post-digital age where intelligence is seamless, secure, and human-centric.

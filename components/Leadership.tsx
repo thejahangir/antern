@@ -221,7 +221,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Global Governance
             </span>
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
+            <h1 className="text-6xl md:text-8xl font-black  tracking-tighter leading-[0.85] text-white mb-8">
               Leadership<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Team

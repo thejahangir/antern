@@ -42,7 +42,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Strategic Trajectory
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
               Product<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Roadmap

@@ -64,7 +64,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
                 Official Correspondence
               </span>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-8">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white mb-8">
                 The<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                   Directive.

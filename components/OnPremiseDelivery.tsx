@@ -50,7 +50,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Infrastructure Sovereignty
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
               On-Premise<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Delivery

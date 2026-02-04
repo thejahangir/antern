@@ -37,7 +37,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#ccff33] mb-8 block">
               The Human Operating System
             </span>
-            <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
+            <h1 className="text-7xl md:text-9xl font-black text-white tracking-tighter leading-[0.8] mb-12">
               Our<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Culture.
