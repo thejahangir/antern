@@ -90,7 +90,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
         
         {/* Bottom Section: Legal & Credits */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-[10px] font-bold text-gray-400">
             <p>© 2024 ANTERN TECHNOLOGIES.</p>
             <div className="flex gap-8">
               <button onClick={() => onNavigateTo('privacy')} className="hover:text-white transition-colors">Privacy</button>
@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
             </div>
           </div>
           
-          <div className="flex items-center gap-4 text-[9px] font-black text-gray-500 uppercase tracking-[0.4em]">
+          <div className="flex items-center gap-4 text-[9px] font-black text-gray-500">
             <span>Empowering Global Scale</span>
             <div className="w-1.5 h-1.5 bg-[#70e000] rounded-full"></div>
             <span>Built for Tomorrow</span>
