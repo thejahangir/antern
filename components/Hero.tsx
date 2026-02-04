@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-3xl">
           <div className="accent-bar"></div>
-          <h1 className="text-5xl md:ext-5xl lg:ext-5xl font-black text-white mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-7xl md:ext-5xl lg:ext-5xl font-black text-white mb-8 leading-[1.1] tracking-tight">
             Bright Thinking.<br />
             <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Intelligent</span> Solutions.
           </h1>
