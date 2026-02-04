@@ -1,5 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
+import Bangalore from '../src/assets/img/bangalore.jpg';
+import Hyderabad from '../src/assets/img/hyderbad.jpg';
+import UnitedStates from '../src/assets/img/usa.png';
 
 interface Props { 
   onInitiateStrategy: () => void; 
@@ -35,21 +38,21 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       region: 'India Headquarters',
       address: '#226, 10 M, 100 Ft Road, HRBR Layout, Block 1, Kalyan Nagar, Bangalore - 560 043. India.',
       timezone: 'IST',
-      image: 'https://images.unsplash.com/photo-1610433572201-110753c6cff9?q=80&w=800&auto=format&fit=crop', // Vidhana Soudha
+      image: [Bangalore], // Vidhana Soudha
     },
     {
       city: 'United States',
       region: 'North America Presence',
       address: 'Strategic Operations & Client Relations Division. One World Trade Center, New York.',
       timezone: 'EST',
-      image: 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=800&auto=format&fit=crop',
+      image: [UnitedStates],
     },
     {
       city: 'Hyderabad',
       region: 'Technology Center',
       address: 'Inorganic Growth & Digital Innovation Hub. HITECH City, Hyderabad.',
       timezone: 'IST',
-      image: 'https://images.unsplash.com/photo-1605142859862-978be7eba909?q=80&w=800&auto=format&fit=crop', // Charminar
+      image: [Hyderabad], // Charminar
     }
   ];
 
