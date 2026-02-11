@@ -48,7 +48,7 @@ export const Testimonials: React.FC = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Impact</span>
               </h3>
             
-            <p className="text-gray-500 text-sm leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-normal">
               Our clients are leaders in their respective industries, driving transformation through our intelligent digital solutions.
             </p>
             
