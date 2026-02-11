@@ -27,7 +27,7 @@ export const Services: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight text-[#1A1A1A]">
-                Flexible Talent &<br />
+              Digital Innovation &<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Tech Consulting</span>
               </h3>
               <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-light">

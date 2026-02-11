@@ -35,19 +35,19 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <div className="accent-bar"></div>
-          <h1 className="text-7xl md:ext-5xl lg:ext-5xl font-black text-white mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-black text-white mb-8 leading-[1.1] tracking-tight">
             Bright Thinking.<br />
             <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Intelligent</span> Solutions.
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-xl leading-relaxed">
-            Leading the next generation of digital solutions with strategic, innovation-driven execution for mission-critical transformation.
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6">
+          An AI-driven product and services company delivering innovative solutions through <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span>, along with specialized services including <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">resume screening</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">project portfolio management</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">interview scheduling</span>.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-          <button 
+            <button 
               onClick={onInitiateStrategy}
               className="px-10 py-5 bg-[#004b23] text-white font-bold uppercase tracking-widest text-sm hover:bg-[#70e000] hover:text-[#004b23] transition-all"
             >
