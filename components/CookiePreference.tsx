@@ -10,7 +10,7 @@ export const CookiePreference: React.FC = () => {
         <h1 className="text-5xl font-black uppercase tracking-tighter mb-8 text-[#1A1A1A]">
           Cookie Preference
         </h1>
-        <p className="text-xl text-gray-500 font-light mb-16 max-w-2xl leading-relaxed">
+        <p className="text-xl text-gray-500 font-normal mb-16 max-w-2xl leading-relaxed">
           Control your digital footprint across the Antern ecosystem. We prioritize your privacy and offer granular control over data collection.
         </p>
         
@@ -23,7 +23,7 @@ export const CookiePreference: React.FC = () => {
             <div key={i} className="p-10 border border-gray-100 flex items-center justify-between hover:border-[#004b23]/30 transition-colors group bg-gray-50/50">
               <div className="max-w-xl pr-8">
                 <h3 className="text-lg font-black uppercase tracking-tight mb-3 text-[#1A1A1A] group-hover:text-[#004b23] transition-colors">{item.title}</h3>
-                <p className="text-sm text-gray-500 font-light leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-gray-500 font-normal leading-relaxed">{item.desc}</p>
               </div>
               <button className={`w-16 h-8 rounded-full transition-all duration-300 relative shrink-0 ${item.active ? 'bg-[#004b23]' : 'bg-gray-300'}`}>
                 <div className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-all duration-300 shadow-md ${item.active ? 'left-9' : 'left-1'}`}></div>

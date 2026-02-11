@@ -35,7 +35,7 @@ export const CaseStudies: React.FC = () => {
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Case <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Studies</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               Real impact, global scale. How Antern partners are redefining their industries through digital excellence and architectural rigor.
             </p>
           </div>
@@ -88,7 +88,7 @@ export const CaseStudies: React.FC = () => {
                     {study.title}
                   </h3>
                   
-                  <p className="text-gray-500 font-light leading-relaxed mb-8">
+                  <p className="text-gray-500 font-normal leading-relaxed mb-8">
                     {study.desc}
                   </p>
 

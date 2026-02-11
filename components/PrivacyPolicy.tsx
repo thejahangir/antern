@@ -11,7 +11,7 @@ export const PrivacyPolicy: React.FC = () => {
           Privacy Policy
         </h1>
         
-        <div className="space-y-16 text-gray-600 leading-relaxed font-light text-lg">
+        <div className="space-y-16 text-gray-600 leading-relaxed font-normal text-lg">
           <section>
             <h2 className="text-sm font-black uppercase tracking-[0.2em] text-[#004b23] mb-6 border-b border-gray-100 pb-4">1. Information We Collect</h2>
             <p>We collect information that you provide directly to us when you use our services, including operational handles, email nodes, and professional dossiers during recruitment processes. We prioritize data minimization, collecting only what is strictly necessary.</p>

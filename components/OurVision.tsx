@@ -47,7 +47,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             <h1 className="text-5xl md:text-5xl lg:text-5xl font-black leading-[0.85] text-white mb-8">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Vision.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
               Antern's vision transcends technology. We are building the cognitive infrastructure for a post-digital age where intelligence is seamless, secure, and human-centric.
             </p>
           </div>
@@ -63,7 +63,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
                 Digital <span className="text-[#004b23]">Sovereignty</span> <br /> 
                 over Digital Noise.
               </h2>
-              <p className="text-xl text-gray-500 font-light leading-relaxed mb-8">
+              <p className="text-xl text-gray-500 font-normal leading-relaxed mb-8">
                 We believe that true innovation isn't just about speed; it's about direction. Our vision is to empower enterprises to reclaim their strategic focus by automating complexity and elevating human potential.
               </p>
               <div className="flex gap-4 p-8 bg-gray-50 border-l-4 border-[#004b23]">
@@ -81,7 +81,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
                 />
               </div>
               {/* Floating Plus Symbol */}
-              <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-[#004b23] flex items-center justify-center text-white text-5xl font-light shadow-2xl">
+              <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-[#004b23] flex items-center justify-center text-white text-5xl font-normal shadow-2xl">
                 +
               </div>
             </div>
@@ -127,7 +127,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
                 <h3 className="text-xl font-black uppercase tracking-tight mb-6 group-hover:text-white transition-colors">
                   {pillar.title}
                 </h3>
-                <p className="text-gray-500 group-hover:text-gray-400 font-light leading-relaxed transition-colors">
+                <p className="text-gray-500 group-hover:text-gray-400 font-normal leading-relaxed transition-colors">
                   {pillar.desc}
                 </p>
                 <div className="mt-12 h-1 bg-gray-100 w-12 group-hover:w-full group-hover:bg-[#70e000] transition-all duration-700"></div>
@@ -148,7 +148,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
                 <span className="text-[#004b23]">Roadmap</span><br />
                 to 2030
               </h2>
-              <p className="text-lg text-gray-400 font-light leading-relaxed">
+              <p className="text-lg text-gray-400 font-normal leading-relaxed">
                 Our vision is structured across three horizons of digital maturity. Each phase is a milestone toward a more intelligent enterprise landscape.
               </p>
             </div>
@@ -183,7 +183,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
                     <h3 className="text-2xl font-black uppercase tracking-tight mb-4 text-[#1A1A1A]">
                       {item.title}
                     </h3>
-                    <p className="text-lg text-gray-500 font-light leading-relaxed max-w-xl">
+                    <p className="text-lg text-gray-500 font-normal leading-relaxed max-w-xl">
                       {item.desc}
                     </p>
                   </div>
@@ -209,7 +209,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             Share the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Manifesto.</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-400 font-light mb-8 max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 font-normal mb-8 max-w-xl mx-auto">
             Our vision is a collaborative journey. Join us in defining the next era of enterprise excellence.
           </p>
           <button 

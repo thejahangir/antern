@@ -54,7 +54,7 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
               Offshore Dev <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Centers.
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#70e000] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#70e000] pl-10">
               Global talent, centralized control. We build and manage dedicated innovation hubs tailored to your technical roadmap, extending your engineering capacity without diluting quality.
             </p>
           </div>
@@ -75,7 +75,7 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
                 <div>
                   <span className="text-[12px] font-black text-[#004b23] group-hover:text-[#ccff33] mb-6 block transition-colors">0{i+1}</span>
                   <h3 className="text-2xl font-black uppercase mb-6 tracking-tight text-[#1A1A1A] group-hover:text-white transition-colors">{feature.title}</h3>
-                  <p className="text-sm text-gray-500 font-light leading-relaxed group-hover:text-gray-400 transition-colors">{feature.desc}</p>
+                  <p className="text-sm text-gray-500 font-normal leading-relaxed group-hover:text-gray-400 transition-colors">{feature.desc}</p>
                 </div>
                 <div className="w-8 h-1 bg-[#004b23] group-hover:w-16 group-hover:bg-[#70e000] transition-all duration-500"></div>
               </div>
@@ -92,7 +92,7 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
                   Expand your <br />
                   <span className="text-[#ccff33]">Horizon.</span>
                 </h2>
-                <p className="text-white/80 max-w-md font-light">Set up your dedicated center in under 45 days.</p>
+                <p className="text-white/80 max-w-md font-normal">Set up your dedicated center in under 45 days.</p>
               </div>
               <button 
                 onClick={onInitiateStrategy} 

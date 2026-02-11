@@ -19,7 +19,7 @@ export const TransitionBanner: React.FC = () => {
           <span className="text-[#4918A9]">Meets Human</span> Experience.
         </h2>
         
-        <p className="mt-8 text-lg text-gray-400 font-light max-w-2xl leading-relaxed">
+        <p className="mt-8 text-lg text-gray-400 font-normal max-w-2xl leading-relaxed">
           We bridge the distance between complex enterprise infrastructure and the people who use it every day.
         </p>
         

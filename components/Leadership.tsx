@@ -149,7 +149,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
-              <p className="text-white text-sm font-light leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
+              <p className="text-white text-sm font-normal leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
               <button 
                 className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
                 onClick={(e) => { e.stopPropagation(); onSelect(member); }}
@@ -224,7 +224,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             <h1 className="text-5xl md:ext-5xl font-black  tracking-tighter leading-[0.85] text-white mb-8">
               Leadership <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Team. </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#70e000] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#70e000] pl-10">
               The architects of Antern's global mission, committed to delivering intelligent solutions with enterprise-grade integrity and strategic foresight.
             </p>
           </div>
@@ -274,7 +274,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             Build with the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Best.</span>
           </h2>
-          <p className="text-lg text-gray-400 font-light mb-10 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg text-gray-400 font-normal mb-10 leading-relaxed max-w-xl mx-auto">
             Our multi-disciplinary teams are ready to transform your most complex challenges into intuitive, scalable digital assets.
           </p>
           <button 
@@ -338,14 +338,14 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
                 
                 <section className="mb-16">
                   <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Strategic Vision</h4>
-                  <p className="text-3xl lg:text-4xl font-light italic leading-tight text-white/90">
+                  <p className="text-3xl lg:text-4xl font-normal italic leading-tight text-white/90">
                     "{selectedLeader.strategicHighlight}"
                   </p>
                 </section>
 
                 <section className="mb-16">
                   <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Executive Context</h4>
-                  <p className="text-lg text-gray-400 font-light leading-relaxed">
+                  <p className="text-lg text-gray-400 font-normal leading-relaxed">
                     {selectedLeader.fullBio || selectedLeader.bio}
                   </p>
                 </section>

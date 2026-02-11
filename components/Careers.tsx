@@ -258,7 +258,7 @@ export const Careers: React.FC = () => {
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
               The Talent <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Matrix.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Recruiting elite architects for the global intelligence transition. We are building the team that builds the future.
             </p>
           </div>
@@ -317,7 +317,7 @@ export const Careers: React.FC = () => {
                     <span className="px-3 py-1 bg-gray-50 text-[10px] font-bold uppercase tracking-widest text-gray-500 group-hover:bg-white/10 group-hover:text-white transition-all">{job.experience}</span>
                   </div>
 
-                  <p className="text-gray-500 text-sm font-light leading-relaxed mb-8 line-clamp-3 group-hover:text-gray-400 transition-colors">
+                  <p className="text-gray-500 text-sm font-normal leading-relaxed mb-8 line-clamp-3 group-hover:text-gray-400 transition-colors">
                     {job.description}
                   </p>
                 </div>
@@ -356,7 +356,7 @@ export const Careers: React.FC = () => {
                 Stay<br />
                 <span className="text-[#ccff33]">Synchronized.</span>
               </h2>
-              <p className="text-xl text-gray-400 font-light leading-relaxed mb-10">
+              <p className="text-xl text-gray-400 font-normal leading-relaxed mb-10">
                 Don't miss a beat. Configure your technical parameters to receive real-time notifications when the right mission opens in the talent matrix.
               </p>
               
@@ -381,7 +381,7 @@ export const Careers: React.FC = () => {
                       <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                     </div>
                     <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-4">Node Integrated</h3>
-                    <p className="text-gray-500 font-light max-w-sm mx-auto">Your parameters have been recorded.</p>
+                    <p className="text-gray-500 font-normal max-w-sm mx-auto">Your parameters have been recorded.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubscriptionSubmit} className="space-y-10 relative z-10 text-[#1A1A1A]">
@@ -392,12 +392,12 @@ export const Careers: React.FC = () => {
                           required 
                           type="email" 
                           placeholder="name@operational.tech" 
-                          className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-light focus:outline-none focus:border-[#004b23] transition-all placeholder:text-gray-300" 
+                          className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-normal focus:outline-none focus:border-[#004b23] transition-all placeholder:text-gray-300" 
                         />
                       </div>
                       <div className="space-y-4">
                         <label className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 block">Target Department</label>
-                        <select className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-light focus:outline-none focus:border-[#004b23] transition-all text-gray-700">
+                        <select className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-normal focus:outline-none focus:border-[#004b23] transition-all text-gray-700">
                           {departments.map(d => (
                             <option key={d} value={d}>{d}</option>
                           ))}
@@ -467,7 +467,7 @@ export const Careers: React.FC = () => {
 
                 <div>
                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#1A1A1A] mb-6">Role Overview</h4>
-                   <p className="text-lg text-gray-600 leading-relaxed font-light">
+                   <p className="text-lg text-gray-600 leading-relaxed font-normal">
                      {activeJob?.description}
                    </p>
                 </div>
@@ -571,7 +571,7 @@ export const Careers: React.FC = () => {
                   <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] mb-4">Received.</h3>
-                <p className="text-gray-500 text-sm font-light mb-8">Your application has been integrated into our talent matrix.</p>
+                <p className="text-gray-500 text-sm font-normal mb-8">Your application has been integrated into our talent matrix.</p>
                 <button onClick={closeApply} className="px-8 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-[0.4em] hover:bg-[#1A1A1A] hover:text-white transition-all">Dismiss</button>
               </div>
             )}

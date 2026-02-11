@@ -67,7 +67,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <h1 className="text-5xl md:ext-5xl lg:ext-5xl font-black tracking-tighter leading-[0.9] text-white mb-8">
                 Message from <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> CEO.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#70e000] pl-10 italic">
+              <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#70e000] pl-10 italic">
                 "We are not here to predict the future, but to engineer the infrastructure that makes it inevitable."
               </p>
             </div>
@@ -90,7 +90,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
                 ].map((item, i) => (
                   <div key={i} className="group">
                     <h4 className="text-xl font-bold uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#004b23] transition-colors mb-2">{item.t}</h4>
-                    <p className="text-gray-500 font-light text-sm">{item.d}</p>
+                    <p className="text-gray-500 font-normal text-sm">{item.d}</p>
                   </div>
                 ))}
               </div>
@@ -101,7 +101,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
                 Architectural Integrity <br />
                 <span className="text-[#004b23]">is our true north.</span>
               </h2>
-              <div className="space-y-10 text-xl text-gray-500 font-light leading-relaxed">
+              <div className="space-y-10 text-xl text-gray-500 font-normal leading-relaxed">
                 <p>
                   At Antern Technologies, we believe we are living through a historical pivot. The digital age, characterized by noise and fragmented data, is giving way to an era of Cognitive Intelligence. This shift requires more than just faster processors; it requires a new philosophy of building.
                 </p>
@@ -151,7 +151,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
                   <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-white transition-colors mb-6 leading-none">
                     {horizon.title}
                   </h3>
-                  <p className="text-gray-500 group-hover:text-gray-400 font-light leading-relaxed transition-colors">
+                  <p className="text-gray-500 group-hover:text-gray-400 font-normal leading-relaxed transition-colors">
                     {horizon.desc}
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             A Note of <br />
             <span className="text-[#ccff33]">Deep Gratitude.</span>
           </h2>
-          <div className="space-y-8 text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-20">
+          <div className="space-y-8 text-xl md:text-2xl text-gray-400 font-normal leading-relaxed mb-20">
             <p>
               Antern Technologies is not just a company of code and architecture; it is a community of shared purpose. To our 500+ global partners, thank you for trusting us with your most vital digital assets.
             </p>
@@ -198,7 +198,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
 
           <div className="flex flex-col items-center">
             <div className="relative mb-8 group">
-              <span className="text-5xl md:ext-5xl font-light text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
+              <span className="text-5xl md:ext-5xl font-normal text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
                 Ramakrishna RL
               </span>
               <div className="absolute -bottom-4 left-0 w-full h-px bg-[#70e000] scale-x-0 animate-expand-line"></div>

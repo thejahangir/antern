@@ -41,7 +41,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
               Online <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Assessments</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Data-driven competency validation. Our adaptive testing engine dynamically adjusts complexity to pinpoint candidate expertise with surgical accuracy.
             </p>
           </div>
@@ -57,7 +57,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-10 leading-tight">
                 Adaptive <br /><span className="text-[#004b23]">Intelligence.</span>
               </h2>
-              <p className="text-lg text-gray-500 font-light leading-relaxed mb-12">
+              <p className="text-lg text-gray-500 font-normal leading-relaxed mb-12">
                 Standardized tests fail to capture the nuance of senior talent. Our engine utilizes Item Response Theory (IRT) to adapt in real-time, serving harder problems as candidates prove their proficiency, ensuring a precise skill calibration in half the time.
               </p>
               
@@ -113,7 +113,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
                 <h3 className="text-xl font-bold uppercase tracking-tight mb-6 group-hover:text-[#70e000] transition-colors">{domain.title}</h3>
                 <ul className="space-y-3">
                   {domain.tags.map(tag => (
-                    <li key={tag} className="flex items-center gap-3 text-sm text-gray-400 font-light group-hover:text-white transition-colors">
+                    <li key={tag} className="flex items-center gap-3 text-sm text-gray-400 font-normal group-hover:text-white transition-colors">
                       <div className="w-1 h-1 bg-[#ccff33] rounded-full"></div>
                       {tag}
                     </li>

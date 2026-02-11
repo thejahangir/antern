@@ -30,7 +30,7 @@ export const Services: React.FC = () => {
               Digital Innovation &<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Tech Consulting</span>
               </h3>
-              <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-light">
+              <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-normal">
               Drive growth and modernization with strategic digital innovation and expert technology consulting. From transformation roadmaps to execution, solutions are designed to optimize operations, reduce risk, and accelerate business performance.
 
               </p>
@@ -83,7 +83,7 @@ export const Services: React.FC = () => {
                 End-to-End Project<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery Assurance</span>
               </h3>
-              <p className="text-sm md:text-base text-gray-400 mb-8 leading-relaxed max-w-md font-light">
+              <p className="text-sm md:text-base text-gray-400 mb-8 leading-relaxed max-w-md font-normal">
                 From strategy to deployment, we build scalable, secure, and high-performance solutions.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 pt-4 border-t border-white/10">

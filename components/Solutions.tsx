@@ -113,7 +113,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Total <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Solutions. </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               A unified architecture of cognitive products and strategic services designed to modernize the enterprise stack from the inside out.
             </p>
           </div>
@@ -130,7 +130,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
              <div className="w-16 h-2 bg-[#1A1A1A]"></div>
           </div>
           <div className="lg:col-span-7">
-            <p className="text-xl text-gray-500 font-light leading-relaxed">
+            <p className="text-xl text-gray-500 font-normal leading-relaxed">
               We don't sell isolated tools. We deploy ecosystems. Antern's suite of products provides the intelligence layer, while our services ensure that intelligence is securely integrated, expertly managed, and beautifully designed. This convergence is where true digital transformation happens.
             </p>
           </div>
@@ -164,7 +164,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                 <div className="w-full lg:w-1/2">
                   <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#004b23] mb-4 block">{product.tagline}</span>
                   <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#1A1A1A] mb-6">{product.name}</h3>
-                  <p className="text-lg text-gray-500 font-light leading-relaxed mb-10 border-l-2 border-gray-200 pl-6">
+                  <p className="text-lg text-gray-500 font-normal leading-relaxed mb-10 border-l-2 border-gray-200 pl-6">
                     {product.description}
                   </p>
                   
@@ -197,7 +197,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">
               Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Services</span>
             </h2>
-            <p className="text-gray-400 font-light max-w-2xl mx-auto">
+            <p className="text-gray-400 font-normal max-w-2xl mx-auto">
               Beyond software. We provide the operational infrastructure and design expertise to ensure your digital transformation is sustainable.
             </p>
           </div>
@@ -217,7 +217,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                         {service.icon}
                       </span>
                    </div>
-                   <p className="text-gray-400 font-light leading-relaxed group-hover:text-white transition-colors">
+                   <p className="text-gray-400 font-normal leading-relaxed group-hover:text-white transition-colors">
                      {service.desc}
                    </p>
                 </div>
@@ -260,7 +260,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
             Architect Your <br /><span className="text-[#004b23]">Future.</span>
           </h2>
-          <p className="text-xl text-gray-500 font-light mb-16 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-500 font-normal mb-16 max-w-2xl mx-auto">
             Deploy the full Antern ecosystem to secure your competitive advantage in the cognitive era.
           </p>
           <button 
@@ -291,7 +291,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   </div>
                   <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] mb-4">Request Received</h3>
-                  <p className="text-gray-500 font-light">Our strategic team will analyze your request and contact you shortly.</p>
+                  <p className="text-gray-500 font-normal">Our strategic team will analyze your request and contact you shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleConsultationSubmit} className="space-y-8">

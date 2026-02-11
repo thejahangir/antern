@@ -35,7 +35,7 @@ export const Whitepapers: React.FC = () => {
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
               Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Whitepapers.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               Rigorous deep-dives and strategic frameworks for the next generation of enterprise architecture. Validated research for the CTO office.
             </p>
           </div>
@@ -61,7 +61,7 @@ export const Whitepapers: React.FC = () => {
                 <h3 className="text-3xl font-black uppercase tracking-tight mb-6 leading-[0.95] text-[#1A1A1A] group-hover:text-white transition-colors">
                   {paper.title}
                 </h3>
-                <p className="text-gray-500 group-hover:text-gray-400 font-light mb-12 text-lg leading-relaxed transition-colors">
+                <p className="text-gray-500 group-hover:text-gray-400 font-normal mb-12 text-lg leading-relaxed transition-colors">
                   {paper.desc}
                 </p>
                 <button className="px-10 py-5 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-[#1A1A1A] group-hover:bg-[#004b23] group-hover:text-white group-hover:border-[#004b23] transition-all">

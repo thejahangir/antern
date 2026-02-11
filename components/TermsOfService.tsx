@@ -11,7 +11,7 @@ export const TermsOfService: React.FC = () => {
           Terms of Service
         </h1>
         
-        <div className="space-y-16 text-gray-600 leading-relaxed font-light text-lg">
+        <div className="space-y-16 text-gray-600 leading-relaxed font-normal text-lg">
           <section>
             <h2 className="text-sm font-black uppercase tracking-[0.2em] text-[#004b23] mb-6 border-b border-gray-100 pb-4">1. Acceptance of Terms</h2>
             <p>By accessing Antern's digital ecosystem, you agree to abide by these strategic guidelines and operational protocols. Access to our proprietary engines is a privilege governed by these terms.</p>

@@ -145,7 +145,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
                 Lifecycle.
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
               A rigorous, data-driven framework spanning seven critical phases of digital evolution. We transform enterprise complexity into human-centric frictionlessness.
             </p>
           </div>
@@ -163,7 +163,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
-              <p className="text-lg text-gray-500 font-light leading-relaxed">
+              <p className="text-lg text-gray-500 font-normal leading-relaxed">
                 By integrating behavioral science with technical feasibility, we ensure every design decision contributes to both user delight and measurable business outcomes.
               </p>
             </div>
@@ -242,7 +242,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
             Ready to <br />
             <span className="text-[#004b23]">Initiate?</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-500 font-light mb-16 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-500 font-normal mb-16 leading-relaxed">
             Successful digital transformation is the result of a disciplined lifecycle. Let's deploy our strategic framework for your next mission-critical project.
           </p>
           <button 

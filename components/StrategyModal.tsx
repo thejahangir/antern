@@ -145,7 +145,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder={context === 'audit' ? "Describe your platform or target metrics..." : "How can we assist your digital roadmap?"}
-              className="w-full bg-transparent border-b-2 border-white/10 py-6 px-0 text-xl focus:outline-none focus:border-[#4918A9] text-white placeholder:text-white/40 transition-all font-light"
+              className="w-full bg-transparent border-b-2 border-white/10 py-6 px-0 text-xl focus:outline-none focus:border-[#4918A9] text-white placeholder:text-white/40 transition-all font-normal"
               autoFocus
             />
             <button 

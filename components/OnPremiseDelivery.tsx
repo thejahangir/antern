@@ -53,7 +53,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
               On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Ultimate security and performance. We deploy Antern's full intelligence stack within your own secure infrastructure, ensuring complete data isolation.
             </p>
           </div>
@@ -69,7 +69,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
                 Air-Gapped <br />
                 <span className="text-[#004b23]">Excellence.</span>
               </h2>
-              <p className="text-lg text-gray-500 font-light leading-relaxed mb-12">
+              <p className="text-lg text-gray-500 font-normal leading-relaxed mb-12">
                 For organizations with strict regulatory requirements, we provide end-to-end on-premise installation and maintenance of our proprietary platforms. Our systems are architected to function with zero external dependency.
               </p>
               <div className="space-y-8">

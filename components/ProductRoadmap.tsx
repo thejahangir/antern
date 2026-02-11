@@ -45,7 +45,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
               Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Roadmap</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               The evolution of Antern's intelligence suite. We build today for the mission-critical needs of tomorrow, ensuring your infrastructure is always ahead of the curve.
             </p>
           </div>
@@ -92,7 +92,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
                     </h3>
                     <ul className="space-y-4">
                       {phase.items.map(item => (
-                        <li key={item} className="flex items-start gap-4 text-gray-500 group-hover:text-gray-400 font-light transition-colors">
+                        <li key={item} className="flex items-start gap-4 text-gray-500 group-hover:text-gray-400 font-normal transition-colors">
                           <div className="w-1.5 h-1.5 bg-[#004b23] group-hover:bg-[#70e000] mt-2 shrink-0 rounded-full transition-colors"></div>
                           {item}
                         </li>

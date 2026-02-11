@@ -41,7 +41,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Culture.
               </span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-normal max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Technology is engineered by the mind, but sustained by the heart. At Antern, we build ecosystems where both thrive."
             </p>
           </div>
@@ -76,10 +76,10 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             </div>
             
             <div className="lg:col-span-7 flex flex-col justify-center space-y-12">
-              <p className="text-2xl md:text-4xl text-[#1A1A1A] font-light leading-tight">
+              <p className="text-2xl md:text-4xl text-[#1A1A1A] font-normal leading-tight">
                 We believe that <span className="font-black text-[#004b23]">Brilliance</span> is a shared state. 
               </p>
-              <p className="text-xl text-gray-500 font-light leading-relaxed">
+              <p className="text-xl text-gray-500 font-normal leading-relaxed">
                 Antern isn't just a place to work; it's a sanctuary for high-fidelity thinkers. We've stripped away the hierarchy of traditional enterprise to focus on the hierarchy of ideas. Our culture is built on the radical notion that autonomy, combined with extreme ownership, produces world-class digital systems.
               </p>
               <div className="pt-12 border-t border-gray-100 grid grid-cols-2 gap-12">
@@ -128,7 +128,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                   <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-white mb-6 transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-gray-500 group-hover:text-gray-400 font-light text-lg leading-relaxed transition-colors">
+                  <p className="text-gray-500 group-hover:text-gray-400 font-normal text-lg leading-relaxed transition-colors">
                     {pillar.desc}
                   </p>
                 </div>
@@ -158,7 +158,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                 The Global <br />
                 <span className="text-[#004b23]">Studio Experience.</span>
               </h2>
-              <div className="space-y-10 text-xl text-gray-500 font-light leading-relaxed">
+              <div className="space-y-10 text-xl text-gray-500 font-normal leading-relaxed">
                 <p>
                   Our hubs in Bangalore, Hyderabad, and the United States are designed for deep work and seamless global sync. We prioritize focus over noise.
                 </p>
@@ -203,7 +203,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             Are you <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Sync Material?</span>
           </h2>
-          <p className="text-lg text-gray-400 font-light mb-10 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg text-gray-400 font-normal mb-10 leading-relaxed max-w-xl mx-auto">
             We are always looking for high-fidelity talent to join our global network of thinkers and doers.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

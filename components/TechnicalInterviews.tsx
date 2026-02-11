@@ -45,7 +45,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
               Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Interviews.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Precision evaluation at scale. We combine human expertise with algorithmic insights to validate engineering talent with zero bias.
             </p>
           </div>
@@ -70,7 +70,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
                 ].map((item, i) => (
                   <div key={i} className="group">
                     <h3 className="text-xl font-bold uppercase tracking-tight text-[#1A1A1A] mb-2 group-hover:text-[#004b23] transition-colors">{item.title}</h3>
-                    <p className="text-gray-500 font-light leading-relaxed">{item.desc}</p>
+                    <p className="text-gray-500 font-normal leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -130,7 +130,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
               <div key={i} className="bg-white p-10 border-t-4 border-[#004b23] hover:border-[#70e000] hover:shadow-lg transition-all cursor-default group">
                 <span className="text-5xl font-black text-gray-100 group-hover:text-[#ccff33] transition-colors mb-6 block">{s.step}</span>
                 <h4 className="text-lg font-bold uppercase tracking-tight mb-4 text-[#1A1A1A]">{s.label}</h4>
-                <p className="text-sm text-gray-500 font-light">{s.text}</p>
+                <p className="text-sm text-gray-500 font-normal">{s.text}</p>
               </div>
             ))}
           </div>

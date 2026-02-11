@@ -81,7 +81,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             <h1 className="ext-5xl md:text-5xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
               Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> Us.</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-normal max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
             </p>
             
@@ -161,7 +161,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                     </div>
                   </div>
 
-                  <p className="text-gray-500 group-hover:text-white/80 text-sm font-light leading-relaxed mb-10 transition-colors">
+                  <p className="text-gray-500 group-hover:text-white/80 text-sm font-normal leading-relaxed mb-10 transition-colors">
                     {office.address}
                   </p>
                 </div>
@@ -200,7 +200,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                 Strategic <br />
                 <span className="text-[#004b23]">Engagement.</span>
               </h2>
-              <p className="text-xl text-gray-500 font-light leading-relaxed mb-12">
+              <p className="text-xl text-gray-500 font-normal leading-relaxed mb-12">
                 Engage our executive council for an immediate deep-dive into your strategic needs, or utilize our cognitive engine to define your project requirements.
               </p>
               
@@ -233,21 +233,21 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                       <input 
                         type="text" 
                         placeholder="Full Name / Operational Handle" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
                       />
                     </div>
                     <div className="relative">
                       <input 
                         type="email" 
                         placeholder="Professional Email Node" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
                       />
                     </div>
                     <div className="relative">
                       <textarea 
                         rows={1}
                         placeholder="Initial Directive / Inquiry Details" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-light focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400 resize-none"
+                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400 resize-none"
                       />
                     </div>
                     

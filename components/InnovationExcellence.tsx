@@ -10,7 +10,7 @@ export const InnovationExcellence: React.FC = () => {
           {/* Central Plus Symbol - Kyndryl Signature */}
           <div className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 items-center justify-center pointer-events-none">
             <div className="w-20 h-20 bg-[#FFFFFF] border border-gray-100 flex items-center justify-center shadow-sm">
-              <span className="text-4xl font-light text-[#004b23]">+</span>
+              <span className="text-4xl font-normal text-[#004b23]">+</span>
             </div>
           </div>
 
@@ -22,7 +22,7 @@ export const InnovationExcellence: React.FC = () => {
                 Continuous<br />
                 <span className="text-[#004b23]">Innovation</span>
               </h2>
-              <p className="text-xl text-gray-500 max-w-md leading-relaxed mb-12 font-light">
+              <p className="text-xl text-gray-500 max-w-md leading-relaxed mb-12 font-normal">
                 Modernizing the world’s most vital infrastructure with cognitive intelligence and cloud-native agility.
               </p>
               
@@ -60,7 +60,7 @@ export const InnovationExcellence: React.FC = () => {
                 Operational<br />
                 <span className="group-hover:text-[#ccff33] transition-colors">Excellence</span>
               </h2>
-              <p className="text-xl text-gray-500 group-hover:text-gray-400 max-w-md leading-relaxed mb-12 font-light transition-colors">
+              <p className="text-xl text-gray-500 group-hover:text-gray-400 max-w-md leading-relaxed mb-12 font-normal transition-colors">
                 Ensuring mission-critical systems are secure, resilient, and optimized for high-performance scale.
               </p>
 

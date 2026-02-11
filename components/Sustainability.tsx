@@ -20,7 +20,7 @@ export const Sustainability: React.FC = () => {
             <h1 className="text-5xl md:text-5xl font-black uppercase tracking-tighter leading-[0.85] mb-8">
               Net-Zero <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Operations</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 font-light max-w-2xl leading-relaxed border-l border-[#ccff33] pl-10">
+            <p className="text-xl md:text-2xl text-white/80 font-normal max-w-2xl leading-relaxed border-l border-[#ccff33] pl-10">
               Sustainability is a mission-critical metric. Our goal is 100% carbon neutrality by 2030 across all digital infrastructure.
             </p>
           </div>
@@ -39,7 +39,7 @@ export const Sustainability: React.FC = () => {
               <div key={i} className="space-y-8 group">
                 <div className="w-16 h-16 bg-[#004b23] text-white flex items-center justify-center font-black text-2xl group-hover:bg-[#70e000] group-hover:text-[#004b23] transition-colors">0{i+1}</div>
                 <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A]">{p.label}</h3>
-                <p className="text-gray-500 leading-relaxed font-light">{p.desc}</p>
+                <p className="text-gray-500 leading-relaxed font-normal">{p.desc}</p>
                 <div className="w-full h-px bg-gray-200 group-hover:bg-[#004b23] transition-colors"></div>
               </div>
             ))}
@@ -49,7 +49,7 @@ export const Sustainability: React.FC = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#004b23] rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
             <div className="relative z-10">
                 <h2 className="text-4xl font-black mb-8 uppercase tracking-tighter text-[#ccff33]">Our Promise</h2>
-                <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl italic">
+                <p className="text-xl md:text-2xl text-white/80 font-normal leading-relaxed max-w-4xl italic">
                 "We recognize that digital progress must not come at an ecological cost. Antern Technologies is committed to engineering solutions that are as kind to the planet as they are efficient for the enterprise."
                 </p>
                 <div className="mt-12 flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em]">

@@ -31,7 +31,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white leading-[0.9] mb-6">
                 Our<br />Culture
               </h2>
-              <p className="text-white/80 text-lg md:text-xl max-w-sm mb-10 font-light leading-relaxed">
+              <p className="text-white/80 text-lg md:text-xl max-w-sm mb-10 font-normal leading-relaxed">
                 Where technical precision meets human empathy. We build for people, by people.
               </p>
               <div className="pointer-events-auto">
@@ -54,7 +54,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
                 Advance<br />
                 <span className="text-[#4918A9]">Your Career</span>
               </h2>
-              <p className="text-gray-500 text-xl max-w-md mb-12 font-light leading-relaxed">
+              <p className="text-gray-500 text-xl max-w-md mb-12 font-normal leading-relaxed">
                 Join a global team of thinkers and doers modernizing the world's most vital digital infrastructure.
               </p>
               
@@ -91,7 +91,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
             
             {/* Visual Detail: Floating Plus symbol */}
             <div className="absolute top-1/2 right-12 -translate-y-1/2 opacity-5 pointer-events-none">
-              <span className="text-[300px] font-light text-[#4918A9] leading-none">+</span>
+              <span className="text-[300px] font-normal text-[#4918A9] leading-none">+</span>
             </div>
           </div>
 

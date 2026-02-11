@@ -235,7 +235,7 @@ export const IdeasTransformation: React.FC = () => {
                 <h3 className={`font-black  tracking-tight text-[#1A1A1A] leading-[0.9] mb-6 transition-all duration-1000 text-3xl md:text-5xl lg:text-5xl`}>
                   {idea.title}
                 </h3>
-                <p className={`mb-8 font-light leading-relaxed transition-all duration-1000 max-w-3xl text-lg text-[#1A1A1A]`}>
+                <p className={`mb-8 font-normal leading-relaxed transition-all duration-1000 max-w-3xl text-lg text-[#1A1A1A]`}>
                   {idea.description}
                 </p>
                 
