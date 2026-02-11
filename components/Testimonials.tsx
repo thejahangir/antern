@@ -1,24 +1,27 @@
 
 import React, { useState, useEffect } from 'react';
+import Avatar1 from '../src/assets/img/avatar/avatar-6.png';
+import Avatar2 from '../src/assets/img/avatar/avatar-2.png';
+import Avatar3 from '../src/assets/img/avatar/avatar-3.png';
 
 const testimonials = [
   {
     quote: "Antern didn't just provide code; they provided a vision. Their strategic approach to our mission-critical systems saved us months of development time and ensured a seamless transition to cloud-native architecture.",
     author: "Sarah Chen",
     role: "CTO, Global Logistics Corp",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+    avatar: [Avatar1]
   },
   {
     quote: "The SkillTest platform revolutionized our hiring process. We've seen a 40% increase in the quality of our technical hires since implementation, allowing our teams to scale with absolute confidence.",
     author: "Marcus Thorne",
     role: "VP of Engineering, FinTech Alpha",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
+    avatar: [Avatar2]
   },
   {
     quote: "Their consultants integrated seamlessly with our internal teams. It felt like they were part of our company from day one. Truly exceptional talent with a deep understanding of enterprise-grade execution.",
     author: "Elena Rodriguez",
     role: "Head of Product, NexaHealth",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+    avatar: [Avatar3]
   }
 ];
 
