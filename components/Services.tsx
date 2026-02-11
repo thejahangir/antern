@@ -2,10 +2,10 @@
 import React from 'react';
 
 const talentPoints = [
-  "On-demand skilled resources",
-  "Faster project ramp-up",
-  "Cost-efficient team scaling",
-  "Seamless integration"
+  "End-to-end digital transformation strategy",
+  "Agile technology implementation",
+  "Process optimization & modernization",
+  "Scalable, future-ready technology solutions"
 ];
 
 const deliveryPoints = [
@@ -31,12 +31,13 @@ export const Services: React.FC = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Tech Consulting</span>
               </h3>
               <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-light">
-                Accelerate delivery with highly skilled resources tailored to your mission-critical needs. We reduce hiring risks while improving productivity.
+              Drive growth and modernization with strategic digital innovation and expert technology consulting. From transformation roadmaps to execution, solutions are designed to optimize operations, reduce risk, and accelerate business performance.
+
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 pt-4 border-t border-gray-100">
                 {talentPoints.map((point, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
+                  <div key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#004b23]"></div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]">{point}</span>
                   </div>
