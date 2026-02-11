@@ -40,10 +40,11 @@ export const Testimonials: React.FC = () => {
           {/* Section Info - Compact */}
           <div className="lg:col-span-4">
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
-              Strategic<br />
-              Impact
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight text-[#1A1A1A]">
+            Strategic<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Impact</span>
+              </h3>
+            
             <p className="text-gray-500 text-sm leading-relaxed mb-8">
               Our clients are leaders in their respective industries, driving transformation through our intelligent digital solutions.
             </p>

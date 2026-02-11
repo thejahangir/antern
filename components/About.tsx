@@ -26,10 +26,11 @@ export const About: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
             <span className="text-[11px] font-black uppercase tracking-[0.6em] text-[#1A1A1A] mb-3 block">The Antern Narrative</span>
-            <h2 className="text-5xl md:text-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
-              Decades of <br />
-              Excellence.
-            </h2>
+
+            <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight text-[#1A1A1A]">
+            Decades of<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Excellence</span>
+              </h3>
           </div>
           <div className="lg:col-span-5">
             <div className="relative p-8 border-l-2 border-[#004b23]/10 bg-gray-50/50 rounded-r-sm">
@@ -41,40 +42,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. STRATEGIC PILLARS GRID */}
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-gray-100 border border-gray-100 mb-32">
-          <div className="bg-white p-12 md:p-24 group hover:bg-[#1A1A1A] transition-all duration-700">
-            <div className="flex items-center gap-6 mb-16">
-              <div className="w-20 h-px bg-[#004b23] group-hover:bg-white/30 transition-all group-hover:w-32"></div>
-              <span className="text-[11px] font-black uppercase tracking-[0.5em] text-gray-400 group-hover:text-[#70e000] transition-colors">Strategic Ops</span>
-            </div>
-            <h3 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white mb-10 transition-colors leading-none">
-              Enterprise <br />Resilience
-            </h3>
-            <p className="text-lg text-gray-500 group-hover:text-gray-400 font-light leading-relaxed transition-colors max-w-sm mb-12">
-              Antern was founded on the principle that digital infrastructure must be as resilient as the industries it supports. We specialize in zero-trust architectures that empower global scale.
-            </p>
-            <button className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors">
-              Explore Capability <div className="w-8 h-px bg-current"></div>
-            </button>
-          </div>
-
-          <div className="bg-white p-12 md:p-24 group hover:bg-[#004b23] transition-all duration-700">
-            <div className="flex items-center gap-6 mb-16">
-              <div className="w-20 h-px bg-[#1A1A1A] group-hover:bg-white/30 transition-all group-hover:w-32"></div>
-              <span className="text-[11px] font-black uppercase tracking-[0.5em] text-gray-400 group-hover:text-[#ccff33] transition-colors">Core Design</span>
-            </div>
-            <h3 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white mb-10 transition-colors leading-none">
-              Cognitive <br />Fluidity
-            </h3>
-            <p className="text-lg text-gray-500 group-hover:text-white/80 font-light leading-relaxed transition-colors max-w-sm mb-12">
-              Technology should disappear into the user's workflow. Our UX Studio applies behavioral science to high-density data, creating frictionless pathways for industrial-scale decision making.
-            </p>
-            <button className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors">
-              Our Methodology <div className="w-8 h-px bg-current"></div>
-            </button>
-          </div>
-        </div> */}
+      
 
         {/* 3. IMPACT SYNC SECTION (Compact Version) */}
         <div className="relative group overflow-hidden bg-[#1A1A1A] flex flex-col lg:flex-row items-stretch border border-white/5">
