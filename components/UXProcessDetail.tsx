@@ -140,8 +140,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
               Strategic Lifecycle
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
-              The Design<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
+              The Design <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
                 Lifecycle.
               </span>
             </h1>

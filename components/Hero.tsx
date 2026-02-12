@@ -42,11 +42,11 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
             <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Intelligent</span> Solutions.
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6">
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6"> 
 
           
 
-          An AI-driven product and services company delivering advanced Technical Interviews,  Technical Assessment, Resume Screening, and Project Portfolio Management solutions — powered by our in-house innovative platforms such as <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span>.
+          An AI-driven product and services company delivering Technical Interviews,  Technical Assessments, Resume Screening, and Project Portfolio Management solutions — powered by our in-house innovative platforms such as <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span>.
           
           
           </p>

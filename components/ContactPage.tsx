@@ -78,18 +78,25 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
               Direct Portal
             </span>
-            <h1 className="ext-5xl md:text-5xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
-              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> Us.</span>
+            {/* <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
+              Initiate<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
+                Sync.
+              </span>
+            </h1> */}
+
+            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
+              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Us</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-normal max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
               "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
             </p>
             
             <div className="flex flex-col md:flex-row gap-8">
                <div className="group">
                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-2 block">General Inquiries</span>
-                  <a href="mailto:contact@antern.com" className="text-2xl font-black text-white hover:text-[#70e000] transition-colors flex items-center gap-4">
-                    contact@antern.com
+                  <a href="mailto:contact@anterntech.com" className="text-2xl font-black text-white hover:text-[#70e000] transition-colors flex items-center gap-4">
+                    contact@anterntech.com
                     <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
                   </a>
                </div>
@@ -112,7 +119,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-12">
              <div className="max-w-2xl">
                 <div className="accent-bar bg-[#1A1A1A] w-16 mb-8"></div>
-                <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
+                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                   Operational <br />
                   <span className="text-[#004b23]">Hubs.</span>
                 </h2>
@@ -161,7 +168,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                     </div>
                   </div>
 
-                  <p className="text-gray-500 group-hover:text-white/80 text-sm font-normal leading-relaxed mb-10 transition-colors">
+                  <p className="text-gray-500 group-hover:text-white/80 text-sm font-light leading-relaxed mb-10 transition-colors">
                     {office.address}
                   </p>
                 </div>
@@ -187,93 +194,81 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       </section>
 
       {/* 3. INTELLIGENCE DESK (Direct Contact Section) */}
-      <section className="py-48 bg-[#F8F7F9] relative overflow-hidden">
+      <section className="py-32 md:py-48 bg-[#F8F7F9] relative overflow-hidden flex items-center justify-center">
         {/* Abstract Background Elements */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-white rounded-full blur-[150px] opacity-40"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-40 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#ccff33]/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
             
-            <div className="lg:col-span-5">
-              <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
-              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-none text-[#1A1A1A] mb-10">
-                Strategic <br />
-                <span className="text-[#004b23]">Engagement.</span>
-              </h2>
-              <p className="text-xl text-gray-500 font-normal leading-relaxed mb-12">
-                Engage our executive council for an immediate deep-dive into your strategic needs, or utilize our cognitive engine to define your project requirements.
-              </p>
+            {/* LEFT COLUMN - Information */}
+            <div className="lg:col-span-7 flex flex-col h-full justify-between">
+              <div>
+                <div className="w-16 h-1.5 bg-[#004b23] mb-10"></div>
+                <h2 className="text-6xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.9] mb-10">
+                  Strategic <br />
+                  <span className="text-[#004b23]">Engagement.</span>
+                </h2>
+                <p className="text-xl text-gray-500 font-light leading-relaxed mb-16 max-w-lg">
+                  Engage our executive council for an immediate deep-dive into your strategic needs, or utilize our cognitive engine to define your project requirements.
+                </p>
+              </div>
               
-              <div className="space-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pt-8 border-t border-gray-200">
                  {[
-                   { label: 'Partnerships', detail: 'partners@antern.tech' },
-                   { label: 'Talent', detail: 'careers@antern.tech' },
-                   { label: 'Press', detail: 'media@antern.tech' }
+                   { label: 'Partnerships', detail: 'partners@anterntech.com' },
+                   { label: 'Talent', detail: 'careers@anterntech.com' },
+                   { label: 'Press', detail: 'media@anterntech.com' }
                  ].map(item => (
-                   <div key={item.label} className="group cursor-pointer">
-                      <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-300 group-hover:text-[#70e000] transition-colors">{item.label}</span>
-                      <p className="text-xl font-bold text-[#1A1A1A] mt-1">{item.detail}</p>
+                   <div key={item.label} className="group">
+                      <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-[#70e000] transition-colors block mb-3">{item.label}</span>
+                      <a href={`mailto:${item.detail}`} className="text-lg font-bold text-[#1A1A1A] border-b border-transparent group-hover:border-[#004b23] transition-all pb-1">{item.detail}</a>
                    </div>
                  ))}
               </div>
             </div>
 
-            <div className="lg:col-span-7">
-               <div className="p-12 md:p-20 bg-white shadow-[0_64px_128px_-32px_rgba(0,75,35,0.1)] relative group rounded-sm">
-                  <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.03] pointer-events-none">
-                     <span className="text-[150px] font-black leading-none">+</span>
+            {/* RIGHT COLUMN - The Action (CTA Only) */}
+            <div className="lg:col-span-5 relative flex flex-col items-start lg:items-end justify-center">
+               <div className="relative z-10 w-full lg:w-auto">
+                  <div className="hidden lg:block absolute -top-12 -right-12 text-[#E5E7EB]">
+                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <path d="M50 0V100M0 50H100" stroke="currentColor" strokeWidth="20" />
+                     </svg>
                   </div>
-                  
-                  <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-12">
-                    Request a <span className="text-[#004b23]">Session.</span>
-                  </h3>
-                  
-                  <form className="space-y-12" onSubmit={(e) => e.preventDefault()}>
-                    <div className="relative">
-                      <input 
-                        type="text" 
-                        placeholder="Full Name / Operational Handle" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
-                      />
-                    </div>
-                    <div className="relative">
-                      <input 
-                        type="email" 
-                        placeholder="Professional Email Node" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400"
-                      />
-                    </div>
-                    <div className="relative">
-                      <textarea 
-                        rows={1}
-                        placeholder="Initial Directive / Inquiry Details" 
-                        className="w-full bg-transparent border-b border-gray-100 py-4 px-0 text-xl font-normal focus:outline-none focus:border-[#70e000] transition-all placeholder:text-gray-400 resize-none"
-                      />
-                    </div>
-                    
-                    <button 
-                      onClick={onInitiateStrategy}
-                      className="w-full py-8 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.6em] hover:bg-[#004b23] transition-all shadow-2xl flex items-center justify-center gap-6 group"
-                    >
+
+                  <button 
+                    onClick={onInitiateStrategy}
+                    className="w-full lg:w-auto py-8 px-12 bg-[#1A1A1A] text-white text-[13px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] transition-all shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_-10px_rgba(0,75,35,0.4)] group relative overflow-hidden"
+                  >
+                    <span className="relative z-10 flex items-center gap-6">
                       Initiate a Discussion
-                      <div className="w-12 h-px bg-white group-hover:w-20 transition-all"></div>
-                    </button>
-                  </form>
+                      <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                    {/* Hover Effect Layer */}
+                    <div className="absolute top-0 left-0 w-full h-full bg-[#70e000] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0 opacity-10"></div>
+                  </button>
                   
-                  <p className="mt-12 text-[9px] font-black text-gray-300 uppercase tracking-[0.5em] text-center">
-                    Secure Transmission &bull; 256-bit Infrastructure
-                  </p>
+                  <div className="mt-8 flex items-center justify-center lg:justify-end gap-3 opacity-60">
+                     <div className="w-1.5 h-1.5 bg-[#004b23] rounded-full animate-pulse"></div>
+                     <span className="text-[9px] font-black text-gray-400 uppercase tracking-[0.3em]">
+                       Secure Transmission &bull; 256-bit Infrastructure
+                     </span>
+                  </div>
                </div>
             </div>
 
           </div>
         </div>
+        
+        {/* Large Watermark */}
+        <div className="absolute bottom-[-5%] left-[-5%] text-[400px] font-black text-gray-100/50 pointer-events-none select-none tracking-tighter z-0 leading-none">
+          CONNECT
+        </div>
       </section>
-
-      {/* Large Watermark Background */}
-      <div className="fixed bottom-[-150px] left-[-50px] opacity-[0.02] text-[500px] font-black pointer-events-none select-none z-0 tracking-tighter">
-        CONNECT
-      </div>
     </div>
   );
 };
