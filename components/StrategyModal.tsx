@@ -13,6 +13,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     location: '',
     query: ''
   });
@@ -22,7 +23,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       // Reset form
-      setFormData({ name: '', email: '', location: '', query: '' });
+      setFormData({ name: '', email: '', phone: '', location: '', query: '' });
       setFormStatus('idle');
     } else {
       document.body.style.overflow = 'unset';
@@ -43,6 +44,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
     const templateParams = {
       name: formData.name,
       email: formData.email,
+      phone: formData.phone,
       location: formData.location,
       message: formData.query,
       context_type: context === 'audit' ? 'Secure Audit Portal' : 'Strategic Advisory Engine',
@@ -65,9 +67,6 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
       // Even if it fails (e.g. invalid keys), show success state for the demo experience
       // In production, you would handle this error with a UI notification
       setFormStatus('success');
-      console.error("FULL ERROR:", error);
-      console.log("STATUS:", error?.status);
-      console.log("TEXT:", error?.text);
       setTimeout(() => {
         onClose();
         setTimeout(() => setFormStatus('idle'), 500);
@@ -151,20 +150,35 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
                   />
                 </div>
               </div>
-              <div className="group">
-                <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">Email</label>
-                <input 
-                  required 
-                  type="email" 
-                  value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full bg-transparent border-b border-white/20 py-3 text-lg text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/50 font-light"
-                  placeholder="corporate@email.com"
-                />
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="group">
+                  <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">Email</label>
+                  <input 
+                    required 
+                    type="email" 
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    className="w-full bg-transparent border-b border-white/20 py-3 text-lg text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/50 font-light"
+                    placeholder="corporate@email.com"
+                  />
+                </div>
+                <div className="group">
+                  <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">Phone</label>
+                  <input 
+                    required 
+                    type="tel" 
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    className="w-full bg-transparent border-b border-white/20 py-3 text-lg text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/50 font-light"
+                    placeholder="8888888888"
+                  />
+                </div>
               </div>
+
               <div className="group">
                 <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">
-                  {context === 'audit' ? 'Audit Scope' : 'Query Directive'}
+                  {context === 'audit' ? 'Audit Scope' : 'Query'}
                 </label>
                 <textarea 
                   required 
@@ -202,4 +216,3 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
     </div>
   );
 };
-console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
