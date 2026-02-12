@@ -41,8 +41,8 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
 
 
     const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
+      name: formData.name,
+      email: formData.email,
       location: formData.location,
       message: formData.query,
       context_type: context === 'audit' ? 'Secure Audit Portal' : 'Strategic Advisory Engine',
