@@ -35,7 +35,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
 
     // EmailJS Configuration
     // Replace these with your actual IDs from your EmailJS dashboard
-    const SERVICE_ID = process.env.EMAILJS_SERVICE_ID || 'service_nldhy54';
+    const SERVICE_ID = process.env.EMAILJS_SERVICE_ID || 'service_n9atl9p';
     const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || 'template_va3ey3d';
     const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
 
@@ -63,6 +63,9 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
       // Even if it fails (e.g. invalid keys), show success state for the demo experience
       // In production, you would handle this error with a UI notification
       setFormStatus('success');
+      console.error("FULL ERROR:", error);
+      console.log("STATUS:", error?.status);
+      console.log("TEXT:", error?.text);
       setTimeout(() => {
         onClose();
         setTimeout(() => setFormStatus('idle'), 500);
@@ -147,7 +150,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
                 </div>
               </div>
               <div className="group">
-                <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">Email Node</label>
+                <label className="text-[10px] font-black uppercase tracking-[0.4em] text-white mb-3 block">Email</label>
                 <input 
                   required 
                   type="email" 
