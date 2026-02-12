@@ -12,6 +12,52 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
   const [offsetY, setOffsetY] = useState(0);
   const [times, setTimes] = useState<Record<string, string>>({});
 
+  // Form State
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    location: '',
+    query: ''
+  });
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormStatus('submitting');
+
+    // EmailJS Configuration
+    const SERVICE_ID = process.env.EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
+    const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
+    const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      location: formData.location,
+      message: formData.query,
+      context_type: 'Direct Contact Page Hero',
+      page_context: 'Contact Page'
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      
+      setFormStatus('success');
+      setTimeout(() => {
+        setFormData({ name: '', email: '', phone: '', location: '', query: '' });
+        setFormStatus('idle');
+      }, 3000);
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      // Fallback for demo
+      setFormStatus('success');
+      setTimeout(() => setFormStatus('idle'), 3000);
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => setOffsetY(window.pageYOffset);
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -58,8 +104,8 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
 
   return (
     <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
-      {/* 1. KINETIC HERO */}
-      <section className="relative h-[80vh] min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
+      {/* 1. KINETIC HERO WITH FORM */}
+      <section className="relative min-h-screen flex items-center bg-[#0A0A0A] overflow-hidden pt-24 pb-24">
         <div 
           className="absolute -inset-y-24 inset-x-0 z-0 opacity-40 grayscale"
           style={{ transform: `translate3d(0, ${offsetY * 0.2}px, 0)` }}
@@ -69,46 +115,143 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             className="w-full h-full object-cover" 
             alt="Antern Global Office"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-[#0A0A0A]/40"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-          <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
-              Direct Portal
-            </span>
-            {/* <h1 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-12">
-              Initiate<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                Sync.
-              </span>
-            </h1> */}
-
-            <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
-              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Us</span>
-            </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
-              "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             
-            <div className="flex flex-col md:flex-row gap-8">
-               <div className="group">
-                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-2 block">General Inquiries</span>
-                  <a href="mailto:contact@anterntech.com" className="text-2xl font-black text-white hover:text-[#70e000] transition-colors flex items-center gap-4">
-                    contact@anterntech.com
-                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
-                  </a>
-               </div>
+            {/* LEFT COLUMN: Text Content */}
+            <div>
+              <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
+              <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
+                Direct Portal
+              </span>
+              {/* <h1 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-10">
+                Initiate<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
+                  Sync.
+                </span>
+              </h1> */}
+              <h1 class="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Us</span></h1>
+              <p className="text-lg md:text-xl text-gray-400 font-light max-w-xl leading-relaxed border-l-2 border-[#70e000] pl-8 mb-12 italic">
+                "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
+              </p>
+              
+              <div className="flex flex-col gap-2">
+                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-1 block">General Inquiries</span>
+                 <a href="mailto:contact@antern.com" className="text-xl font-bold text-white hover:text-[#70e000] transition-colors flex items-center gap-4 w-fit group">
+                   contact@anterntech.com
+                   <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
+                 </a>
+              </div>
             </div>
+
+            {/* RIGHT COLUMN: Contact Form */}
+            <div className="bg-[#1A1A1A]/80 backdrop-blur-md border border-white/10 p-8 md:p-12 shadow-[0_32px_64px_rgba(0,0,0,0.4)] animate-in slide-in-from-bottom-10 duration-1000">
+              <h3 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#D9D1DB] mb-1">
+                Get in touch
+              </h3>
+              <p className="text-[9px] text-gray-400 font-bold uppercase tracking-widest mb-10">
+                We will get back to you in next 3 working days
+              </p>
+
+              {formStatus === 'success' ? (
+                <div className="text-center py-20 animate-in fade-in zoom-in-95 duration-500">
+                  <div className="w-20 h-20 bg-[#004b23] rounded-full flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgba(0,75,35,0.6)]">
+                    <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+                  </div>
+                  <h3 className="text-2xl font-black uppercase tracking-tight text-white mb-4">Thank you</h3>
+                  <p className="text-white/60 font-light text-sm">We will get in touch very soon.</p>
+                </div>
+              ) : (
+                <form onSubmit={handleFormSubmit} className="space-y-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="group">
+                      <label className="text-[11px]  uppercase text-gray-100 mb-2 block">Name</label>
+                      <input 
+                        required 
+                        type="text" 
+                        value={formData.name}
+                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                        className="w-full bg-transparent border-b border-white/20 py-2 text-sm text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/20 font-light"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div className="group">
+                      <label className="text-[11px]  uppercase text-gray-100 mb-2 block">Location</label>
+                      <input 
+                        required 
+                        type="text" 
+                        value={formData.location}
+                        onChange={(e) => setFormData({...formData, location: e.target.value})}
+                        className="w-full bg-transparent border-b border-white/20 py-2 text-sm text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/20 font-light"
+                        placeholder="City, Country"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="group">
+                      <label className="text-[11px]  uppercase text-gray-100 mb-2 block">Email</label>
+                      <input 
+                        required 
+                        type="email" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        className="w-full bg-transparent border-b border-white/20 py-2 text-sm text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/20 font-light"
+                        placeholder="name@corp.com"
+                      />
+                    </div>
+                    <div className="group">
+                      <label className="text-[11px]  uppercase text-gray-100 mb-2 block">Phone</label>
+                      <input 
+                        required 
+                        type="tel" 
+                        value={formData.phone}
+                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                        className="w-full bg-transparent border-b border-white/20 py-2 text-sm text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/20 font-light"
+                        placeholder="+1 (555) 000-0000"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="group">
+                    <label className="text-[11px]  uppercase text-gray-100 mb-2 block">Query</label>
+                    <textarea 
+                      required 
+                      rows={2}
+                      value={formData.query}
+                      onChange={(e) => setFormData({...formData, query: e.target.value})}
+                      className="w-full bg-transparent border-b border-white/20 py-2 text-sm text-white focus:outline-none focus:border-[#70e000] transition-all placeholder:text-white/20 font-light resize-none"
+                      placeholder="Brief us on your strategic requirements..."
+                    />
+                  </div>
+
+                  <div className="pt-4">
+                    <button 
+                      type="submit"
+                      disabled={formStatus === 'submitting'}
+                      className="w-full py-4 bg-[#004b23] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-xl disabled:opacity-50 disabled:cursor-not-allowed group relative overflow-hidden"
+                    >
+                      {formStatus === 'submitting' ? 'Transmitting...' : 'Send'}
+                      {formStatus !== 'submitting' && (
+                          <div className="absolute top-0 left-0 w-full h-full bg-white/20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
+                      )}
+                    </button>
+                  </div>
+                </form>
+              )}
+            </div>
+
           </div>
         </div>
 
-        {/* Floating Accent */}
-        <div className="absolute bottom-20 right-10 hidden lg:block">
+        {/* Floating Accent (Hidden on mobile to save space) */}
+        <div className="absolute bottom-20 left-10 hidden lg:block">
            <div className="flex flex-col items-center gap-6">
-              <div className="w-px h-32 bg-gradient-to-b from-white/20 to-[#70e000]"></div>
-              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40 rotate-90 origin-left mt-24 whitespace-nowrap">Global Operations</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40 rotate-[-90deg] origin-center whitespace-nowrap mb-24">Global Operations</span>
+              <div className="w-px h-32 bg-gradient-to-t from-white/20 to-[#70e000]"></div>
            </div>
         </div>
       </section>

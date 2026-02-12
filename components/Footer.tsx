@@ -16,9 +16,9 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-10">
           <div className="col-span-2 lg:col-span-1">
-             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Digital Products</h4>
+             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Digital Products</h4>
              <ul className="space-y-4">
                <li><button onClick={() => onNavigateTo('roadmap')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Product Roadmap</button></li>
                <li><a href="https://iaminterviewed.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">IAmInterviewed</a></li>
@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           </div>
           
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Advisory</h4>
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Advisory</h4>
             <ul className="space-y-4 text-left">
               <li><button onClick={() => onNavigateTo('on-premise')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">On-Premise Delivery</button></li>
               <li><button onClick={() => onNavigateTo('odc')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">ODC</button></li>
@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           </div>
 
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Intelligence</h4>
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Intelligence</h4>
             <ul className="space-y-4 text-left">
               <li><button onClick={() => onNavigateTo('reports')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Market Reports</button></li>
               <li><button onClick={() => onNavigateTo('case-studies')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Case Studies</button></li>
@@ -48,7 +48,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           </div>
 
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Corporate</h4>
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Corporate</h4>
             <ul className="space-y-4 text-left">
               <li><button onClick={() => onNavigateTo('our-vision')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Our Vision</button></li>
               <li><button onClick={() => onNavigateTo('leadership')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Leadership Team</button></li>
@@ -58,30 +58,54 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           </div>
 
           <div className="col-span-2 lg:col-span-1">
-            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8">Connect</h4>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <div className="group">
+            <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Connect</h4>
+            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <div className="relative">
                 <input 
                   type="text" 
-                  placeholder="NAME" 
-                  className="w-full bg-white/5 border border-white/10 p-3 text-[10px] font-bold text-white placeholder:text-gray-600 focus:outline-none focus:border-[#70e000] transition-all uppercase tracking-widest" 
+                  id="footer-name"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all placeholder-transparent"
+                  placeholder="Name"
                 />
+                <label 
+                  htmlFor="footer-name"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                >
+                  Name
+                </label>
               </div>
-              <div className="group">
+              
+              <div className="relative">
                 <input 
                   type="email" 
-                  placeholder="EMAIL" 
-                  className="w-full bg-white/5 border border-white/10 p-3 text-[10px] font-bold text-white placeholder:text-gray-600 focus:outline-none focus:border-[#70e000] transition-all uppercase tracking-widest" 
+                  id="footer-email"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all placeholder-transparent"
+                  placeholder="Email"
                 />
+                <label 
+                  htmlFor="footer-email"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                >
+                  Email
+                </label>
               </div>
-              <div className="group">
+
+              <div className="relative">
                 <textarea 
                   rows={3} 
-                  placeholder="MESSAGE" 
-                  className="w-full bg-white/5 border border-white/10 p-3 text-[10px] font-bold text-white placeholder:text-gray-600 focus:outline-none focus:border-[#70e000] transition-all uppercase tracking-widest resize-none"
+                  id="footer-message"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all resize-none placeholder-transparent"
+                  placeholder="Message"
                 ></textarea>
+                <label 
+                  htmlFor="footer-message"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                >
+                  Message
+                </label>
               </div>
-              <button className="w-full py-4 bg-[#004b23] hover:bg-[#70e000] hover:text-[#004b23] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all">
+
+              <button className="w-full py-4 bg-[#004b23] hover:bg-[#70e000] hover:text-[#004b23] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#70e000]/20 rounded-sm">
                 Send
               </button>
             </form>
@@ -89,8 +113,8 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
         </div>
         
         {/* Bottom Section: Legal & Credits */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-[10px] font-bold text-gray-400">
+        <div className=" border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <p>© 2024 ANTERN TECHNOLOGIES.</p>
             <div className="flex gap-8">
               <button onClick={() => onNavigateTo('privacy')} className="hover:text-white transition-colors">Privacy</button>
@@ -99,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
             </div>
           </div>
           
-          <div className="flex items-center gap-4 text-[9px] font-black text-gray-500">
+          <div className="flex items-center gap-4 text-[9px] font-black text-gray-400 uppercase ">
             <span>Empowering Global Scale</span>
             <div className="w-1.5 h-1.5 bg-[#70e000] rounded-full"></div>
             <span>Built for Tomorrow</span>
