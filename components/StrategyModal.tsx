@@ -35,9 +35,10 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
 
     // EmailJS Configuration
     // Replace these with your actual IDs from your EmailJS dashboard
-    const SERVICE_ID = process.env.EMAILJS_SERVICE_ID || 'service_n9atl9p';
-    const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || 'template_va3ey3d';
-    const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 
     const templateParams = {
       from_name: formData.name,
@@ -50,6 +51,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
 
     try {
       // Attempt to send email
+
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
       
       setFormStatus('success');
@@ -200,3 +202,4 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
     </div>
   );
 };
+console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
