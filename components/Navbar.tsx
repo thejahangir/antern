@@ -64,7 +64,6 @@ export const Navbar: React.FC<NavbarProps> = ({
       label: 'Products', 
       id: 'products',
       subItems: [
-        { label: 'Product Roadmap', id: 'roadmap', targetPage: 'roadmap' },
         { label: 'IAmInterviewed', id: 'iaminterviewed', externalLink: 'https://iaminterviewed.com/' },
         { label: 'MySkillTest', id: 'myskilltest', externalLink: 'https://myskilltest.com/' },
         { label: 'ScanJD', id: 'products' }
@@ -74,13 +73,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       label: 'Services', 
       id: 'services',
       subItems: [
-        { label: 'On-Premise Delivery', id: 'on-premise', targetPage: 'on-premise' },
-        { label: 'ODC', id: 'odc', targetPage: 'odc' },
-        { label: 'Managed Services', id: 'managed-services', targetPage: 'managed-services' },
-        { label: 'UX Studio', id: 'ux-studio', targetPage: 'ux-studio' },
         { label: 'Technical Interviews', id: 'technical-interviews', targetPage: 'technical-interviews' },
         { label: 'Online Assessments', id: 'online-assessments', targetPage: 'online-assessments' },
-        { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' }
+        { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' },
+        { label: 'Software Delivery', id: 'software-delivery', targetPage: 'software-delivery' }
       ]
     },
     { label: 'Careers', id: 'careers', targetPage: 'careers' }
@@ -240,7 +236,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           relative px-5 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
                           ${hoverColor} 
                           ${isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'}
-                           ${isActive 
+                          ${isActive 
                             ? `text-[#004b23] font-black ${isScrolled ? 'bg-[#70e000]/10' : 'bg-white/5 text-[#70e000]'}` 
                             : 'font-bold'
                           }
@@ -252,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                           </svg>
                         )}
-                       {isActive && (
+                        {isActive && (
                           <span className="absolute bottom-1.5 left-5 right-5 h-0.5 bg-[#70e000] rounded-full"></span>
                         )}
                       </a>

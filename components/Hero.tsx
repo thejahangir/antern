@@ -38,8 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
         <div className="max-w-4xl">
           <div className="accent-bar"></div>
           <h1 className="text-5xl md:text-7xl lg:text-7xl font-black text-white mb-8 leading-[1.1] tracking-tight">
-            Bright Thinking.<br />
-            <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Intelligent</span> Solutions.
+          Hybrid Intelligence.<br />
+            <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Enterprise</span> Execution.
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6"> 

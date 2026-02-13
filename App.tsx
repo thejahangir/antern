@@ -43,18 +43,19 @@ import { TechnicalInterviews } from './components/TechnicalInterviews';
 import { OnlineAssessments } from './components/OnlineAssessments';
 import { ScanningResume } from './components/ScanningResume';
 import { Solutions } from './components/Solutions';
+import { SoftwareDelivery } from './components/SoftwareDelivery';
 
 export type PageType = 
   | 'home' | 'ux-studio' | 'ux-process' | 'leadership' | 'our-vision' | 'ceo-message' | 'careers' | 'culture'
   | 'roadmap' | 'on-premise' | 'odc' | 'managed-services' | 'reports' | 'case-studies' 
   | 'whitepapers' | 'events' | 'sustainability' | 'privacy' | 'terms' | 'cookies' | 'contact'
-  | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions';
+  | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions' | 'software-delivery';
 
 const VALID_PAGES: PageType[] = [
   'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
   'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
   'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
-  'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions'
+  'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions', 'software-delivery'
 ];
 
 const getPageFromHash = (): PageType => {
@@ -223,6 +224,12 @@ const App: React.FC = () => {
         <Solutions 
           onInitiateStrategy={openStrategySession} 
           onNavigateTo={(page) => navigateTo(page as PageType, 'solutions')} 
+        />
+      )}
+      {currentPage === 'software-delivery' && (
+        <SoftwareDelivery 
+          onInitiateStrategy={openStrategySession} 
+          onNavigateTo={(page: PageType) => navigateTo(page)} 
         />
       )}
 
