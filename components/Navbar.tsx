@@ -66,7 +66,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       subItems: [
         { label: 'IAmInterviewed', id: 'iaminterviewed', externalLink: 'https://iaminterviewed.com/' },
         { label: 'MySkillTest', id: 'myskilltest', externalLink: 'https://myskilltest.com/' },
-        { label: 'ScanJD', id: 'products' }
+        { label: 'ScanJD', id: 'products' },
+        { label: 'DelOrg360', id: 'delorg360', externalLink: 'https://delorg360.com/' }
       ]
     },
     { 

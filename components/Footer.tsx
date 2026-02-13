@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
           <div className="col-span-2 lg:col-span-1">
              <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Digital Products</h4>
              <ul className="space-y-4">
@@ -24,6 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
                <li><a href="https://iaminterviewed.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">IAmInterviewed</a></li>
                <li><a href="https://myskilltest.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">MySkillTest</a></li>
                <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">ScanJD</button></li>
+               <li><a href="https://delorg360.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">DelOrg360</a></li>
              </ul>
           </div>
           
