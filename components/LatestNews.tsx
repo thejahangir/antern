@@ -27,7 +27,7 @@ export const LatestNews: React.FC = () => {
         <div className="flex justify-between items-end mb-10">
           <div>
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-4"></div>
-            <h2 className="text-3xl font-black uppercase tracking-tighter text-[#1A1A1A]">
+            <h2 className="text-3xl font-black tracking-tighter text-[#1A1A1A]">
               Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Insights</span>
             </h2>
           </div>

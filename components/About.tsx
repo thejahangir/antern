@@ -27,7 +27,7 @@ export const About: React.FC = () => {
             <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
             <span className="text-[11px] font-black uppercase tracking-[0.6em] text-[#1A1A1A] mb-3 block">The Antern Narrative</span>
 
-            <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight text-[#1A1A1A]">
+            <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none tracking-tight text-[#1A1A1A]">
             Decades of<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Excellence</span>
               </h3>

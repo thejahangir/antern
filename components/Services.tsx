@@ -26,7 +26,7 @@ export const Services: React.FC = () => {
             {/* Content Side */}
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
-              <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight text-[#1A1A1A]">
+              <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight text-[#1A1A1A]">
               Digital Innovation &<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Tech Consulting</span>
               </h3>
@@ -79,7 +79,7 @@ export const Services: React.FC = () => {
             {/* Content Side */}
             <div className="lg:col-span-5">
               <div className="accent-bar bg-white w-12 h-1 mb-6"></div>
-              <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none uppercase tracking-tight">
+              <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight">
                 End-to-End Project<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery Assurance</span>
               </h3>
