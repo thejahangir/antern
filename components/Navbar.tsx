@@ -155,10 +155,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
         
         {/* Right-Aligned Navigation Cluster */}
-        <div className="hidden md:flex flex-1 justify-end items-center gap-2 lg:gap-6">
+        <div className="hidden md:flex flex-1 justify-end items-center gap-2 lg:gap-4">
           
           {/* 1. Core Navigation Items (About, Products, Services, Careers) */}
-          <div className={`flex items-center gap-1 lg:gap-2 text-[13px] tracking-[0.12em] uppercase transition-colors duration-300 ${textColor}`}>
+          <div className={`flex items-center gap-0 lg:gap-1 text-[13px] tracking-[0.12em] uppercase transition-colors duration-300 ${textColor}`}>
             {isDetailPage ? (
               <>
                 <button 
@@ -234,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         href={item.externalLink || (item.targetPage ? undefined : `#${item.id}`)}
                         onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)} 
                         className={`
-                          relative px-5 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
+                          relative px-3 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
                           ${hoverColor} 
                           ${isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'}
                           ${isActive 
@@ -250,7 +250,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           </svg>
                         )}
                         {isActive && (
-                          <span className="absolute bottom-1.5 left-5 right-5 h-0.5 bg-[#70e000] rounded-full"></span>
+                          <span className="absolute bottom-1.5 left-3 right-3 h-0.5 bg-[#70e000] rounded-full"></span>
                         )}
                       </a>
 
