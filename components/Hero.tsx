@@ -37,28 +37,28 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-4xl">
           <div className="accent-bar"></div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
           Hybrid Intelligence.<br />
             <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Enterprise</span> Execution.
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6"> 
 
-          We are a technology-driven product and services company specializing in On-Demand Technical Interviews, Technical Assessments, Resume Screening, and Project Portfolio Management. Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation
-          
+          {/* We are a technology-driven product and services company specializing in On-Demand Technical Interviews, Technical Assessments, Resume Screening, and Project Portfolio Management. Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation */}
+          A technology-driven product and services company specializing in On-Demand Technical Interviews, Technical Assessments, Resume Screening, and Project Portfolio Management.
           
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
               onClick={onInitiateStrategy}
-              className="px-10 py-5 bg-[#004b23] text-white font-bold uppercase tracking-widest text-sm hover:bg-[#70e000] hover:text-[#004b23] transition-all"
+              className="px-8 py-4 bg-[#004b23] text-white font-bold uppercase tracking-widest text-xs hover:bg-[#70e000] hover:text-[#004b23] transition-all"
             >
               Initiate Strategy Session
             </button>
             <button 
               onClick={onViewSolutions}
-              className="px-10 py-5 border border-white/30 text-white font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-[#1A1A1A] transition-all"
+              className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-[#1A1A1A] transition-all"
             >
               View Solutions
             </button>
