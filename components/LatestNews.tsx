@@ -28,7 +28,7 @@ export const LatestNews: React.FC = () => {
           <div>
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-4"></div>
             <h2 className="text-3xl font-black tracking-tighter text-[#1A1A1A]">
-              Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Insights</span>
+              Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Insights</span>
             </h2>
           </div>
           <a href="#" className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#004b23] hover:text-[#70e000] transition-colors">

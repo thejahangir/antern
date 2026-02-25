@@ -39,20 +39,20 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
           <div className="accent-bar"></div>
           <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
           Hybrid Intelligence.<br />
-            <span className="bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33] bg-clip-text text-transparent">Enterprise</span> Execution.
+          <span className="bg-gradient-to-r from-[#0085F7] to-[#00A94B] bg-clip-text text-transparent">Enterprise</span> Execution.
           </h1>
           
-          <p className="text-base md:text-lg text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#70e000] pl-6"> 
+          <p className="text-base md:text-lg text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#00A94B] pl-6"> 
 
           We are a technology-driven product and services company specializing in On-Demand Technical Interviews, Technical Assessments, Resume Screening, and Project Portfolio Management. <br />
-          Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation
+          Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation
          
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
               onClick={onInitiateStrategy}
-              className="px-8 py-4 bg-[#004b23] text-white font-bold uppercase tracking-widest text-xs hover:bg-[#70e000] hover:text-[#004b23] transition-all"
+              className="px-8 py-4 bg-[#0085F7] text-white font-bold uppercase tracking-widest text-xs hover:bg-[#339DFF] hover:text-white transition-all"
             >
               Initiate Strategy Session
             </button>

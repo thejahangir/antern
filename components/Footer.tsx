@@ -106,7 +106,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
                 </label>
               </div>
 
-              <button className="w-full py-4 bg-[#004b23] hover:bg-[#70e000] hover:text-[#004b23] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#70e000]/20 rounded-sm">
+              <button className="w-full py-4 bg-[#0085F7] hover:bg-[#339dff] hover:text-[#fff] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#70e000]/20 rounded-sm">
                 Send
               </button>
             </form>
@@ -126,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           
           <div className="flex items-center gap-4 text-[9px] font-black text-gray-400 uppercase ">
             <span>Empowering Global Scale</span>
-            <div className="w-1.5 h-1.5 bg-[#70e000] rounded-full"></div>
+            <div className="w-1.5 h-1.5 bg-[#0085F7] rounded-full"></div>
             <span>Built for Tomorrow</span>
           </div>
         </div>

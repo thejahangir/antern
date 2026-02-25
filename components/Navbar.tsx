@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
 
   const textColor = isScrolled ? 'text-gray-900' : 'text-white';
-  const hoverColor = isScrolled ? 'hover:text-[#004b23]' : 'hover:text-[#ccff33]';
+  const hoverColor = isScrolled ? 'hover:text-[#004b23]' : 'hover:text-[#0085F7]';
   const dropdownBg = isScrolled ? 'bg-white' : 'bg-[#1A1A1A]';
   const dropdownBorder = isScrolled ? 'border-gray-200' : 'border-white/10';
   const subTextColor = isScrolled ? 'text-gray-900' : 'text-white/80';
@@ -292,14 +292,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               ${currentPage === 'ux-studio' 
                 ? 'bg-[#004b23] text-white border-[#004b23] shadow-[0_10px_20px_rgba(0,75,35,0.3)]' 
                 : isScrolled
-                  ? 'text-[#004b23] border-[#004b23]/20 hover:bg-[#004b23] hover:text-white hover:border-[#004b23]'
+                  ? 'text-[#004b23] border-[#004b23]/20 hover:bg-[#0085F7] hover:text-white hover:border-[#0085F7]'
                   : 'text-white border-white/20 hover:bg-white hover:text-[#1A1A1A] hover:border-white'
               }
             `}
           >
             UX Studio
             <span className={`w-1.5 h-1.5 rounded-full animate-pulse transition-colors duration-500 ${
-              currentPage === 'ux-studio' ? 'bg-[#70e000]' : 'bg-[#70e000]'
+              currentPage === 'ux-studio' ? 'bg-[#0085F7]' : 'bg-[#0085F7]'
             }`}></span>
           </button>
 
@@ -308,8 +308,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onContact}
             className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer ${
               isScrolled 
-                ? 'bg-[#1A1A1A] text-white hover:bg-[#70e000] hover:text-[#004b23]' 
-                : 'bg-white text-[#1A1A1A] hover:bg-[#ccff33]'
+                ? 'bg-[#1A1A1A] text-white hover:bg-[#00A94B] hover:text-[#fff]' 
+                : 'bg-white text-[#1A1A1A] hover:bg-[#00A94B]'
             }`}
           >
             Contact

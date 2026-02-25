@@ -651,7 +651,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
               onClick={onInitiateStrategy}
-              className="px-12 py-5 bg-[#004b23] text-white text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#70e000] hover:text-[#004b23] transition-all"
+              className="px-12 py-5 bg-[#0085F7] text-white text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#339DFF] hover:text-white transition-all"
             >
               Initiate Strategy Session
             </button>

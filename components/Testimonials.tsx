@@ -45,7 +45,7 @@ export const Testimonials: React.FC = () => {
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
             <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight text-[#1A1A1A]">
             Strategic<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Impact</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Impact</span>
               </h3>
             
             <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-normal">

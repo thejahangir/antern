@@ -28,7 +28,7 @@ export const Services: React.FC = () => {
               <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight text-[#1A1A1A]">
               Digital Innovation &<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Tech Consulting</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Tech Consulting</span>
               </h3>
               <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-normal">
               Drive growth and modernization with strategic digital innovation and expert technology consulting. From transformation roadmaps to execution, solutions are designed to optimize operations, reduce risk, and accelerate business performance.
@@ -81,7 +81,7 @@ export const Services: React.FC = () => {
               <div className="accent-bar bg-white w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight">
                 End-to-End Project<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery Assurance</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#0085F7] to-[#00A94B]">Delivery Assurance</span>
               </h3>
               <p className="text-sm md:text-base text-gray-400 mb-8 leading-relaxed max-w-md font-normal">
                 From strategy to deployment, we build scalable, secure, and high-performance solutions.

@@ -26,7 +26,7 @@ export const GetThereTogether: React.FC<GetThereTogetherProps> = ({ onPartner })
           <div className="text-center md:text-left flex-1">
             <h2 className="text-4xl md:text-5xl font-black  tracking-tighter leading-[0.85] text-[#1A1A1A]">
               Let's get there <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">Together.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Together.</span>
             </h2>
           </div>
           

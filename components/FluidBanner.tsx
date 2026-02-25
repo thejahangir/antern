@@ -21,11 +21,11 @@ export const FluidBanner: React.FC<FluidBannerProps> = ({ onExplore }) => {
           <div className="flex items-center gap-8 w-full md:w-auto">
              <div className="hidden md:block w-1 h-12 bg-[#70e000]"></div>
              <div>
-                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#ccff33] block mb-1">
+                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#00A94B] block mb-1">
                   Core Infrastructure
                 </span>
                 <h2 className="text-3xl md:text-4xl font-black text-white  tracking-tighter leading-none">
-                  Managed <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">IT Services</span>
+                  Managed <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#0085F7] to-[#00A94B]">IT Services</span>
                 </h2>
              </div>
           </div>
