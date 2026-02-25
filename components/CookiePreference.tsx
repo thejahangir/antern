@@ -3,7 +3,7 @@ import React from 'react';
 
 export const CookiePreference: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen pt-40 pb-32 selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen pt-40 pb-32 selection:bg-[#0085F7] selection:text-[#fff]">
       <div className="max-w-4xl mx-auto px-6">
         <div className="accent-bar bg-[#004b23] w-12 h-1.5 mb-10"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Data Control</span>

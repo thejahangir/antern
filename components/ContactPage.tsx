@@ -103,7 +103,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
   ];
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#fff]">
       {/* 1. KINETIC HERO WITH FORM */}
       <section className="relative min-h-screen flex items-center bg-[#0A0A0A] overflow-hidden pt-24 pb-24">
         <div 

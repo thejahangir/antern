@@ -36,7 +36,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
   ];
 
   return (
-    <div className="bg-white overflow-x-hidden selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white overflow-x-hidden selection:bg-[#0085F7] selection:text-[#fff]">
       {/* HERO SECTION */}
       <section className="relative h-[80vh] min-h-[600px] bg-[#0A0A0A] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">

@@ -16,7 +16,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
   }, []);
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23] overflow-hidden">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#004b23] overflow-hidden">
       {/* 1. KINETIC HERO */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 

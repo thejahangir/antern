@@ -135,7 +135,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div id="top" className="min-h-screen selection:bg-[#70e000] selection:text-[#004b23] bg-white">
+    <div id="top" className="min-h-screen selection:bg-[#0085F7] selection:text-[#fff] bg-white">
       <ProgressBar />
       <Navbar 
         isScrolled={isScrolled} 

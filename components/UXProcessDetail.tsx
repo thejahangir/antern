@@ -119,7 +119,7 @@ const processSteps = [
 
 export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscovery }) => {
   return (
-    <div className="bg-[#FFFFFF] selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-[#FFFFFF] selection:bg-[#0085F7] selection:text-[#fff]">
       {/* 1. KINETIC HERO */}
       <section className="relative h-[85vh] min-h-[700px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div className="absolute inset-0 z-0">

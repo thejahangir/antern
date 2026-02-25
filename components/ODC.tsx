@@ -19,7 +19,7 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
   }, []);
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#fff]">
       {/* HERO SECTION */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div className="absolute inset-0 z-0">

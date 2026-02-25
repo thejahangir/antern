@@ -19,7 +19,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
   }, []);
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#fff]">
       {/* HERO SECTION */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#1A1A1A] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">

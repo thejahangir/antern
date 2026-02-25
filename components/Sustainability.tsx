@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Sustainability: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#fff]">
       {/* 1. HERO */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-[#0A0A0A] overflow-hidden text-white">
         <div className="absolute inset-0 opacity-40 grayscale">

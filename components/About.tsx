@@ -11,7 +11,7 @@ export const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="relative py-24 bg-white overflow-hidden selection:bg-[#70e000] selection:text-[#004b23]">
+    <section id="about" className="relative py-24 bg-white overflow-hidden selection:bg-[#0085F7] selection:text-[#fff]">
       {/* Background Watermark Layer - Positioned tighter */}
       <div 
         className="absolute top-10 right-[-10%] text-[350px] font-black text-[#1A1A1A]/[0.02] select-none pointer-events-none leading-none tracking-tighter"

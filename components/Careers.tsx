@@ -229,7 +229,7 @@ export const Careers: React.FC = () => {
     : [];
 
   return (
-    <div className="bg-white min-h-screen selection:bg-[#70e000] selection:text-[#004b23]">
+    <div className="bg-white min-h-screen selection:bg-[#0085F7] selection:text-[#fff]">
       
       {/* 1. KINETIC HERO */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#0A0A0A]">
