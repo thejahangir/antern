@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import LogoIaminterViewed from "../src/assets/img/product/Logo-IAmInterviewed.png";
+import LogoSkillTest from "../src/assets/img/product/Logo-Skilltest.png";
+import LogoDelOrg from "../src/assets/img/product/Logo-DO.png";
 
 interface ProductsPageProps {
   onNavigateTo: (page: string) => void;
@@ -17,11 +20,13 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
     {
       id: "01",
       name: "IAmInterviewed",
-      tagline: "Video Intelligence",
+      tagline: "Technical Interviews",
       description: "An enterprise-grade video assessment platform that uses behavioral AI to analyze candidate communication skills, reducing time-to-hire by 40%.",
       features: ["Sentiment Analysis", "Asynchronous Screening", "Bias Reduction"],
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
-      link: "https://iaminterviewed.com/"
+      logo: [LogoIaminterViewed],
+      link: "https://iaminterviewed.com/",
+      logoClass: "logo-one"
     },
     {
       id: "02",
@@ -30,7 +35,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: "A dynamic technical validation engine that scales difficulty in real-time based on candidate performance, ensuring precise competency mapping.",
       features: ["50+ Languages", "Anti-Cheat Proctoring", "Code Playback"],
       image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200",
-      link: "https://myskilltest.com/"
+      logo: [LogoSkillTest],
+      link: "https://myskilltest.com/",
+      logoClass: "logo-two"
     },
     {
       id: "03",
@@ -39,7 +46,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: "Next-generation resume parsing that understands context, not just keywords. Matches talent to opportunity with 98% semantic accuracy.",
       features: ["Contextual Matching", "Gap Analysis", "Instant Ranking"],
       image: "https://images.unsplash.com/photo-1705544363568-425eabe4de51?q=80&w=1200",
-      link: "#" // Internal link handled via onClick if needed, or just placeholder
+      logo: [LogoSkillTest],
+      link: "#", 
+      logoClass: "logo-three"
     },
     {
       id: "04",
@@ -48,7 +57,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: "Comprehensive project portfolio management solution designed to streamline organizational delivery and optimize resource allocation.",
       features: ["Resource Optimization", "Delivery Tracking", "Strategic Alignment"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
-      link: "https://delorg360.com/"
+      logo: [LogoDelOrg],
+      link: "https://delorg360.com/",
+       logoClass: "logo-four"
     }
   ];
 
@@ -114,7 +125,10 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
                 
                 <div className="w-full lg:w-1/2">
                   <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-4 block">{product.tagline}</span>
-                  <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#1A1A1A] mb-6">{product.name}</h3>
+                  <div className="flex items-center gap-4 mb-6">
+                    <img src={product.logo} alt={`${product.name} logo`} className={`${product.logoClass}`} referrerPolicy="no-referrer" />
+                    {/* <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#1A1A1A]">{product.name}</h3> */}
+                  </div>
                   <p className="text-lg text-gray-500 font-light leading-relaxed mb-10 border-l-2 border-gray-200 pl-6">
                     {product.description}
                   </p>
