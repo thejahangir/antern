@@ -8,12 +8,11 @@ interface GetThereTogetherProps {
 export const GetThereTogether: React.FC<GetThereTogetherProps> = ({ onPartner }) => {
   return (
     <section className="relative w-full py-20 overflow-hidden border-t border-gray-200">
-      {/* Background Image Layer - Increased visibility */}
+      {/* Background Image Layer - Parallax */}
       <div className="absolute inset-0 z-0">
-         <img 
-           src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000" 
-           alt="Strategic Partnership Team" 
-           className="w-full h-full object-cover opacity-25"
+         <div 
+           className="absolute inset-0 bg-fixed bg-center bg-cover opacity-25"
+           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000')" }}
          />
          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/50"></div>
       </div>

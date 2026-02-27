@@ -180,7 +180,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)]`}
     >
       {/* Top Bar */}
-      <div className={`bg-white border-b border-gray-100 text-gray-500 overflow-hidden transition-all duration-500 ease-in-out ${isScrolled ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100'}`}>
+      <div className={`bg-white text-gray-500 overflow-hidden transition-all duration-500 ease-in-out ${isScrolled ? 'max-h-0 opacity-0 border-none' : 'max-h-10 opacity-100 border-b border-gray-200'}`}>
         <div className="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
           <div className="flex items-center gap-6">
             <a href="tel:+15550000000" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
@@ -214,11 +214,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      <div className={`max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'py-3' : 'py-5'}`}>
+      <div className={`max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
         {/* Logo (Left) */}
         <div onClick={handleLogoClick} className="cursor-pointer relative z-[60] shrink-0">
           <Logo 
-            className={isScrolled ? 'h-7' : 'h-8'} 
+            className={isScrolled ? 'h-6' : 'h-8'} 
             isLight={false}
           />
         </div>
@@ -373,7 +373,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* 3. Contact CTA (Rightmost in the desktop view) */}
           <button 
             onClick={onContact}
-            className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer bg-[#1A1A1A] text-white hover:bg-[#70e000] hover:text-[#004b23]`}
+            className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer bg-[#1A1A1A] text-white hover:bg-[#464646] hover:text-[#E0E0E0]`}
           >
             Contact
           </button>
