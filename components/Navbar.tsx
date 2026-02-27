@@ -41,13 +41,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
 
-  const textColor = isScrolled ? 'text-gray-900' : 'text-white';
-  const hoverColor = isScrolled ? 'hover:text-[#004b23]' : 'hover:text-[#0085F7]';
-  const dropdownBg = isScrolled ? 'bg-white' : 'bg-[#1A1A1A]';
-  const dropdownBorder = isScrolled ? 'border-gray-200' : 'border-white/10';
-  const subTextColor = isScrolled ? 'text-gray-900' : 'text-white/80';
-  const subHoverTextColor = isScrolled ? 'text-[#004b23]' : 'text-[#70e000]';
-  const subHoverBg = isScrolled ? 'hover:bg-gray-50' : 'hover:bg-white/5';
+  const textColor = 'text-gray-900';
+  const hoverColor = 'hover:text-[#004b23]';
+  const dropdownBg = 'bg-white';
+  const dropdownBorder = 'border-gray-200';
+  const subTextColor = 'text-gray-900';
+  const subHoverTextColor = 'text-[#004b23]';
+  const subHoverBg = 'hover:bg-gray-50';
 
   const navItems: NavItem[] = [
     { 
@@ -65,10 +65,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       id: 'products',
       targetPage: 'products',
       subItems: [
-        { label: 'IAmInterviewed', id: 'iaminterviewed', externalLink: 'https://iaminterviewed.com/' },
-        { label: 'MySkillTest', id: 'myskilltest', externalLink: 'https://myskilltest.com/' },
-        { label: 'ScanJD', id: 'products' },
-        { label: 'DelOrg360', id: 'delorg360', externalLink: 'https://delorg360.com/' }
+        { label: 'IAmInterviewed', id: 'iaminterviewed', targetPage: 'products' },
+        { label: 'MySkillTest', id: 'myskilltest', targetPage: 'products' },
+        { label: 'ScanJD', id: 'scanjd', targetPage: 'products' },
+        { label: 'DelOrg360', id: 'delorg360', targetPage: 'products' }
       ]
     },
     { 
@@ -95,6 +95,45 @@ export const Navbar: React.FC<NavbarProps> = ({
     }
 
     if (targetPage) {
+      if (targetPage === 'products' && currentPage === 'products') {
+        // Already on products page, just scroll
+        const element = document.getElementById(id);
+        if (element) {
+          const offset = 100;
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = element.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+        return;
+      }
+
+      if (targetPage === 'products' && currentPage !== 'products') {
+        // Navigate to products then scroll
+        onNavigateTo(targetPage);
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          if (element) {
+            const offset = 100;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 500);
+        return;
+      }
+
       onNavigateTo(targetPage);
       return;
     }
@@ -138,20 +177,33 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'py-4 bg-white border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)]' 
-          : isDetailPage
-            ? 'py-6 bg-black/40 backdrop-blur-md'
-            : 'py-6 bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)]`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      {/* Top Bar */}
+      <div className={`bg-white border-b border-gray-100 text-gray-500 overflow-hidden transition-all duration-500 ease-in-out ${isScrolled ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100'}`}>
+        <div className="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+          <div className="flex items-center gap-6">
+            <a href="tel:+15550000000" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
+              <span>+1 (555) 000-0000</span>
+            </a>
+            <a href="mailto:contact@antern.com" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
+              <span>contact@antern.com</span>
+            </a>
+          </div>
+          <div className="flex items-center gap-4">
+            <a href="#" className="hover:text-[#004b23] transition-colors">LinkedIn</a>
+            <a href="#" className="hover:text-[#004b23] transition-colors">Twitter</a>
+            <a href="#" className="hover:text-[#004b23] transition-colors">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={`max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'py-3' : 'py-5'}`}>
         {/* Logo (Left) */}
         <div onClick={handleLogoClick} className="cursor-pointer relative z-[60] shrink-0">
           <Logo 
-            className={isScrolled ? 'h-8' : 'h-10'} 
-            isLight={(!isScrolled && !mobileMenuOpen) || (isDetailPage && !isScrolled)}
+            className={isScrolled ? 'h-7' : 'h-8'} 
+            isLight={false}
           />
         </div>
         
@@ -292,26 +344,20 @@ export const Navbar: React.FC<NavbarProps> = ({
               text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-500 relative group px-6 py-2.5 rounded-full border flex items-center gap-2.5 cursor-pointer
               ${currentPage === 'ux-studio' 
                 ? 'bg-[#004b23] text-white border-[#004b23] shadow-[0_10px_20px_rgba(0,75,35,0.3)]' 
-                : isScrolled
-                  ? 'text-[#004b23] border-[#004b23]/20 hover:bg-[#0085F7] hover:text-white hover:border-[#0085F7]'
-                  : 'text-white border-white/20 hover:bg-white hover:text-[#1A1A1A] hover:border-white'
+                : 'text-[#004b23] border-[#004b23]/20 hover:bg-[#004b23] hover:text-white hover:border-[#004b23]'
               }
             `}
           >
             UX Studio
             <span className={`w-1.5 h-1.5 rounded-full animate-pulse transition-colors duration-500 ${
-              currentPage === 'ux-studio' ? 'bg-[#0085F7]' : 'bg-[#0085F7]'
+              currentPage === 'ux-studio' ? 'bg-[#70e000]' : 'bg-[#70e000]'
             }`}></span>
           </button>
 
           {/* 3. Contact CTA (Rightmost in the desktop view) */}
           <button 
             onClick={onContact}
-            className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer ${
-              isScrolled 
-                ? 'bg-[#1A1A1A] text-white hover:bg-[#00A94B] hover:text-[#fff]' 
-                : 'bg-white text-[#1A1A1A] hover:bg-[#00A94B]'
-            }`}
+            className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer bg-[#1A1A1A] text-white hover:bg-[#70e000] hover:text-[#004b23]`}
           >
             Contact
           </button>

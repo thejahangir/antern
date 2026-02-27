@@ -101,7 +101,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-32">
             {products.map((product, idx) => (
-              <div key={product.id} className={`flex flex-col lg:flex-row gap-16 items-center group ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+              <div key={product.id} id={product.name.toLowerCase()} className={`flex flex-col lg:flex-row gap-16 items-center group ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className="w-full lg:w-1/2 relative">
                   <div className="aspect-video bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000 shadow-2xl">
                     <img src={product.image} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2000ms]" alt={product.name} />

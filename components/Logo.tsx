@@ -44,7 +44,8 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div className={`flex flex-col ${className}`}>
       <img
-        src={scrolled ? LogoDark : LogoWhite}
+        // src={scrolled ? LogoDark : LogoWhite}
+        src={LogoDark}
         className="logo-antern transition-all duration-300"
         alt="Antern Logo"
       />
