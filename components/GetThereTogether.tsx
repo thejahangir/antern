@@ -33,11 +33,11 @@ export const GetThereTogether: React.FC<GetThereTogetherProps> = ({ onPartner })
           <div className="shrink-0">
             <button 
               onClick={onPartner}
-              className="group flex items-center gap-6 text-[13px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] hover:text-[#004b23] transition-colors whitespace-nowrap"
+              className="group flex items-center gap-6 text-[13px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] hover:text-[#0085F7] transition-colors whitespace-nowrap"
             >
               Start Partnership
               <div className="w-16 h-px bg-[#1A1A1A] group-hover:w-24 group-hover:bg-[#004b23] transition-all duration-500"></div>
-              <div className="w-12 h-12 rounded-full border border-gray-300 bg-white/80 backdrop-blur-sm flex items-center justify-center group-hover:bg-[#004b23] group-hover:border-[#004b23] transition-all shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-full border border-gray-300 bg-white/80 backdrop-blur-sm flex items-center justify-center group-hover:bg-[#0085F7] group-hover:border-[#0085F7] transition-all shadow-lg hover:shadow-xl">
                  <svg className="w-4 h-4 text-[#1A1A1A] group-hover:text-white transform group-hover:-rotate-45 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                  </svg>

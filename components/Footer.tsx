@@ -20,41 +20,41 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
           <div className="col-span-2 lg:col-span-1">
              <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Digital Products</h4>
              <ul className="space-y-4">
-               <li><button onClick={() => onNavigateTo('roadmap')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Product Roadmap</button></li>
-               <li><a href="https://iaminterviewed.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">IAmInterviewed</a></li>
-               <li><a href="https://myskilltest.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">MySkillTest</a></li>
-               <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">ScanJD</button></li>
-               <li><a href="https://delorg360.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors block">DelOrg360</a></li>
+               <li><button onClick={() => onNavigateTo('roadmap')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Product Roadmap</button></li>
+               <li><a href="https://iaminterviewed.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors block">IAmInterviewed</a></li>
+               <li><a href="https://myskilltest.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors block">MySkillTest</a></li>
+               <li><button onClick={() => onNavigateTo('home')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">ScanJD</button></li>
+               <li><a href="https://delorg360.com/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors block">DelOrg360</a></li>
              </ul>
           </div>
           
           <div>
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Advisory</h4>
             <ul className="space-y-4 text-left">
-              <li><button onClick={() => onNavigateTo('on-premise')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">On-Premise Delivery</button></li>
-              <li><button onClick={() => onNavigateTo('odc')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">ODC</button></li>
-              <li><button onClick={() => onNavigateTo('managed-services')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Managed Services</button></li>
-              <li><button onClick={() => onNavigateTo('ux-studio')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors font-bold">UX Studio</button></li>
+              <li><button onClick={() => onNavigateTo('on-premise')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">On-Premise Delivery</button></li>
+              <li><button onClick={() => onNavigateTo('odc')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">ODC</button></li>
+              <li><button onClick={() => onNavigateTo('managed-services')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Managed Services</button></li>
+              <li><button onClick={() => onNavigateTo('ux-studio')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors font-bold">UX Studio</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Intelligence</h4>
             <ul className="space-y-4 text-left">
-              <li><button onClick={() => onNavigateTo('reports')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Market Reports</button></li>
-              <li><button onClick={() => onNavigateTo('case-studies')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Case Studies</button></li>
-              <li><button onClick={() => onNavigateTo('whitepapers')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Whitepapers</button></li>
-              <li><button onClick={() => onNavigateTo('events')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Events</button></li>
+              <li><button onClick={() => onNavigateTo('reports')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Market Reports</button></li>
+              <li><button onClick={() => onNavigateTo('case-studies')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Case Studies</button></li>
+              <li><button onClick={() => onNavigateTo('whitepapers')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Whitepapers</button></li>
+              <li><button onClick={() => onNavigateTo('events')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Events</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">Corporate</h4>
             <ul className="space-y-4 text-left">
-              <li><button onClick={() => onNavigateTo('our-vision')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Our Vision</button></li>
-              <li><button onClick={() => onNavigateTo('leadership')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Leadership Team</button></li>
-              <li><button onClick={() => onNavigateTo('careers')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Careers</button></li>
-              <li><button onClick={() => onNavigateTo('sustainability')} className="text-[13px] text-gray-400 hover:text-[#70e000] transition-colors">Sustainability</button></li>
+              <li><button onClick={() => onNavigateTo('our-vision')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Our Vision</button></li>
+              <li><button onClick={() => onNavigateTo('leadership')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Leadership Team</button></li>
+              <li><button onClick={() => onNavigateTo('careers')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Careers</button></li>
+              <li><button onClick={() => onNavigateTo('sustainability')} className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors">Sustainability</button></li>
             </ul>
           </div>
 
@@ -65,12 +65,12 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
                 <input 
                   type="text" 
                   id="footer-name"
-                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all placeholder-transparent"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all placeholder-transparent"
                   placeholder="Name"
                 />
                 <label 
                   htmlFor="footer-name"
-                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#79BFFA]"
                 >
                   Name
                 </label>
@@ -80,12 +80,12 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
                 <input 
                   type="email" 
                   id="footer-email"
-                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all placeholder-transparent"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all placeholder-transparent"
                   placeholder="Email"
                 />
                 <label 
                   htmlFor="footer-email"
-                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#79BFFA]"
                 >
                   Email
                 </label>
@@ -95,18 +95,18 @@ export const Footer: React.FC<FooterProps> = ({ onInitiateStrategy, onNavigateTo
                 <textarea 
                   rows={3} 
                   id="footer-message"
-                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#70e000] transition-all resize-none placeholder-transparent"
+                  className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all resize-none placeholder-transparent"
                   placeholder="Message"
                 ></textarea>
                 <label 
                   htmlFor="footer-message"
-                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#70e000]"
+                  className="absolute left-3 -top-2.5 bg-[#1A1A1A] px-2 text-[10px] font-bold uppercase tracking-widest text-gray-300 transition-colors peer-focus:text-[#79BFFA]"
                 >
                   Message
                 </label>
               </div>
 
-              <button className="w-full py-4 bg-[#0085F7] hover:bg-[#339dff] hover:text-[#fff] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#70e000]/20 rounded-sm">
+              <button className="w-full py-4 bg-[#0085F7] hover:bg-[#339dff] hover:text-[#fff] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#79BFFA]/20 rounded-sm">
                 Send
               </button>
             </form>

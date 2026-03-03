@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LogoIaminterViewed from "../src/assets/img/product/Logo-IAmInterviewed.png";
 import LogoSkillTest from "../src/assets/img/product/Logo-Skilltest.png";
 import LogoDelOrg from "../src/assets/img/product/Logo-DO.png";
+import LogoScanJD from "../src/assets/img/product/Logo-ScanJD.png";
 
 interface ProductsPageProps {
   onNavigateTo: (page: string) => void;
@@ -46,7 +47,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: "Next-generation resume parsing that understands context, not just keywords. Matches talent to opportunity with 98% semantic accuracy.",
       features: ["Contextual Matching", "Gap Analysis", "Instant Ranking"],
       image: "https://images.unsplash.com/photo-1705544363568-425eabe4de51?q=80&w=1200",
-      logo: [LogoSkillTest],
+      logo: [LogoScanJD],
       link: "#", 
       logoClass: "logo-three"
     },

@@ -359,8 +359,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             className={`
               text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-500 relative group px-6 py-2.5 rounded-full border flex items-center gap-2.5 cursor-pointer
               ${currentPage === 'ux-studio' 
-                ? 'bg-[#004b23] text-white border-[#004b23] shadow-[0_10px_20px_rgba(0,75,35,0.3)]' 
-                : 'text-[#004b23] border-[#004b23]/20 hover:bg-[#004b23] hover:text-white hover:border-[#004b23]'
+                ? 'bg-[#00A94B] text-white border-[#00A94B] shadow-[0_10px_20px_rgba(0,75,35,0.3) ]' 
+                : 'text-[#004b23] border-[#004b23]/20 hover:bg-[#00A94B] hover:text-white hover:border-[#00A94B]'
               }
             `}
           >

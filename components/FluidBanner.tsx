@@ -34,7 +34,7 @@ export const FluidBanner: React.FC<FluidBannerProps> = ({ onExplore }) => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 w-full md:w-auto justify-between md:justify-end">
              <div className="flex flex-wrap justify-center md:justify-end gap-3">
                 {['Cloud Ops', 'Cyber Security', 'Network Arch'].map((tag) => (
-                    <span key={tag} className="text-[9px] font-bold uppercase tracking-widest text-white/50 border border-white/10 px-3 py-1.5 rounded-sm whitespace-nowrap hover:text-white hover:border-[#70e000] transition-colors cursor-default">
+                    <span key={tag} className="text-[9px] font-bold uppercase tracking-widest text-white/50 border border-white/10 px-3 py-1.5 rounded-sm whitespace-nowrap hover:text-white hover:border-[#0085F7] transition-colors cursor-default">
                         {tag}
                     </span>
                 ))}
@@ -42,11 +42,11 @@ export const FluidBanner: React.FC<FluidBannerProps> = ({ onExplore }) => {
              
              <button 
                 onClick={onExplore}
-                className="group/btn flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-white cursor-pointer hover:text-[#70e000] transition-colors shrink-0"
+                className="group/btn flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-white cursor-pointer hover:text-[#0085F7] transition-colors shrink-0"
              >
                 Explore
-                <div className="w-6 h-px bg-white group-hover/btn:w-12 group-hover/btn:bg-[#70e000] transition-all duration-500"></div>
-                <svg className="w-3.5 h-3.5 text-[#70e000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-6 h-px bg-white group-hover/btn:w-12 group-hover/btn:bg-[#0085F7] transition-all duration-500"></div>
+                <svg className="w-3.5 h-3.5 text-[#0085F7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
              </button>
