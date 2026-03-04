@@ -51,7 +51,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
               Infrastructure Sovereignty
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
-              On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Delivery</span>
+              On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Delivery</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Ultimate security and performance. We deploy Antern's full intelligence stack within your own secure infrastructure, ensuring complete data isolation.

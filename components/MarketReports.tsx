@@ -29,11 +29,11 @@ export const MarketReports: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
             <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
+            <span className="text-[12px] font-black tracking-[0.5em] text-[#0085F7] mb-6 block">
               Strategic Intelligence
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">
-              Market <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Reports</span>
+              Market <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Reports</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-8">
               Intelligence-driven insights into the future of enterprise tech and human-centric design. We decode the signals others miss.

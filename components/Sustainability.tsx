@@ -18,7 +18,7 @@ export const Sustainability: React.FC = () => {
               Ecological Responsibility
             </span>
             <h1 className="text-5xl md:text-5xl font-black uppercase tracking-tighter leading-[0.85] mb-8">
-              Net-Zero <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Operations</span>
+              Net-Zero <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Operations</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 font-normal max-w-2xl leading-relaxed border-l border-[#ccff33] pl-10">
               Sustainability is a mission-critical metric. Our goal is 100% carbon neutrality by 2030 across all digital infrastructure.

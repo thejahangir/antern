@@ -43,7 +43,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
               Strategic Trajectory
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
-              Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Roadmap</span>
+              Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Roadmap</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               The evolution of Antern's intelligence suite. We build today for the mission-critical needs of tomorrow, ensuring your infrastructure is always ahead of the curve.

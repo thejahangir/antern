@@ -22,7 +22,7 @@ export const UXStudioBanner: React.FC<UXStudioBannerProps> = ({ onKnowDetails })
             <span className="text-[11px] font-black uppercase tracking-[0.4em] text-[#ccff33] mb-6 block">Specialized Studio</span>
             <h2 className="text-5xl md:ext-5xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-8">
               Antern <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">UX Studio</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">UX Studio</span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-lg leading-relaxed font-normal">
               Crafting human-centric digital experiences that bridge the gap between complex enterprise technology and intuitive user interaction.
