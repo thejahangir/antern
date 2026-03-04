@@ -27,9 +27,9 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             className="absolute inset-0 opacity-40 grayscale transition-transform duration-100 ease-out will-change-transform"
             style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
           >
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2000" className="w-full h-full object-cover" alt="Secure Server Room" />
+            <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2000" className="w-full h-full object-cover" alt="Secure Server Room" />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] via-[#1A1A1A]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/70 via-[#1A1A1A]/50 to-transparent"></div>
         </div>
         
         {showBackToSolutions && (

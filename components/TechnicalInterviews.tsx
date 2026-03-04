@@ -24,12 +24,12 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
             style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000" 
               className="w-full h-full object-cover" 
               alt="Technical Interview Code"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#000]/70 via-[#0A0A0A]/50 to-transparent"></div>
           {/* Matrix Grid Effect */}
           <div className="absolute inset-0 opacity-[0.05]" 
                style={{ backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(112, 224, 0, .3) 25%, rgba(112, 224, 0, .3) 26%, transparent 27%, transparent 74%, rgba(112, 224, 0, .3) 75%, rgba(112, 224, 0, .3) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(112, 224, 0, .3) 25%, rgba(112, 224, 0, .3) 26%, transparent 27%, transparent 74%, rgba(112, 224, 0, .3) 75%, rgba(112, 224, 0, .3) 76%, transparent 77%, transparent)', backgroundSize: '50px 50px' }}>

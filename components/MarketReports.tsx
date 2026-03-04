@@ -19,7 +19,7 @@ export const MarketReports: React.FC = () => {
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bbda4833878d?q=80&w=2500" 
+            src="https://images.unsplash.com/photo-1763038311036-6d18805537e5?q=80&w=2000" 
             className="w-full h-full object-cover" 
             alt="Market Analysis"
           />

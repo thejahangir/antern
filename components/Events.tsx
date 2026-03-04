@@ -83,7 +83,7 @@ export const Events: React.FC = () => {
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1540575861501-7c0f110f6f3a?q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1712903276040-c99b32a057eb?q=80&w=2000" 
             className="w-full h-full object-cover" 
             alt="Global Networking Events"
           />

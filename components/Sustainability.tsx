@@ -9,7 +9,7 @@ export const Sustainability: React.FC = () => {
         <div className="absolute inset-0 opacity-40 grayscale">
           <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2500" className="w-full h-full object-cover" alt="Sustainable Future" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#004b23]/80 via-[#0A0A0A]/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#000]/80 via-[#0A0A0A]/60 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">

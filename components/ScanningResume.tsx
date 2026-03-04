@@ -24,12 +24,12 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
             style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1698047681432-006d2449c631?q=80&w=2000" 
               className="w-full h-full object-cover" 
               alt="Semantic Analysis"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/70 via-[#0A0A0A]/50 to-transparent"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">

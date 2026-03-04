@@ -24,12 +24,12 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
             style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1551288049-bbda4833878d?q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=2000" 
               className="w-full h-full object-cover" 
               alt="Data Analytics"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/70 via-[#0A0A0A]/50 to-transparent"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">

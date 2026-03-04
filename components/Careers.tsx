@@ -239,7 +239,7 @@ export const Careers: React.FC = () => {
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2500&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1561489422-45de3d015e3e?q=80&w=2000" 
             alt="Career Opportunities" 
             className="w-full h-full object-cover grayscale"
           />

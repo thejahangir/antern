@@ -77,15 +77,15 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       {/* HERO SECTION */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center bg-[#0A0A0A] overflow-hidden">
         <div 
-          className="absolute -inset-y-24 inset-x-0 z-0 opacity-30 grayscale"
+          className="absolute -inset-y-24 inset-x-0 z-0 opacity-50 grayscale"
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2000" 
             className="w-full h-full object-cover" 
             alt="Antern Products"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/90 via-[#0A0A0A]/50 to-transparent"></div>
           {/* Tech Grid Overlay */}
           <div className="absolute inset-0 opacity-[0.05]" 
                style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
