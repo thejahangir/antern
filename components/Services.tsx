@@ -81,7 +81,7 @@ export const Services: React.FC = () => {
               <div className="accent-bar bg-white w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight">
                 End-to-End Project<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#0085F7] to-[#00A94B]">Delivery Assurance</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Delivery Assurance</span>
               </h3>
               <p className="text-sm md:text-base text-gray-400 mb-8 leading-relaxed max-w-md font-normal">
                 From strategy to deployment, we build scalable, secure, and high-performance solutions.

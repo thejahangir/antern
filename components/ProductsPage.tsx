@@ -95,11 +95,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
             <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#00A94B] mb-6 block">
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#0085F7] mb-6 block">
             Innovation Suite
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#0085F7] to-[#00A94B]">Products</span>
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Products</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
             Purpose-built solutions for modern hiring. Our intelligent platform streamlines evaluation, enhances decision-making, and delivers precise talent alignment at scale.

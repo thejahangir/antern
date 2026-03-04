@@ -45,17 +45,17 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-gradient-to-r from-[#ccff33] to-[#70e000] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
+          <div className="accent-bar bg-[#79BFFA] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#0085F7] mb-6 block">
               Experience Systems & Design
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-6">
-              UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Studio.</span>
+              UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Studio.</span>
             </h1>
-            <h2 className="text-2xl md:text-4xl font-normal text-[#ccff33]/90 mb-12 tracking-tight italic leading-tight">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#00A94B]/90 mb-12 tracking-tight italic leading-tight">
               Designing systems that think before users do.
             </h2>
-            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-3xl border-l border-[#70e000] pl-8">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-3xl border-l border-[#004b23] pl-8">
               Antern UX Studio bridges the gap between complex enterprise logic and human behavior. 
               We transform high-density data into frictionless, intuitive cognitive pathways—engineering the invisible layer of instinct.
             </p>
@@ -77,7 +77,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <div className="accent-bar bg-[#004b23] w-12 mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
                 Architecture for <br />
-                <span className="text-[#004b23]">Human Potential.</span>
+                <span className="text-[#0085F7]">Human Potential.</span>
               </h2>
               <p className="mt-8 text-xl text-gray-500 font-normal max-w-2xl leading-relaxed">
                 We don't just design interfaces; we architect digital behaviors. Our studio combines rigorous cognitive science with aesthetic precision to deliver measurable business growth and unparalleled user clarity.
@@ -105,27 +105,27 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             alt="Design Research Workshop" 
             className="w-full h-full object-cover opacity-50 grayscale transition-transform duration-1000 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#004b23]/90 to-[#1A1A1A]/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#262626]/90 to-[#1A1A1A]/70"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="max-w-2xl">
-              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-4 block">Strategic Capability</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-4 block">Strategic Capability</span>
               <h2 className="text-4xl md:text-5xl lg:text-5xl font-black uppercase tracking-tighter mb-6 leading-tight">
-                Deep User Research & <br />Design Methodology
+                Deep User Research & <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Design Methodology</span>
               </h2>
               <p className="text-xl text-white/80 font-normal leading-relaxed mb-8">
                 Discover how we combine empathy-driven discovery with algorithmic analysis to build the world's most intuitive enterprise interfaces.
               </p>
               <div className="flex gap-4 items-center">
-                <div className="w-8 h-px bg-[#ccff33]"></div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#ccff33]">Evidence-Based Design</span>
+                <div className="w-8 h-px bg-[#0085F7]"></div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#0085F7]">Evidence-Based Design</span>
               </div>
             </div>
             <button 
               onClick={onExploreProcess}
-              className="px-12 py-6 bg-white text-[#1A1A1A] text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#ccff33] transition-all shadow-2xl shrink-0 group"
+              className="px-12 py-6 bg-white text-[#1A1A1A] text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#0085F7] hover:text-white transition-all shadow-2xl shrink-0 group"
             >
               Explore Design Lifecycle
               <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-1">→</span>
@@ -141,7 +141,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             <div className="accent-bar bg-[#004b23] w-24"></div>
             <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
               The UX<br />
-              <span className="text-[#004b23]">Business Engine</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Business Engine</span>
             </h2>
             <p className="text-xl text-gray-500 font-normal leading-relaxed">
               We quantify experience quality to drive shareholder value. Our strategic services are designed to identify friction and maximize product-market fit.
@@ -189,7 +189,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             ].map((item, i) => (
               <div key={i} className="bg-white p-10 group hover:bg-[#1A1A1A] transition-all duration-500 flex flex-col justify-between min-h-[420px]">
                 <div>
-                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] mb-8 transition-colors">
+                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] mb-8 transition-colors">
                     {item.metric}
                   </div>
                   <h3 className="text-2xl font-black uppercase tracking-tight mb-6 text-[#1A1A1A] group-hover:text-white transition-colors">
@@ -216,24 +216,24 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
       <section className="relative w-full py-32 md:py-48 bg-[#004b23] overflow-hidden group text-white">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bbda4833878d?q=80&w=2500&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1587355760421-b9de3226a046?q=80&w=2500&auto=format&fit=crop" 
             alt="Enterprise Growth and ROI Analytics" 
             className="w-full h-full object-cover grayscale opacity-40 transition-transform duration-[4000ms] group-hover:scale-110 ease-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#004b23] via-[#004b23]/80 to-[#1A1A1A]/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] via-[#00A94B]/80 to-[#1A1A1A]/95"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24 items-center">
             
-            <div className="lg:col-span-5 border-l-8 border-[#ccff33] pl-10 md:pl-16">
-              <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-6 block">
+            <div className="lg:col-span-5 border-l-8 border-[#C2C2C2] pl-10 md:pl-16">
+              <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#C2C2C2] mb-6 block">
                 Enterprise Value Realization
               </span>
-              <div className="ext-5xl md:text-[140px] font-black tracking-tighter leading-none mb-4 group-hover:text-[#ccff33] transition-colors duration-700">
+              <div className="ext-5xl md:text-[140px] font-black tracking-tighter leading-none mb-4 group-hover:text-[#fff] transition-colors duration-700">
                 100:1
               </div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-widest text-[#ccff33] opacity-80">
+              <h3 className="text-xl md:text-2xl font-black uppercase tracking-widest text-[#C2C2C2] opacity-80">
                 The Gold Standard <br /> of UX Return
               </h3>
             </div>
@@ -241,8 +241,8 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             <div className="lg:col-span-7">
               <div className="accent-bar bg-white w-20 mb-10"></div>
               <h2 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.9] text-white">
-                Proven <span className="text-[#ccff33]">Impact</span>, <br />
-                Quantifiable <span className="text-[#ccff33]">ROI</span>.
+                Proven Impact, <br />
+                Quantifiable ROI.
               </h2>
               <p className="text-xl md:text-2xl text-white/80 font-normal leading-relaxed mb-12 max-w-2xl">
                 We transform experience maturity into shareholder value. For every $1 invested in Antern's strategic design lifecycle, enterprises see an average return of $100 through conversion lift and operational efficiency.
@@ -250,14 +250,14 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pt-12 border-t border-white/10">
                 <div className="space-y-4">
-                  <p className="text-[11px] font-black uppercase tracking-[0.4em] text-[#ccff33]">Success Benchmark</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.4em] text-[#C2C2C2]">Success Benchmark</p>
                   <div className="text-4xl font-black">35% Reduction</div>
                   <p className="text-sm text-white/60 leading-relaxed font-normal">
                     In customer support volume achieved for Tier-1 partners through intuitive interface restructuring.
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-[11px] font-black uppercase tracking-[0.4em] text-[#ccff33]">Efficiency Metric</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.4em] text-[#C2C2C2]">Efficiency Metric</p>
                   <div className="text-4xl font-black">22% CR Lift</div>
                   <p className="text-sm text-white/60 leading-relaxed font-normal">
                     Average increase in transactional funnel velocity using our proprietary behavioral architecture.
@@ -280,18 +280,18 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
               <div className="lg:col-span-5">
-                <div className="accent-bar bg-[#ccff33] w-20 mb-8"></div>
-                <div className="text-[10px] font-black text-[#ccff33] uppercase tracking-[0.5em] mb-4">Strategic Value Proposition</div>
+                <div className="accent-bar bg-[#0085F7] w-20 mb-8"></div>
+                <div className="text-[10px] font-black text-[#0085F7] uppercase tracking-[0.5em] mb-4">Strategic Value Proposition</div>
                 <h3 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
                   Acquisition <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Architecture</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Architecture</span>
                 </h3>
                 <p className="text-lg text-gray-400 font-normal leading-relaxed mb-10">
                   UX is your most efficient growth engine. We transform legacy product complexity into fluid, acquisition-ready digital ecosystems.
                 </p>
                 <div className="flex gap-4 p-6 bg-white/[0.03] border-l-4 border-[#fb5b2b]">
                   <div className="space-y-1">
-                    <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#ccff33]">Portfolio Average</p>
+                    <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#0085F7]">Portfolio Average</p>
                     <p className="text-xl font-black uppercase tracking-tighter">3x Conversion Lift</p>
                   </div>
                 </div>
@@ -307,7 +307,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                   {
                     title: "Brand Equity",
                     desc: "Injecting high-fidelity aesthetics into complex data systems to build professional trust.",
-                    icon: "E"
+                    icon: "B"
                   },
                   {
                     title: "Scalability",
@@ -317,15 +317,15 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                   {
                     title: "Due Diligence",
                     desc: "Documentation and interface excellence that satisfies enterprise acquisition exit strategies.",
-                    icon: "A"
+                    icon: "D"
                   }
                 ].map((item) => (
                   <div className="p-8 border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300 group/card" key={item.title}>
                     <div className="text-[11px] font-black text-white mb-4 flex items-center gap-4">
-                      <span className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-[#ccff33] group-hover/card:border-[#fb5b2b] group-hover/card:text-white transition-colors">
+                      <span className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-[#0085F7] group-hover/card:border-[#0085F7] group-hover/card:text-white transition-colors">
                         {item.icon}
                       </span>
-                      <span className="tracking-[0.2em] uppercase group-hover/card:text-[#ccff33] transition-colors">
+                      <span className="tracking-[0.2em] uppercase group-hover/card:text-[#0085F7] transition-colors">
                         {item.title}
                       </span>
                     </div>
@@ -348,7 +348,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <div className="accent-bar bg-[#004b23] w-24"></div>
               <h2 className="text-5xl md:ext-5xl lg:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85] text-[#1A1A1A]">
                 AI Experience<br />
-                <span className="text-[#004b23]">Design (AIXD)</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Design (AIXD)</span>
               </h2>
               <p className="text-2xl text-gray-500 font-normal leading-relaxed max-w-3xl">
                 Moving from automation to augmentation. We design high-performance cognitive interfaces that bridge complex machine logic and human strategic intuition.
@@ -370,7 +370,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             
             <div className="bg-white p-12 group hover:bg-[#1A1A1A] transition-all duration-700">
               <div className="mb-10 flex justify-between items-start">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">Efficiency Layer</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Efficiency Layer</span>
                 <div className="w-10 h-10 border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">01</div>
               </div>
               <h3 className="text-3xl font-black uppercase tracking-tight mb-6 group-hover:text-white transition-colors">Conversational <br />Mastery</h3>
@@ -386,14 +386,14 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 ))}
               </div>
               <div className="pt-6 border-t border-gray-50 group-hover:border-white/10 transition-colors">
-                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#ccff33] uppercase tracking-[0.2em] mb-1">Impact</p>
+                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#0085F7] uppercase tracking-[0.2em] mb-1">Impact</p>
                 <p className="text-sm font-bold text-[#1A1A1A] group-hover:text-white transition-colors">60% Support Deflection</p>
               </div>
             </div>
 
             <div className="bg-white p-12 group hover:bg-[#1A1A1A] transition-all duration-700">
               <div className="mb-10 flex justify-between items-start">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">Growth Layer</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Growth Layer</span>
                 <div className="w-10 h-10 border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">02</div>
               </div>
               <h3 className="text-3xl font-black uppercase tracking-tight mb-6 group-hover:text-white transition-colors">Predictive <br />Orchestration</h3>
@@ -409,14 +409,14 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 ))}
               </div>
               <div className="pt-6 border-t border-gray-50 group-hover:border-white/10 transition-colors">
-                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#ccff33] uppercase tracking-[0.2em] mb-1">Impact</p>
+                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#0085F7] uppercase tracking-[0.2em] mb-1">Impact</p>
                 <p className="text-sm font-bold text-[#1A1A1A] group-hover:text-white transition-colors">25% LTV Increase</p>
               </div>
             </div>
 
             <div className="bg-white p-12 group hover:bg-[#1A1A1A] transition-all duration-700">
               <div className="mb-10 flex justify-between items-start">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">Expansion Layer</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Expansion Layer</span>
                 <div className="w-10 h-10 border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">03</div>
               </div>
               <h3 className="text-3xl font-black uppercase tracking-tight mb-6 group-hover:text-white transition-colors">Multimodal <br />Fluidity</h3>
@@ -432,7 +432,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 ))}
               </div>
               <div className="pt-6 border-t border-gray-50 group-hover:border-white/10 transition-colors">
-                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#ccff33] uppercase tracking-[0.2em] mb-1">Impact</p>
+                <p className="text-[10px] font-black text-[#004b23] group-hover:text-[#0085F7] uppercase tracking-[0.2em] mb-1">Impact</p>
                 <p className="text-sm font-bold text-[#1A1A1A] group-hover:text-white transition-colors">Enhanced Industrial TAM</p>
               </div>
             </div>
@@ -446,10 +446,10 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-5">
-              <div className="accent-bar bg-[#ccff33] w-20 mb-10"></div>
+              <div className="accent-bar bg-[#0085F7] w-20 mb-10"></div>
               <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
                 Ethical UX <br />
-                <span className="text-[#ccff33]">Architecture</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Architecture</span>
               </h2>
               <p className="text-xl text-gray-400 font-normal leading-relaxed mb-16">
                 Ethical design is a risk mitigation strategy. We build trust-centric systems that ensure global compliance and protect brand equity.
@@ -462,7 +462,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                   { title: "Transparent Consent", desc: "Designing intuitive data controls that turn privacy into a competitive advantage." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-8 group/item">
-                    <div className="text-2xl font-black text-[#ccff33]">0{i+1}</div>
+                    <div className="text-2xl font-black text-[#0085F7]">0{i+1}</div>
                     <div>
                       <h4 className="text-xs font-black uppercase tracking-[0.3em] text-white mb-2">{item.title}</h4>
                       <p className="text-sm text-gray-500 font-normal leading-relaxed">{item.desc}</p>
@@ -475,14 +475,14 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
             <div className="lg:col-span-7 flex flex-col justify-center">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="p-12 border border-white/5 bg-white/[0.02] backdrop-blur-sm relative overflow-hidden">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#ccff33] mb-6">Retention Focus</h4>
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#0085F7] mb-6">Retention Focus</h4>
                   <h3 className="text-2xl font-bold mb-6 uppercase tracking-tight">Digital Well-being</h3>
                   <p className="text-sm text-gray-500 font-normal leading-relaxed">
                     Preventing user burnout by designing for focus. Respecting cognitive limits leads to sustained engagement.
                   </p>
                 </div>
                 <div className="p-12 border border-white/5 bg-white/[0.02] backdrop-blur-sm relative overflow-hidden">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#ccff33] mb-6">Market Compliance</h4>
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#0085F7] mb-6">Market Compliance</h4>
                   <h3 className="text-2xl font-bold mb-6 uppercase tracking-tight">Global Inclusivity</h3>
                   <p className="text-sm text-gray-500 font-normal leading-relaxed">
                     Meeting WCAG 2.2 and international standards to ensure enterprise applications are ready for global scale.
@@ -498,7 +498,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                     </div>
                     <button 
                       onClick={onRequestAudit}
-                      className="px-8 py-4 border border-[#004b23] text-[10px] font-black uppercase tracking-[0.3em] text-[#ccff33] hover:bg-[#004b23] hover:text-white transition-all whitespace-nowrap"
+                      className="px-8 py-4 border border-[#004b23] text-[10px] font-black uppercase tracking-[0.3em] text-[#0085F7] hover:bg-[#0085F7] hover:text-white transition-all whitespace-nowrap"
                     >
                       Request Audit
                     </button>
@@ -515,7 +515,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
         <div className="max-w-7xl mx-auto px-6 text-center">
             <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-10 leading-[1] text-[#1A1A1A]">
-                The Cognitive <span className="text-[#004b23]">Bridge</span>
+                The Cognitive <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Bridge</span>
             </h2>
             <p className="text-xl text-gray-500 font-normal max-w-3xl mx-auto leading-relaxed mb-20">
                 Data without clarity is noise. We engineer the thin layer between complexity and understanding, turning enterprise systems into intuitive extensions of the human mind.
@@ -556,17 +556,17 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
             
             <div className="lg:col-span-5">
-              <div className="accent-bar bg-gradient-to-r from-[#004b23] to-[#ccff33] w-32 mb-12"></div>
+            <div className="accent-bar bg-[#79BFFA] w-24 h-1.5 mb-10"></div>
               <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter mb-10 leading-[0.85]">
                 The Growth <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Engine</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Engine</span>
               </h2>
               <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed mb-16 border-l-4 border-[#004b23] pl-10">
                 Design is no longer aesthetic; it is economic. We transform complex user behaviors into precision-engineered catalysts for enterprise capital efficiency.
               </p>
               
               <div className="relative p-12 bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-2xl">
-                <div className="ext-5xl md:text-[120px] font-black tracking-tighter leading-none mb-4 text-[#ccff33]">
+                <div className="ext-5xl md:text-[120px] font-black tracking-tighter leading-none mb-4 text-[#0085F7]">
                   32%
                 </div>
                 <h4 className="text-xs font-black uppercase tracking-[0.5em] text-[#004b23] mb-4">Baseline Efficiency Gain</h4>
@@ -606,10 +606,10 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 ].map((pillar, i) => (
                   <div className="p-10 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-700 flex flex-col justify-between group/card min-h-[340px]" key={i}>
                     <div>
-                      <div className="w-14 h-14 border border-white/10 flex items-center justify-center text-xl font-black mb-8 group-hover/card:scale-110 group-hover/card:border-[#004b23] transition-all" style={{ color: pillar.color }}>
+                      <div className="text-[#0085F7] w-14 h-14 border border-white/10 flex items-center justify-center text-xl font-black mb-8 group-hover/card:scale-110 group-hover/card:border-[#004b23] transition-all" >
                         {pillar.icon}
                       </div>
-                      <h3 className="text-xl font-black uppercase tracking-tight mb-4 group-hover/card:text-[#ccff33] transition-colors">{pillar.title}</h3>
+                      <h3 className="text-xl font-black uppercase tracking-tight mb-4 group-hover/card:text-[#0085F7] transition-colors">{pillar.title}</h3>
                       <p className="text-sm text-gray-500 font-normal leading-relaxed group-hover/card:text-gray-300 transition-colors">
                         {pillar.desc}
                       </p>
@@ -630,7 +630,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 <div className="flex shrink-0">
                     <button 
                         onClick={onInitiateStrategy}
-                        className="px-12 py-6 bg-white text-[#1A1A1A] text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] hover:text-white transition-all shadow-[0_20px_40px_rgba(255,255,255,0.1)] group"
+                        className="px-12 py-6 bg-white text-[#1A1A1A] text-[12px] font-black uppercase tracking-[0.4em] hover:bg-[#0085F7] hover:text-white transition-all shadow-[0_20px_40px_rgba(255,255,255,0.1)] group"
                     >
                         Request Business Case
                         <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
@@ -646,7 +646,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-10 leading-tight text-[#1A1A1A]">
-            Design the <span className="text-[#004b23]">Untold</span> Story<br /> of your Enterprise.
+            Design the  Untold Story<br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">of your Enterprise.</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 

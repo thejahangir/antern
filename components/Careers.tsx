@@ -251,12 +251,12 @@ export const Careers: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-6 block">
               Join the Vanguard
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] text-white mb-8">
-              The Talent <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Matrix.</span>
+              The Talent <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Matrix.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
               Recruiting elite architects for the global intelligence transition. We are building the team that builds the future.
@@ -301,8 +301,8 @@ export const Careers: React.FC = () => {
               >
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-6">
-                    <span className="text-[9px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">{job.department}</span>
-                    <span className="text-[9px] font-bold text-gray-300 group-hover:text-white/40 transition-colors">{job.postedDate}</span>
+                    <span className="text-[9px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">{job.department}</span>
+                    <span className="text-[9px] font-bold text-gray-300 group-hover:text-white/90 transition-colors">{job.postedDate}</span>
                   </div>
                   
                   <h3 
@@ -325,14 +325,14 @@ export const Careers: React.FC = () => {
                 <div className="pt-8 border-t border-gray-100 group-hover:border-white/10 flex items-center justify-between transition-colors">
                   <button 
                     onClick={() => openDetails(job)}
-                    className="flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] group-hover:text-[#70e000] transition-colors"
+                    className="flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] group-hover:text-[#0085F7] transition-colors"
                   >
                     Details
                     <svg className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                   </button>
                   <button 
                     onClick={() => openApply(job)}
-                    className="w-8 h-8 flex items-center justify-center bg-[#004b23] text-white hover:bg-[#ccff33] hover:text-[#004b23] transition-all"
+                    className="w-8 h-8 flex items-center justify-center bg-[#004b23] text-white hover:bg-[#00A94B] hover:text-[#fff] transition-all"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
                   </button>
@@ -351,17 +351,17 @@ export const Careers: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-5">
-              <div className="accent-bar bg-[#ccff33] w-12 mb-8"></div>
+              <div className="accent-bar bg-[#0085F7] w-12 mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white leading-none mb-8">
                 Stay<br />
-                <span className="text-[#ccff33]">Synchronized.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Synchronized.</span>
               </h2>
               <p className="text-xl text-gray-400 font-normal leading-relaxed mb-10">
                 Don't miss a beat. Configure your technical parameters to receive real-time notifications when the right mission opens in the talent matrix.
               </p>
               
               <div className="flex items-center gap-6 p-8 border border-white/10 bg-white/5">
-                <div className="w-12 h-12 bg-white/10 flex items-center justify-center text-[#ccff33]">
+                <div className="w-12 h-12 bg-white/10 flex items-center justify-center text-[#0085F7]">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                   </svg>
@@ -408,7 +408,7 @@ export const Careers: React.FC = () => {
                     <button 
                       type="submit"
                       disabled={subscriptionState === 'loading'}
-                      className="w-full py-6 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#004b23] transition-all shadow-xl relative overflow-hidden group/btn"
+                      className="w-full py-6 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#0085F7] transition-all shadow-xl relative overflow-hidden group/btn"
                     >
                       {subscriptionState === 'loading' ? 'Configuring Node...' : 'Notify Me'}
                     </button>

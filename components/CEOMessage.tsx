@@ -60,14 +60,14 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               Executive
             </div>
             <div className="max-w-3xl">
-              <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-              <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
+              <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
+              <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-6 block">
                 Official Correspondence
               </span>
               <h1 className="text-5xl md:ext-5xl lg:ext-5xl font-black tracking-tighter leading-[0.9] text-white mb-8">
-                Message from <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]"> CEO.</span>
+                Message  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">from CEO.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#70e000] pl-10 italic">
+              <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10 italic">
                 "We are not here to predict the future, but to engineer the infrastructure that makes it inevitable."
               </p>
             </div>
@@ -99,7 +99,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             <div className="lg:col-span-8">
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
                 Architectural Integrity <br />
-                <span className="text-[#004b23]">is our true north.</span>
+                <span className="text-[#0085F7]">is our true north.</span>
               </h2>
               <div className="space-y-10 text-xl text-gray-500 font-normal leading-relaxed">
                 <p>
@@ -142,7 +142,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             {visionHorizons.map((horizon, i) => (
               <div key={i} className="bg-white p-12 md:p-16 hover:bg-[#1A1A1A] group transition-all duration-700 h-full flex flex-col justify-between min-h-[450px]">
                 <div>
-                  <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#004b23] group-hover:text-[#ccff33] mb-10 block transition-colors">
+                  <span className="text-[10px] font-black uppercase tracking-[0.6em] text-[#004b23] group-hover:text-[#0085F7] mb-10 block transition-colors">
                     Horizon 0{i+1}
                   </span>
                   <div className="text-5xl font-black text-gray-200 group-hover:text-white/30 transition-colors mb-6">
@@ -155,7 +155,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
                     {horizon.desc}
                   </p>
                 </div>
-                <div className="w-12 h-1 bg-[#004b23] group-hover:w-full group-hover:bg-[#70e000] transition-all duration-700 mt-12"></div>
+                <div className="w-12 h-1 bg-[#004b23] group-hover:w-full group-hover:bg-[#0085F7] transition-all duration-700 mt-12"></div>
               </div>
             ))}
           </div>
@@ -179,10 +179,9 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
         </div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-          <div className="accent-bar bg-[#70e000] mx-auto w-16 mb-12"></div>
+          <div className="accent-bar bg-[#00A94B] mx-auto w-16 mb-12"></div>
           <h2 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-12">
-            A Note of <br />
-            <span className="text-[#ccff33]">Deep Gratitude.</span>
+            A Note of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#00A94B]">Deep Gratitude.</span>
           </h2>
           <div className="space-y-8 text-xl md:text-2xl text-gray-400 font-normal leading-relaxed mb-20">
             <p>
@@ -201,7 +200,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <span className="text-5xl md:ext-5xl font-normal text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
                 Ramakrishna RL
               </span>
-              <div className="absolute -bottom-4 left-0 w-full h-px bg-[#70e000] scale-x-0 animate-expand-line"></div>
+              <div className="absolute -bottom-4 left-0 w-full h-px bg-[#00A94B] scale-x-0 animate-expand-line"></div>
             </div>
             <p className="text-[12px] font-black uppercase tracking-[0.8em] text-gray-500">
               Chief Executive Officer & Founder
@@ -210,7 +209,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             <div className="mt-20 flex flex-wrap justify-center gap-6">
                <button 
                 onClick={onInitiateStrategy}
-                className="px-12 py-5 bg-[#004b23] text-white text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-xl group"
+                className="px-12 py-5 bg-[#fff] text-black text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#00A94B] hover:text-[#fff] transition-all shadow-xl group"
                >
                  Initiate a Discussion
                  <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
@@ -230,7 +229,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
              { label: "Impact Rating", val: "A+" }
            ].map((stat, i) => (
              <div key={i} className="flex flex-col group cursor-default">
-               <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 group-hover:text-[#004b23] transition-colors">{stat.label}</span>
+               <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 group-hover:text-[#0085F7] transition-colors">{stat.label}</span>
                <span className="text-3xl font-black text-[#1A1A1A]">{stat.val}</span>
              </div>
            ))}

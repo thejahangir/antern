@@ -25,7 +25,7 @@ export const FluidBanner: React.FC<FluidBannerProps> = ({ onExplore }) => {
                   Core Infrastructure
                 </span>
                 <h2 className="text-3xl md:text-4xl font-black text-white  tracking-tighter leading-none">
-                  Managed <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#0085F7] to-[#00A94B]">IT Services</span>
+                  Managed <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">IT Services</span>
                 </h2>
              </div>
           </div>

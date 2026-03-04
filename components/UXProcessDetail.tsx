@@ -135,12 +135,12 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-6 block">
               Strategic Lifecycle
             </span>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black uppercase tracking-tighter leading-[0.85] mb-8 text-white">
-              The Design <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
+              The Design <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">
                 Lifecycle.
               </span>
             </h1>
@@ -157,8 +157,8 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8">
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95]">
-                Evidence-based <span className="text-[#004b23]">Discovery</span>. <br />
-                Iterative <span className="text-[#004b23]">Execution</span>.
+                Evidence-basedDiscovery. <br />
+                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Iterative Execution</span>.
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
@@ -182,7 +182,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
                 <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[300px]">
                   
                   {/* Phase ID & Indicator */}
-                  <div className="lg:col-span-1 bg-gray-50 group-hover:bg-[#004b23] flex items-center justify-center p-8 transition-colors duration-500">
+                  <div className="lg:col-span-1 bg-gray-50 group-hover:bg-[#00A94B] flex items-center justify-center p-8 transition-colors duration-500">
                     <span className="text-4xl lg:text-5xl font-black text-gray-200 group-hover:text-white transition-colors">
                       {step.id}
                     </span>
@@ -190,14 +190,14 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
 
                   {/* Core Strategic Tasks */}
                   <div className="lg:col-span-6 p-10 lg:p-14 border-r border-gray-100 group-hover:border-white/10 transition-colors">
-                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#ccff33] mb-6 transition-colors">Core Objectives</div>
+                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] mb-6 transition-colors">Core Objectives</div>
                     <h3 className="text-3xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white mb-8 leading-none transition-colors">
                       {step.title}
                     </h3>
                     <div className="space-y-5">
                       {step.tasks.map((task, i) => (
                         <div key={i} className="flex gap-4 items-start">
-                          <div className="w-1.5 h-1.5 bg-[#004b23] group-hover:bg-[#70e000] mt-2 rounded-full shrink-0 transition-colors"></div>
+                          <div className="w-1.5 h-1.5 bg-[#0085F7] group-hover:bg-[#00A94B] mt-2 rounded-full shrink-0 transition-colors"></div>
                           <p className="text-lg text-gray-700 group-hover:text-gray-400 font-medium leading-snug transition-colors">
                             {task}
                           </p>
@@ -213,7 +213,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
                       {step.discovery.map((item, i) => (
                         <div 
                           key={i} 
-                          className="px-4 py-3 bg-white border border-gray-200 text-[12px] font-bold uppercase tracking-widest text-gray-600 group-hover:bg-white/5 group-hover:text-[#ccff33] group-hover:border-[#70e000] transition-all"
+                          className="px-4 py-3 bg-white border border-gray-200 text-[12px] font-bold uppercase tracking-widest text-gray-600 group-hover:bg-white/5 group-hover:text-[#fff] group-hover:border-[#0085F7] transition-all"
                         >
                           {item}
                         </div>
@@ -238,15 +238,14 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-12"></div>
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A] mb-12">
-            Ready to <br />
-            <span className="text-[#004b23]">Initiate?</span>
+            Ready <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">to Initiate?</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-500 font-normal mb-16 leading-relaxed">
             Successful digital transformation is the result of a disciplined lifecycle. Let's deploy our strategic framework for your next mission-critical project.
           </p>
           <button 
             onClick={onStartDiscovery}
-            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#004b23] transition-all shadow-2xl group"
+            className="px-16 py-7 bg-[#1A1A1A] text-white text-[12px] font-black uppercase tracking-[0.5em] hover:bg-[#0085F7] transition-all shadow-2xl group"
           >
             Start Project Discovery
             <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>

@@ -129,7 +129,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
     <div className="flex flex-col mb-16">
       <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
       <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9] mb-4">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#004b23] to-[#70e000]">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000] to-[#0085F7]">
           {title}
         </span>
         <span className="text-[#004b23]">.</span>
@@ -151,7 +151,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
               <p className="text-white text-sm font-normal leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
               <button 
-                className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#004b23] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
+                className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#00A94B] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
                 onClick={(e) => { e.stopPropagation(); onSelect(member); }}
               >
                 View Profile Dossier
@@ -159,7 +159,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
             </div>
           </div>
           <div className="relative">
-            <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#004b23] transition-colors">{member.name}</h3>
+            <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#0085F7] transition-colors">{member.name}</h3>
             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mt-2">{member.role}</p>
             <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#004b23] group-hover:w-12 transition-all duration-500"></div>
           </div>
@@ -217,14 +217,14 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#0085F7] mb-6 block">
               Global Governance
             </span>
             <h1 className="text-5xl md:ext-5xl font-black  tracking-tighter leading-[0.85] text-white mb-8">
-              Leadership <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Team. </span>
+              Leadership <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Team. </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#70e000] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
               The architects of Antern's global mission, committed to delivering intelligent solutions with enterprise-grade integrity and strategic foresight.
             </p>
           </div>
@@ -272,14 +272,14 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
             Build with the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Best.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Best.</span>
           </h2>
           <p className="text-lg text-gray-400 font-normal mb-10 leading-relaxed max-w-xl mx-auto">
             Our multi-disciplinary teams are ready to transform your most complex challenges into intuitive, scalable digital assets.
           </p>
           <button 
             onClick={onContact}
-            className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-2xl group"
+            className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#0085F7] hover:text-[#fff] transition-all shadow-2xl group"
           >
             Initiate Consultation
             <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>

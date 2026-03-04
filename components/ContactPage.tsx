@@ -123,24 +123,18 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             
             {/* LEFT COLUMN: Text Content */}
             <div>
-              <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
-              <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#ccff33] mb-8 block">
+              <div className="accent-bar bg-[#0085F7] w-32 h-1.5 mb-12"></div>
+              <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#0085F7] mb-8 block">
                 Direct Portal
               </span>
-              {/* <h1 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-10">
-                Initiate<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">
-                  Sync.
-                </span>
-              </h1> */}
-              <h1 class="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Us</span></h1>
-              <p className="text-lg md:text-xl text-gray-400 font-light max-w-xl leading-relaxed border-l-2 border-[#70e000] pl-8 mb-12 italic">
-                "Connecting global strategic thinkers to accelerate your industrial-scale digital transformation."
+              <h1 class="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Us</span></h1>
+              <p className="text-lg md:text-xl text-gray-400 font-light max-w-xl leading-relaxed border-l-2 border-[#004b23] pl-8 mb-12">
+                Connecting global strategic thinkers to accelerate your industrial-scale digital transformation.
               </p>
               
               <div className="flex flex-col gap-2">
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-1 block">General Inquiries</span>
-                 <a href="mailto:contact@antern.com" className="text-xl font-bold text-white hover:text-[#70e000] transition-colors flex items-center gap-4 w-fit group">
+                 <a href="mailto:contact@antern.com" className="text-xl font-bold text-white hover:text-[#004b23] transition-colors flex items-center gap-4 w-fit group">
                    contact@anterntech.com
                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
                  </a>
@@ -232,7 +226,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                     <button 
                       type="submit"
                       disabled={formStatus === 'submitting'}
-                      className="w-full py-4 bg-[#004b23] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-xl disabled:opacity-50 disabled:cursor-not-allowed group relative overflow-hidden"
+                      className="w-full py-4 bg-[#00A94B] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#0085F7] hover:text-[#004b23] transition-all shadow-xl disabled:opacity-50 disabled:cursor-not-allowed group relative overflow-hidden"
                     >
                       {formStatus === 'submitting' ? 'Transmitting...' : 'Send'}
                       {formStatus !== 'submitting' && (
@@ -262,9 +256,9 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-12">
              <div className="max-w-2xl">
                 <div className="accent-bar bg-[#1A1A1A] w-16 mb-8"></div>
-                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
+                <h2 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-black uppercase">
                   Operational <br />
-                  <span className="text-[#004b23]">Hubs.</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Hubs.</span>
                 </h2>
              </div>
              <p className="text-[11px] font-black uppercase tracking-[0.4em] text-gray-400 max-w-[250px] border-l border-gray-100 pl-8">
@@ -279,10 +273,10 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                   <div className="flex items-center justify-between mb-8 pb-6 border-b border-gray-100 group-hover:border-white/10 transition-colors">
                     <div className="flex flex-col">
                         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-white/50 transition-colors mb-1">Timezone</span>
-                        <span className="text-xl font-black text-[#004b23] group-hover:text-[#ccff33] transition-colors">{office.timezone}</span>
+                        <span className="text-xl font-black text-[#004b23] group-hover:text-[#0085F7] transition-colors">{office.timezone}</span>
                     </div>
                     <div className="flex items-center gap-3 bg-gray-50 group-hover:bg-white/10 px-4 py-2 rounded-full transition-colors">
-                        <div className="w-2 h-2 rounded-full bg-[#70e000] animate-pulse"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#0085F7] animate-pulse"></div>
                         <span className="text-lg font-mono font-bold text-[#1A1A1A] group-hover:text-white transition-colors">
                             {times[office.city] || '--:--'}
                         </span>
@@ -292,7 +286,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                   <h3 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] group-hover:text-white transition-colors mb-6">
                     {office.city}
                   </h3>
-                  <div className="w-8 h-1 bg-[#004b23] mb-8 group-hover:w-full group-hover:bg-[#70e000] transition-all duration-700"></div>
+                  <div className="w-8 h-1 bg-[#004b23] mb-8 group-hover:w-full group-hover:bg-[#0085F7] transition-all duration-700"></div>
                   
                   {/* Particular Place Thumbnail */}
                   <div className="my-8 aspect-[16/10] w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000 border border-gray-100 group-hover:border-white/10 bg-gray-50 relative">
@@ -317,7 +311,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                 </div>
 
                 <div className="relative z-20 pt-12 border-t border-gray-50 group-hover:border-white/10 transition-colors">
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 group-hover:text-[#ccff33] block mb-4 transition-colors">
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 group-hover:text-[#0085F7] block mb-4 transition-colors">
                     {office.region}
                   </span>
                   <button className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors group/btn">
@@ -349,9 +343,9 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
             <div className="lg:col-span-7 flex flex-col h-full justify-between">
               <div>
                 <div className="w-16 h-1.5 bg-[#004b23] mb-10"></div>
-                <h2 className="text-6xl md:text-7xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.9] mb-10">
+                <h2 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-black uppercase">
                   Strategic <br />
-                  <span className="text-[#004b23]">Engagement.</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000]  to-[#0085F7]">Engagement.</span>
                 </h2>
                 <p className="text-xl text-gray-500 font-light leading-relaxed mb-16 max-w-lg">
                   Engage our executive council for an immediate deep-dive into your strategic needs, or utilize our cognitive engine to define your project requirements.
@@ -365,7 +359,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                    { label: 'Press', detail: 'media@anterntech.com' }
                  ].map(item => (
                    <div key={item.label} className="group">
-                      <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-[#70e000] transition-colors block mb-3">{item.label}</span>
+                      <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-[#0085F7] transition-colors block mb-3">{item.label}</span>
                       <a href={`mailto:${item.detail}`} className="text-lg font-bold text-[#1A1A1A] border-b border-transparent group-hover:border-[#004b23] transition-all pb-1">{item.detail}</a>
                    </div>
                  ))}
@@ -383,7 +377,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
 
                   <button 
                     onClick={onInitiateStrategy}
-                    className="w-full lg:w-auto py-8 px-12 bg-[#1A1A1A] text-white text-[13px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] transition-all shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_-10px_rgba(0,75,35,0.4)] group relative overflow-hidden"
+                    className="w-full lg:w-auto py-8 px-12 bg-[#1A1A1A] text-white text-[13px] font-black uppercase tracking-[0.4em] hover:bg-[#0085F7] transition-all shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_-10px_rgba(0,75,35,0.4)] group relative overflow-hidden"
                   >
                     <span className="relative z-10 flex items-center gap-6">
                       Initiate a Discussion

@@ -33,15 +33,15 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-32 h-1.5 mb-12"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#ccff33] mb-8 block">
+          <div className="accent-bar bg-[#79BFFA] w-24 h-1.5 mb-10"></div>
+            <span className="text-[12px] font-black uppercase tracking-[0.8em] text-[#0085F7] mb-8 block">
               The Human Operating System
             </span>
             <h1 className="ext-5xl md:text-5xl font-black text-white tracking-tighter leading-[0.8] mb-12">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] via-[#70e000] to-[#ccff33]">Culture.
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Culture.
               </span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-normal max-w-2xl leading-tight border-l-2 border-[#70e000] pl-10 mb-16 italic">
+            <p className="text-xl md:text-3xl text-gray-400 font-normal max-w-2xl leading-tight border-l-2 border-[#004b23] pl-10 mb-16 italic">
               "Technology is engineered by the mind, but sustained by the heart. At Antern, we build ecosystems where both thrive."
             </p>
           </div>
