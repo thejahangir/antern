@@ -9,6 +9,7 @@ import amarnath from '../src/assets/img/leadership/amar.png';
 import jahangir from '../src/assets/img/leadership/jahangir.jpg';
 import arvind from '../src/assets/img/leadership/arvind.png';
 import pallavi from '../src/assets/img/leadership/pallavi.png';
+import pradeep from '../src/assets/img/leadership/pradeep.png';
 
 
 
@@ -33,7 +34,7 @@ const leadershipTeam: Leader[] = [
     role: "Chief Executive Officer & Founder",
     image: ram,
     bio: "Visionary leader with 20+ years in IT strategy and large-scale project delivery.",
-    fullBio: "With over two decades of experience in the Information Technology industry, Ram brings extensive expertise to his role at MySkillTest. Prior to this, he managed software project delivery at several multinational companies, steering complex digital transformations for Fortune 500 clients. His focus at MySkillTest is on bridging the gap between technical capability and industrial requirement through automated intelligence.",
+    fullBio: "With over two decades of experience in the Information Technology industry, Ram brings extensive expertise to his role at Antern. Prior to this, he managed software project delivery at several multinational companies, steering complex digital transformations for Fortune 500 clients. His focus at Antern is on bridging the gap between technical capability and industrial requirement through automated intelligence.",
     expertise: ["Digital Strategy", "Enterprise Scaling", "Managment", "M&A Advisory", "Leadership"],
     strategicHighlight: "Pioneering the 'Intuition-First' enterprise framework for Global 500 partners.",
     socials: { linkedin: "#", twitter: "#", email: "ramakrishna@antern.tech" }
@@ -43,10 +44,20 @@ const leadershipTeam: Leader[] = [
     role: "Co-Founder and COO",
     image: rajani,
     bio: "Expert in operational excellence and cross-border marketing strategies.",
-    fullBio: "Rajani brings two decades of expertise in the marketing and outsourcing industries. Throughout his career, he has executed successful campaigns that have helped businesses grow multifold. At MySkillTest, he oversees the global operations, ensuring that our scalable testing infrastructure meets the rigorous demands of enterprise clients while maintaining a seamless experience for candidates worldwide.",
+    fullBio: "Rajani brings two decades of expertise in the marketing and outsourcing industries. Throughout his career, he has executed successful campaigns that have helped businesses grow multifold. At Antern, he oversees the global operations, ensuring that our scalable testing infrastructure meets the rigorous demands of enterprise clients while maintaining a seamless experience for candidates worldwide.",
     expertise: ["Execution Rigor", "Risk Stewardship", "Platform Scalability", "Experience Architecture"],
     strategicHighlight: "Institutionalizing zero-trust operating models to ensure mission-critical reliability.",
     socials: { linkedin: "#", twitter: "#", email: "rajani@antern.tech" }
+  },
+  {
+    name: "Pradeep Nageshwar",
+    role: "Director – Talent Strategy & Client Partnerships",
+    image: pradeep,
+    bio: "Operations expert driving global delivery and strategic execution.",
+    fullBio: "With over a decade of experience in the recruitment industry, Pradeep specializes in talent acquisition and client relationship management. He has helped organizations identify and secure top talent through strategic sourcing, technical screening, and efficient recruitment operations. His expertise lies in building strong client partnerships while delivering high-quality hiring solutions.",
+    expertise: ["Client Management", "Key Account Management", "Recruitment Operations", "Talent Sourcing"],
+    strategicHighlight: "Streamlining global delivery models to accelerate time-to-market by 30%.",
+    socials: { linkedin: "#", email: "michael@antern.tech" }
   }
 ];
 
@@ -121,10 +132,9 @@ interface TeamSectionProps {
   subtitle: string;
   members: Leader[];
   columns?: number;
-  onSelect: (member: Leader) => void;
 }
 
-const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, columns = 3, onSelect }) => (
+const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, columns = 3 }) => (
   <div className="mb-32">
     <div className="flex flex-col mb-16">
       <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
@@ -148,14 +158,40 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, members, col
               alt={member.name} 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
-              <p className="text-white text-sm font-normal leading-relaxed mb-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{member.bio}</p>
-              <button 
-                className="w-full py-4 bg-white text-[#1A1A1A] text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#00A94B] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 transition-all duration-500"
-                onClick={(e) => { e.stopPropagation(); onSelect(member); }}
-              >
-                View Profile Dossier
-              </button>
+            <div className="absolute inset-0 bg-[#1A1A1A]/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center p-8 overflow-y-auto">
+              <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#00A94B] mb-3">Executive Context</h4>
+                <p className="text-white text-sm font-light leading-relaxed mb-6">
+                  {member.fullBio || member.bio}
+                </p>
+
+                <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#00A94B] mb-3">Core Expertise</h4>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {member.expertise.map(exp => (
+                    <span key={exp} className="px-3 py-1 border border-white/20 text-[9px] font-bold uppercase tracking-widest text-gray-300 bg-white/5">
+                      {exp}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-4 pt-4 border-t border-white/20">
+                  {member.socials.linkedin && (
+                    <a href={member.socials.linkedin} className="text-gray-400 hover:text-[#70e000] transition-colors" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                  )}
+                  {member.socials.twitter && (
+                    <a href={member.socials.twitter} className="text-gray-400 hover:text-[#70e000] transition-colors" target="_blank" rel="noopener noreferrer">
+                      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                    </a>
+                  )}
+                  {member.socials.email && (
+                    <a href={`mailto:${member.socials.email}`} className="text-gray-400 hover:text-[#70e000] transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
           <div className="relative">
@@ -174,8 +210,6 @@ interface LeadershipProps {
 }
 
 export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
-  const [selectedLeader, setSelectedLeader] = useState<Leader | null>(null);
-  const [isDossierActive, setIsDossierActive] = useState(false);
   const [offsetY, setOffsetY] = useState(0);
 
   useEffect(() => {
@@ -185,16 +219,6 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    if (selectedLeader) {
-      setTimeout(() => setIsDossierActive(true), 50);
-      document.body.style.overflow = 'hidden';
-    } else {
-      setIsDossierActive(false);
-      document.body.style.overflow = 'unset';
-    }
-  }, [selectedLeader]);
 
   return (
     <div className="bg-white">
@@ -238,20 +262,17 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
             title="Leadership" 
             subtitle="Strategic Executive Council" 
             members={leadershipTeam} 
-            columns={2}
-            onSelect={setSelectedLeader}
+            columns={3}
           />
           <TeamSection 
-            title="Advisors" 
+            title="Advisors & Investors" 
             subtitle="Global Strategy & Innovation Board" 
             members={advisors} 
-            onSelect={setSelectedLeader}
           />
           <TeamSection 
             title="UX Studio" 
             subtitle="Experience Architecture & Behavioral Design Leads" 
             members={uxStudioTeam} 
-            onSelect={setSelectedLeader}
           />
         </div>
       </section>
@@ -286,106 +307,6 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
           </button>
         </div>
       </section>
-
-      {/* Profile Dossier Detail Overlay */}
-      {selectedLeader && (
-        <div className={`fixed inset-0 z-[100] transition-opacity duration-700 ${isDossierActive ? 'opacity-100' : 'opacity-0'}`}>
-          <div 
-            className="absolute inset-0 bg-[#0A0A0A]/95 backdrop-blur-3xl" 
-            onClick={() => setSelectedLeader(null)}
-          ></div>
-          
-          <div className="relative h-full w-full overflow-y-auto overflow-x-hidden flex flex-col lg:flex-row">
-            {/* Visual Portrait Side */}
-            <div className={`w-full lg:w-1/2 h-[50vh] lg:h-full relative bg-[#1A1A1A] transition-all duration-1000 ease-expo ${isDossierActive ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
-              <img src={selectedLeader.image} alt={selectedLeader.name} className="w-full h-full object-cover grayscale opacity-60" />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-transparent to-transparent"></div>
-              
-              {/* Dynamic Scan Line Effect */}
-              <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
-                <div className="w-full h-px bg-white/40 absolute top-0 left-0 animate-scan"></div>
-                <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '100% 4px' }}></div>
-              </div>
-
-              {/* Large Outline Name */}
-              <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-20">
-                <div className="text-[10vw] font-black leading-none text-transparent border-text select-none opacity-10 absolute -bottom-8 left-0 whitespace-nowrap">
-                   {selectedLeader.name.split(' ')[0]}
-                </div>
-                <h3 className="text-5xl lg:text-5xl font-black uppercase tracking-tighter text-white relative z-10">
-                  {selectedLeader.name}
-                </h3>
-                <p className="text-[12px] font-black uppercase tracking-[0.6em] text-[#70e000] mt-6 relative z-10 flex items-center gap-4">
-                  <span className="w-8 h-px bg-[#70e000]"></span>
-                  {selectedLeader.role}
-                </p>
-              </div>
-            </div>
-
-            {/* Strategic Content Side */}
-            <div className={`w-full lg:w-1/2 p-10 lg:p-24 flex flex-col justify-center bg-[#0A0A0A] text-white transition-all duration-1000 delay-300 ease-expo ${isDossierActive ? 'translate-x-0 opacity-100' : 'translate-x-24 opacity-0'}`}>
-              <button 
-                onClick={() => setSelectedLeader(null)}
-                className="absolute top-10 right-10 w-16 h-16 flex items-center justify-center border border-white/10 hover:bg-white hover:text-[#1A1A1A] transition-all group rounded-full"
-              >
-                <svg className="w-8 h-8 transform group-hover:rotate-90 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-
-              <div className="max-w-xl">
-                <div className="accent-bar bg-[#70e000] w-12 mb-12"></div>
-                
-                <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Strategic Vision</h4>
-                  <p className="text-3xl lg:text-4xl font-normal italic leading-tight text-white/90">
-                    "{selectedLeader.strategicHighlight}"
-                  </p>
-                </section>
-
-                <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6">Executive Context</h4>
-                  <p className="text-lg text-gray-400 font-normal leading-relaxed">
-                    {selectedLeader.fullBio || selectedLeader.bio}
-                  </p>
-                </section>
-
-                <section className="mb-16">
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-8">Core Expertise</h4>
-                  <div className="flex flex-wrap gap-3">
-                    {selectedLeader.expertise.map(exp => (
-                      <span key={exp} className="px-5 py-3 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-gray-300 bg-white/5 hover:border-[#70e000] transition-colors">
-                        {exp}
-                      </span>
-                    ))}
-                  </div>
-                </section>
-
-                {/* Dossier Social Connect */}
-                <div className="pt-12 border-t border-white/10">
-                  <div className="flex flex-wrap gap-12">
-                    {Object.entries(selectedLeader.socials).map(([key, val]) => val && (
-                      <a 
-                        key={key} 
-                        href={key === 'email' ? `mailto:${val}` : val} 
-                        className="group flex flex-col gap-2"
-                      >
-                        <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 group-hover:text-[#70e000] transition-colors">
-                          {key}
-                        </span>
-                        <div className="flex items-center gap-3">
-                          <span className="text-xs font-black uppercase tracking-widest">Connect</span>
-                          <div className="w-0 h-px bg-[#70e000] group-hover:w-8 transition-all duration-500"></div>
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       <style>{`
         .border-text {

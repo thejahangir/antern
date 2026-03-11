@@ -111,11 +111,11 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
           style={{ transform: `translate3d(0, ${offsetY * 0.2}px, 0)` }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2500" 
+            src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=2000" 
             className="w-full h-full object-cover" 
             alt="Antern Global Office"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-[#0A0A0A]/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/70 via-[#0A0A0A]/50 to-[#0A0A0A]/40"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
