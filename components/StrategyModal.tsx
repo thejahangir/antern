@@ -121,7 +121,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
               <div className="w-24 h-24 bg-[#004b23] rounded-full flex items-center justify-center mx-auto mb-8 shadow-[0_0_40px_rgba(0,75,35,0.6)]">
                 <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
               </div>
-              <h3 className="text-3xl font-black uppercase tracking-tight text-white mb-4">Request Initiated</h3>
+              <h3 className="text-3xl font-black uppercase tracking-tight text-white mb-4">Request <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Initiated</span></h3>
               <p className="text-white/60 font-light text-lg">Our team is reviewing your {context === 'audit' ? 'audit' : 'strategic'} parameters.</p>
             </div>
           ) : (

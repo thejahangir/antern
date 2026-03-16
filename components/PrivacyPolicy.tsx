@@ -8,7 +8,7 @@ export const PrivacyPolicy: React.FC = () => {
         <div className="accent-bar bg-[#004b23] w-12 h-1.5 mb-10"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Legal Protocol</span>
         <h1 className="text-5xl font-black uppercase tracking-tighter mb-16 text-[#1A1A1A]">
-          Privacy Policy
+          Privacy <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Policy</span>
         </h1>
         
         <div className="space-y-16 text-gray-600 leading-relaxed font-normal text-lg">

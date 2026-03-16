@@ -60,7 +60,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
                 The Interview <br />
-                <span className="text-[#004b23]">OS.</span>
+                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">OS</span>.</span>
               </h2>
               <div className="space-y-10">
                 {[
@@ -118,7 +118,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
       <section className="py-32 bg-[#F8F7F9] border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20 text-center">
-            <h2 className="text-3xl font-black uppercase tracking-widest text-[#1A1A1A]">The Validation Pipeline</h2>
+            <h2 className="text-3xl font-black uppercase tracking-widest text-[#1A1A1A]">The Validation <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Pipeline</span></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
@@ -146,7 +146,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
         </div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-white mb-10 leading-none">
-            Hire with <br /><span className="text-[#ccff33]">Certainty.</span>
+            Hire with <br /><span className="text-[#ccff33]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Certainty</span>.</span>
           </h2>
           <button 
             onClick={onInitiateStrategy}

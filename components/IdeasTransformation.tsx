@@ -148,7 +148,7 @@ export const IdeasTransformation: React.FC = () => {
             <div className="accent-bar bg-[#4918A9] w-16 mb-6"></div>
             <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.85] text-[#1A1A1A]">
               Ideas that drive<br />
-              <span className="text-[#4918A9]">Transformation</span>
+              <span className="text-[#4918A9]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Transformation</span></span>
             </h2>
           </div>
           

@@ -53,7 +53,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Studio.</span>
             </h1>
             <h2 className="font-normal text-[#00A94B]/90 mb-12 tracking-tight italic leading-tight text-4xl md:text-5xl capitalize">
-              Designing systems that think before users do.
+              Designing systems that think before users <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">do</span>.
             </h2>
             <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-3xl border-l border-[#004b23] pl-8">
               Antern UX Studio bridges the gap between complex enterprise logic and human behavior. 
@@ -234,7 +234,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 100:1
               </div>
               <h3 className="text-sm md:text-base font-black tracking-widest text-[#C2C2C2] opacity-80 text-4xl md:text-5xl capitalize">
-                Gold Standard UX Return
+                Gold Standard UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Return</span>
               </h3>
             </div>
             
@@ -242,7 +242,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <div className="accent-bar bg-white w-12 h-1 mb-4"></div>
               <h2 className="font-black tracking-tighter mb-4 leading-tight text-white text-4xl md:text-5xl capitalize">
                 Proven Impact, <br className="hidden md:block" />
-                Quantifiable ROI.
+                Quantifiable <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">ROI</span>.
               </h2>
               <p className="text-base md:text-lg text-white/80 font-normal leading-relaxed mb-6 max-w-2xl">
                 We transform experience maturity into shareholder value. For every $1 invested, enterprises see an average return of $100 through conversion lift and operational efficiency.
@@ -373,7 +373,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Efficiency Layer</span>
                 <div className="w-8 h-8 text-[11px] border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">01</div>
               </div>
-              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Conversational <br />Mastery</h3>
+              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Conversational <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Mastery</span></h3>
               <p className="text-[13px] text-gray-500 group-hover:text-gray-400 font-normal leading-relaxed mb-8 transition-colors">
                 Beyond chatbots. We design LLM-driven agent frameworks that resolve complex technical and procurement flows with brand-aligned accuracy.
               </p>
@@ -396,7 +396,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Growth Layer</span>
                 <div className="w-8 h-8 text-[11px] border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">02</div>
               </div>
-              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Predictive <br />Orchestration</h3>
+              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Predictive <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Orchestration</span></h3>
               <p className="text-[13px] text-gray-500 group-hover:text-gray-400 font-normal leading-relaxed mb-8 transition-colors">
                 Anticipating user needs before they occur. We build predictive UIs that reorganize dynamically to reduce friction and maximize funnel velocity.
               </p>
@@ -418,7 +418,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">Expansion Layer</span>
                 <div className="w-8 h-8 text-[11px] border border-[#004b23]/20 flex items-center justify-center text-[#004b23] group-hover:text-white transition-colors">03</div>
               </div>
-              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Multimodal <br />Fluidity</h3>
+              <h3 className="font-black tracking-tight mb-4 group-hover:text-white transition-colors text-4xl md:text-5xl capitalize">Multimodal <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Fluidity</span></h3>
               <p className="text-[13px] text-gray-500 group-hover:text-gray-400 font-normal leading-relaxed mb-8 transition-colors">
                 Unlocking mission-critical efficiency with hands-free, voice, and haptic systems designed for industrial and high-stakes environments.
               </p>
@@ -475,14 +475,14 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="p-6 md:p-8 border border-white/5 bg-white/[0.02] backdrop-blur-sm relative overflow-hidden">
                   <h4 className="text-[9px] font-black uppercase tracking-[0.4em] text-[#0085F7] mb-4">Retention Focus</h4>
-                  <h3 className="font-bold mb-3 tracking-tight text-4xl md:text-5xl capitalize">Digital Well-being</h3>
+                  <h3 className="font-bold mb-3 tracking-tight text-4xl md:text-5xl capitalize">Digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Well-being</span></h3>
                   <p className="text-[13px] text-gray-500 font-normal leading-relaxed">
                     Preventing user burnout by designing for focus. Respecting cognitive limits leads to sustained engagement.
                   </p>
                 </div>
                 <div className="p-6 md:p-8 border border-white/5 bg-white/[0.02] backdrop-blur-sm relative overflow-hidden">
                   <h4 className="text-[9px] font-black uppercase tracking-[0.4em] text-[#0085F7] mb-4">Market Compliance</h4>
-                  <h3 className="font-bold mb-3 tracking-tight text-4xl md:text-5xl capitalize">Global Inclusivity</h3>
+                  <h3 className="font-bold mb-3 tracking-tight text-4xl md:text-5xl capitalize">Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Inclusivity</span></h3>
                   <p className="text-[13px] text-gray-500 font-normal leading-relaxed">
                     Meeting WCAG 2.2 and international standards to ensure enterprise applications are ready for global scale.
                   </p>
@@ -490,7 +490,7 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
                 <div className="md:col-span-2 p-6 md:p-8 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A2A] border border-white/5">
                   <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
                     <div className="max-w-md">
-                      <h3 className="font-black tracking-tighter mb-2 text-4xl md:text-5xl capitalize">Strategic UX Audit</h3>
+                      <h3 className="font-black tracking-tighter mb-2 text-4xl md:text-5xl capitalize">Strategic UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Audit</span></h3>
                       <p className="text-[13px] text-gray-500 font-normal leading-relaxed">
                         Assess your digital portfolio for friction and technical debt. Identify immediate opportunities for efficiency gains.
                       </p>

@@ -30,7 +30,7 @@ export const Products: React.FC<ProductsProps> = ({ onViewSolutions }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
             <div className="accent-bar"></div>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-6">Our Solutions</h2>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-6">Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Solutions</span></h2>
             <p className="text-gray-500 text-lg">Innovative products built to solve the complex challenges of the modern enterprise.</p>
           </div>
         </div>

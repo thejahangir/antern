@@ -115,7 +115,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
           <div className="mt-40 bg-[#1A1A1A] p-20 text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-[#004b23]/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
             <div className="relative z-10">
-              <h2 className="text-4xl font-black mb-10 uppercase tracking-tighter text-white">Shape our direction.</h2>
+              <h2 className="text-4xl font-black mb-10 uppercase tracking-tighter text-white">Shape our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">direction</span>.</h2>
               <button 
                 onClick={onInitiateStrategy} 
                 className="px-12 py-6 border border-white/20 text-white font-bold uppercase tracking-[0.3em] text-[10px] hover:bg-white hover:text-[#1A1A1A] transition-all"

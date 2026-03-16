@@ -20,7 +20,7 @@ export const InnovationExcellence: React.FC = () => {
               <div className="accent-bar bg-[#004b23] w-12 mb-10"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
                 Continuous<br />
-                <span className="text-[#004b23]">Innovation</span>
+                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Innovation</span></span>
               </h2>
               <p className="text-xl text-gray-500 max-w-md leading-relaxed mb-12 font-normal">
                 Modernizing the world’s most vital infrastructure with cognitive intelligence and cloud-native agility.
@@ -58,7 +58,7 @@ export const InnovationExcellence: React.FC = () => {
               <div className="accent-bar bg-[#70e000] w-12 mb-10"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A] group-hover:text-white transition-colors">
                 Operational<br />
-                <span className="group-hover:text-[#ccff33] transition-colors">Excellence</span>
+                <span className="group-hover:text-[#ccff33] transition-colors"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Excellence</span></span>
               </h2>
               <p className="text-xl text-gray-500 group-hover:text-gray-400 max-w-md leading-relaxed mb-12 font-normal transition-colors">
                 Ensuring mission-critical systems are secure, resilient, and optimized for high-performance scale.

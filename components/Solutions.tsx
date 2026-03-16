@@ -125,7 +125,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5">
              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-8">
-               The Power of <br /><span className="text-[#004b23]">Convergence.</span>
+               The Power of <br /><span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Convergence</span>.</span>
              </h2>
              <div className="w-16 h-2 bg-[#1A1A1A]"></div>
           </div>
@@ -143,7 +143,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
           <div className="flex flex-col md:flex-row justify-between items-end mb-24">
             <div>
               <div className="accent-bar bg-[#004b23] w-12 mb-6"></div>
-              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A]">Cognitive Products</h2>
+              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A]">Cognitive <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Products</span></h2>
             </div>
             <p className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Deployed in 200+ Enterprises</p>
           </div>
@@ -258,7 +258,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
       <section className="py-48 bg-[#F8F7F9] relative overflow-hidden text-center border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
-            Architect Your <br /><span className="text-[#004b23]">Future.</span>
+            Architect Your <br /><span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Future</span>.</span>
           </h2>
           <p className="text-xl text-gray-500 font-normal mb-16 max-w-2xl mx-auto">
             Deploy the full Antern ecosystem to secure your competitive advantage in the cognitive era.

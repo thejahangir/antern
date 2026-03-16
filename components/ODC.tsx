@@ -90,7 +90,7 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
               <div>
                 <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
                   Expand your <br />
-                  <span className="text-[#ccff33]">Horizon.</span>
+                  <span className="text-[#ccff33]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Horizon</span>.</span>
                 </h2>
                 <p className="text-white/80 max-w-md font-normal">Set up your dedicated center in under 45 days.</p>
               </div>

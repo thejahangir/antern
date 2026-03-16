@@ -94,7 +94,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-24">
             <div className="accent-bar bg-[#004b23] mx-auto w-12 mb-8"></div>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A]">The Pillars of Progress</h2>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A]">The Pillars of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Progress</span></h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200 border border-gray-200">

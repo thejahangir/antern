@@ -55,7 +55,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
             <div>
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-10 leading-tight">
-                Adaptive <br /><span className="text-[#004b23]">Intelligence.</span>
+                Adaptive <br /><span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Intelligence</span>.</span>
               </h2>
               <p className="text-lg text-gray-500 font-normal leading-relaxed mb-12">
                 Standardized tests fail to capture the nuance of senior talent. Our engine utilizes Item Response Theory (IRT) to adapt in real-time, serving harder problems as candidates prove their proficiency, ensuring a precise skill calibration in half the time.
@@ -100,7 +100,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
       {/* DOMAIN COVERAGE */}
       <section className="py-32 bg-[#1A1A1A] text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-black uppercase tracking-widest mb-16 text-center text-[#ccff33]">Full-Stack Validation</h2>
+          <h2 className="text-3xl font-black uppercase tracking-widest mb-16 text-center text-[#ccff33]">Full-Stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Validation</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
             {[
@@ -127,7 +127,7 @@ export const OnlineAssessments: React.FC<Props> = ({ onInitiateStrategy }) => {
 
       <section className="py-40 bg-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8">Deploy Assessment</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8">Deploy <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Assessment</span></h2>
           <p className="text-gray-500 mb-12">Start screening your pipeline with enterprise-grade rigour.</p>
           <button 
             onClick={onInitiateStrategy}

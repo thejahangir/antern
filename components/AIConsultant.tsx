@@ -58,7 +58,7 @@ export const AIConsultant: React.FC = () => {
             <div className="accent-bar bg-[#4918A9]"></div>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9] text-[#1A1A1A]">
               Strategic AI<br />
-              <span className="text-[#4918A9]">Advisory</span>
+              <span className="text-[#4918A9]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Advisory</span></span>
             </h2>
             <p className="text-xl text-gray-500 mb-12 max-w-md leading-relaxed font-normal">
               Engage with our cognitive intelligence engine to explore how Antern's products and strategic consulting can transform your mission-critical operations.

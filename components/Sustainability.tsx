@@ -48,7 +48,7 @@ export const Sustainability: React.FC = () => {
           <div className="p-20 bg-[#1A1A1A] relative overflow-hidden text-white group">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#004b23] rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
             <div className="relative z-10">
-                <h2 className="text-4xl font-black mb-8 uppercase tracking-tighter text-[#ccff33]">Our Promise</h2>
+                <h2 className="text-4xl font-black mb-8 uppercase tracking-tighter text-[#ccff33]">Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Promise</span></h2>
                 <p className="text-xl md:text-2xl text-white/80 font-normal leading-relaxed max-w-4xl italic">
                 "We recognize that digital progress must not come at an ecological cost. Antern Technologies is committed to engineering solutions that are as kind to the planet as they are efficient for the enterprise."
                 </p>

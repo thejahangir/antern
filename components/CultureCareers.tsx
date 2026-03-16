@@ -29,7 +29,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
             <div className="absolute inset-0 p-12 md:p-20 flex flex-col justify-end pointer-events-none">
               <div className="accent-bar bg-white w-12 mb-6"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white leading-[0.9] mb-6">
-                Our<br />Culture
+                Our<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Culture</span>
               </h2>
               <p className="text-white/80 text-lg md:text-xl max-w-sm mb-10 font-normal leading-relaxed">
                 Where technical precision meets human empathy. We build for people, by people.
@@ -52,7 +52,7 @@ export const CultureCareers: React.FC<CultureCareersProps> = ({ onExploreCareers
               <div className="accent-bar bg-[#4918A9] w-12 mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.9] mb-8">
                 Advance<br />
-                <span className="text-[#4918A9]">Your Career</span>
+                <span className="text-[#4918A9]">Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Career</span></span>
               </h2>
               <p className="text-gray-500 text-xl max-w-md mb-12 font-normal leading-relaxed">
                 Join a global team of thinkers and doers modernizing the world's most vital digital infrastructure.

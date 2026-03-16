@@ -77,7 +77,7 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
             </div>
 
             <div>
-              <h2 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8">Contextual <span className="text-[#004b23]">Understanding.</span></h2>
+              <h2 className="text-4xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8">Contextual <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Understanding</span>.</span></h2>
               <p className="text-lg text-gray-500 font-normal leading-relaxed mb-10">
                 Traditional parsers miss the story. Our AI reads between the lines, identifying leadership potential, project complexity, and transferable skills that aren't explicitly listed.
               </p>
@@ -103,7 +103,7 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="accent-bar bg-[#004b23] mx-auto w-12 mb-8"></div>
-          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-20">The Matching Core</h2>
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-20">The Matching <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Core</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="p-8 group">
@@ -128,7 +128,7 @@ export const ScanningResume: React.FC<Props> = ({ onInitiateStrategy }) => {
       <section className="py-48 bg-[#1A1A1A] relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-white mb-12">
-            Process <span className="text-[#ccff33]">Faster.</span>
+            Process <span className="text-[#ccff33]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Faster</span>.</span>
           </h2>
           <button 
             onClick={onInitiateStrategy}

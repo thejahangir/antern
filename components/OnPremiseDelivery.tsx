@@ -67,7 +67,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             <div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">
                 Air-Gapped <br />
-                <span className="text-[#004b23]">Excellence.</span>
+                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Excellence</span>.</span>
               </h2>
               <p className="text-lg text-gray-500 font-normal leading-relaxed mb-12">
                 For organizations with strict regulatory requirements, we provide end-to-end on-premise installation and maintenance of our proprietary platforms. Our systems are architected to function with zero external dependency.
@@ -104,7 +104,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
           </div>
           
           <div className="mt-40 text-center border-t border-gray-100 pt-20">
-             <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-8">Secure Your Infrastructure</h3>
+             <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-8">Secure Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Infrastructure</span></h3>
              <button 
                onClick={onInitiateStrategy} 
                className="px-12 py-6 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] hover:text-white transition-all shadow-xl group"

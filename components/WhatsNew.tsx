@@ -30,7 +30,7 @@ export const WhatsNew: React.FC = () => {
           <div className="flex flex-col">
             <div className="accent-bar bg-[#70e000] w-12 mb-8 mx-auto"></div>
             <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-16 pb-6 text-center">
-              Recent <span className="text-[#ccff33]">Announcements</span>
+              Recent <span className="text-[#ccff33]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Announcements</span></span>
             </h3>
             <div className="space-y-12">
               {newsHighlights.map((item, idx) => (

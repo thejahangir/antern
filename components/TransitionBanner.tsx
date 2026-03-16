@@ -16,7 +16,7 @@ export const TransitionBanner: React.FC = () => {
         
         <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[1] max-w-4xl">
           Where Engineering Logic <br /> 
-          <span className="text-[#4918A9]">Meets Human</span> Experience.
+          <span className="text-[#4918A9]">Meets Human</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Experience</span>.
         </h2>
         
         <p className="mt-8 text-lg text-gray-400 font-normal max-w-2xl leading-relaxed">

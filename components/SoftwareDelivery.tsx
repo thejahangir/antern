@@ -23,7 +23,7 @@ export const SoftwareDelivery: React.FC<SoftwareDeliveryProps> = ({ onInitiateSt
         <div className="max-w-7xl mx-auto px-6">
             <div className="mb-8">
                 <div className="h-1 w-12 bg-[#70e000] mb-4"></div>
-                <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter">Software Delivery</h1>
+                <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter">Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Delivery</span></h1>
             </div>
             <div className="flex gap-8 overflow-x-auto scrollbar-hide">
                 <button

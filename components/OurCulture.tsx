@@ -64,7 +64,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
               <div className="accent-bar bg-[#1A1A1A] w-12 mb-10"></div>
               <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-12">
                 The Antern<br />
-                <span className="text-[#004b23]">Manifesto.</span>
+                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Manifesto</span>.</span>
               </h2>
               <div className="aspect-[4/5] bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
                 <img 
