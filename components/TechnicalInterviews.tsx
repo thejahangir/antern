@@ -38,7 +38,7 @@ export const TechnicalInterviews: React.FC<Props> = ({ onInitiateStrategy }) => 
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
             <span className="text-[12px] font-black tracking-[0.5em] text-[#0085F7] mb-6 block">
               Evaluation Engine
             </span>

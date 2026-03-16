@@ -60,8 +60,8 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-[0.95] mb-12">
-                Digital <span className="text-[#0085F7]">Sovereignty</span> <br /> 
-                over Digital Noise.
+                Digital Sovereignty <br /> 
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">over Digital Noise.</span>
               </h2>
               <p className="text-xl text-gray-500 font-normal leading-relaxed mb-8">
                 We believe that true innovation isn't just about speed; it's about direction. Our vision is to empower enterprises to reclaim their strategic focus by automating complexity and elevating human potential.
@@ -144,9 +144,8 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             <div className="lg:col-span-4">
               <div className="accent-bar bg-[#004b23] w-12 mb-10"></div>
               <h2 className="text-5xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-8">
-                The<br />
-                <span className="text-[#0085F7]">Roadmap</span><br />
-                to 2030
+                The Roadmap<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">to 2030</span>
               </h2>
               <p className="text-lg text-gray-400 font-normal leading-relaxed">
                 Our vision is structured across three horizons of digital maturity. Each phase is a milestone toward a more intelligent enterprise landscape.
@@ -207,7 +206,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white leading-[0.85] mb-6">
             Share the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#79BFFA]">Manifesto.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Manifesto.</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-400 font-normal mb-8 max-w-xl mx-auto">
             Our vision is a collaborative journey. Join us in defining the next era of enterprise excellence.

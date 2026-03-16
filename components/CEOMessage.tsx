@@ -99,7 +99,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             <div className="lg:col-span-8">
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-12 leading-[0.9]">
                 Architectural Integrity <br />
-                <span className="text-[#0085F7]">is our true north.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">is our true north.</span>
               </h2>
               <div className="space-y-10 text-xl text-gray-500 font-normal leading-relaxed">
                 <p>
@@ -130,7 +130,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
               <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
                 Vision <br />
-                <span className="text-[#004b23]">2025 - 2030.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">2025 - 2030.</span>
               </h2>
             </div>
             <p className="text-xs font-black uppercase tracking-[0.5em] text-gray-400 border-l border-gray-200 pl-8 max-w-[200px]">
@@ -181,7 +181,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <div className="accent-bar bg-[#00A94B] mx-auto w-16 mb-12"></div>
           <h2 className="text-4xl md:ext-5xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-12">
-            A Note of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#00A94B]">Deep Gratitude.</span>
+            A Note of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Deep Gratitude.</span>
           </h2>
           <div className="space-y-8 text-xl md:text-2xl text-gray-400 font-normal leading-relaxed mb-20">
             <p>
@@ -200,7 +200,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
               <span className="text-5xl md:ext-5xl font-normal text-white opacity-90 select-none animate-draw" style={{ fontFamily: 'Georgia, serif' }}>
                 Ramakrishna RL
               </span>
-              <div className="absolute -bottom-4 left-0 w-full h-px bg-[#00A94B] scale-x-0 animate-expand-line"></div>
+              <div className="absolute -bottom-4 left-0 w-full h-px bg-[#0085F7] scale-x-0 animate-expand-line"></div>
             </div>
             <p className="text-[12px] font-black uppercase tracking-[0.8em] text-gray-500">
               Chief Executive Officer & Founder
@@ -209,7 +209,7 @@ export const CEOMessage: React.FC<CEOProps> = ({ onInitiateStrategy }) => {
             <div className="mt-20 flex flex-wrap justify-center gap-6">
                <button 
                 onClick={onInitiateStrategy}
-                className="px-12 py-5 bg-[#fff] text-black text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#00A94B] hover:text-[#fff] transition-all shadow-xl group"
+                className="px-12 py-5 bg-[#fff] text-black text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#0085F7] hover:text-[#fff] transition-all shadow-xl group"
                >
                  Initiate a Discussion
                  <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>

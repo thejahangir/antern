@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-4xl">
-          <div className="accent-bar"></div>
+          <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
           <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white tracking-tighter leading-[0.85] mb-8">
           Hybrid Intelligence.<br />
           <span className="bg-gradient-to-r from-[#0085F7] to-[#00A94B] bg-clip-text text-transparent">Optimized </span> Delivery.
@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onInitiateStrategy, onViewSolutions 
           <p className="text-base md:text-lg text-gray-300 mb-12 max-w-4xl leading-relaxed border-l-4 border-[#00A94B] pl-6"> 
 
           We are a technology-driven product and services company specializing in On-Demand Technical Interviews, Technical Assessments, Resume Screening, and Project Portfolio Management. <br />
-          Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation
+          Our solutions are powered by proprietary platforms — <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">IamInterviewed</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">SkillTest</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">ScanJD</span>, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">DelOrg</span> — developed to deliver efficiency, accuracy, and innovation
          
           </p>
           

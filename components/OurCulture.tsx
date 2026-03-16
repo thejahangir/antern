@@ -109,7 +109,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
           <div className="text-center mb-32">
              <div className="accent-bar bg-[#004b23] mx-auto w-16 mb-10"></div>
              <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none">
-               The Pillars of <br /><span className="text-[#004b23]">Our Identity.</span>
+               The Pillars of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Our Identity.</span>
              </h2>
           </div>
 
@@ -122,7 +122,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
             ].map((pillar) => (
               <div key={pillar.id} className="bg-white p-12 md:p-20 group hover:bg-[#1A1A1A] transition-all duration-700 min-h-[450px] flex flex-col justify-between">
                 <div>
-                  <span className="text-4xl font-black text-gray-100 group-hover:text-white/10 transition-colors block mb-10">
+                  <span className="text-4xl font-black text-gray-100 group-hover:text-white/50 transition-colors block mb-10">
                     {pillar.id}
                   </span>
                   <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-white mb-6 transition-colors">
@@ -132,7 +132,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                     {pillar.desc}
                   </p>
                 </div>
-                <div className="w-12 h-1 bg-[#004b23] group-hover:w-full transition-all duration-1000 mt-12"></div>
+                <div className="w-12 h-1 bg-[#0085F7] group-hover:w-full transition-all duration-1000 mt-12"></div>
               </div>
             ))}
           </div>
@@ -156,7 +156,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
               <div className="accent-bar bg-[#004b23] w-24 mb-10"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] leading-none mb-10">
                 The Global <br />
-                <span className="text-[#004b23]">Studio Experience.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Studio Experience.</span>
               </h2>
               <div className="space-y-10 text-xl text-gray-500 font-normal leading-relaxed">
                 <p>
@@ -173,7 +173,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
                     "Global Sync Rooms"
                   ].map(label => (
                     <div key={label} className="flex items-center gap-3">
-                       <div className="w-2 h-2 bg-[#004b23]"></div>
+                       <div className="w-2 h-2 bg-[#00A94B]"></div>
                        <span className="text-[11px] font-black uppercase tracking-widest text-[#1A1A1A]">{label}</span>
                     </div>
                   ))}
@@ -200,8 +200,8 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
-            Are you <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#70e000] to-[#ccff33]">Sync Material?</span>
+            Are you 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Sync Material?</span>
           </h2>
           <p className="text-lg text-gray-400 font-normal mb-10 leading-relaxed max-w-xl mx-auto">
             We are always looking for high-fidelity talent to join our global network of thinkers and doers.
@@ -209,7 +209,7 @@ export const OurCulture: React.FC<Props> = ({ onExploreCareers, onInitiateStrate
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
               onClick={onExploreCareers}
-              className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#70e000] hover:text-[#004b23] transition-all shadow-2xl group"
+              className="px-12 py-5 bg-white text-[#1A1A1A] text-[11px] font-black uppercase tracking-[0.5em] hover:bg-[#0085F7] hover:text-[#fff] transition-all shadow-2xl group"
             >
               View Open Roles
               <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
