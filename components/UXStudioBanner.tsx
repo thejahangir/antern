@@ -7,7 +7,7 @@ interface UXStudioBannerProps {
 
 export const UXStudioBanner: React.FC<UXStudioBannerProps> = ({ onKnowDetails }) => {
   return (
-    <section className="relative py-32 bg-[#1A1A1A] overflow-hidden group">
+    <section className="relative py-16 bg-[#1A1A1A] overflow-hidden group">
       {/* Background Graphic Element */}
       <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
         <svg viewBox="0 0 100 100" className="w-full h-full text-[#004b23]" fill="currentColor">
@@ -16,15 +16,15 @@ export const UXStudioBanner: React.FC<UXStudioBannerProps> = ({ onKnowDetails })
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <div className="accent-bar bg-[#70e000]"></div>
             <span className="text-[11px] font-black uppercase tracking-[0.4em] text-[#ccff33] mb-6 block">Specialized Studio</span>
-            <h2 className="text-5xl md:ext-5xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-8">
+            <h2 className="font-black text-white tracking-tighter leading-[0.9] mb-8 text-4xl md:text-5xl capitalize">
               Antern <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">UX Studio</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">UX Studio</span>
             </h2>
-            <p className="text-xl text-gray-400 mb-12 max-w-lg leading-relaxed font-normal">
+            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-lg leading-relaxed font-normal">
               Crafting human-centric digital experiences that bridge the gap between complex enterprise technology and intuitive user interaction.
             </p>
             <button 
