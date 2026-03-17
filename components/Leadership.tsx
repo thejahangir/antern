@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import ram from "../src/assets/img/leadership/ramk.png";
-import rajani from "../src/assets/img/leadership/rajnikanth.png";
+import rajani from "../src/assets/img/leadership/rajani.png";
 import jaya from "../src/assets/img/leadership/jayk.jpg";
 import jagan from "../src/assets/img/leadership/jagan.jpg";
 import amarnath from "../src/assets/img/leadership/amar.png";
