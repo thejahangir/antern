@@ -106,7 +106,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
             <span className="text-[12px] font-black tracking-[0.5em] text-[#0085F7] mb-6 block">
               Integrated Ecosystem
             </span>
@@ -210,10 +210,10 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
               >
                 <div>
                    <div className="flex justify-between items-start mb-8">
-                      <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#ccff33] transition-colors">
+                      <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#0085F7] transition-colors">
                         {service.name}
                       </h3>
-                      <span className="text-[10px] font-black border border-white/20 px-2 py-1 text-gray-400 group-hover:border-[#70e000] group-hover:text-[#70e000] transition-all">
+                      <span className="text-[10px] font-black border border-white/20 px-2 py-1 text-gray-400 group-hover:border-[#0085F7] group-hover:text-[#0085F7] transition-all">
                         {service.icon}
                       </span>
                    </div>
