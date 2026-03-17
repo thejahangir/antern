@@ -157,7 +157,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-8">
               <h2 className="font-black tracking-tighter text-[#1A1A1A] leading-[0.95] text-4xl md:text-5xl capitalize">
-                Evidence-basedDiscovery. <br />
+                Evidence-based Discovery. <br />
                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Iterative Execution</span>.
               </h2>
             </div>
@@ -191,7 +191,7 @@ export const UXProcessDetail: React.FC<UXProcessDetailProps> = ({ onStartDiscove
                   {/* Core Strategic Tasks */}
                   <div className="lg:col-span-6 p-4 lg:p-6 border-r border-gray-100 group-hover:border-white/10 transition-colors">
                     <div className="text-[8px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#0085F7] mb-2 transition-colors">Core Objectives</div>
-                    <h3 className="text-lg font-black tracking-tighter text-[#1A1A1A] group-hover:text-white mb-3 leading-none transition-colors text-4xl md:text-5xl capitalize">
+                    <h3 className="text-lg font-black tracking-tighter text-[#1A1A1A] group-hover:text-white mb-3 leading-none transition-colors text-3xl md:text-3xl capitalize">
                       {step.title}
                     </h3>
                     <div className="space-y-2">
