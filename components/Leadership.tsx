@@ -321,7 +321,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
             <h3 className="text-2xl font-black uppercase tracking-tight text-[#1A1A1A] group-hover:text-[#0085F7] transition-colors">
               {member.name}
             </h3>
-            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mt-2">
+            <p className="text-[14px] font-black uppercase  text-gray-500 mt-2">
               {member.role}
             </p>
             <div className="absolute top-0 right-0 w-8 h-px bg-gray-200 group-hover:bg-[#004b23] group-hover:w-12 transition-all duration-500"></div>
