@@ -27,7 +27,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             className="absolute inset-0 opacity-40 grayscale transition-transform duration-100 ease-out will-change-transform"
             style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
           >
-            <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2000" className="w-full h-full object-cover" alt="Secure Server Room" />
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000" className="w-full h-full object-cover" alt="On-Premise Delivery Team" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/70 via-[#1A1A1A]/50 to-transparent"></div>
         </div>
@@ -54,7 +54,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
               On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Delivery</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
-              Ultimate security and performance. We deploy Antern's full intelligence stack within your own secure infrastructure, ensuring complete data isolation.
+              Tailored software services, delivered directly within your environment. We design, deploy, and support Antern's full solution suite on-site — aligned precisely to your operational workflows.
             </p>
           </div>
         </div>
@@ -66,18 +66,18 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">
-                Air-Gapped <br />
-                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Excellence</span>.</span>
+                Precision-Fit <br />
+                <span className="text-[#004b23]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Delivery</span>.</span>
               </h2>
               <p className="text-lg text-gray-500 font-normal leading-relaxed mb-12">
-                For organizations with strict regulatory requirements, we provide end-to-end on-premise installation and maintenance of our proprietary platforms. Our systems are architected to function with zero external dependency.
+                We embed our expert teams directly within your organizational environment to deliver software solutions end-to-end. From requirement analysis to final handover, every phase is executed on your terms, in your context, with full operational alignment.
               </p>
               <div className="space-y-8">
                 {[
-                  { title: 'Hardware Optimization', desc: 'Custom kernel tuning for your specific bare-metal constraints.' },
-                  { title: 'Local Data Sovereignty', desc: '100% data retention within your physical perimeter.' },
-                  { title: 'Dedicated Support Mesh', desc: 'On-site reliability engineers aligned to your timezone.' },
-                  { title: 'Real-time Updates', desc: 'Secure, offline update mechanisms for continuous evolution.' }
+                  { title: 'Embedded Delivery Teams', desc: 'Fully integrated Antern teams co-located with your staff for seamless, context-aware execution.' },
+                  { title: 'Workflow-Aligned Solutions', desc: 'Software configured and delivered to match your existing business processes and organizational standards.' },
+                  { title: 'Continuous Engagement Model', desc: 'Ongoing support, iteration, and optimization from dedicated service leads aligned to your goals.' },
+                  { title: 'Governed Delivery Framework', desc: 'Structured milestones, transparent reporting, and quality gates at every phase of engagement.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6 group">
                     <div className="w-12 h-12 border border-gray-200 flex items-center justify-center shrink-0 group-hover:border-[#004b23] group-hover:bg-[#004b23] transition-all">
@@ -93,23 +93,23 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
             </div>
             <div className="relative">
               <div className="aspect-[4/5] bg-[#1A1A1A] overflow-hidden grayscale group hover:grayscale-0 transition-all duration-1000 relative">
-                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" alt="Server Infrastructure" />
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" alt="On-site service delivery" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#004b23]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               </div>
               <div className="absolute -bottom-10 -left-10 bg-white p-8 shadow-2xl border-l-4 border-[#70e000] hidden md:block">
-                 <p className="text-3xl font-black text-[#1A1A1A]">99.999%</p>
-                 <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Uptime SLA</p>
+                 <p className="text-3xl font-black text-[#1A1A1A]">100%</p>
+                 <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Client-Side Delivery</p>
               </div>
             </div>
           </div>
           
           <div className="mt-40 text-center border-t border-gray-100 pt-20">
-             <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-8">Secure Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Infrastructure</span></h3>
+             <h3 className="text-3xl font-black uppercase tracking-tight text-[#1A1A1A] mb-8">Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">Engagement</span></h3>
              <button 
                onClick={onInitiateStrategy} 
                className="px-12 py-6 bg-[#1A1A1A] text-white text-[11px] font-black uppercase tracking-[0.4em] hover:bg-[#004b23] hover:text-white transition-all shadow-xl group"
              >
-               Request Infrastructure Audit
+               Request a Delivery Consultation
                <span className="ml-4 inline-block transform transition-transform group-hover:translate-x-2">→</span>
              </button>
           </div>
