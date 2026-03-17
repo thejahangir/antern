@@ -57,7 +57,7 @@ export const MarketReports: React.FC = () => {
               <div key={i} className="group p-12 bg-white hover:bg-[#1A1A1A] transition-all duration-500 flex flex-col justify-between min-h-[350px]">
                 <div>
                   <div className="flex justify-between items-start mb-6">
-                    <span className="text-[9px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#ccff33] transition-colors">
+                    <span className="text-[9px] font-black uppercase tracking-[0.3em] text-[#004b23] group-hover:text-[#0085F7] transition-colors">
                       {report.category}
                     </span>
                     <span className="text-[9px] font-bold text-gray-300 group-hover:text-white/40 uppercase tracking-widest transition-colors">
@@ -69,7 +69,7 @@ export const MarketReports: React.FC = () => {
                   </h3>
                 </div>
                 
-                <button className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] group-hover:text-[#70e000] transition-colors group/btn">
+                <button className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A] group-hover:text-[#0085F7] transition-colors group/btn">
                   Access Intelligence
                   <div className="w-8 h-px bg-current group-hover/btn:w-16 transition-all"></div>
                 </button>

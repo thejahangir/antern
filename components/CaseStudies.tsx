@@ -28,7 +28,7 @@ export const CaseStudies: React.FC = () => {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
             <span className="text-[12px] font-black tracking-[0.5em] text-[#0085F7] mb-6 block">
               Proven Outcomes
             </span>
@@ -92,7 +92,7 @@ export const CaseStudies: React.FC = () => {
                     {study.desc}
                   </p>
 
-                  <div className="p-6 bg-gray-50 border-l-4 border-[#70e000] mb-10">
+                  <div className="p-6 bg-gray-50 border-l-4 border-[#0085F7] mb-10">
                     <span className="text-[9px] font-bold uppercase tracking-widest text-gray-400 block mb-1">Key Outcome</span>
                     <div className="text-3xl font-black text-[#1A1A1A]">{study.impact}</div>
                   </div>

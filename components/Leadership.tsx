@@ -428,8 +428,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-5xl md:ext-5xl font-black uppercase tracking-tighter leading-tight text-white mb-8">
-            Build with the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">
+            Build with the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">
               Best.
             </span>
           </h2>
