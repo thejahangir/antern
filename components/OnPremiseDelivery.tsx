@@ -96,7 +96,7 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
                 <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" alt="On-site service delivery" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#004b23]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               </div>
-              <div className="absolute -bottom-10 -left-10 bg-white p-8 shadow-2xl border-l-4 border-[#70e000] hidden md:block">
+              <div className="absolute -bottom-10 -left-10 bg-white p-8 shadow-2xl border-l-4 border-[#0085F7] hidden md:block">
                  <p className="text-3xl font-black text-[#1A1A1A]">100%</p>
                  <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Client-Side Delivery</p>
               </div>
