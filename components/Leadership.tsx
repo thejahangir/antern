@@ -60,6 +60,18 @@ const leadershipTeam: Leader[] = [
       "Institutionalizing zero-trust operating models to ensure mission-critical reliability.",
     socials: { linkedin: "#", twitter: "#", email: "rajani@antern.tech" },
   },
+
+  {
+    name: "Venkatesh ",
+    role: "VP - Engineering",
+    image: venky,
+    bio: "Technology leader driving large-scale platforms and digital transformation.",
+    fullBio:
+      "Venkatesh comes with nearly three decades of experience leading global technology organizations and delivering large-scale digital platforms. He has built and scaled high-performing engineering teams across multiple geographies, driving technology transformation for both product and services organizations. His experience spans lottery gaming platforms, banking, hospitality, enterprise systems, and data-driven applications operating in regulated environments. Venkatesh has led several modernization initiatives, helping organizations transition from legacy systems to scalable cloud and hybrid architectures. He is passionate about building strong engineering cultures, mentoring future technology leaders, and ensuring that engineering teams consistently deliver solutions that drive measurable business impact.",
+    expertise: ["Innovation", "Engineering"],
+    strategicHighlight: "Driving growth.",
+    socials: { linkedin: "#", twitter: "#", email: "Venkatesh@antern.tech" },
+  },
   {
     name: "Pradeep Nageshwar",
     role: "Director – Talent Strategy & Client Partnerships",
@@ -76,18 +88,6 @@ const leadershipTeam: Leader[] = [
     strategicHighlight:
       "Streamlining global delivery models to accelerate time-to-market by 30%.",
     socials: { linkedin: "#", twitter: "#", email: "michael@antern.tech" },
-  },
-
-  {
-    name: "Venkatesh ",
-    role: "VP - Engineering",
-    image: venky,
-    bio: "Technology leader driving large-scale platforms and digital transformation.",
-    fullBio:
-      "Venkatesh comes with nearly three decades of experience leading global technology organizations and delivering large-scale digital platforms. He has built and scaled high-performing engineering teams across multiple geographies, driving technology transformation for both product and services organizations. His experience spans lottery gaming platforms, banking, hospitality, enterprise systems, and data-driven applications operating in regulated environments. Venkatesh has led several modernization initiatives, helping organizations transition from legacy systems to scalable cloud and hybrid architectures. He is passionate about building strong engineering cultures, mentoring future technology leaders, and ensuring that engineering teams consistently deliver solutions that drive measurable business impact.",
-    expertise: ["Innovation", "Engineering"],
-    strategicHighlight: "Driving growth.",
-    socials: { linkedin: "#", twitter: "#", email: "Venkatesh@antern.tech" },
   },
   {
     name: "Jahangir Alam",

@@ -46,9 +46,9 @@ export const UXStudioDetail: React.FC<UXStudioDetailProps> = ({
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
           <div className="accent-bar bg-[#79BFFA] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#0085F7] mb-6 block">
+            {/* <span className="text-[12px] font-black uppercase tracking-[0.6em] text-[#0085F7] mb-6 block">
               Experience Systems & Design
-            </span>
+            </span> */}
             <h1 className="font-black tracking-tighter leading-[0.85] mb-6 text-4xl md:text-5xl capitalize">
               UX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Studio.</span>
             </h1>

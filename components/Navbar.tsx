@@ -75,10 +75,14 @@ export const Navbar: React.FC<NavbarProps> = ({
       label: 'Services', 
       id: 'services',
       subItems: [
-        { label: 'Technical Interviews', id: 'technical-interviews', targetPage: 'technical-interviews' },
-        { label: 'Online Assessments', id: 'online-assessments', targetPage: 'online-assessments' },
-        { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' },
-        { label: 'Software Delivery', id: 'software-delivery', targetPage: 'software-delivery' }
+        // { label: 'Technical Interviews', id: 'technical-interviews', targetPage: 'technical-interviews' },
+        // { label: 'Online Assessments', id: 'online-assessments', targetPage: 'online-assessments' },
+        // { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' },
+        // { label: 'Software Delivery', id: 'software-delivery', targetPage: 'software-delivery' },
+        { label: 'On-Premise Delivery', id: 'on-premise', targetPage: 'on-premise' },
+        { label: 'ODC (Offshore Dev Centers)', id: 'odc', targetPage: 'odc' },
+        { label: 'Managed Services', id: 'managed-services', targetPage: 'managed-services' },
+        { label: 'UX Studio', id: 'ux-studio-services', targetPage: 'ux-studio' }
       ]
     },
     { label: 'Careers', id: 'careers', targetPage: 'careers' }

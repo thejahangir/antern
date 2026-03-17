@@ -46,15 +46,12 @@ export const ODC: React.FC<Props> = ({ onInitiateStrategy, showBackToSolutions, 
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#004b23] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#004b23] mb-6 block bg-[#ccff33] px-2 py-1 w-fit">
-              Global Scale
-            </span>
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black text-white  tracking-tighter leading-[0.85] mb-8">
               Offshore Dev <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Centers.
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#70e000] pl-10">
+            <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#0085F7] pl-10">
               Global talent, centralized control. We build and manage dedicated innovation hubs tailored to your technical roadmap, extending your engineering capacity without diluting quality.
             </p>
           </div>

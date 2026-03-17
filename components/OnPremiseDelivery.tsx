@@ -46,10 +46,10 @@ export const OnPremiseDelivery: React.FC<Props> = ({ onInitiateStrategy, showBac
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <div className="accent-bar bg-[#70e000] w-24 h-1.5 mb-10"></div>
-            <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
+            <div className="accent-bar bg-[#0085F7] w-24 h-1.5 mb-10"></div>
+            {/* <span className="text-[12px] font-black uppercase tracking-[0.5em] text-[#ccff33] mb-6 block">
               Infrastructure Sovereignty
-            </span>
+            </span> */}
             <h1 className="text-5xl md:ext-5xl lg:text-5xl font-black tracking-tighter leading-[0.85] mb-8 text-white">
               On-Premise <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Delivery</span>
             </h1>
