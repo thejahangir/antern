@@ -81,7 +81,7 @@ export const ManagedServices: React.FC<Props> = ({ onInitiateStrategy, showBackT
             <h2 className="text-3xl font-black uppercase tracking-tighter text-[#1A1A1A] mb-8">Ready for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0085F7] to-[#00A94B]">reliability</span>?</h2>
             <button 
               onClick={onInitiateStrategy} 
-              className="px-12 py-6 bg-[#004b23] text-white font-black uppercase tracking-[0.4em] text-[11px] hover:bg-[#1A1A1A] transition-all shadow-[0_20px_40px_rgba(0,75,35,0.3)] hover:shadow-none"
+              className="px-12 py-6 bg-[#0085F7] text-white font-black uppercase tracking-[0.4em] text-[11px] hover:bg-[#57ADF8] transition-all "
             >
               Request Managed Support Proposal
             </button>
