@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { HomeSlider } from './components/HomeSlider';
+import { HomeSliderV2 } from './components/HomeSliderV2';
 import { About } from './components/About';
 import { Services } from './components/Services';
 import { TransitionBanner } from './components/TransitionBanner';
@@ -47,13 +49,13 @@ import { SoftwareDelivery } from './components/SoftwareDelivery';
 import { ProductsPage } from './components/ProductsPage';
 
 export type PageType = 
-  | 'home' | 'ux-studio' | 'ux-process' | 'leadership' | 'our-vision' | 'ceo-message' | 'careers' | 'culture'
+  | 'home' | 'v2' | 'ux-studio' | 'ux-process' | 'leadership' | 'our-vision' | 'ceo-message' | 'careers' | 'culture'
   | 'roadmap' | 'on-premise' | 'odc' | 'managed-services' | 'reports' | 'case-studies' 
   | 'whitepapers' | 'events' | 'sustainability' | 'privacy' | 'terms' | 'cookies' | 'contact'
   | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions' | 'software-delivery'  | 'products';
 
 const VALID_PAGES: PageType[] = [
-  'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
+  'v2', 'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
   'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
   'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
   'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions', 'software-delivery','products'
@@ -134,13 +136,23 @@ const App: React.FC = () => {
     setIsModalOpen(true);
   };
 
+  const handleNavigateToProduct = (productId: string) => {
+    navigateTo('products');
+    setTimeout(() => {
+      const el = document.getElementById(productId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <div id="top" className="min-h-screen selection:bg-[#0085F7] selection:text-[#fff] bg-white">
       <ProgressBar />
       <Navbar 
         isScrolled={isScrolled} 
         onNavigateHome={() => navigateTo('home')} 
-        isDetailPage={currentPage !== 'home'}
+        isDetailPage={currentPage !== 'home' && currentPage !== 'v2'}
         onNavigateToUXStudio={() => navigateTo('ux-studio')}
         onNavigateToLeadership={() => navigateTo('leadership')}
         onNavigateToVision={() => navigateTo('our-vision')}
@@ -151,9 +163,14 @@ const App: React.FC = () => {
         onContact={() => navigateTo('contact')}
       />
       
-      {currentPage === 'home' && (
+      {(currentPage === 'home' || currentPage === 'v2') && (
         <main>
-          <Hero onInitiateStrategy={openStrategySession} onViewSolutions={() => navigateTo('solutions')} />
+          {/* <Hero onInitiateStrategy={openStrategySession} onViewSolutions={() => navigateTo('solutions')} /> */}
+          {currentPage === 'home' ? (
+            <HomeSlider onNavigateToProduct={handleNavigateToProduct} />
+          ) : (
+            <HomeSliderV2 onNavigateToProduct={handleNavigateToProduct} />
+          )}
           <About />
        
           <Services />
