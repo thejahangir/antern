@@ -141,7 +141,15 @@ const App: React.FC = () => {
     setTimeout(() => {
       const el = document.getElementById(productId);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        const offset = 120; // Accounts for the fixed navbar height
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = el.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: 'smooth'
+        });
       }
     }, 100);
   };
@@ -169,7 +177,10 @@ const App: React.FC = () => {
           {currentPage === 'home' ? (
             <HomeSlider onNavigateToProduct={handleNavigateToProduct} />
           ) : (
-            <HomeSliderV2 onNavigateToProduct={handleNavigateToProduct} />
+            <HomeSliderV2 
+              onNavigateToProduct={handleNavigateToProduct} 
+              onNavigateToVision={() => navigateTo('our-vision')}
+            />
           )}
           <About />
        
