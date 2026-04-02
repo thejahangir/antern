@@ -116,6 +116,14 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
               <div className="absolute inset-0 bg-black/5 mix-blend-multiply"></div>
               
               <div className="relative z-10 w-full">
+                 {/* Product Category Tag */}
+                 {i !== 0 && (
+                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/20 backdrop-blur-md border border-white/20 text-white/70 text-[9px] font-bold lowercase tracking-[0.10em] mb-4 shadow-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-white/70"></span>
+                      our products
+                   </div>
+                 )}
+
                  {/* Title */}
                  <h1 className="text-[2.5rem] font-bold text-white leading-tight mb-8 tracking-tight">
                     {/* Antern <br/> */}
@@ -189,6 +197,8 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
               </div>
             </div>
 
+
+
           </div>
         ))}
       </div>
@@ -210,6 +220,23 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="transform transition-transform duration-300 group-hover:translate-x-1 opacity-80 group-hover:opacity-100"><path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
       </button>
       
+      {/* Slide Pagination Numbers */}
+      <div className="absolute bottom-8 right-8 md:bottom-10 md:right-12 z-30 flex items-center gap-2 md:gap-3 pointer-events-auto">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentSlide(idx)}
+            className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-500 font-sans text-sm md:text-base hover:scale-105
+              ${currentSlide === idx
+                ? 'bg-white text-black font-bold scale-110 shadow-[0_4px_20px_rgba(255,255,255,0.4)]'
+                : 'bg-black/40 backdrop-blur-md border border-white/20 text-white/80 hover:bg-white/20 font-light'
+              }`}
+          >
+            {idx + 1}
+          </button>
+        ))}
+      </div>
+
     </section>
   );
 };
