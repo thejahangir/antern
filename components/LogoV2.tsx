@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LogoDark1 from "../src/assets/img/Logo-AnternV2.png";
+import LogoV2Img from "../src/assets/img/Logo-AnternV2.png";
 import '../src/assets/css/antern-style.css'
 
 interface LogoProps {
@@ -25,7 +25,7 @@ export const LogoV2: React.FC<LogoProps> = ({
   return (
     <div className={`flex flex-col ${className}`}>
       <img
-        src={LogoDark1}
+        src={LogoV2Img}
         className="logo-antern transition-all duration-300"
         alt="Antern Logo V2"
       />
