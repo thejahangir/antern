@@ -134,8 +134,8 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
               
               <div className="flex flex-col gap-2">
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-1 block">General Inquiries</span>
-                 <a href="mailto:contact@antern.com" className="text-xl font-bold text-white hover:text-[#004b23] transition-colors flex items-center gap-4 w-fit group">
-                   contact@anterntech.com
+                 <a href="mailto:rajani@anterntech.com" className="text-xl font-bold text-white hover:text-[#004b23] transition-colors flex items-center gap-4 w-fit group">
+                   rajani@anterntech.com
                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
                  </a>
               </div>
