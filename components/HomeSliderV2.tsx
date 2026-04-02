@@ -118,8 +118,8 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
               <div className="relative z-10 w-full">
                  {/* Product Category Tag */}
                  {i !== 0 && (
-                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/20 backdrop-blur-md border border-white/20 text-white/70 text-[9px] font-bold lowercase tracking-[0.10em] mb-4 shadow-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/70"></span>
+                   <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/20 backdrop-blur-md border border-white/20 text-white/70 text-[11px] font-bold lowercase tracking-[0.10em] mb-4 shadow-sm">
+                      <span className="w-2 h-2 rounded-full bg-white/70"></span>
                       our products
                    </div>
                  )}
