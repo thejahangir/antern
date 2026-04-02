@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
+import { NavbarV2 } from './components/NavbarV2';
 import { Hero } from './components/Hero';
 import { HomeSlider } from './components/HomeSlider';
 import { HomeSliderV2 } from './components/HomeSliderV2';
@@ -157,19 +158,35 @@ const App: React.FC = () => {
   return (
     <div id="top" className="min-h-screen selection:bg-[#0085F7] selection:text-[#fff] bg-white">
       <ProgressBar />
-      <Navbar 
-        isScrolled={isScrolled} 
-        onNavigateHome={() => navigateTo('home')} 
-        isDetailPage={currentPage !== 'home' && currentPage !== 'v2'}
-        onNavigateToUXStudio={() => navigateTo('ux-studio')}
-        onNavigateToLeadership={() => navigateTo('leadership')}
-        onNavigateToVision={() => navigateTo('our-vision')}
-        onNavigateToCEO={() => navigateTo('ceo-message')}
-        onNavigateToCareers={() => navigateTo('careers')}
-        onNavigateTo={(page: PageType) => navigateTo(page)}
-        currentPage={currentPage}
-        onContact={() => navigateTo('contact')}
-      />
+      {currentPage === 'v2' ? (
+        <NavbarV2 
+          isScrolled={isScrolled} 
+          onNavigateHome={() => navigateTo('home')} 
+          isDetailPage={false}
+          onNavigateToUXStudio={() => navigateTo('ux-studio')}
+          onNavigateToLeadership={() => navigateTo('leadership')}
+          onNavigateToVision={() => navigateTo('our-vision')}
+          onNavigateToCEO={() => navigateTo('ceo-message')}
+          onNavigateToCareers={() => navigateTo('careers')}
+          onNavigateTo={(page: PageType) => navigateTo(page)}
+          currentPage={currentPage}
+          onContact={() => navigateTo('contact')}
+        />
+      ) : (
+        <Navbar 
+          isScrolled={isScrolled} 
+          onNavigateHome={() => navigateTo('home')} 
+          isDetailPage={currentPage !== 'home' && currentPage !== 'v2'}
+          onNavigateToUXStudio={() => navigateTo('ux-studio')}
+          onNavigateToLeadership={() => navigateTo('leadership')}
+          onNavigateToVision={() => navigateTo('our-vision')}
+          onNavigateToCEO={() => navigateTo('ceo-message')}
+          onNavigateToCareers={() => navigateTo('careers')}
+          onNavigateTo={(page: PageType) => navigateTo(page)}
+          currentPage={currentPage}
+          onContact={() => navigateTo('contact')}
+        />
+      )}
       
       {(currentPage === 'home' || currentPage === 'v2') && (
         <main>
