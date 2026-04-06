@@ -63,7 +63,7 @@ export const ProductRoadmap: React.FC<Props> = ({ onInitiateStrategy }) => {
               { 
                 q: 'Q1-Q2 2024', 
                 title: 'Cognitive Integration', 
-                items: ['IAmInterviewed Video Synthesis', 'SkillTest Adaptive Scoring', 'ScanJD Sentiment Analysis'],
+                items: ['IamInterviewed Video Synthesis', 'SkillTest Adaptive Scoring', 'ScanJD Sentiment Analysis'],
                 align: 'left'
               },
               { 

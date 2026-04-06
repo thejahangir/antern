@@ -8,6 +8,8 @@ import amarnath from "../src/assets/img/leadership/amar.png";
 import jahangir from "../src/assets/img/leadership/jahangir.jpg";
 import pradeep from "../src/assets/img/leadership/pradeep.png";
 import venky from "../src/assets/img/leadership/venky.png";
+import Surya from "../src/assets/img/leadership/surya.png";
+
 
 interface Leader {
   name: string;
@@ -71,6 +73,24 @@ const leadershipTeam: Leader[] = [
     expertise: ["Innovation", "Engineering"],
     strategicHighlight: "Driving growth.",
     socials: { linkedin: "#", twitter: "#", email: "Venkatesh@antern.tech" },
+  },
+    {
+    name: "Surya Viswanath ",
+    role: "Head of quality (Advisory)",
+    image: Surya,
+    bio: "Technology leader driving large-scale platforms and digital transformation.",
+    fullBio: (
+      <>
+        Surya Viswanath is a seasoned IT and Quality Engineering leader with over a decade of experience driving business transformation, process automation, and technology delivery across BFSI, Retail, CPG, Travel & Hospitality, and Telecom industries. He has successfully led large-scale complex programs and delivering multimillion-dollar initiatives from concept to execution. Surya combines strategic insight with hands-on delivery, helping organizations accelerate time-to-market, reduce costs, and improve quality
+        <br />
+        With deep expertise in Quality Engineering, Product Strategy, and Engagement Management, Surya combines business insight with technology innovation to accelerate digital transformation, optimize processes, and implement scalable, automation-led solutions. He is recognized for building high-performing teams, fostering client trust, and embedding a culture of business-aligned quality and continuous improvement across organizations.
+        <br />
+        He is passionate about embedding a culture of innovation and business-aligned quality, leveraging AI, automation, and next-gen testing approaches to create measurable business value.
+      </>
+    ),
+    expertise: ["Quality Engineering", "Product Strategy", "Engagement Management", "Engineering"],
+    strategicHighlight: "Driving growth.",
+    socials: { linkedin: "#", twitter: "#", email: "Surya@antern.tech" },
   },
   {
     name: "Pradeep Nageshwar",
@@ -357,7 +377,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
           style={{ transform: `translate3d(0, ${offsetY * 0.15}px, 0)` }}
         >
           <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000"
+            src="https://images.unsplash.com/photo-1556565681-67b9cd907d20?q=80&w=2000"
             alt="Antern Leadership Collaboration"
             className="w-full h-full object-cover grayscale"
           />

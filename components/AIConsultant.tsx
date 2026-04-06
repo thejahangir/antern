@@ -33,7 +33,7 @@ export const AIConsultant: React.FC = () => {
           systemInstruction: `You are a helpful and professional AI assistant for Antern Technologies. 
           Information about Antern:
           - Slogan: Bright Thinking. Intelligent Solutions.
-          - Products: IAmInterviewed, SkillTest, ScanJD.
+          - Products: IamInterviewed, SkillTest, ScanJD.
           - Services: Flexible Talent & Tech Consultants, End-to-End Project Development.
           Always be concise, professional, and focus on business transformation and enterprise-grade strategy.`
         }

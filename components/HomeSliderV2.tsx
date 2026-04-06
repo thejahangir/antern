@@ -29,14 +29,20 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       id: 'vision',
       title: 'A Decade of Building. 500+ Customers Worldwide.',
       subtitle: 'Our Journey',
-      description: 'Antern Technologies has partnered with 500+ customers across the globe, building platforms and delivering engineering solutions. This journey shaped by long-term relationships, consistent delivery, and a strong focus on practical, scalable outcomes.',
+      description: (
+  <>
+    Antern Technologies has partnered with 500+ customers across the globe, building platforms and delivering engineering solutions.
+    <br />
+    This journey shaped by long-term relationships, consistent delivery, and a strong focus on practical, scalable outcomes.
+  </>
+),
       color: 'bg-[#0085F7]', // Antern blue
       images: [imagesList[0], imagesList[1], imagesList[2], imagesList[3], imagesList[4], imagesList[5]],
       hoverImages: [imagesList[6], imagesList[7], imagesList[8], imagesList[9], imagesList[10], imagesList[11]]
     },
     {
       id: 'iaminterviewed',
-      title: 'IAmInterviewed',
+      title: 'IamInterviewed',
       subtitle: 'Technical Interviews',
       description: 'An Interview-as-a-Service platform designed to scale technical hiring through expert-led evaluations. Enables organizations to assess candidates efficiently with structured interviews, detailed feedback, recorded sessions, and actionable insights.',
       color: 'bg-[#0060B5]', // Darker blue
@@ -63,7 +69,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
     },
     {
       id: 'delorg360',
-      title: 'DelOrg365',
+      title: 'DelOrg360',
       subtitle: 'Project Portfolio',
       description: 'An enterprise-grade project and delivery management platform. Offers real-time insights into execution, resource utilization, and performance to help organizations manage and optimize large-scale programs.',
       color: 'bg-[#1a1a1a]', // Dark gray
@@ -116,14 +122,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
               <div className="absolute inset-0 bg-black/5 mix-blend-multiply"></div>
               
               <div className="relative z-10 w-full">
-                 {/* Product Category Tag */}
-                 {i !== 0 && (
-                   <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/20 backdrop-blur-md border border-white/20 text-white/70 text-[11px] font-bold lowercase tracking-[0.10em] mb-4 shadow-sm">
-                      <span className="w-2 h-2 rounded-full bg-white/70"></span>
-                      our products
-                   </div>
-                 )}
-
+     
                  {/* Title */}
                  <h1 className="text-[2.5rem] font-bold text-white leading-tight mb-8 tracking-tight">
                     {/* Antern <br/> */}
@@ -134,7 +133,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
                  </h1>
 
                  {/* Links to all brands, highlighting the current one */}
-                 {i !== 0 && (
+                 {/* {i !== 0 && (
                    <ul className="space-y-3 font-medium text-[17px]">
                       {slides.slice(1).map((s, idx) => (
                         <li key={s.id}>
@@ -147,10 +146,10 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
                         </li>
                       ))}
                    </ul>
-                 )}
+                 )} */}
                  
                  <div className="mt-12 flex flex-col items-start">
-                   <p className="text-white/90 text-sm xl:text-[15px] font-light leading-relaxed mb-6">
+                   <p className="text-white/90 text-sm xl:text-[16px] font-light leading-relaxed mb-6">
                      {slide.description}
                    </p>
                    <button
@@ -161,7 +160,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
                           onNavigateToProduct(slide.id);
                         }
                       }}
-                      className="inline-block border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all duration-300 px-6 py-2.5 rounded font-bold text-xs uppercase tracking-widest"
+                      className="inline-block border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all duration-300 px-6 py-2.5 rounded font-bold text-xs uppercase tracking-widest mt-5"
                     >
                       Learn More
                     </button>
@@ -221,7 +220,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       </button>
       
       {/* Slide Pagination Numbers */}
-      <div className="absolute bottom-8 right-8 md:bottom-10 md:right-12 z-30 flex items-center gap-2 md:gap-3 pointer-events-auto">
+      {/* <div className="absolute bottom-8 right-8 md:bottom-10 md:right-12 z-30 flex items-center gap-2 md:gap-3 pointer-events-auto">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -235,7 +234,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
             {idx + 1}
           </button>
         ))}
-      </div>
+      </div> */}
 
     </section>
   );

@@ -18,12 +18,9 @@ const deliveryPoints = [
 export const Services: React.FC = () => {
   return (
     <section id="services" className="bg-white">
-      {/* Service Block 1 - White Theme - Compact */}
-      <div className="py-20 border-b border-gray-100">
+      {/* <div className="py-20 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            
-            {/* Content Side */}
             <div className="lg:col-span-5">
               <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight text-[#1A1A1A]">
@@ -32,7 +29,6 @@ export const Services: React.FC = () => {
               </h3>
               <p className="text-sm md:text-base text-gray-500 mb-8 leading-relaxed max-w-md font-normal">
               Drive growth and modernization with strategic digital innovation and expert technology consulting. From transformation roadmaps to execution, solutions are designed to optimize operations, reduce risk, and accelerate business performance.
-
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 pt-4 border-t border-gray-100">
@@ -44,8 +40,6 @@ export const Services: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            {/* Image Side */}
             <div className="lg:col-span-7 grayscale hover:grayscale-0 transition-all duration-700">
               <div className="aspect-[16/9] w-full overflow-hidden bg-gray-100">
                 <img 
@@ -58,14 +52,12 @@ export const Services: React.FC = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Service Block 2 - Dark Theme - Compact */}
-      <div className="py-20 bg-[#1A1A1A] text-white">
+      {/* <div className="py-20 bg-[#1A1A1A] text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            
-            {/* Image Side */}
             <div className="lg:col-span-7 order-last lg:order-first grayscale hover:grayscale-0 transition-all duration-700">
                <div className="aspect-[16/9] w-full overflow-hidden bg-[#222]">
                  <img 
@@ -75,8 +67,6 @@ export const Services: React.FC = () => {
                  />
                </div>
             </div>
-
-            {/* Content Side */}
             <div className="lg:col-span-5">
               <div className="accent-bar bg-white w-12 h-1 mb-6"></div>
               <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight">
@@ -98,7 +88,7 @@ export const Services: React.FC = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

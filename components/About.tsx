@@ -11,7 +11,7 @@ export const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="relative py-24 bg-white overflow-hidden selection:bg-[#0085F7] selection:text-[#fff]">
+    <section id="about" className="relative py-24 bg-white overflow-hidden selection:bg-[#0085F7] selection:text-[#fff] pb-0 pt-10">
       {/* Background Watermark Layer - Positioned tighter */}
       <div 
         className="absolute top-10 right-[-10%] text-[350px] font-black text-[#1A1A1A]/[0.02] select-none pointer-events-none leading-none tracking-tighter"
@@ -20,8 +20,7 @@ export const About: React.FC = () => {
         ANTERN
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* 1. NARRATIVE HEADER - Compact Layout */}
+      {/* <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-20 items-center">
           <div className="lg:col-span-7">
             <div className="accent-bar bg-[#004b23] w-16 h-1 mb-6"></div>
@@ -44,9 +43,7 @@ export const About: React.FC = () => {
 
       
 
-        {/* 3. IMPACT SYNC SECTION (Compact Version) */}
         <div className="relative group overflow-hidden bg-[#1A1A1A] flex flex-col lg:flex-row items-stretch border border-white/5">
-          {/* Visual Layer */}
           <div className="lg:w-1/2 relative overflow-hidden h-[350px] lg:h-auto border-r border-white/5">
             <img 
               src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000" 
@@ -55,14 +52,12 @@ export const About: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] via-transparent to-transparent"></div>
             
-            {/* Scanline Detail */}
             <div className="absolute inset-0 pointer-events-none opacity-20">
                <div className="w-full h-px bg-white/40 absolute top-1/2 left-0"></div>
                <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '100% 4px' }}></div>
             </div>
           </div>
 
-          {/* Metrics Layer - Tighter Layout */}
           <div className="lg:w-1/2 p-10 md:p-14 flex flex-col justify-center relative">
             <div className="absolute top-0 right-0 p-8 opacity-[0.03] text-[150px] font-black leading-none pointer-events-none text-white">
               +
@@ -92,7 +87,7 @@ export const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

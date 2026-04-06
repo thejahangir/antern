@@ -1,77 +1,121 @@
-
-import React, { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
-import { NavbarV2 } from './components/NavbarV2';
-import { Hero } from './components/Hero';
-import { HomeSlider } from './components/HomeSlider';
-import { HomeSliderV2 } from './components/HomeSliderV2';
-import { About } from './components/About';
-import { Services } from './components/Services';
-import { TransitionBanner } from './components/TransitionBanner';
-import { FluidBanner } from './components/FluidBanner';
-import { UXStudioBanner } from './components/UXStudioBanner';
-import { UXStudioDetail } from './components/UXStudioDetail';
-import { UXProcessDetail } from './components/UXProcessDetail';
-import { Leadership } from './components/Leadership';
-import { OurVision } from './components/OurVision';
-import { CEOMessage } from './components/CEOMessage';
-import { Careers } from './components/Careers';
-import { IdeasTransformation } from './components/IdeasTransformation';
-import { InnovationExcellence } from './components/InnovationExcellence';
-import { CultureCareers } from './components/CultureCareers';
-import { Testimonials } from './components/Testimonials';
-import { LatestNews } from './components/LatestNews';
-import { GetThereTogether } from './components/GetThereTogether';
-import { Footer } from './components/Footer';
-import { BackToTop } from './components/BackToTop';
-import { ProgressBar } from './components/ProgressBar';
-import { StrategyModal } from './components/StrategyModal';
+import React, { useState, useEffect } from "react";
+import { Navbar } from "./components/Navbar";
+import { HomeSliderV2 } from "./components/HomeSliderV2";
+import { About } from "./components/About";
+import { Services } from "./components/Services";
+import { TransitionBanner } from "./components/TransitionBanner";
+import { FluidBanner } from "./components/FluidBanner";
+import { UXStudioBanner } from "./components/UXStudioBanner";
+import { UXStudioDetail } from "./components/UXStudioDetail";
+import { UXProcessDetail } from "./components/UXProcessDetail";
+import { Leadership } from "./components/Leadership";
+import { OurVision } from "./components/OurVision";
+import { CEOMessage } from "./components/CEOMessage";
+import { Careers } from "./components/Careers";
+import { IdeasTransformation } from "./components/IdeasTransformation";
+import { InnovationExcellence } from "./components/InnovationExcellence";
+import { CultureCareers } from "./components/CultureCareers";
+import { Testimonials } from "./components/Testimonials";
+import { LatestNews } from "./components/LatestNews";
+import { GetThereTogether } from "./components/GetThereTogether";
+import { Footer } from "./components/Footer";
+import { BackToTop } from "./components/BackToTop";
+import { ProgressBar } from "./components/ProgressBar";
+import { StrategyModal } from "./components/StrategyModal";
 
 // New Page Components
-import { ProductRoadmap } from './components/ProductRoadmap';
-import { OnPremiseDelivery } from './components/OnPremiseDelivery';
-import { ODC } from './components/ODC';
-import { ManagedServices } from './components/ManagedServices';
-import { MarketReports } from './components/MarketReports';
-import { CaseStudies } from './components/CaseStudies';
-import { Whitepapers } from './components/Whitepapers';
-import { Events } from './components/Events';
-import { Sustainability } from './components/Sustainability';
-import { PrivacyPolicy } from './components/PrivacyPolicy';
-import { TermsOfService } from './components/TermsOfService';
-import { CookiePreference } from './components/CookiePreference';
-import { ContactPage } from './components/ContactPage';
-import { OurCulture } from './components/OurCulture';
-import { TechnicalInterviews } from './components/TechnicalInterviews';
-import { OnlineAssessments } from './components/OnlineAssessments';
-import { ScanningResume } from './components/ScanningResume';
-import { Solutions } from './components/Solutions';
-import { SoftwareDelivery } from './components/SoftwareDelivery';
-import { ProductsPage } from './components/ProductsPage';
+import { ProductRoadmap } from "./components/ProductRoadmap";
+import { OnPremiseDelivery } from "./components/OnPremiseDelivery";
+import { ODC } from "./components/ODC";
+import { ManagedServices } from "./components/ManagedServices";
+import { MarketReports } from "./components/MarketReports";
+import { CaseStudies } from "./components/CaseStudies";
+import { Whitepapers } from "./components/Whitepapers";
+import { Events } from "./components/Events";
+import { Sustainability } from "./components/Sustainability";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { TermsOfService } from "./components/TermsOfService";
+import { CookiePreference } from "./components/CookiePreference";
+import { ContactPage } from "./components/ContactPage";
+import { OurCulture } from "./components/OurCulture";
+import { TechnicalInterviews } from "./components/TechnicalInterviews";
+import { OnlineAssessments } from "./components/OnlineAssessments";
+import { ScanningResume } from "./components/ScanningResume";
+import { Solutions } from "./components/Solutions";
+import { SoftwareDelivery } from "./components/SoftwareDelivery";
+import { ProductsPage } from "./components/ProductsPage";
+import { ServicesPage } from "./components/ServicesPage";
 
-export type PageType = 
-  | 'home' | 'v2' | 'ux-studio' | 'ux-process' | 'leadership' | 'our-vision' | 'ceo-message' | 'careers' | 'culture'
-  | 'roadmap' | 'on-premise' | 'odc' | 'managed-services' | 'reports' | 'case-studies' 
-  | 'whitepapers' | 'events' | 'sustainability' | 'privacy' | 'terms' | 'cookies' | 'contact'
-  | 'technical-interviews' | 'online-assessments' | 'scanning-resume' | 'solutions' | 'software-delivery'  | 'products';
+export type PageType =
+  | "home"
+  | "ux-studio"
+  | "ux-process"
+  | "leadership"
+  | "our-vision"
+  | "ceo-message"
+  | "careers"
+  | "culture"
+  | "roadmap"
+  | "on-premise"
+  | "odc"
+  | "managed-services"
+  | "reports"
+  | "case-studies"
+  | "whitepapers"
+  | "events"
+  | "sustainability"
+  | "privacy"
+  | "terms"
+  | "cookies"
+  | "contact"
+  | "technical-interviews"
+  | "online-assessments"
+  | "scanning-resume"
+  | "solutions"
+  | "software-delivery"
+  | "products"
+  | "services";
 
 const VALID_PAGES: PageType[] = [
-  'v2', 'ux-studio', 'ux-process', 'leadership', 'our-vision', 'ceo-message', 'careers', 'culture',
-  'roadmap', 'on-premise', 'odc', 'managed-services', 'reports', 'case-studies', 
-  'whitepapers', 'events', 'sustainability', 'privacy', 'terms', 'cookies', 'contact',
-  'technical-interviews', 'online-assessments', 'scanning-resume', 'solutions', 'software-delivery','products'
+  "ux-studio",
+  "ux-process",
+  "leadership",
+  "our-vision",
+  "ceo-message",
+  "careers",
+  "culture",
+  "roadmap",
+  "on-premise",
+  "odc",
+  "managed-services",
+  "reports",
+  "case-studies",
+  "whitepapers",
+  "events",
+  "sustainability",
+  "privacy",
+  "terms",
+  "cookies",
+  "contact",
+  "technical-interviews",
+  "online-assessments",
+  "scanning-resume",
+  "solutions",
+  "software-delivery",
+  "products",
+  "services",
 ];
 
 const getPageFromHash = (): PageType => {
   try {
-    const hash = window.location.hash.replace('#', '');
+    const hash = window.location.hash.replace("#", "");
     if (VALID_PAGES.includes(hash as PageType)) {
       return hash as PageType;
     }
   } catch (e) {
     console.warn("Could not access location hash:", e);
   }
-  return 'home';
+  return "home";
 };
 
 const App: React.FC = () => {
@@ -79,7 +123,9 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageType>(getPageFromHash());
   const [navSource, setNavSource] = useState<PageType | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState<'strategy' | 'audit'>('strategy');
+  const [modalContext, setModalContext] = useState<"strategy" | "audit">(
+    "strategy",
+  );
 
   // Handle Browser Back/Forward Navigation
   useEffect(() => {
@@ -93,16 +139,16 @@ const App: React.FC = () => {
       }
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -116,29 +162,32 @@ const App: React.FC = () => {
     // Update URL Hash to support browser back button
     // Wrapped in try/catch to handle environments where pushState is restricted (e.g., sandboxed iframes/blobs)
     try {
-      const url = page === 'home' ? window.location.pathname : `#${page}`;
-      const hashCheck = page === 'home' ? '' : `#${page}`;
-      
+      const url = page === "home" ? window.location.pathname : `#${page}`;
+      const hashCheck = page === "home" ? "" : `#${page}`;
+
       if (window.location.hash !== hashCheck) {
-        window.history.pushState({ source: source || null }, '', url);
+        window.history.pushState({ source: source || null }, "", url);
       }
     } catch (e) {
-      console.warn("Navigation state update failed (likely restricted environment):", e);
+      console.warn(
+        "Navigation state update failed (likely restricted environment):",
+        e,
+      );
     }
   };
 
   const openStrategySession = () => {
-    setModalContext('strategy');
+    setModalContext("strategy");
     setIsModalOpen(true);
   };
 
   const openAuditRequest = () => {
-    setModalContext('audit');
+    setModalContext("audit");
     setIsModalOpen(true);
   };
 
   const handleNavigateToProduct = (productId: string) => {
-    navigateTo('products');
+    navigateTo("products");
     setTimeout(() => {
       const el = document.getElementById(productId);
       if (el) {
@@ -146,150 +195,162 @@ const App: React.FC = () => {
         const bodyRect = document.body.getBoundingClientRect().top;
         const elementRect = el.getBoundingClientRect().top;
         const elementPosition = elementRect - bodyRect;
-        
+
         window.scrollTo({
           top: elementPosition - offset,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     }, 100);
   };
 
   return (
-    <div id="top" className="min-h-screen selection:bg-[#0085F7] selection:text-[#fff] bg-white">
+    <div
+      id="top"
+      className="min-h-screen selection:bg-[#0085F7] selection:text-[#fff] bg-white overflow-x-hidden"
+    >
       <ProgressBar />
-      {currentPage === 'v2' ? (
-        <NavbarV2 
-          isScrolled={isScrolled} 
-          onNavigateHome={() => navigateTo('home')} 
-          isDetailPage={false}
-          onNavigateToUXStudio={() => navigateTo('ux-studio')}
-          onNavigateToLeadership={() => navigateTo('leadership')}
-          onNavigateToVision={() => navigateTo('our-vision')}
-          onNavigateToCEO={() => navigateTo('ceo-message')}
-          onNavigateToCareers={() => navigateTo('careers')}
-          onNavigateTo={(page: PageType) => navigateTo(page)}
-          currentPage={currentPage}
-          onContact={() => navigateTo('contact')}
-        />
-      ) : (
-        <Navbar 
-          isScrolled={isScrolled} 
-          onNavigateHome={() => navigateTo('home')} 
-          isDetailPage={currentPage !== 'home' && currentPage !== 'v2'}
-          onNavigateToUXStudio={() => navigateTo('ux-studio')}
-          onNavigateToLeadership={() => navigateTo('leadership')}
-          onNavigateToVision={() => navigateTo('our-vision')}
-          onNavigateToCEO={() => navigateTo('ceo-message')}
-          onNavigateToCareers={() => navigateTo('careers')}
-          onNavigateTo={(page: PageType) => navigateTo(page)}
-          currentPage={currentPage}
-          onContact={() => navigateTo('contact')}
-        />
-      )}
-      
-      {(currentPage === 'home' || currentPage === 'v2') && (
+      <Navbar
+        isScrolled={isScrolled}
+        onNavigateHome={() => navigateTo("home")}
+        isDetailPage={currentPage !== "home"}
+        onNavigateToUXStudio={() => navigateTo("ux-studio")}
+        onNavigateToLeadership={() => navigateTo("leadership")}
+        onNavigateToVision={() => navigateTo("our-vision")}
+        onNavigateToCEO={() => navigateTo("ceo-message")}
+        onNavigateToCareers={() => navigateTo("careers")}
+        onNavigateTo={(page: PageType) => navigateTo(page)}
+        currentPage={currentPage}
+        onContact={() => navigateTo("contact")}
+      />
+
+      {currentPage === "home" && (
         <main>
-          {/* <Hero onInitiateStrategy={openStrategySession} onViewSolutions={() => navigateTo('solutions')} /> */}
-          {currentPage === 'home' ? (
-            <HomeSlider onNavigateToProduct={handleNavigateToProduct} />
-          ) : (
-            <HomeSliderV2 
-              onNavigateToProduct={handleNavigateToProduct} 
-              onNavigateToVision={() => navigateTo('our-vision')}
-            />
-          )}
+          <HomeSliderV2
+            onNavigateToProduct={handleNavigateToProduct}
+            onNavigateToVision={() => navigateTo("our-vision")}
+          />
           <About />
-       
+
           <Services />
-          
-          
+
           {/* <InnovationExcellence /> */}
 
-         
           <LatestNews />
-          <FluidBanner onExplore={() => navigateTo('managed-services')} />
+          <FluidBanner onExplore={() => navigateTo("managed-services")} />
           {/* <UXStudioBanner onKnowDetails={() => navigateTo('ux-studio')} /> */}
           <Testimonials />
           <GetThereTogether onPartner={openStrategySession} />
         </main>
       )}
 
-      {currentPage === 'ux-studio' && (
-        <UXStudioDetail 
-          onExploreProcess={() => navigateTo('ux-process')} 
-          onInitiateStrategy={openStrategySession} 
-          onRequestAudit={openAuditRequest} 
-          showBackToSolutions={navSource === 'solutions'}
-          onBackToSolutions={() => navigateTo('solutions')}
+      {currentPage === "ux-studio" && (
+        <UXStudioDetail
+          onExploreProcess={() => navigateTo("ux-process")}
+          onInitiateStrategy={openStrategySession}
+          onRequestAudit={openAuditRequest}
+          showBackToSolutions={navSource === "solutions"}
+          onBackToSolutions={() => navigateTo("solutions")}
         />
       )}
-      {currentPage === 'ux-process' && <UXProcessDetail onStartDiscovery={openStrategySession} />}
-      {currentPage === 'leadership' && <Leadership onContact={() => navigateTo('contact')} />}
-      {currentPage === 'our-vision' && <OurVision onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'ceo-message' && <CEOMessage onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'careers' && <Careers />}
-      {currentPage === 'culture' && <OurCulture onExploreCareers={() => navigateTo('careers')} onInitiateStrategy={openStrategySession} />}
-      
-      {/* New Pages Mapping */}
-      {currentPage === 'roadmap' && <ProductRoadmap onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'on-premise' && (
-        <OnPremiseDelivery 
-          onInitiateStrategy={openStrategySession} 
-          showBackToSolutions={navSource === 'solutions'}
-          onBackToSolutions={() => navigateTo('solutions')}
-        />
+      {currentPage === "ux-process" && (
+        <UXProcessDetail onStartDiscovery={openStrategySession} />
       )}
-      {currentPage === 'odc' && (
-        <ODC 
-          onInitiateStrategy={openStrategySession} 
-          showBackToSolutions={navSource === 'solutions'}
-          onBackToSolutions={() => navigateTo('solutions')}
-        />
+      {currentPage === "leadership" && (
+        <Leadership onContact={() => navigateTo("contact")} />
       )}
-      {currentPage === 'managed-services' && (
-        <ManagedServices 
-          onInitiateStrategy={openStrategySession} 
-          showBackToSolutions={navSource === 'solutions'}
-          onBackToSolutions={() => navigateTo('solutions')}
-        />
+      {currentPage === "our-vision" && (
+        <OurVision onInitiateStrategy={openStrategySession} />
       )}
-      {currentPage === 'reports' && <MarketReports />}
-      {currentPage === 'case-studies' && <CaseStudies />}
-      {currentPage === 'whitepapers' && <Whitepapers />}
-      {currentPage === 'events' && <Events />}
-      {currentPage === 'sustainability' && <Sustainability />}
-      {currentPage === 'privacy' && <PrivacyPolicy />}
-      {currentPage === 'terms' && <TermsOfService />}
-      {currentPage === 'cookies' && <CookiePreference />}
-      {currentPage === 'contact' && <ContactPage onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'technical-interviews' && <TechnicalInterviews onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'online-assessments' && <OnlineAssessments onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'scanning-resume' && <ScanningResume onInitiateStrategy={openStrategySession} />}
-      {currentPage === 'solutions' && (
-        <Solutions 
-          onInitiateStrategy={openStrategySession} 
-          onNavigateTo={(page) => navigateTo(page as PageType, 'solutions')} 
-        />
+      {currentPage === "ceo-message" && (
+        <CEOMessage onInitiateStrategy={openStrategySession} />
       )}
-      {currentPage === 'software-delivery' && (
-        <SoftwareDelivery 
-          onInitiateStrategy={openStrategySession} 
-          onNavigateTo={(page: PageType) => navigateTo(page)} 
-        />
-      )}
-       {currentPage === 'products' && (
-        <ProductsPage 
-          onNavigateTo={(page: string) => navigateTo(page as PageType)} 
+      {currentPage === "careers" && <Careers />}
+      {currentPage === "culture" && (
+        <OurCulture
+          onExploreCareers={() => navigateTo("careers")}
+          onInitiateStrategy={openStrategySession}
         />
       )}
 
-      <Footer onNavigateTo={(page: PageType) => navigateTo(page)} onInitiateStrategy={openStrategySession} />
+      {/* New Pages Mapping */}
+      {currentPage === "roadmap" && (
+        <ProductRoadmap onInitiateStrategy={openStrategySession} />
+      )}
+      {currentPage === "on-premise" && (
+        <OnPremiseDelivery
+          onInitiateStrategy={openStrategySession}
+          showBackToSolutions={navSource === "solutions"}
+          onBackToSolutions={() => navigateTo("solutions")}
+        />
+      )}
+      {currentPage === "odc" && (
+        <ODC
+          onInitiateStrategy={openStrategySession}
+          showBackToSolutions={navSource === "solutions"}
+          onBackToSolutions={() => navigateTo("solutions")}
+        />
+      )}
+      {currentPage === "managed-services" && (
+        <ManagedServices
+          onInitiateStrategy={openStrategySession}
+          showBackToSolutions={navSource === "solutions"}
+          onBackToSolutions={() => navigateTo("solutions")}
+        />
+      )}
+      {currentPage === "reports" && <MarketReports />}
+      {currentPage === "case-studies" && <CaseStudies />}
+      {currentPage === "whitepapers" && <Whitepapers />}
+      {currentPage === "events" && <Events />}
+      {currentPage === "sustainability" && <Sustainability />}
+      {currentPage === "privacy" && <PrivacyPolicy />}
+      {currentPage === "terms" && <TermsOfService />}
+      {currentPage === "cookies" && <CookiePreference />}
+      {currentPage === "contact" && (
+        <ContactPage onInitiateStrategy={openStrategySession} />
+      )}
+      {currentPage === "technical-interviews" && (
+        <TechnicalInterviews onInitiateStrategy={openStrategySession} />
+      )}
+      {currentPage === "online-assessments" && (
+        <OnlineAssessments onInitiateStrategy={openStrategySession} />
+      )}
+      {currentPage === "scanning-resume" && (
+        <ScanningResume onInitiateStrategy={openStrategySession} />
+      )}
+      {currentPage === "solutions" && (
+        <Solutions
+          onInitiateStrategy={openStrategySession}
+          onNavigateTo={(page) => navigateTo(page as PageType, "solutions")}
+        />
+      )}
+      {currentPage === "software-delivery" && (
+        <SoftwareDelivery
+          onInitiateStrategy={openStrategySession}
+          onNavigateTo={(page: PageType) => navigateTo(page)}
+        />
+      )}
+      {currentPage === "products" && (
+        <ProductsPage
+          onNavigateTo={(page: string) => navigateTo(page as PageType)}
+        />
+      )}
+      {currentPage === "services" && (
+        <ServicesPage
+          onNavigateTo={(page: string) => navigateTo(page as PageType)}
+        />
+      )}
+
+      <Footer
+        onNavigateTo={(page: PageType) => navigateTo(page)}
+        onNavigateToProduct={handleNavigateToProduct}
+        onInitiateStrategy={openStrategySession}
+      />
       <BackToTop />
 
-      <StrategyModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
+      <StrategyModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
         context={modalContext}
       />
     </div>

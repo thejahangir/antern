@@ -23,7 +23,7 @@ export const LogoV2: React.FC<LogoProps> = ({
   }, []);
 
   return (
-    <div className={`flex flex-col ${className}`}>
+    <div className={`flex flex-col mt-3 ${className}`}>
       <img
         src={LogoV2Img}
         className="logo-antern transition-all duration-300"

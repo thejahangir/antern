@@ -33,7 +33,7 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
   const products = [
     {
       id: "01",
-      name: "IAmInterviewed",
+      name: "IamInterviewed",
       tagline: "Video Intelligence",
       description: "An enterprise-grade video assessment platform that uses behavioral AI to analyze candidate communication skills, reducing time-to-hire by 40%.",
       features: ["Sentiment Analysis", "Asynchronous Screening", "Bias Reduction"],

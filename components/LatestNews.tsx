@@ -21,9 +21,8 @@ const newsItems = [
 
 export const LatestNews: React.FC = () => {
   return (
-    <section id="news" className="py-20 bg-white border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Compact Header */}
+    <section id="news" className="bg-white border-t border-gray-100">
+      {/* <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-10">
           <div>
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-4"></div>
@@ -39,11 +38,9 @@ export const LatestNews: React.FC = () => {
           </a>
         </div>
 
-        {/* Compact Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {newsItems.map((news, idx) => (
             <article key={idx} className="group cursor-pointer flex flex-col h-full">
-              {/* Image Container */}
               <div className="aspect-[3/2] overflow-hidden bg-gray-100 mb-5 relative">
                 <img 
                   src={news.image} 
@@ -57,7 +54,6 @@ export const LatestNews: React.FC = () => {
                 </div>
               </div>
               
-              {/* Content */}
               <div className="flex flex-col flex-1">
                 <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 leading-snug group-hover:text-[#004b23] transition-colors">
                   {news.title}
@@ -77,7 +73,7 @@ export const LatestNews: React.FC = () => {
             </article>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

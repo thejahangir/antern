@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Logo } from './Logo';
+import { LogoV2 } from './LogoV2';
 
 interface NavItem {
   label: string;
@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       id: 'products',
       targetPage: 'products',
       subItems: [
-        { label: 'IAmInterviewed', id: 'iaminterviewed', targetPage: 'products' },
+        { label: 'IamInterviewed', id: 'iaminterviewed', targetPage: 'products' },
         { label: 'MySkillTest', id: 'myskilltest', targetPage: 'products' },
         { label: 'ScanJD', id: 'scanjd', targetPage: 'products' },
         { label: 'DelOrg360', id: 'delorg360', targetPage: 'products' }
@@ -74,15 +74,16 @@ export const Navbar: React.FC<NavbarProps> = ({
     { 
       label: 'Services', 
       id: 'services',
+      targetPage: 'services',
       subItems: [
         // { label: 'Technical Interviews', id: 'technical-interviews', targetPage: 'technical-interviews' },
         // { label: 'Online Assessments', id: 'online-assessments', targetPage: 'online-assessments' },
         // { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' },
         // { label: 'Software Delivery', id: 'software-delivery', targetPage: 'software-delivery' },
-        { label: 'On-Premise Delivery', id: 'on-premise', targetPage: 'on-premise' },
-        { label: 'ODC (Offshore Dev Centers)', id: 'odc', targetPage: 'odc' },
-        { label: 'Managed Services', id: 'managed-services', targetPage: 'managed-services' },
-        { label: 'UX Studio', id: 'ux-studio-services', targetPage: 'ux-studio' }
+        { label: 'On-Premise Delivery', id: 'on-premise', targetPage: 'services' },
+        { label: 'ODC (Offshore Dev Centers)', id: 'odc', targetPage: 'services' },
+        { label: 'Managed Services', id: 'managed-services', targetPage: 'services' },
+        { label: 'UX Studio', id: 'ux-studio-services', targetPage: 'services' }
       ]
     },
     { label: 'Careers', id: 'careers', targetPage: 'careers' }
@@ -99,8 +100,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     }
 
     if (targetPage) {
-      if (targetPage === 'products' && currentPage === 'products') {
-        // Already on products page, just scroll
+      if ((targetPage === 'products' && currentPage === 'products') || (targetPage === 'services' && currentPage === 'services')) {
+        // Already on target page, just scroll
         const element = document.getElementById(id);
         if (element) {
           const offset = 100;
@@ -117,8 +118,8 @@ export const Navbar: React.FC<NavbarProps> = ({
         return;
       }
 
-      if (targetPage === 'products' && currentPage !== 'products') {
-        // Navigate to products then scroll
+      if ((targetPage === 'products' && currentPage !== 'products') || (targetPage === 'services' && currentPage !== 'services')) {
+        // Navigate to target page then scroll
         onNavigateTo(targetPage);
         setTimeout(() => {
           const element = document.getElementById(id);
@@ -187,14 +188,12 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className={`bg-white text-gray-500 overflow-hidden transition-all duration-500 ease-in-out ${isScrolled ? 'max-h-0 opacity-0 border-none' : 'max-h-10 opacity-100 border-b border-gray-200'}`}>
         <div className="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
           <div className="flex items-center gap-6">
-            <a href="tel:+15550000000" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
-              <span>+91 98805 65578</span>
-            </a>
-            <a href="mailto:rajani@anterntech.com" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
-              <span>rajani@anterntech.com</span>
+            <a href="mailto:info@anterntech.com" className="hover:text-[#004b23] transition-colors flex items-center gap-2">
+              <span>info@anterntech.com</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
+            <span>Connect with us on</span>
             <a href="https://www.linkedin.com/company/antern-technologies/" className="hover:text-[#0085F7] transition-colors" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -221,7 +220,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className={`max-w-7xl mx-auto px-6 flex justify-between items-center transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
         {/* Logo (Left) */}
         <div onClick={handleLogoClick} className="cursor-pointer relative z-[60] shrink-0">
-          <Logo 
+          <LogoV2 
             className={isScrolled ? 'h-6' : 'h-8'} 
             isLight={false}
           />
@@ -232,139 +231,75 @@ export const Navbar: React.FC<NavbarProps> = ({
           
           {/* 1. Core Navigation Items (About, Products, Services, Careers) */}
           <div className={`flex items-center gap-0 lg:gap-1 text-[13px] tracking-[0.12em] uppercase transition-colors duration-300 ${textColor}`}>
-            {isDetailPage ? (
-              <>
-                <button 
-                  onClick={onNavigateHome} 
-                  className={`flex items-center gap-3 group/home font-bold px-4 py-2 cursor-pointer ${hoverColor}`}
-                >
-                  <span className="w-4 h-px bg-current opacity-30 group-hover/home:w-6 group-hover/home:opacity-100 transition-all"></span>
-                  Back to Home
-                </button>
-
+            {navItems.map((item) => {
+              const isActive = currentPage === item.targetPage;
+              return (
                 <div 
-                  className="relative flex items-center cursor-pointer"
-                  onMouseEnter={() => setIsDiscoverOpen(true)}
-                  onMouseLeave={() => setIsDiscoverOpen(false)}
+                  key={item.label}
+                  className="relative group h-full cursor-pointer"
+                  onMouseEnter={() => setActiveDropdown(item.label)}
+                  onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <button className={`px-4 py-2 border border-current opacity-30 group hover:opacity-100 transition-all flex items-center gap-3 font-bold cursor-pointer ${textColor}`}>
-                    Discover
-                    <div className="flex gap-0.5">
-                       <div className={`w-1 h-1 bg-current transition-all duration-300 ${isDiscoverOpen ? 'scale-150 bg-[#70e000]' : 'scale-100'}`}></div>
-                       <div className={`w-1 h-1 bg-current transition-all duration-300 delay-75 ${isDiscoverOpen ? 'scale-150 bg-[#70e000]' : 'scale-100'}`}></div>
-                    </div>
-                  </button>
+                  <a 
+                    href={item.externalLink || (item.targetPage ? undefined : `#${item.id}`)}
+                    onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)} 
+                    className={`
+                      relative px-3 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
+                      ${hoverColor} 
+                      ${isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'}
+                      ${isActive 
+                        ? `text-[#004b23] font-black ${isScrolled ? 'bg-[#0085F7]/10' : 'bg-white/5 text-[#0085F7]'}` 
+                        : 'font-bold'
+                      }
+                    `}
+                  >
+                    {item.label}
+                    {item.subItems && (
+                      <svg className={`w-3 h-3 opacity-50 transition-transform duration-300 ${activeDropdown === item.label ? 'rotate-180 opacity-100' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    )}
+                    {isActive && (
+                      <span className="absolute bottom-1.5 left-3 right-3 h-0.5 bg-[#0085F7] rounded-full"></span>
+                    )}
+                  </a>
 
-                  <div className={`absolute left-0 top-full pt-4 transition-all duration-500 ease-expo ${isDiscoverOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
-                    <div className={`flex items-center gap-2 p-2 ${dropdownBg} border ${dropdownBorder} shadow-2xl rounded-sm`}>
-                      {navItems.map((item) => (
-                        <div 
-                          key={item.label}
-                          className="relative group/mini cursor-pointer"
-                          onMouseEnter={() => setActiveDropdown(item.label)}
-                          onMouseLeave={() => setActiveDropdown(null)}
-                        >
-                          <button 
-                            onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)}
-                            className={`px-4 py-2 whitespace-nowrap text-[11px] font-black tracking-widest cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all`}
+                  {item.subItems && (
+                    <div className={`absolute left-0 top-full pt-3 transition-all duration-300 transform-gpu z-50 ${
+                      activeDropdown === item.label ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
+                    }`}>
+                      <div className={`w-[260px] ${dropdownBg} border ${dropdownBorder} shadow-[0_20px_50px_rgba(0,0,0,0.15)] p-1.5 flex flex-col rounded-sm overflow-hidden`}>
+                        {item.subItems.map((sub) => (
+                          <a
+                            key={sub.label}
+                            href={sub.externalLink || (sub.targetPage ? undefined : `#${sub.id}`)}
+                            onClick={(e) => handleNavClick(e, sub.id, sub.targetPage, sub.externalLink)}
+                            className={`group/sub px-5 py-4 text-[12px] font-bold tracking-[0.12em] cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all duration-300 flex items-center justify-between border-b border-gray-100/5 last:border-0`}
                           >
-                            {item.label}
-                          </button>
-
-                          {item.subItems && activeDropdown === item.label && (
-                            <div className={`absolute left-0 top-full pt-2 z-[70] transition-all duration-300`}>
-                              <div className={`w-64 ${dropdownBg} border ${dropdownBorder} shadow-xl p-1 flex flex-col rounded-sm`}>
-                                {item.subItems.map((sub) => (
-                                  <button
-                                    key={sub.label}
-                                    onClick={(e) => handleNavClick(e as any, sub.id, sub.targetPage, sub.externalLink)}
-                                    className={`px-4 py-3 text-[11px] font-bold text-left cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all border-b border-white/5 last:border-0`}
-                                  >
-                                    {sub.label}
-                                  </button>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      ))}
+                            <span className="transform transition-transform duration-300 group-hover/sub:translate-x-1">
+                              {sub.label}
+                            </span>
+                            <svg className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover/sub:opacity-100 group-hover/sub:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
-              </>
-            ) : (
-              <>
-                {navItems.map((item) => {
-                  const isActive = currentPage === item.targetPage;
-                  return (
-                    <div 
-                      key={item.label}
-                      className="relative group h-full cursor-pointer"
-                      onMouseEnter={() => setActiveDropdown(item.label)}
-                      onMouseLeave={() => setActiveDropdown(null)}
-                    >
-                      <a 
-                        href={item.externalLink || (item.targetPage ? undefined : `#${item.id}`)}
-                        onClick={(e) => handleNavClick(e, item.id, item.targetPage, item.externalLink)} 
-                        className={`
-                          relative px-3 py-3 flex items-center gap-2 transition-all duration-300 rounded-sm cursor-pointer
-                          ${hoverColor} 
-                          ${isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'}
-                          ${isActive 
-                            ? `text-[#004b23] font-black ${isScrolled ? 'bg-[#70e000]/10' : 'bg-white/5 text-[#70e000]'}` 
-                            : 'font-bold'
-                          }
-                        `}
-                      >
-                        {item.label}
-                        {item.subItems && (
-                          <svg className={`w-3 h-3 opacity-50 transition-transform duration-300 ${activeDropdown === item.label ? 'rotate-180 opacity-100' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        )}
-                        {isActive && (
-                          <span className="absolute bottom-1.5 left-3 right-3 h-0.5 bg-[#70e000] rounded-full"></span>
-                        )}
-                      </a>
-
-                      {item.subItems && (
-                        <div className={`absolute left-0 top-full pt-3 transition-all duration-300 transform-gpu z-50 ${
-                          activeDropdown === item.label ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
-                        }`}>
-                          <div className={`w-[260px] ${dropdownBg} border ${dropdownBorder} shadow-[0_20px_50px_rgba(0,0,0,0.15)] p-1.5 flex flex-col rounded-sm overflow-hidden`}>
-                            {item.subItems.map((sub) => (
-                              <a
-                                key={sub.label}
-                                href={sub.externalLink || (sub.targetPage ? undefined : `#${sub.id}`)}
-                                onClick={(e) => handleNavClick(e, sub.id, sub.targetPage, sub.externalLink)}
-                                className={`group/sub px-5 py-4 text-[12px] font-bold tracking-[0.12em] cursor-pointer ${subTextColor} ${subHoverTextColor} ${subHoverBg} transition-all duration-300 flex items-center justify-between border-b border-gray-100/5 last:border-0`}
-                              >
-                                <span className="transform transition-transform duration-300 group-hover/sub:translate-x-1">
-                                  {sub.label}
-                                </span>
-                                <svg className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover/sub:opacity-100 group-hover/sub:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                </svg>
-                              </a>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </>
-            )}
+              );
+            })}
           </div>
 
-          {/* 2. UX Studio (Differentiated Pill Style) */}
-          <button 
+
+          {/* <button 
             onClick={() => onNavigateTo('ux-studio')}
             className={`
               text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-500 relative group px-6 py-2.5 rounded-full border flex items-center gap-2.5 cursor-pointer
               ${currentPage === 'ux-studio' 
                 ? 'bg-[#00A94B] text-white border-[#00A94B] shadow-[0_10px_20px_rgba(0,75,35,0.3) ]' 
-                : 'text-[#004b23] border-[#004b23]/20 hover:bg-[#00A94B] hover:text-white hover:border-[#00A94B]'
+                : 'text-[#004b23] border-[#004b23]/20 hover:bg-[#00A94B] hover:text-white hover:border-[#004b23]'
               }
             `}
           >
@@ -374,13 +309,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             }`}></span>
           </button>
 
-          {/* 3. Contact CTA (Rightmost in the desktop view) */}
+     
           <button 
             onClick={onContact}
             className={`px-8 py-3.5 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 shadow-sm whitespace-nowrap ml-2 cursor-pointer bg-[#1A1A1A] text-white hover:bg-[#464646] hover:text-[#E0E0E0]`}
           >
             Contact
-          </button>
+          </button> */}
 
         </div>
 
@@ -427,13 +362,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                    )}
                 </div>
              ))}
-             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
+             {/* <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
                 UX Studio
                 <span className="w-2 h-2 bg-[#70e000] rounded-full animate-pulse"></span>
              </button>
              <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('contact'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#ccff33] text-left text-white/50 cursor-pointer">
                 Contact
-             </button>
+             </button> */}
           </div>
         </div>
       </div>

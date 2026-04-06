@@ -47,7 +47,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
       phone: formData.phone,
       location: formData.location,
       message: formData.query,
-      context_type: context === 'audit' ? 'Secure Audit Portal' : 'Strategic Advisory Engine',
+      context_type: context === 'audit' ? 'Your Next Move Starts Here' : 'Start the Conversation',
       page_context: window.location.hash || 'Home'
     };
 
@@ -91,17 +91,17 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
         <div className="p-6 md:p-8 border-b border-white/10 flex justify-between items-center bg-white/5">
           <div className="flex items-center gap-6">
             <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-[#70e000]"></div>
-              <div className="w-3 h-3 rounded-full bg-[#ccff33]"></div>
-              <div className="w-3 h-3 rounded-full bg-white"></div>
+              <div className="w-3 h-3 rounded-full bg-[#0085F7]"></div>
+              <div className="w-3 h-3 rounded-full bg-[#00A94B]"></div>
+              <div className="w-3 h-3 rounded-full bg-[#004B23]"></div>
             </div>
             <div>
               <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#D9D1DB]">
-                {context === 'audit' ? 'Secure Audit Portal' : 'Strategic Advisory Engine'}
+                {context === 'audit' ? 'Start the Conversation' : 'Start the Conversation'}
               </h2>
-              <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">
-                {context === 'audit' ? 'Direct Audit Channel' : 'Direct Executive Channel'}
-              </p>
+              {/* <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">
+                {context === 'audit' ? 'Start the Conversation' : 'Start the Conversation'}
+              </p> */}
             </div>
           </div>
           <button 

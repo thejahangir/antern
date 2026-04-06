@@ -36,11 +36,9 @@ export const Testimonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white overflow-hidden border-t border-gray-100">
+    <section className="py-20 bg-white overflow-hidden border-t border-gray-100 pt-1 pb-1">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          
-          {/* Section Info - Compact */}
           <div className="lg:col-span-4">
             <div className="accent-bar bg-[#004b23] w-12 h-1 mb-6"></div>
             <h3 className="text-3xl md:text-4xl font-black mb-6 leading-none  tracking-tight text-[#1A1A1A]">
@@ -52,7 +50,6 @@ export const Testimonials: React.FC = () => {
               Our clients are leaders in their respective industries, driving transformation through our intelligent digital solutions.
             </p>
             
-            {/* Custom Navigation Controls - Compact */}
             <div className="flex items-center gap-3">
               <button 
                 onClick={() => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
@@ -81,7 +78,6 @@ export const Testimonials: React.FC = () => {
             </div>
           </div>
 
-          {/* Testimonial Content - Compact */}
           <div className="lg:col-span-8 relative min-h-[280px] lg:min-h-[240px]">
             {testimonials.map((t, idx) => (
               <div 
