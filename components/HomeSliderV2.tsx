@@ -3,9 +3,14 @@ import React, { useState, useEffect } from 'react';
 interface HomeSliderV2Props {
   onNavigateToProduct: (productId: string) => void;
   onNavigateToVision?: () => void;
+  onNavigateToServices?: () => void;
 }
 
-export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct, onNavigateToVision }) => {
+export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ 
+  onNavigateToProduct, 
+  onNavigateToVision,
+  onNavigateToServices 
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -30,12 +35,13 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       title: 'A Decade of Building. 500+ Customers Worldwide.',
       subtitle: 'Our Journey',
       description: (
-  <>
-    Antern Technologies has partnered with 500+ customers across the globe, building platforms and delivering engineering solutions.
-    <br />
-    This journey shaped by long-term relationships, consistent delivery, and a strong focus on practical, scalable outcomes.
-  </>
-),
+        <>
+        <p>Antern Technologies has partnered with 500+ customers across the globe, building platforms and delivering engineering solutions.</p>
+          <br />
+          
+          <p>This journey shaped by long-term relationships, consistent delivery, and a strong focus on practical, scalable outcomes.</p>
+        </>
+      ),
       color: 'bg-[#0085F7]', // Antern blue
       images: [imagesList[0], imagesList[1], imagesList[2], imagesList[3], imagesList[4], imagesList[5]],
       hoverImages: [imagesList[6], imagesList[7], imagesList[8], imagesList[9], imagesList[10], imagesList[11]]
@@ -62,7 +68,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       id: 'scanjd',
       title: 'ScanJD',
       subtitle: 'Semantic Parsing',
-      description: 'An AI-driven resume parsing and matching engine powered by semantic intelligence. Delivers context-aware candidate insights and precise JD-to-profile matching for faster and more effective hiring decisions. DelOrg360',
+      description: 'An AI-driven resume parsing and matching engine powered by semantic intelligence. Delivers context-aware candidate insights and precise JD-to-profile matching for faster and more effective hiring decisions.',
       color: 'bg-[#050505]', // Dark
       images: [imagesList[2], imagesList[4], imagesList[6], imagesList[8], imagesList[10], imagesList[0]],
       hoverImages: [imagesList[3], imagesList[5], imagesList[7], imagesList[9], imagesList[11], imagesList[1]]
@@ -72,6 +78,21 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       title: 'DelOrg360',
       subtitle: 'Project Portfolio',
       description: 'An enterprise-grade project and delivery management platform. Offers real-time insights into execution, resource utilization, and performance to help organizations manage and optimize large-scale programs.',
+      color: 'bg-[#1a1a1a]', // Dark gray
+      images: [imagesList[1], imagesList[3], imagesList[5], imagesList[7], imagesList[9], imagesList[11]],
+      hoverImages: [imagesList[0], imagesList[2], imagesList[4], imagesList[6], imagesList[8], imagesList[10]]
+    },
+    {
+      id: 'services',
+      title: 'Services',
+      subtitle: 'Project Portfolio',
+      description: (
+        <>
+        <p>Antern Technologies provides end-to-end engineering services to build, scale, and modernize digital platforms. Our expertise spans AI/ML, cloud, and modern engineering practices—from ideation to deployment.</p>
+        <br/>
+        <p>We support cloud migration, system integration, and legacy transformation, along with flexible models like ODC, GCC setup, and dedicated teams. Our focus is on delivering scalable, high-performance solutions with measurable outcomes.</p>
+        </>
+      ),
       color: 'bg-[#1a1a1a]', // Dark gray
       images: [imagesList[1], imagesList[3], imagesList[5], imagesList[7], imagesList[9], imagesList[11]],
       hoverImages: [imagesList[0], imagesList[2], imagesList[4], imagesList[6], imagesList[8], imagesList[10]]
@@ -156,6 +177,8 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
                       onClick={() => {
                         if (i === 0 && onNavigateToVision) {
                           onNavigateToVision();
+                        } else if (slide.id === 'services' && onNavigateToServices) {
+                          onNavigateToServices();
                         } else {
                           onNavigateToProduct(slide.id);
                         }

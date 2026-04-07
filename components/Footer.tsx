@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 interface FooterProps {
   onInitiateStrategy?: () => void;
@@ -11,6 +12,40 @@ export const Footer: React.FC<FooterProps> = ({
   onNavigateTo,
   onNavigateToProduct,
 }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('submitting');
+
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_n9atl9p';
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_7gj9eni';
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_email: 'reach.anterntech@gmail.com',
+      context_type: 'Footer Contact Form',
+      page_context: window.location.hash || 'Home'
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus('idle'), 3000);
+    } catch (error) {
+      console.error('Footer EmailJS Error:', error);
+      setStatus('idle');
+    }
+  };
   return (
     <footer
       id="contact"
@@ -173,11 +208,14 @@ export const Footer: React.FC<FooterProps> = ({
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">
               Connect
             </h4>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="relative">
                 <input
                   type="text"
                   id="footer-name"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all placeholder-transparent"
                   placeholder="Name"
                 />
@@ -193,6 +231,9 @@ export const Footer: React.FC<FooterProps> = ({
                 <input
                   type="email"
                   id="footer-email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all placeholder-transparent"
                   placeholder="Email"
                 />
@@ -208,6 +249,9 @@ export const Footer: React.FC<FooterProps> = ({
                 <textarea
                   rows={3}
                   id="footer-message"
+                  required
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="peer w-full bg-transparent border border-white/20 rounded-sm px-4 py-3 text-[13px] text-white focus:outline-none focus:border-[#79BFFA] transition-all resize-none placeholder-transparent"
                   placeholder="Message"
                 ></textarea>
@@ -219,8 +263,14 @@ export const Footer: React.FC<FooterProps> = ({
                 </label>
               </div>
 
-              <button className="w-full py-4 bg-[#0085F7] hover:bg-[#339dff] hover:text-[#fff] text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg hover:shadow-[#79BFFA]/20 rounded-sm">
-                Send
+              <button 
+                type="submit"
+                disabled={status !== 'idle'}
+                className={`w-full py-4 text-white text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg rounded-sm ${
+                  status === 'success' ? 'bg-green-600' : 'bg-[#0085F7] hover:bg-[#339dff] hover:text-[#fff]'
+                }`}
+              >
+                {status === 'submitting' ? 'Sending...' : status === 'success' ? 'Sent' : 'Send'}
               </button>
             </form>
           </div>

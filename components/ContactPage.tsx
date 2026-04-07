@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import Bangalore from '../src/assets/img/bangalore.jpg';
 import Hyderabad from '../src/assets/img/hyderbad.jpg';
 import UnitedStates from '../src/assets/img/usa.png';
@@ -27,9 +28,9 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
     setFormStatus('submitting');
 
     // EmailJS Configuration
-    const SERVICE_ID = process.env.EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
-    const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
-    const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_n9atl9p';
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_7gj9eni';
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
 
     const templateParams = {
       from_name: formData.name,
@@ -37,6 +38,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       from_phone: formData.phone,
       location: formData.location,
       message: formData.query,
+      to_email: 'reach.anterntech@gmail.com',
       context_type: 'Direct Contact Page Hero',
       page_context: 'Contact Page'
     };
@@ -85,6 +87,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       address: '#226, 10 M, 100 Ft Road, HRBR Layout, Block 1, Kalyan Nagar, Bangalore - 560 043. India.',
       timezone: 'IST',
       image: [Bangalore], // Vidhana Soudha
+      mapLink: 'https://www.google.com/maps/search/?api=1&query=%23226%2C+10+M%2C+100+Ft+Road%2C+HRBR+Layout%2C+Block+1%2C+Kalyan+Nagar%2C+Bangalore+-+560+043.+India.'
     },
     {
       city: 'United States',
@@ -92,6 +95,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       address: 'Strategic Operations & Client Relations Division. One World Trade Center, New York.',
       timezone: 'EST',
       image: [UnitedStates],
+      mapLink: 'https://www.google.com/maps/search/?api=1&query=One+World+Trade+Center%2C+New+York'
     },
     {
       city: 'Hyderabad',
@@ -99,6 +103,7 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
       address: 'Inorganic Growth & Digital Innovation Hub. HITECH City, Hyderabad.',
       timezone: 'IST',
       image: [Hyderabad], // Charminar
+      mapLink: 'https://www.google.com/maps/search/?api=1&query=HITECH+City%2C+Hyderabad'
     }
   ];
 
@@ -134,8 +139,8 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
               
               <div className="flex flex-col gap-2">
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-1 block">General Inquiries</span>
-                 <a href="mailto:rajani@anterntech.com" className="text-xl font-bold text-white hover:text-[#004b23] transition-colors flex items-center gap-4 w-fit group">
-                   rajani@anterntech.com
+                 <a href="mailto:info@anterntech.com" className="text-xl font-bold text-white hover:text-[#004b23] transition-colors flex items-center gap-4 w-fit group">
+                   info@anterntech.com
                    <div className="w-8 h-px bg-white group-hover:w-16 group-hover:bg-[#70e000] transition-all"></div>
                  </a>
               </div>
@@ -314,7 +319,10 @@ export const ContactPage: React.FC<Props> = ({ onInitiateStrategy }) => {
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 group-hover:text-[#0085F7] block mb-4 transition-colors">
                     {office.region}
                   </span>
-                  <button className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors group/btn">
+                  <button 
+                    onClick={() => window.open(office.mapLink, '_blank', 'noopener,noreferrer')}
+                    className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.4em] text-[#1A1A1A] group-hover:text-white transition-colors group/btn cursor-pointer"
+                  >
                     View on Map 
                     <div className="w-10 h-px bg-current group-hover:w-20 transition-all duration-500 bg-[#70e000]"></div>
                   </button>

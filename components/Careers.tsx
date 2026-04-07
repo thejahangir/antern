@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 
 interface Job {
   id: string;
@@ -145,9 +146,18 @@ export const Careers: React.FC = () => {
   const [subscriptionState, setSubscriptionState] = useState<'idle' | 'loading' | 'success'>('idle');
   const [fileName, setFileName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [alertSuccess, setAlertSuccess] = useState(false);
   const detailScrollRef = useRef<HTMLDivElement>(null);
   const [offsetY, setOffsetY] = useState(0);
+
+  // Form states
+  const [appFormData, setAppFormData] = useState({
+    name: '',
+    email: ''
+  });
+  const [subEmail, setSubEmail] = useState('');
+  const [subDept, setSubDept] = useState('All');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -186,19 +196,53 @@ export const Careers: React.FC = () => {
     if (!activeJob) document.body.style.overflow = 'auto';
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formRef.current) return;
     setAppState('loading');
-    setTimeout(() => setAppState('success'), 2000);
+
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_n9atl9p';
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_7gj9eni';
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
+
+    try {
+      // Use sendForm to automatically handle the file attachment and all other named inputs
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY);
+      setAppState('success');
+      setAppFormData({ name: '', email: '' });
+      setFileName(null);
+    } catch (error) {
+      console.error('Application EmailJS Error:', error);
+      setAppState('form');
+    }
   };
 
-  const handleSubscriptionSubmit = (e: React.FormEvent) => {
+  const handleSubscriptionSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubscriptionState('loading');
-    setTimeout(() => {
+
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_n9atl9p';
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_7gj9eni';
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
+
+    const templateParams = {
+      from_email: subEmail,
+      department: subDept,
+      message: `New Job Alert Subscription for ${subDept} department.`,
+      to_email: 'reach.anterntech@gmail.com',
+      context_type: 'Job Alert Subscription',
+      page_context: 'Careers Page'
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
       setSubscriptionState('success');
+      setSubEmail('');
       setTimeout(() => setSubscriptionState('idle'), 5000);
-    }, 1500);
+    } catch (error) {
+      console.error('Subscription EmailJS Error:', error);
+      setSubscriptionState('idle');
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -391,13 +435,19 @@ export const Careers: React.FC = () => {
                         <input 
                           required 
                           type="email" 
+                          value={subEmail}
+                          onChange={(e) => setSubEmail(e.target.value)}
                           placeholder="name@operational.tech" 
                           className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-normal focus:outline-none focus:border-[#004b23] transition-all placeholder:text-gray-300" 
                         />
                       </div>
                       <div className="space-y-4">
                         <label className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 block">Target Department</label>
-                        <select className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-normal focus:outline-none focus:border-[#004b23] transition-all text-gray-700">
+                        <select 
+                          value={subDept}
+                          onChange={(e) => setSubDept(e.target.value)}
+                          className="w-full bg-transparent border-b border-gray-200 py-3 text-lg font-normal focus:outline-none focus:border-[#004b23] transition-all text-gray-700"
+                        >
                           {departments.map(d => (
                             <option key={d} value={d}>{d}</option>
                           ))}
@@ -518,14 +568,36 @@ export const Careers: React.FC = () => {
                   {applyingJob?.title}
                 </h3>
                 
-                <form onSubmit={handleFormSubmit} className="space-y-8">
+                <form ref={formRef} onSubmit={handleFormSubmit} className="space-y-8">
+                  {/* Hidden metadata for EmailJS template */}
+                  <input type="hidden" name="to_email" value="reach.anterntech@gmail.com" />
+                  <input type="hidden" name="job_title" value={applyingJob?.title || ''} />
+                  <input type="hidden" name="job_id" value={applyingJob?.id || ''} />
+                  <input type="hidden" name="context_type" value="Job Application" />
+                  <input type="hidden" name="page_context" value="Careers Page" />
+                  <input type="hidden" name="message" value={`Resume submission for ${applyingJob?.title}`} />
+
                   <div className="group">
                     <label className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400 mb-2 block">Full Name</label>
-                    <input required type="text" className="w-full bg-gray-50 border-b-2 border-gray-100 p-3 text-sm focus:outline-none focus:border-[#004b23] transition-all text-[#1A1A1A]" />
+                    <input 
+                      required 
+                      type="text" 
+                      name="from_name"
+                      value={appFormData.name}
+                      onChange={(e) => setAppFormData({...appFormData, name: e.target.value})}
+                      className="w-full bg-gray-50 border-b-2 border-gray-100 p-3 text-sm focus:outline-none focus:border-[#004b23] transition-all text-[#1A1A1A]" 
+                    />
                   </div>
                   <div className="group">
                     <label className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400 mb-2 block">Email Node</label>
-                    <input required type="email" className="w-full bg-gray-50 border-b-2 border-gray-100 p-3 text-sm focus:outline-none focus:border-[#004b23] transition-all text-[#1A1A1A]" />
+                    <input 
+                      required 
+                      type="email" 
+                      name="from_email"
+                      value={appFormData.email}
+                      onChange={(e) => setAppFormData({...appFormData, email: e.target.value})}
+                      className="w-full bg-gray-50 border-b-2 border-gray-100 p-3 text-sm focus:outline-none focus:border-[#004b23] transition-all text-[#1A1A1A]" 
+                    />
                   </div>
                   
                   <div className="group">
@@ -538,6 +610,7 @@ export const Careers: React.FC = () => {
                         ref={fileInputRef}
                         type="file" 
                         required 
+                        name="resume"
                         className="hidden" 
                         onChange={handleFileChange}
                         accept=".pdf,.doc,.docx"

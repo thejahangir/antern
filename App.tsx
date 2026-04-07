@@ -229,6 +229,7 @@ const App: React.FC = () => {
           <HomeSliderV2
             onNavigateToProduct={handleNavigateToProduct}
             onNavigateToVision={() => navigateTo("our-vision")}
+            onNavigateToServices={() => navigateTo("services")}
           />
           <About />
 

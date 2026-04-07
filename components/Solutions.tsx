@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 
 interface Props {
   onInitiateStrategy: () => void;
@@ -10,6 +11,12 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
   const [offsetY, setOffsetY] = useState(0);
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
 
   useEffect(() => {
     const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -17,17 +24,36 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleConsultationSubmit = (e: React.FormEvent) => {
+  const handleConsultationSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('submitting');
-    // Simulate API call
-    setTimeout(() => {
+
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_n9atl9p';
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_7gj9eni';
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zDr7_mS8xJCngl2O3';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      message: formData.message,
+      to_email: 'reach.anterntech@gmail.com',
+      context_type: 'Consultation Request',
+      page_context: 'Solutions Page'
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
       setFormStatus('success');
+      setFormData({ name: '', email: '', phone: '', message: '' });
       setTimeout(() => {
         setIsConsultationOpen(false);
         setFormStatus('idle');
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      console.error('Consultation EmailJS Error:', error);
+      setFormStatus('idle');
+    }
   };
 
   const products = [
@@ -306,6 +332,8 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                       <input 
                         required 
                         type="text" 
+                        value={formData.name}
+                        onChange={(e) => setFormData({...formData, name: e.target.value})}
                         placeholder="Your full name" 
                         className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
@@ -315,6 +343,8 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                       <input 
                         required 
                         type="email" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
                         placeholder="corporate@email.com" 
                         className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
@@ -324,6 +354,8 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                       <input 
                         required 
                         type="tel" 
+                        value={formData.phone}
+                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
                         placeholder="+1 (555) 000-0000" 
                         className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A]" 
                       />
@@ -333,6 +365,8 @@ export const Solutions: React.FC<Props> = ({ onInitiateStrategy, onNavigateTo })
                       <textarea 
                         required 
                         rows={3} 
+                        value={formData.message}
+                        onChange={(e) => setFormData({...formData, message: e.target.value})}
                         placeholder="Briefly describe your strategic needs..." 
                         className="w-full bg-gray-50 border-b border-gray-200 py-3 px-4 text-sm focus:outline-none focus:border-[#70e000] focus:bg-white transition-all placeholder:text-gray-300 text-[#1A1A1A] resize-none" 
                       />

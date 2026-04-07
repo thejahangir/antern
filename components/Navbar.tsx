@@ -291,6 +291,20 @@ export const Navbar: React.FC<NavbarProps> = ({
               );
             })}
           </div>
+          
+          <button 
+            onClick={onContact}
+            className={`
+              ml-3 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.2em] transition-all duration-500 
+              rounded-full border border-[#0085F7] text-[#0085F7] 
+              hover:bg-[#0085F7] hover:text-white hover:shadow-[0_8px_20px_rgba(0,133,247,0.3)]
+              cursor-pointer whitespace-nowrap flex items-center gap-2
+              ${currentPage === 'contact' ? 'bg-[#0085F7] text-white shadow-[0_8px_20px_rgba(0,133,247,0.3)]' : ''}
+            `}
+          >
+            Contact Us
+            <span className={`w-1.5 h-1.5 rounded-full bg-[#0085F7] group-hover:bg-white transition-colors duration-500 ${currentPage === 'contact' ? 'bg-white' : ''}`}></span>
+          </button>
 
 
           {/* <button 
@@ -362,13 +376,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                    )}
                 </div>
              ))}
-             {/* <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('ux-studio'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#70e000] text-left flex items-center gap-4 cursor-pointer">
-                UX Studio
-                <span className="w-2 h-2 bg-[#70e000] rounded-full animate-pulse"></span>
-             </button>
-             <button onClick={() => { setMobileMenuOpen(false); onNavigateTo('contact'); }} className="text-4xl font-black uppercase tracking-tighter hover:text-[#ccff33] text-left text-white/50 cursor-pointer">
-                Contact
-             </button> */}
+              <button 
+                onClick={() => { setMobileMenuOpen(false); onContact && onContact(); }} 
+                className="text-4xl font-black uppercase tracking-tighter hover:text-[#0085F7] text-left flex items-center gap-4 cursor-pointer"
+              >
+                Contact Us
+                <span className="w-3 h-3 bg-[#0085F7] rounded-full animate-pulse"></span>
+              </button>
           </div>
         </div>
       </div>

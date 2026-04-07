@@ -47,6 +47,7 @@ export const StrategyModal: React.FC<StrategyModalProps> = ({ isOpen, onClose, c
       phone: formData.phone,
       location: formData.location,
       message: formData.query,
+      to_email: 'reach.anterntech@gmail.com',
       context_type: context === 'audit' ? 'Your Next Move Starts Here' : 'Start the Conversation',
       page_context: window.location.hash || 'Home'
     };
