@@ -149,7 +149,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
                  )} */}
                  
                  <div className="mt-12 flex flex-col items-start">
-                   <p className="text-white/90 text-sm xl:text-[16px] font-light leading-relaxed mb-6">
+                   <p className="text-white/90 text-[18px] font-normal leading-relaxed mb-6">
                      {slide.description}
                    </p>
                    <button
@@ -205,7 +205,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
       {/* Navigation Arrows (Semi-transparent dark bands with hollow chevrons) */}
       <button 
         onClick={prevSlide}
-        className="absolute left-0 top-1/2 -translate-y-1/2 h-[140px] w-12 xl:w-16 bg-black/40 hover:bg-black/60 backdrop-blur-sm flex items-center justify-center text-white transition-all duration-300 z-20 group"
+        className="absolute left-0 top-1/2 -translate-y-1/2 h-[140px] w-12 xl:w-16 bg-black/40 hover:bg-black/60 flex items-center justify-center text-white transition-all duration-300 z-50 group"
         aria-label="Previous slide"
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="transform transition-transform duration-300 group-hover:-translate-x-1 opacity-80 group-hover:opacity-100"><path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -213,7 +213,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({ onNavigateToProduct,
 
       <button 
         onClick={nextSlide}
-        className="absolute right-0 top-1/2 -translate-y-1/2 h-[140px] w-12 xl:w-16 bg-black/40 hover:bg-black/60 backdrop-blur-sm flex items-center justify-center text-white transition-all duration-300 z-20 group"
+        className="absolute right-2 top-1/2 -translate-y-1/2 h-[140px] w-12 xl:w-16 bg-black/40 hover:bg-black/60 flex items-center justify-center text-white transition-all duration-300 z-50 group"
         aria-label="Next slide"
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="transform transition-transform duration-300 group-hover:translate-x-1 opacity-80 group-hover:opacity-100"><path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>

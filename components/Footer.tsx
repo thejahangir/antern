@@ -228,8 +228,8 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Section: Legal & Credits */}
         <div className=" border-t border-white/5 flex flex-col justify-center items-center gap-8 pt-8">
-          <div className="flex flex-col items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 text-center">
-            <p>© {new Date().getFullYear()} ANTERN TECHNOLOGIES.</p>
+          <div className="flex flex-col items-center gap-6 text-[10px] font-bold lowercase  text-gray-400 text-center">
+            <p>© {new Date().getFullYear()} Antern Technologies.</p>
             <div className="flex gap-8">
               {/*<button onClick={() => onNavigateTo('privacy')} className="hover:text-white transition-colors">Privacy</button>
                <button onClick={() => onNavigateTo('terms')} className="hover:text-white transition-colors">Terms</button>
