@@ -64,7 +64,7 @@ const leadershipTeam: Leader[] = [
   },
 
   {
-    name: "Venkatesh ",
+    name: "Venkatesh Dhanakshirur ",
     role: "VP - Engineering",
     image: venky,
     bio: "Technology leader driving large-scale platforms and digital transformation.",
