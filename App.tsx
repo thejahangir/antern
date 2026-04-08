@@ -45,6 +45,9 @@ import { Solutions } from "./components/Solutions";
 import { SoftwareDelivery } from "./components/SoftwareDelivery";
 import { ProductsPage } from "./components/ProductsPage";
 import { ServicesPage } from "./components/ServicesPage";
+import { ReimagineBanner } from "./components/ReimagineBanner";
+import { ProductOverview } from "./components/ProductOverview";
+import { ManagedServicesOverview } from "./components/ManagedServicesOverview";
 
 export type PageType =
   | "home"
@@ -231,6 +234,9 @@ const App: React.FC = () => {
             onNavigateToVision={() => navigateTo("our-vision")}
             onNavigateToServices={() => navigateTo("services")}
           />
+          <ReimagineBanner />
+          <ProductOverview />
+          <ManagedServicesOverview />
           <About />
 
           <Services />

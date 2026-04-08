@@ -48,7 +48,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff]  to-[#0085F7]">Vision.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
-              Antern's vision transcends technology. We are building the cognitive infrastructure for a post-digital age where intelligence is seamless, secure, and human-centric.
+              To be a trusted partner in building intelligent hiring platforms and scalable engineering ecosystems for modern enterprises.
             </p>
           </div>
         </div>

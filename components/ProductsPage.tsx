@@ -279,9 +279,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
-              Purpose-built solutions for modern hiring. Our intelligent
-              platform streamlines evaluation, enhances decision-making, and
-              delivers precise talent alignment at scale.
+              Platforms built to streamline hiring and delivery. Combining AI, structured workflows, and real-time insights to drive better decisions at scale.
             </p>
           </div>
         </div>

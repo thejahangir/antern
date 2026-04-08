@@ -56,8 +56,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       subItems: [
         { label: 'Our Vision', id: 'our-vision', targetPage: 'our-vision' },
         { label: 'Leadership Team', id: 'leadership', targetPage: 'leadership' },
-        { label: 'Our Culture', id: 'culture', targetPage: 'culture' },
-        { label: 'Message From CEO', id: 'ceo-message', targetPage: 'ceo-message' }
+        // { label: 'Our Culture', id: 'culture', targetPage: 'culture' },
+        // { label: 'Message From CEO', id: 'ceo-message', targetPage: 'ceo-message' }
       ]
     },
     { 
@@ -76,13 +76,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       id: 'services',
       targetPage: 'services',
       subItems: [
-        // { label: 'Technical Interviews', id: 'technical-interviews', targetPage: 'technical-interviews' },
-        // { label: 'Online Assessments', id: 'online-assessments', targetPage: 'online-assessments' },
-        // { label: 'Scanning Resume', id: 'scanning-resume', targetPage: 'scanning-resume' },
-        // { label: 'Software Delivery', id: 'software-delivery', targetPage: 'software-delivery' },
-        { label: 'On-Premise Delivery', id: 'on-premise', targetPage: 'services' },
-        { label: 'ODC (Offshore Dev Centers)', id: 'odc', targetPage: 'services' },
-        { label: 'Managed Services', id: 'managed-services', targetPage: 'services' },
+        { label: 'Engineering', id: 'engineering', targetPage: 'services' },
+        { label: 'Cloud, Data & Analytics', id: 'cloud-data', targetPage: 'services' },
+        { label: 'Artificial Intelligence', id: 'ai', targetPage: 'services' },
+        { label: 'Business Models', id: 'business-models', targetPage: 'services' },
         { label: 'UX Studio', id: 'ux-studio-services', targetPage: 'services' }
       ]
     },

@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-5">
           <div className="col-span-2 lg:col-span-1">
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-8">
               Product Suite
@@ -112,26 +112,34 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-4 text-left">
               <li>
                 <button
-                  onClick={() => onNavigateTo("on-premise")}
+                  onClick={() => onNavigateTo("services")}
                   className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors"
                 >
-                  On-Premise Delivery
+                  Engineering
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigateTo("odc")}
+                  onClick={() => onNavigateTo("services")}
                   className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors"
                 >
-                  ODC
+                  Cloud, Data & Analytics
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigateTo("managed-services")}
+                  onClick={() => onNavigateTo("services")}
                   className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors"
                 >
-                  Managed Services
+                  Artificial Intelligence
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onNavigateTo("services")}
+                  className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors"
+                >
+                  Business Models
                 </button>
               </li>
               <li>
@@ -273,6 +281,46 @@ export const Footer: React.FC<FooterProps> = ({
                 {status === 'submitting' ? 'Sending...' : status === 'success' ? 'Sent' : 'Send'}
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Global Office Hubs */}
+        <div className="border-t border-white/5 py-5">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
+            <div className="md:col-span-12 mb-4">
+              <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-white/30">
+                Global Network
+              </h4>
+            </div>
+            
+            {/* Headquarters */}
+            <div className="md:col-span-5 pr-8 border-l border-[#0085F7]/30 pl-6">
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#0085F7] mb-3 block">Headquarters</span>
+              <h5 className="text-xl font-black text-white mb-4 tracking-tight">Bangalore</h5>
+              <p className="text-[13px] text-gray-400 font-light leading-relaxed max-w-sm">
+                #226, 2nd Floor, 10 M, 100 Ft Road, HRBR Layout, Block 1, Kalyan Nagar, Bangalore - 560 043. India.
+              </p>
+            </div>
+
+            {/* Operational Hub: Hyderabad */}
+            <div className="md:col-span-4 pr-8 border-l border-white/5 pl-6">
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-3 block">Technology Center</span>
+              <h5 className="text-xl font-bold text-white mb-4 tracking-tight">Hyderabad</h5>
+              <p className="text-[13px] text-gray-400 font-light leading-relaxed">
+                Inorganic Growth & Digital Innovation Hub.<br />
+                HITECH City, Hyderabad, India.
+              </p>
+            </div>
+
+            {/* Strategic Operations: USA */}
+            <div className="md:col-span-3 border-l border-white/5 pl-6">
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-3 block">North America</span>
+              <h5 className="text-xl font-bold text-white mb-4 tracking-tight">New York</h5>
+              <p className="text-[13px] text-gray-400 font-light leading-relaxed">
+                Strategic Operations Division.<br />
+                One World Trade Center, NY, USA.
+              </p>
+            </div>
           </div>
         </div>
 
