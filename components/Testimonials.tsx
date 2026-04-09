@@ -6,21 +6,21 @@ import Avatar3 from '../src/assets/img/avatar/avatar-3.png';
 
 const testimonials = [
   {
-    quote: "Antern didn't just provide code; they provided a vision. Their strategic approach to our mission-critical systems saved us months of development time and ensured a seamless transition to cloud-native architecture.",
-    author: "Sarah Chen",
-    role: "CTO, Global Logistics Corp",
+    quote: "The quality of their interviews truly stands out. They evaluate real-world skills with precision and clarity, not just theoretical knowledge. The insights we get have significantly improved our final-round conversion rates.",
+    author: "Director of Engineering",
+    role: "PaaS Product Company",
     avatar: [Avatar1]
   },
   {
-    quote: "The SkillTest platform revolutionized our hiring process. We've seen a 40% increase in the quality of our technical hires since implementation, allowing our teams to scale with absolute confidence.",
-    author: "Marcus Thorne",
-    role: "VP of Engineering, FinTech Alpha",
+    quote: "With 500 profiles to manage and 50 urgent roles to fill in just two months, we needed speed without losing quality. IamInterviewed delivered both – conducting 350 high-quality interviews with remarkable turnaround time and helping us shortlist 80 top candidates. Their partnership made the process effortless and even earned me a promotion.",
+    author: "Recruiter",
+    role: "IT Services MNC",
     avatar: [Avatar2]
   },
   {
-    quote: "Their consultants integrated seamlessly with our internal teams. It felt like they were part of our company from day one. Truly exceptional talent with a deep understanding of enterprise-grade execution.",
-    author: "Elena Rodriguez",
-    role: "Head of Product, NexaHealth",
+    quote: "As part of the procurement team, I initially connected IamInterviewed with our internal recruitment function to support an urgent requirement. Since then, there’s been no looking back — the feedback from our hiring teams has been consistently positive. Their reliability, speed, and professionalism have made them one of our most trusted and valued partners.",
+    author: "Head of Procurement",
+    role: "Business Consulting and Services",
     avatar: [Avatar3]
   }
 ];
@@ -91,12 +91,12 @@ export const Testimonials: React.FC = () => {
                 <div className="h-full flex flex-col justify-between">
                   <div className="mb-6">
                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#004b23] mb-4 block">Client Perspective</span>
-                    <blockquote className="text-xl md:text-2xl font-normal italic text-[#1A1A1A] leading-snug tracking-tight">
+                    <blockquote className="text-xl md:text-1xl font-normal italic text-[#1A1A1A] leading-snug tracking-tight">
                       "{t.quote}"
                     </blockquote>
                   </div>
                   
-                  <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                  <div className="flex items-center gap-4 pt-1 border-t border-gray-100">
                     <img 
                       src={t.avatar} 
                       alt={t.author} 

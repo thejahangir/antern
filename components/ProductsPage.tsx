@@ -3,6 +3,11 @@ import LogoIaminterViewed from "../src/assets/img/product/Logo-IAmInterviewed.pn
 import LogoSkillTest from "../src/assets/img/product/Logo-Skilltest.png";
 import LogoDelOrg from "../src/assets/img/product/Logo-DO.png";
 import LogoScanJD from "../src/assets/img/product/Logo-ScanJD.png";
+import Avatar1 from '../src/assets/img/avatar/avatar-6.png';
+import Avatar2 from '../src/assets/img/avatar/avatar-2.png';
+import Avatar3 from '../src/assets/img/avatar/avatar-3.png';
+import Avatar4 from '../src/assets/img/avatar/avatar-4.png';
+import Avatar5 from '../src/assets/img/avatar/avatar-5.png';
 
 interface ProductsPageProps {
   onNavigateTo: (page: string) => void;
@@ -34,7 +39,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: (
         <>
           <p>
-            <strong>IamInterviewed</strong> is an Interview-as-a-Service (IaaS) platform built to
+            <span className="text-[#000] font-bold">IamInterviewed</span> is an Interview-as-a-Service (IaaS) platform built to
             scale technical hiring through expert-led evaluations. It enables
             real-time interviews conducted by experienced professionals using
             structured frameworks to ensure consistency and quality.
@@ -49,7 +54,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
           </p>
           <br />
           <p>
-            Designed for high-volume hiring, IamInterviewed allows parallel
+            Designed for high-volume hiring, <span className="text-[#000] font-bold">IamInterviewed</span> allows parallel
             interview execution, reduces dependency on internal engineering
             teams, and significantly speeds up turnaround times. The result is a
             more efficient, transparent, and data-driven hiring process that
@@ -75,7 +80,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: (
         <>
           <p>
-            SkillTest is a scalable assessment platform designed to deliver
+            <span className="text-[#000] font-bold">SkillTest</span> is a scalable assessment platform designed to deliver
             structured, data-driven candidate evaluations across technical,
             aptitude, and role-specific skills. It allows organizations to
             create customized assessment frameworks aligned to job requirements
@@ -87,13 +92,13 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
             The platform supports large-scale hiring, including campus and
             lateral recruitment, ensuring consistent and unbiased assessments.
             With integrated coding tests, objective assessments, and
-            domain-specific modules, SkillTest provides real-time insights into
+            domain-specific modules, <span className="text-[#000] font-bold">SkillTest</span> provides real-time insights into
             candidate performance.
           </p>
           <br />
           <p>
             By reducing manual screening effort and accelerating shortlisting,
-            SkillTest helps improve both hiring efficiency and decision
+            <span className="text-[#000] font-bold">SkillTest</span> helps improve both hiring efficiency and decision
             accuracy.
           </p>
         </>
@@ -112,7 +117,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: (
         <>
           <p>
-            Scan JD is an AI-powered resume parsing and intelligent matching
+            <span className="text-[#000] font-bold">Scan JD</span> is an AI-powered resume parsing and intelligent matching
             engine that goes beyond traditional keyword-based filtering. Using
             semantic intelligence, it understands context, career progression,
             and inferred skills to deliver accurate candidate-to-job matching.
@@ -128,7 +133,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
           <br />
           <p>
             By improving the quality of matching and reducing manual effort,
-            Scan JD enhances recruiter productivity, enables better talent
+            <span className="text-[#000] font-bold">Scan JD</span> enhances recruiter productivity, enables better talent
             discovery, and accelerates hiring decisions at scale.
           </p>
         </>
@@ -147,7 +152,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: (
         <>
           <p>
-            DelOrg360 is an enterprise-grade delivery and project portfolio
+            <span className="text-[#000] font-bold">DelOrg360</span> is an enterprise-grade delivery and project portfolio
             management platform that provides clear visibility into projects,
             resources, and performance. It enables real-time tracking of
             delivery progress, supports efficient resource allocation, and helps
@@ -164,7 +169,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
           <br />
           <p>
             By bringing greater control, transparency, and accountability to
-            delivery, DelOrg360 helps organizations improve execution and
+            delivery, <span className="text-[#000] font-bold">DelOrg360</span> helps organizations improve execution and
             achieve more predictable outcomes.
           </p>
         </>
@@ -193,51 +198,45 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
   const productTestimonialsPool = [
     {
       quote:
-        "Antern's specialized products didn't just solve our technical gaps; they redefined our entire delivery velocity.",
-      author: "Jonathan Vane",
-      role: "Technical Director, Quantum Labs",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
+        "The quality of their interviews truly stands out. They evaluate real-world skills with precision and clarity, not just theoretical knowledge. The insights we get have significantly improved our final-round conversion rates.",
+      author: "Director of Engineering",
+      role: "PaaS Product Company",
+      avatar:[Avatar1],
     },
     {
       quote:
-        "The SkillTest platform revolutionized our hiring process. We've seen a 40% increase in candidate quality.",
-      author: "Marcus Thorne",
-      role: "VP of Engineering, FinTech Alpha",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200",
+        "With 500 profiles to manage and 50 urgent roles to fill in just two months, we needed speed without losing quality. IamInterviewed delivered both – conducting 350 high-quality interviews with remarkable turnaround time and helping us shortlist 80 top candidates. Their partnership made the process effortless and even earned me a promotion.",
+      author: "Recruiter",
+      role: "IT Services MNC",
+      avatar:[Avatar2],
     },
     {
       quote:
-        "Strategic approach to mission-critical systems saved us months of development time.",
-      author: "Sarah Chen",
-      role: "CTO, Global Logistics Corp",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200",
+        "As part of the procurement team, I initially connected IamInterviewed with our internal recruitment function to support an urgent requirement. Since then, there’s been no looking back — the feedback from our hiring teams has been consistently positive. Their reliability, speed, and professionalism have made them one of our most trusted and valued partners.",
+      author: "Head of Procurement",
+      role: "Business Consulting and Services",
+      avatar:[Avatar3],
     },
     {
       quote:
-        "The integration support was world-class. Antern is a true partner in our digital journey.",
-      author: "Liam O'Connell",
-      role: "CTO, CloudStream",
-      avatar:
-        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200",
+        "The turnaround time is exceptional, and every report is crisp, detailed, and actionable. We make faster, data-driven hiring decisions with complete confidence. Their process is fast, structured, and consistently reliable.",
+      author: "TA Manager",
+      role: "Product Engineering Company",
+      avatar:[Avatar4],
     },
     {
       quote:
-        "Their AI-driven screening saved us hundreds of manual hours. A game-changer for our team.",
-      author: "Priya Sharma",
-      role: "Head of Talent, TechNext",
-      avatar:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200",
+        "We had an urgent hiring goal with over 3,000 candidates to interview in a very short time. IamInterviewed handled the entire process with remarkable speed, structure, and consistency — delivering high-quality assessments for every candidate. Thanks to their efficiency, we were able to onboard 150 exceptional hires right on schedule.",
+      author: "AVP Talent Acquisition",
+      role: "IT Services MNC ",
+     avatar:[Avatar5],
     },
     {
       quote:
-        "Precision, scale, and speed. Antern delivers exactly what modern enterprises need.",
-      author: "Alex Volkov",
-      role: "Director of Ops, BuildWise",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200",
+        "Their weekend support has been a real differentiator for us. We’ve been able to maintain hiring momentum even during tight delivery phases. IamInterviewed’s responsiveness and flexibility make them an indispensable partner.",
+      author: "Head of Talent Acquisition",
+      role: "IT Services Company",
+      avatar:[Avatar1],
     },
   ];
 
@@ -327,7 +326,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
                       {product.description}
                     </p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                    <div className="flex justify-between items-center w-full mb-12 flex-wrap sm:flex-nowrap gap-4">
                       {product.features.map((feat) => (
                         <div key={feat} className="flex items-center gap-3">
                           <div className="w-1.5 h-1.5 bg-[#00A94B]"></div>
@@ -338,12 +337,14 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
                       ))}
                     </div>
 
-                    <button
-                      onClick={() => handleKnowMore(product.link, product.name)}
-                      className="px-8 py-4 bg-[#0085F7] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#339DFF] transition-all"
-                    >
-                      Know More
-                    </button>
+                    <div className="flex justify-center mt-6">
+                      <button
+                        onClick={() => handleKnowMore(product.link, product.name)}
+                        className="px-8 py-4 bg-[#0085F7] text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-[#339DFF] transition-all"
+                      >
+                        Know More
+                      </button>
+                    </div>
                   </div>
                 </div>
 
@@ -382,7 +383,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
                         <div className="w-10 h-1 bg-[#0085F7]/40"></div>
                       </div>
 
-                      <blockquote className="text-base md:text-lg font-medium text-[#333] italic leading-relaxed mb-8 max-w-3xl mx-auto">
+                      <blockquote className="text-base md:text-lg font-medium text-[#333] italic leading-relaxed mb-8  mx-auto">
                         "
                         {displayTestimonials[idx]?.quote ||
                           productTestimonialsPool[

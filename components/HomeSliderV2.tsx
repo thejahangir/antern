@@ -179,20 +179,20 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({
                    <p className="text-white/90 text-[18px] font-normal leading-relaxed mb-6">
                      {slide.description}
                    </p>
-                   <button
-                      onClick={() => {
-                        if (i === 0 && onNavigateToVision) {
-                          onNavigateToVision();
-                        } else if (slide.id === 'services' && onNavigateToServices) {
-                          onNavigateToServices();
-                        } else {
-                          onNavigateToProduct(slide.id);
-                        }
-                      }}
-                      className="inline-block border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all duration-300 px-6 py-2.5 rounded font-bold text-xs uppercase tracking-widest mt-5"
-                    >
-                      Learn More
-                    </button>
+                   {i !== 0 && (
+                     <button
+                        onClick={() => {
+                          if (slide.id === 'services' && onNavigateToServices) {
+                            onNavigateToServices();
+                          } else {
+                            onNavigateToProduct(slide.id);
+                          }
+                        }}
+                        className="inline-block border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all duration-300 px-6 py-2.5 rounded font-bold text-xs uppercase tracking-widest mt-5"
+                      >
+                        Learn More
+                      </button>
+                   )}
                  </div>
               </div>
             </div>
