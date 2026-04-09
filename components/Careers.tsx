@@ -17,7 +17,7 @@ interface Job {
 
 const jobs: Job[] = [
   { 
-    id: "AN-NODE-001",
+    id: "ANT-BLR-001",
     title: "C or C++",
     department: "Engineering",
     location: "Bangalore, India",
@@ -29,7 +29,7 @@ const jobs: Job[] = [
     perks: ["Competitive Equity", "Global Mobility", "Research Stipend"]
   },
   { 
-    id: "AN-NODE-002",
+    id: "ANT-BLR-002",
     title: "Embedded Firmware Developers",
     department: "Engineering",
     location: "Bangalore, India",
@@ -41,7 +41,7 @@ const jobs: Job[] = [
     perks: ["Relocation Package", "Health Concierge", "Annual Retreat"]
   },
   {
-    id: "AN-NODE-003",
+    id: "ANT-BLR-003",
     title: "Java Freshers",
     department: "Engineering",
     location: "Bangalore, India",
@@ -53,7 +53,7 @@ const jobs: Job[] = [
     perks: ["Relocation Package", "Health Concierge", "Annual Retreat"]
   },
   {
-    id: "AN-NODE-003",
+    id: "ANT-BLR-004",
     title: "QA Automation Engineer",
     department: "QA",
     location: "Bangalore, India",
