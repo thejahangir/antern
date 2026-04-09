@@ -138,7 +138,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
       </section>
 
       {/* Vision 2030 Roadmap */}
-      <section className="py-32 bg-white overflow-hidden">
+      {/* <section className="py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4">
@@ -154,7 +154,6 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             
             <div className="lg:col-span-8">
               <div className="space-y-24 relative">
-                {/* Vertical Line */}
                 <div className="absolute left-0 lg:left-0 top-0 bottom-0 w-px bg-gray-100"></div>
 
                 {[
@@ -191,7 +190,7 @@ export const OurVision: React.FC<VisionProps> = ({ onInitiateStrategy }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Immersive CTA - Further Reduced Font Size & Tightened */}
       <section className="relative py-12 bg-[#0A0A0A] overflow-hidden group">

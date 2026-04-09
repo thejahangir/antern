@@ -65,7 +65,7 @@ const leadershipTeam: Leader[] = [
 
   {
     name: "Venkatesh Dhanakshirur ",
-    role: "VP - Engineering",
+    role: "VP - Product Engineering & Managed Services",
     image: venky,
     bio: "Technology leader driving large-scale platforms and digital transformation.",
     fullBio:
@@ -405,9 +405,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ onContact }) => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal leading-relaxed max-w-2xl border-l border-[#004b23] pl-10">
-              The architects of Antern's global mission, committed to delivering
-              intelligent solutions with enterprise-grade integrity and
-              strategic foresight.
+              Our leadership team combines strong engineering expertise with a deep understanding of business outcomes. They lead with an ownership mindset, driving innovation, execution excellence, and long-term value for our customers.
             </p>
           </div>
         </div>

@@ -32,7 +32,13 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({
   const slides = [
     {
       id: 'vision',
-      title: 'A Decade of Building. 500+ Customers Worldwide.',
+      title: (
+        <>
+          A Decade of Building.
+        <br />
+          500+ Customers Worldwide.
+        </>
+      ),
       subtitle: 'Our Journey',
       description: (
         <>

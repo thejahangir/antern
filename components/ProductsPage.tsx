@@ -34,7 +34,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateTo }) => {
       description: (
         <>
           <p>
-            IamInterviewed is an Interview-as-a-Service (IaaS) platform built to
+            <strong>IamInterviewed</strong> is an Interview-as-a-Service (IaaS) platform built to
             scale technical hiring through expert-led evaluations. It enables
             real-time interviews conducted by experienced professionals using
             structured frameworks to ensure consistency and quality.

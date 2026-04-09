@@ -40,7 +40,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigateTo }) => {
       ],
       features: [],
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200",
-      linkTarget: "services"
+      linkTarget: "contact"
     },
     {
       id: "02",
@@ -50,17 +50,17 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigateTo }) => {
       description: "We build cloud-native platforms and data solutions that enable organizations to scale efficiently and make informed decisions. From infrastructure setup and data pipelines to analytics and reporting, we help transform data into actionable insights.",
       features: ["Cloud Migrations", "Data Warehousing", "Predictive Analytics"],
       image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200",
-      linkTarget: "services"
+      linkTarget: "contact"
     },
     {
       id: "03",
       name: "ai",
       title: "Artificial Intelligence",
       tagline: "AI-First Transformation",
-      description: "We apply AI to solve real business problems—enhancing decision-making, automating workflows, and improving operational efficiency. Our focus is on practical, production-ready AI solutions that integrate seamlessly into existing systems.",
+      description: "We apply AI to solve real business problems, enhancing decision-making, automating workflows, and improving operational efficiency. Our focus is on practical, production-ready AI solutions that integrate seamlessly into existing systems.",
       features: ["Machine Learning", "NLP Solutions", "AI Strategy"],
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200",
-      linkTarget: "services"
+      linkTarget: "contact"
     },
     {
       id: "04",
@@ -84,7 +84,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigateTo }) => {
       ],
       features: [],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200",
-      linkTarget: "services"
+      linkTarget: "contact"
     },
     {
       id: "05",

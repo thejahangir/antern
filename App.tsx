@@ -189,10 +189,10 @@ const App: React.FC = () => {
     setIsModalOpen(true);
   };
 
-  const handleNavigateToProduct = (productId: string) => {
-    navigateTo("products");
+  const handleNavigateToSection = (page: PageType, sectionId: string) => {
+    navigateTo(page);
     setTimeout(() => {
-      const el = document.getElementById(productId);
+      const el = document.getElementById(sectionId);
       if (el) {
         const offset = 120; // Accounts for the fixed navbar height
         const bodyRect = document.body.getBoundingClientRect().top;
@@ -205,6 +205,10 @@ const App: React.FC = () => {
         });
       }
     }, 100);
+  };
+
+  const handleNavigateToProduct = (productId: string) => {
+    handleNavigateToSection("products", productId);
   };
 
   return (
@@ -350,6 +354,7 @@ const App: React.FC = () => {
 
       <Footer
         onNavigateTo={(page: PageType) => navigateTo(page)}
+        onNavigateToSection={handleNavigateToSection}
         onNavigateToProduct={handleNavigateToProduct}
         onInitiateStrategy={openStrategySession}
       />
