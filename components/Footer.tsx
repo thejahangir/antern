@@ -67,14 +67,14 @@ export const Footer: React.FC<FooterProps> = ({
               Product Suite
             </h4>
             <ul className="space-y-6">
-              <li>
+              {/* <li>
                 <button
                   onClick={() => onNavigateTo("roadmap")}
                   className="text-[13px] text-gray-400 hover:text-[#79BFFA] transition-colors"
                 >
                   Product Roadmap
                 </button>
-              </li>
+              </li> */}
               <li>
                 <button
                   onClick={() => onNavigateToProduct("iaminterviewed")}

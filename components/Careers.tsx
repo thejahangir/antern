@@ -232,7 +232,7 @@ export const Careers: React.FC = () => {
               The Talent <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#0085F7]">Matrix.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-normal max-w-2xl leading-relaxed border-l border-[#004b23] pl-10">
-              Recruiting elite architects for the global intelligence transition. We are building the team that builds the future.
+              Be part of a team that values learning, collaboration, and meaningful impact.
             </p>
           </div>
         </div>

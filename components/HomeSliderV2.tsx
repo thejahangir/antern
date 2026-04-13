@@ -94,7 +94,7 @@ export const HomeSliderV2: React.FC<HomeSliderV2Props> = ({
       subtitle: 'Project Portfolio',
       description: (
         <>
-        <p>Antern Technologies provides end-to-end engineering services to build, scale, and modernize digital platforms. Our expertise spans AI/ML, cloud, and modern engineering practices—from ideation to deployment.</p>
+        <p>Antern Technologies provides end-to-end engineering services to build, scale, and modernize digital platforms. Our expertise spans AI/ML, cloud, and modern engineering practices from ideation to deployment.</p>
         <br/>
         <p>We support cloud migration, system integration, and legacy transformation, along with flexible models like ODC, GCC setup, and dedicated teams. Our focus is on delivering scalable, high-performance solutions with measurable outcomes.</p>
         </>
