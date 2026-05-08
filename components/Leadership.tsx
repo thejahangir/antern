@@ -9,6 +9,7 @@ import jahangir from "../src/assets/img/leadership/jahangir.jpg";
 import pradeep from "../src/assets/img/leadership/pradeep.png";
 import venky from "../src/assets/img/leadership/venky.png";
 import Surya from "../src/assets/img/leadership/surya.png";
+import John from "../src/assets/img/leadership/john.png";
 
 
 interface Leader {
@@ -74,7 +75,27 @@ const leadershipTeam: Leader[] = [
     strategicHighlight: "Driving growth.",
     socials: { linkedin: "#", twitter: "#", email: "Venkatesh@antern.tech" },
   },
-    {
+  {
+    name: "John",
+    role: "Head - AI Practice",
+    image: John,
+    bio: "business and technology leader with 25+ years of experience in AI, digital transformation, and enterprise innovation",
+    fullBio:(
+      <>
+      John is a seasoned business and technology leader with over 25 years of corporate professional experience spanning Product Management, Enterprise Technology, Digital Transformation, and Artificial Intelligence solutions across global markets.
+      <br />
+      He is deeply passionate about leveraging Artificial Intelligence to address complex real-world business challenges, particularly within highly regulated industries such as education, insurance, healthcare, legal, and enterprise operations. 
+      <br />
+      Currently pursuing doctoral research in Emerging Technologies and Artificial Intelligence, John combines strategic business leadership with strong technological expertise to help organizations successfully navigate the evolving landscape of AI-driven transformation.
+      <br />
+      At Antern AI, John leads the vision of developing next-generation AI platforms, Agentic AI solutions, and intelligent enterprise systems that empower businesses to innovate faster, operate smarter, and scale confidently in the AI era.
+      </>
+    ),
+      expertise: ["AI Engineering", "Agentic AI"],
+    strategicHighlight: "Leading next-generation AI innovation and enterprise transformation.",
+    socials: { linkedin: "#", twitter: "#", email: "john@antern.com" },
+  },
+  {
     name: "Surya Viswanath ",
     role: "Head of quality (Advisory)",
     image: Surya,
